@@ -8,15 +8,13 @@ previous:
 next:
     url: /secure/
     title: What is secure?
-bibliography: citations.bib
-nocite: '@*'
 ---
 
 It's hard to get good advice about internet security.
 
 The internet is dangerous, and it is foolish to advise otherwise, but **the internet is dangerous only in specific, well-understood ways**. I wrote this guide to give you a coherent model of security on the internet: with a good model, you can separate reasonable fears from irrational ones.
 
-Eliezer S. Yudkowsky, an AI researcher, writes (-@yudkowsky_2005; emphasis in original):
+Eliezer S. Yudkowsky, an AI researcher, writes {% cite yudkowsky_2005 -A %} (emphasis in original):
 
 > [In Karl] Popper's philosophy, the strength of a scientific theory is not how much it explains, but how much it *doesn't* explain. The virtue of a scientific theory lies not in the outcomes it permits, but in the outcomes it *prohibits*.
 

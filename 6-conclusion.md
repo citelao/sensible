@@ -5,8 +5,9 @@ permalink: /conclusion/
 previous:
     url: /overall/
     title: How to stay safe
-bibliography: citations.bib
-nocite: '@*'
+next:
+    url: /references/
+    title: References
 ---
 
 If you ask security experts about the state of the world, they'll probably say that everything's broken and everyone is hackable. Mozilla, in their [FAQ encouraging everyone to move to HTTPS](https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf) admits it:

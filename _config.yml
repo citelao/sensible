@@ -26,10 +26,14 @@ markdown: Pandoc
 plugins:
   - jekyll-feed
   - jekyll-pandoc
+  - jekyll-scholar
 
 pandoc:
   extensions:
     - filter: pandoc-citeproc
+
+scholar:
+  relative: "/references/"
 
 sass:
   load_paths:
