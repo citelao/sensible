@@ -3,49 +3,42 @@
 body.home {
 	@include global_grid;
 
-	header {
-		grid-column: full;
-		grid-row: 2;
+	nav {
+		grid-column: content;
 
-		.logo {
-			margin: $line-rem 0;
-			display: block;
+		ul {
+			padding: 0;
+			width: 100%;
 		}
 
-		nav {
-			ul {
-				padding: 0;
-				width: 100%;
+		li {
+			display: block;
+			@include breakpoint($begin-columns) {
+				display: inline-block;
 			}
 
-			li {
-				display: block;
+			& + li {
+				margin-top: (0.5 * $line-rem);
+
 				@include breakpoint($begin-columns) {
-					display: inline-block;
+					margin-top: 0;
 				}
+			}
 
-				& + li {
-					margin-top: (0.5 * $line-rem);
+			a {
+				display: block;
+				margin: (0.5 * $line-rem) 0;
+				padding: (0.5 * $line-rem) $line-rem;
+				background: rebeccapurple;
+				border-radius: 1rem;
 
-					@include breakpoint($begin-columns) {
-						margin-top: 0;
-					}
-				}
+				color: white;
+				text-align: center;
+				text-decoration: none;
 
-				a {
-					display: block;
-					padding: (0.5 * $line-rem) $line-rem;
-					background: rebeccapurple;
-					border-radius: 1rem;
-
+				&:hover {
+					background: darken(rebeccapurple, 30%);
 					color: white;
-					text-align: center;
-					text-decoration: none;
-
-					&:hover {
-						background: darken(rebeccapurple, 30%);
-						color: white;
-					}
 				}
 			}
 		}
@@ -53,7 +46,11 @@ body.home {
 
 	article {
 		grid-column: full;
-		grid-row: 1;
+		@include breakpoint($begin-columns) {
+			grid-row: 1;
+		}
+
+		@include global_grid;
 
 		margin-top: $line-rem;
 		@include breakpoint($begin-columns) {
@@ -69,12 +66,13 @@ body.home {
 			line-height: (4 * $line-height) / (5 * $base-font-size);
 
 			@include breakpoint($begin-columns) {
-				font-size: 15rem;
-				line-height: 1;
+				font-size: 10rem;
+				line-height: (6 * $line-height) / (10 * $base-font-size);
+				// line-height: 1;
 			}
 
 			padding: 0;
-			margin: 0;
+			margin: $line-height 0;
 		}
 	}
 

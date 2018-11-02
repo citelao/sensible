@@ -65,10 +65,6 @@ body {
 	background: #fee;
 }
 
-header {
-	@include global_grid;
-}
-
 article {
 	@include global_grid;
 
