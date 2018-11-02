@@ -1,0 +1,63 @@
+body.page {
+	@include global_grid;
+
+	header {
+		grid-template-columns: none;
+
+		.content {
+			grid-column: unset;
+		}
+
+		grid-column: sidebar;
+
+		@include breakpoint($begin-columns) {
+			grid-row: 1;
+
+			li {
+				list-style-position: outside;
+			}
+
+			// Shame.css
+			nav {
+				margin-top: 13px; // cheat to align baselines
+			}
+		}
+	}
+
+	article {
+		grid-column: full;
+		@include breakpoint($begin-columns) {
+			grid-row: 1;
+		}
+
+		@include global_grid;
+
+		& > *:not(.pullquote):not(.hero) {
+			grid-column: article;
+		}
+
+		& > .hero {
+			height: 40rem;
+			background-size: cover;
+			grid-row: 1;
+			grid-column: full;
+		}
+
+		.page_nav {
+			padding: $line-rem 0; 
+
+			.next {
+				float: right;
+			}
+		}
+	}
+
+	footer {
+		grid-column: full;
+		grid-row: footer;
+	}
+
+	// aside {
+	// 	grid-area: c;
+	// }
+}

@@ -1,0 +1,144 @@
+// Debug:
+body {
+	// background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='5' height='26'> <line x1='0' y1='26' x2='5' y2='26' stroke='black' stroke-opacity='0.2'/></svg>") !important;
+}
+
+// Design to a line height of 16 * 1.625 = 26px;
+$base-font-size: 16px;
+$line-height: 26px;
+$line-rem: 1rem * $line-height / $base-font-size;
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: $line-height / $base-font-size;
+}
+
+$link_color: #2f6bcc;
+$link_hover_color: darken($link_color, 20%);
+a {
+	// text-decoration: none;
+
+	color: $link_color;
+
+	&:hover {
+		text-decoration: underline;
+
+		color: $link_hover_color;
+	}
+
+	&:visited {
+		color: $link_color;
+
+		&:hover {
+			color: $link_hover_color;			
+		}
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+blockquote {
+	border-left: 0.2rem solid rebeccapurple;
+	margin: 0;
+
+	// rebeccapurple, but translucent:
+	background: rgba(102, 50, 155, 0.1);
+	padding: $line-rem;
+	padding-left: $line-rem - 0.2rem;
+}
+
+p {
+	margin: 0;
+}
+
+blockquote + blockquote,
+blockquote + p,
+blockquote + ol,
+blockquote + ul,
+p + blockquote, 
+p + p,
+p + ol,
+p + ul,
+ol + blockquote,
+ol + p,
+ol + ol,
+ol + ul,
+ul + blockquote,
+ul + p,
+ul + ol,
+ul + ul {
+	margin-top: $line-rem;
+}
+
+.pullquote {
+	font-size: 1.25rem;
+	line-height: (1 * $line-height) / (1.25 * $base-font-size);
+}
+
+.footnote-ref {
+	/*display: inline-block;*/
+
+	background: rebeccapurple;
+	color: white;
+
+	padding: 0 0.5rem;
+	margin: 0 0.1rem;
+	border-radius: 0.5rem;
+
+	text-decoration: none;
+
+	&:hover {
+		background: darken(rebeccapurple, 30%);
+	}
+
+	sup {
+		vertical-align: inherit;
+		font-size: inherit;
+		top: 0;
+	}
+}
+
+	a.footnote-ref {
+		color: white;
+
+		&:hover {
+			color: white;
+		}
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: (0.75 * $line-rem) 0 (0.25 * $line-rem);
+}
+
+	h1 {
+		font-size: 2.25rem;
+		line-height: (2 * $line-height) / (2.25 * $base-font-size);
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		line-height: (2 * $line-height) / (1.5 * $base-font-size);
+	}
+
+	h3, h4, h5, h6 {
+		font-size: 1rem;
+	}
+
+hr {
+	margin: $line-rem 0;
+	border: none;
+
+	border-top: 0.2rem solid rebeccapurple;
+	margin-top: $line-rem - 0.2rem;
+}
+
+ol, ul {
+	margin: 0;
+	padding-left: $line-rem;
+
+	li {
+		list-style-position: inside;
+	}
+}

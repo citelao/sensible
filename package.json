@@ -1,0 +1,16 @@
+{
+  "name": "sensible_security_www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "normalize.css": "^8.0.0"
+  }
+}

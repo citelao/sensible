@@ -1,0 +1,89 @@
+@import "breakpoints";
+
+body.home {
+	@include global_grid;
+
+	header {
+		grid-column: full;
+		grid-row: 2;
+
+		.logo {
+			margin: $line-rem 0;
+			display: block;
+		}
+
+		nav {
+			ul {
+				padding: 0;
+				width: 100%;
+			}
+
+			li {
+				display: block;
+				@include breakpoint($begin-columns) {
+					display: inline-block;
+				}
+
+				& + li {
+					margin-top: (0.5 * $line-rem);
+
+					@include breakpoint($begin-columns) {
+						margin-top: 0;
+					}
+				}
+
+				a {
+					display: block;
+					padding: (0.5 * $line-rem) $line-rem;
+					background: rebeccapurple;
+					border-radius: 1rem;
+
+					color: white;
+					text-align: center;
+					text-decoration: none;
+
+					&:hover {
+						background: darken(rebeccapurple, 30%);
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	article {
+		grid-column: full;
+		grid-row: 1;
+
+		margin-top: $line-rem;
+		@include breakpoint($begin-columns) {
+			margin-top: 0;
+		}
+
+		& > *:not(.pullquote) {
+			grid-column: content;
+		}
+
+		.title {
+			font-size: 5rem;
+			line-height: (4 * $line-height) / (5 * $base-font-size);
+
+			@include breakpoint($begin-columns) {
+				font-size: 15rem;
+				line-height: 1;
+			}
+
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	footer {
+		grid-column: full;
+		grid-row: footer;
+	}
+
+	// aside {
+	// 	grid-area: c;
+	// }
+}

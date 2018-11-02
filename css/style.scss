@@ -1,0 +1,158 @@
+---
+---
+
+@import "inc/normalize";
+@import "breakpoint-sass/stylesheets/breakpoint";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+@import "breakpoints";
+
+@import "typography";
+@import "components/alert";
+
+$num_columns: 12;
+$content_width: 40rem;
+@mixin global_grid {
+	display: grid;
+
+	grid-template-columns:
+		[full-start]
+		$line-rem
+		[content-col content half-bleed sidebar article sidenotes] 8fr
+		$line-rem
+		[full-end];
+	grid-column-gap: 0;
+
+	@include breakpoint($begin-columns) {
+		grid-template-columns:
+		[full-start] 
+			minmax(0.5rem, 1fr)
+			[content-start content-col sidebar-start]
+				minmax(min-content, $content_width/$num_columns)
+			[half-bleed-start content-col]
+				minmax(min-content, $content_width/$num_columns)
+			[sidebar-end article-start]
+				repeat(8, [content-col] minmax(min-content, $content_width/$num_columns))
+			[article-end content-col sidenotes-start]
+				minmax(min-content, $content_width/$num_columns)
+			[half-bleed-end content-col]
+				minmax(min-content, $content_width/$num_columns)
+			[sidenotes-end content-end]
+			minmax(0.5rem, 1fr)
+		[full-end];
+		grid-column-gap: $line-rem;
+	}
+
+    grid-template-rows: min-content 1fr [footer] auto;
+	align-items: baseline;
+
+	.content {
+		grid-column: content;
+	}
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	width: 100%;
+
+	color: #111;
+	background: #fee;
+}
+
+header {
+	@include global_grid;
+}
+
+article {
+	@include global_grid;
+
+	& > * {
+		grid-column: content;
+	}
+
+	& > .pullquote {
+		grid-column: half-bleed;
+	}
+}
+
+// shame.css
+// Footnotes first paragraph shouldn't break because of the list item
+.footnotes {
+	li {
+		list-style-position: outside;
+	}
+
+	li + li {
+		margin-top: $line-rem;
+	}
+}
+
+footer {
+	@include global_grid;
+
+	background: #111;
+	color: #fff;
+	margin-top: $line-rem;
+
+
+	padding-bottom: $line-rem;
+
+	// max-width: 60rem;
+
+	@include breakpoint($begin-columns) {
+		.content {
+			display: flex;
+			justify-content: space-between;
+		}
+		section {
+			flex-basis: 45%;
+		}
+	}
+}
+
+/* some stuff */
+header {
+	.logo {
+		font-weight: bold;
+		font-style: normal;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			&:hover {
+				color: $link_hover_color;
+				text-decoration: underline;
+			}
+
+			&:visited {
+				color: inherit;
+
+				&:hover {
+					color: $link_hover_color;
+				}
+			}
+		}
+	}
+}
+
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	.current {
+		font-weight: bold;
+	}
+}
+
+@import "layouts/default";
+@import "layouts/home";
+@import "layouts/page";
