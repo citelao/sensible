@@ -1,3 +1,15 @@
 {
-	
+	"buildCommand": "npm run build",
+	"dist": {
+		"repo": "git@github.com:citelao/sensible-security.git#gh_pages",
+		"stageDir": ".stage",
+		"baseDir": "_site",
+		"files": ["**/*"],
+		"github": {
+			"release": true
+		},
+		"npm": {
+			"publish": false
+		}
+	}
 }
