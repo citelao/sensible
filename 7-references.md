@@ -7,4 +7,6 @@ previous:
     title: Conclusion
 ---
 
+<div class="references">
 {% bibliography %}
+</div>

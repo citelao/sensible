@@ -79,7 +79,8 @@ article {
 
 // shame.css
 // Footnotes first paragraph shouldn't break because of the list item
-.footnotes {
+.footnotes,
+.references {
 	li {
 		list-style-position: outside;
 	}

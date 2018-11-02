@@ -18,7 +18,7 @@ Eliezer S. Yudkowsky, an AI researcher, writes {% cite yudkowsky_2005 -A %} (emp
 
 > [In Karl] Popper's philosophy, the strength of a scientific theory is not how much it explains, but how much it *doesn't* explain. The virtue of a scientific theory lies not in the outcomes it permits, but in the outcomes it *prohibits*.
 
-So, my entreaty: this article aims to give you a good, falsifiable model. This model shouldn't be that "the internet is safe" or "the internet is dangerous"; it should help you understand the *specific* things that are dangerous and things that are safe on the internet because it describes how the internet *actually* works---and nothing else (see @pollard_2018). 
+So, my entreaty: this article aims to give you a good, falsifiable model. This model shouldn't be that "the internet is safe" or "the internet is dangerous"; it should help you understand the *specific* things that are dangerous and things that are safe on the internet because it describes how the internet *actually* works---and nothing else {% cite_details pollard_2018 %}. 
 
 If my article cannot help you make a prediction---like how safe it is to download an app on public Wi-Fi, for example---please let me know, and I will improve it.
 

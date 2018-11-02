@@ -33,6 +33,7 @@ pandoc:
     - filter: pandoc-citeproc
 
 scholar:
+  reference_tagname: "p"
   relative: "/references/"
 
 sass:
