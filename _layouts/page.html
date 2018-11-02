@@ -27,7 +27,9 @@ layout: default
 <article>
 	<!-- <div src={{page.hero}} class="hero" style="background-image: url({{page.hero}})"></div> -->
 	<h1>{{ page.title }}</h1>
-	{% include time_to_read.html %}
+	<aside class="sidebar">
+		<strong>Reading time</strong>: {% include time_to_read.html %}
+	</aside>
 	<aside class="alert warning">
 		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
 		Use with caution.

@@ -32,7 +32,7 @@ body.page {
 
 		@include global_grid;
 
-		& > *:not(.pullquote):not(.hero) {
+		& > *:not(.pullquote):not(.hero):not(.sidebar) {
 			grid-column: article;
 		}
 
@@ -49,6 +49,10 @@ body.page {
 			.next {
 				float: right;
 			}
+		}
+
+		.sidebar {
+			grid-column: sidenotes;
 		}
 	}
 

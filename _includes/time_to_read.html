@@ -4,7 +4,7 @@
 {% assign words = content | number_of_words %}
 {% assign time = words | divided_by:180 %}
 {% if time < 2 %}
-  1 min
+  1min
 {% else %}
-  {{ time }} mins
+  {{ time }}mins
 {% endif %}
