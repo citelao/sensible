@@ -37,15 +37,3 @@ That's where this guide comes in. This is a guide for everyday people, people wh
 **Yes, probably**. Armed with a few straightforward steps and a little knowledge, you can browse the web in peace.
 
 Welcome to Sensible Security.
-
-<!-- 
-## Staying safe on the internet
-
-**It is possible to stay safe on the internet**. In fact, armed with a few straightforward steps and a little knowledge, you can browse the web in peace.
-
-When you access secure websites on a secure computer, your traffic is automatically encrypted with some of the most well-tested security in the world.
-
-**Public Wi-Fi has a unique set of dangers**, especially if your device is misconfigured or infected with a virus, but many of these dangers don't go away on private networks or with VPNs. These "mitigation strategies" provide certain security guarantees, but they are often redundant and are not the most effective steps you can take.
-
-If you can guarantee your computer is healthy and your connection is secure---and it's pretty straightforward to check---you can use open Wi-Fi in peace.
- -->

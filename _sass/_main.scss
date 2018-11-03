@@ -1,0 +1,80 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	width: 100%;
+
+	color: #111;
+	background: #fee;
+
+	margin: $line-rem 0;
+
+	@include breakpoint($begin-columns) {
+		margin: 0;
+	}
+}
+
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	.current {
+		font-weight: bold;
+	}
+}
+
+footer {
+	@include global_grid;
+
+	background: #111;
+	color: #fff;
+	margin-top: $line-rem;
+
+
+	padding-bottom: $line-rem;
+
+	// max-width: 60rem;
+
+	@include breakpoint($begin-columns) {
+		.content {
+			display: flex;
+			justify-content: space-between;
+		}
+		section {
+			flex-basis: 45%;
+		}
+	}
+}
+
+// logo should look like a normal link.
+header {
+	.logo {
+		font-weight: bold;
+		font-style: normal;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			&:hover {
+				color: $link_hover_color;
+				text-decoration: underline;
+			}
+
+			&:visited {
+				color: inherit;
+
+				&:hover {
+					color: $link_hover_color;
+				}
+			}
+		}
+	}
+}

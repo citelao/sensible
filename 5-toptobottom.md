@@ -4,7 +4,7 @@ title: How to stay safe
 permalink: /overall/
 previous:
     url: /https/
-    title: What is secure? What is HTTPS?
+    title: What is HTTPS?
 next:
     url: /conclusion/
     title: Conclusion

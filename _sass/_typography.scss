@@ -53,23 +53,21 @@ p {
 	margin: 0;
 }
 
-blockquote + blockquote,
-blockquote + p,
-blockquote + ol,
-blockquote + ul,
-p + blockquote, 
-p + p,
-p + ol,
-p + ul,
-ol + blockquote,
-ol + p,
-ol + ol,
-ol + ul,
-ul + blockquote,
-ul + p,
-ul + ol,
-ul + ul {
-	margin-top: $line-rem;
+%reflows-typography {
+	& + blockquote,
+	& + p,
+	& + ol,
+	& + ul {
+		margin-top: $line-rem;
+	}
+}
+
+blockquote,
+p,
+ol,
+ul,
+.sidenote {
+	@extend %reflows-typography;
 }
 
 .pullquote {

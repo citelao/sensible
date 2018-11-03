@@ -16,11 +16,6 @@ body.page {
 			li {
 				list-style-position: outside;
 			}
-
-			// Shame.css
-			nav {
-				margin-top: 13px; // cheat to align baselines
-			}
 		}
 	}
 
@@ -32,7 +27,7 @@ body.page {
 
 		@include global_grid;
 
-		& > *:not(.pullquote):not(.hero):not(.sidebar) {
+		& > *:not(.pullquote):not(.hero):not(.sidebar):not(.sidenote) {
 			grid-column: article;
 		}
 

@@ -1,0 +1,22 @@
+// Footnotes first paragraph shouldn't break because of the list item
+.footnotes,
+.references {
+	li {
+		list-style-position: outside;
+	}
+
+	li + li {
+		margin-top: $line-rem;
+	}
+}
+
+ // cheat to align baselines
+body.page {
+	header {
+		@include breakpoint($begin-columns) {
+			nav {
+				margin-top: 13px;
+			}
+		}
+	}
+}

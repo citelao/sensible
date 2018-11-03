@@ -28,7 +28,7 @@ With that, a warning:
 
 This content is targeted at most internet users---to access your bank, online shopping, and Facebook.
 
-If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions. <!-- TODO: the first thing I always want to talk about is "threat model," but that's not useful -->
+If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.
 
 ## The caveat at the beginning
 

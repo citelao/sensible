@@ -21,16 +21,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-markdown: Pandoc
+markdown: Kramdown
 # theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-pandoc
+  # - jekyll-pandoc
   - jekyll-scholar
 
-pandoc:
-  extensions:
-    - filter: pandoc-citeproc
+# pandoc:
+#   extensions:
+#     - filter: pandoc-citeproc
 
 scholar:
   reference_tagname: "p"

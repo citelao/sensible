@@ -119,7 +119,3 @@ Hackers can also target you, personally, by watching over your shoulder. They ca
 Security literature focuses on man-in-the-middle attacks because<!-- TODO: citation needed --> they're so easy without encryption: they leave little trace, can be performed without direct contact (especially if you're a government), and are extremely powerful. 
 
 Once man-in-the-middle attacks are mitigated, you need to minimize your other security holes before you can browse safely. As long as you are aware of *how* you can be attacked and are taking reasonable precautions, you can browse pretty secure.
-
-
-
-<!-- **Public wi-fi still has many specific dangers**---it's easier to phish, easier to physically observe your passwords, and easier to exploit vulnerabilities in your device---but HTTPS makes it much harder to attack your connection. -->
