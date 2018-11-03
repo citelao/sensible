@@ -32,6 +32,9 @@ plugins:
 #   extensions:
 #     - filter: pandoc-citeproc
 
+kramdown:
+  parse_block_html: true
+
 scholar:
   reference_tagname: "p"
   relative: "/references/"

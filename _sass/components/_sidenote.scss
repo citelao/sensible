@@ -7,4 +7,8 @@
 	color: #444;
 	font-style: italic;
 	@include rhythm-font-size(0.875rem, 1);
+
+	blockquote {
+		padding: 0.5 * $line-rem;
+	}
 }

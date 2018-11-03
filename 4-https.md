@@ -16,17 +16,16 @@ Up until recently, **protecting your data every step of the way was impossible**
 
 The core standards that defined the Internet—protocols like TCP/IP, HTTP, DNS, and SMTP—only described how to send your data as **plaintext**---unencrypted, just like physical mail. All your information flew across the internet in a way that anyone could read: all hackers needed to do was eavesdrop.
 
-This was the original design of the internet[^design], which helped it spread quickly, but **it soon became a liability**. Security specialists drafted "secure" variants of most internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
+This was the original design of the internet, which helped it spread quickly, but **it soon became a liability**. Security specialists drafted "secure" variants of most internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
 
-[^design]: [The original HTTP specification](https://tools.ietf.org/html/rfc1945#section-12.1):
+<aside class="sidenote">
+Tim Berners-Lee (designer of the internet) [at IP Expo](https://www.theregister.co.uk/2014/10/08/sir_tim_bernerslee_defends_decision_not_to_bake_security_into_www/), about the decision to leave security out of the original design:
 
-	> Basic authentication scheme is not a secure method of user authentication [...] HTTP/1.0 does not prevent additional authentication schemes and encryption mechanisms from being employed to increase security.
+> [The web] might not have taken off if it had been too difficult.
+
+He was probably right.
 	
-	Tim Berners-Lee (designer of the internet) [at IP Expo](https://www.theregister.co.uk/2014/10/08/sir_tim_bernerslee_defends_decision_not_to_bake_security_into_www/), about the decision to leave security out of the original design:
-	
-	> [The web] might not have taken off if it had been too difficult.
-
-	He was probably right.
+</aside>
 
 ## Introducing HTTPS
 
@@ -38,9 +37,11 @@ For a long time HTTPS stayed in the background, but thanks to initiatives by Goo
 
 ## The old internet -- before HTTPS
 
-HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-the-middle attack[^citations].
+HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-the-middle attack.
 
-[^citations]: There is no direct citation for this statement. However, the vulnerabilities listed in Nottingham, Mill, Farrell & Tschofenig, and Basques {% cite nottingham_2015 mill_2014 farrell2014pervasive basques %}---essays from Google, the government, and *the agency that created the internet* explaining the need for HTTPS---are all man-in-the-middle attacks.
+<aside class="sidenote">
+There is no direct citation for this statement. However, the vulnerabilities listed in Nottingham, Mill, Farrell & Tschofenig, and Basques {% cite nottingham_2015 mill_2014 farrell2014pervasive basques %}---essays from Google, the government, and *the agency that created the internet* explaining the need for HTTPS---are all man-in-the-middle attacks.
+</aside>
 
 A man-in-the-middle attack in general is any attack where someone intercepts your communication before it reaches its destination. The most obvious example is someone standing outside your mailbox and reading all your mail before you send it to the post office. 
 
@@ -66,13 +67,15 @@ HTTPS makes the man-in-the-middle attack almost impossible, except for in a few 
 
 But HTTPS does not secure every part of your internet browsing, and you must double check it to make sure no one is attacking you.
 
-Using HTTPS is a bit like **sending coded messages through the mail**: how secure you are depends on how secure your encryption is, how trustworthy the recipient is, and how sensitive the information on the envelope is[^implications], among other things.
+Using HTTPS is a bit like **sending coded messages through the mail**: how secure you are depends on how secure your encryption is, how trustworthy the recipient is, and how sensitive the information on the envelope is, among other things.
 
-[^implications]: The information on the "envelope"---the **metadata**---has specific privacy and security implications {%cite muehlstein2016analyzing -L note -l 7--46 %}, but most of them are highly specific.
+<aside class="sidenote">
+The information on the "envelope"---the **metadata**---has specific privacy and security implications {%cite muehlstein2016analyzing -L note -l 7--46 %}, but most of them are highly specific.
 
-	For example, an attacker can tell if you're using Skype, or that you are going to Planned Parenthood's website (but they cannot know who you talked to or which specific pages you load).
+For example, an attacker can tell if you're using Skype, or that you are going to Planned Parenthood's website (but they cannot know who you talked to or which specific pages you load).
 
-	This is discussed in greater depth later. <!-- TODO not atm -->	
+This is discussed in greater depth later. <!-- TODO not atm -->	
+</aside>
 
 Understanding how the internet works, end-to-end, helps you decide what is safe. Knowing how to check your computer's security helps you decide when you are safe.
 
@@ -109,7 +112,7 @@ However, it is worth emphasizing that HTTPS<!-- TODO and VPNs--> *only* protects
 This leads to an interesting conclusion: HTTPS is not enough to secure your internet communication, even though it secures all communication that actually goes through "the Internet."
 
 <blockquote class="pullquote">
-	HTTPS is not enough to secure your internet communication, even though it secures all communication that actually goes through "the Internet."
+HTTPS is not enough to secure your internet communication, even though it secures all communication that actually goes through "the Internet."
 </blockquote>
 
 For example, Equifax [stored social security numbers poorly](https://arstechnica.com/information-technology/2018/05/equifax-breach-exposed-millions-of-drivers-licenses-phone-numbers-emails/)<!-- TODO cite -->. HTTPS had nothing to do with it---when their databases were hacked, your SSN was probably leaked, and there was nothing you could do. 

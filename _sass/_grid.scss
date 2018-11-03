@@ -1,7 +1,7 @@
 $begin-columns: 600px;
 
-$num_columns: 12;
-$content_width: 40rem;
+$num_columns: 10;
+$content_width: 50rem;
 @mixin global_grid {
 	display: grid;
 
@@ -22,7 +22,7 @@ $content_width: 40rem;
 			[half-bleed-start content-col]
 				minmax(min-content, $content_width/$num_columns)
 			[sidebar-end article-start]
-				repeat(8, [content-col] minmax(min-content, $content_width/$num_columns))
+				repeat($num_columns - 4, [content-col] minmax(min-content, $content_width/$num_columns))
 			[article-end content-col sidenotes-start]
 				minmax(min-content, $content_width/$num_columns)
 			[half-bleed-end content-col]

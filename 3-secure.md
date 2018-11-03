@@ -33,7 +33,7 @@ Your browser---or mail app, or whatever app your computer is using to talk to th
 So downloading a webpage (or playing a YouTube video, or logging in---anything done in a browser) goes through these points:
 
 <aside class="sidenote">
-	Anything on the internet not done in a browser (email in an app, for example) goes through a different application (not your browser) and is not protected by HTTPS. The rest is the same, though.
+Anything on the internet not done in a browser (email in an app, for example) goes through a different application (not your browser) and is not protected by HTTPS. The rest is the same, though.
 </aside>
 
 1. You
@@ -50,7 +50,7 @@ An attacker can target any part of this chain, so a message is only as secure as
 This is why classic security tools are not enough to protect yourself. Your computer can be perfectly secure, and the destination server can be well-protected. But, at some point, you will need to log in to your bank. At some point, you will need to send your password over the Internet. And **if an attacker can read your password as you send it, it doesn't matter how good it is** or how secure the bank's database is: the attacker has your password.
 
 <blockquote class="pullquote">
-	If an attacker can read your password as you send it, it doesn't matter how good it is.
+If an attacker can read your password as you send it, it doesn't matter how good it is.
 </blockquote>
 
 You must learn how to protect your messages in transit.
