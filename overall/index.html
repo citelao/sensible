@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to stay safe &#x2022; Sensible Security</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body class="page">
+    <header>
+  <div class="content">
+    <em class="logo">
+      
+        <a href="/">
+          <svg
+            version="1.1"
+            height="18" 
+            width="20"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg">
+              <polygon points="0,8 10,0 20,8" fill="currentColor" />
+              <polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
+          </svg> 
+          Sensible Security
+        </a>
+      
+    </em class="logo">
+    <nav>
+  <ul>
+    
+      
+        <li>
+          
+            <a href="/intro/">
+          
+            
+              Introduction
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/entreaty/">
+          
+            
+              An entreaty
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/secure/">
+          
+            
+              What is secure?
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/https/">
+          
+            
+              What is HTTPS?
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+        <li>
+          
+            <span class="current">
+          
+            
+              How to stay safe
+            
+          
+            </span>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/conclusion/">
+          
+            
+              Conclusion
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/references/">
+          
+            
+              References
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+</nav>
+  </div>
+</header>
+<article>
+	<!-- <div src= class="hero" style="background-image: url()"></div> -->
+	<h1>How to stay safe</h1>
+	<aside class="sidebar">
+		<strong>Reading time</strong>: 
+
+
+
+  2mins
+
+	</aside>
+	<aside class="alert warning">
+		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
+		Use with caution.
+	</aside>
+	<p>Security literature focuses on man-in-the-middle attacks because<!-- TODO: citation needed --> they’re so easy without encryption: they leave little trace, can be performed without direct contact (especially if you’re a government), and are extremely powerful.</p>
+<p>Once man-in-the-middle attacks are mitigated, you need to minimize your other security holes before you can browse safely. As long as you are aware of <em>how</em> you can be attacked and are taking reasonable precautions, you can browse pretty secure.</p>
+<h2 id="staying-safe-in-general">Staying safe, in general</h2>
+<p>There’s a reason that <strong>popular security advice</strong>, despite it flaws, tends to include three things:</p>
+<ol type="1">
+<li><em>Always</em> use an auto-updating computer and browser</li>
+<li>Use different passwords on each site, managed in a password manager</li>
+<li>Use two-step authentication, especially on your email and bank accounts</li>
+</ol>
+<p><strong>I will add 2 more things</strong>, but these first steps are extremely important. These three protect against the easiest attacks on most parts of the “<a href="/secure/#every-step-of-the-way-on-the-internet">internet chain</a>.”</p>
+<ul>
+<li><strong>You</strong>: if you use two-step authentication, attackers can’t steal your accounts <em>even if you’ve given them your password</em> accidentally. They also need your second step, like your phone.</li>
+<li><strong>Your computer</strong>: hundreds of people work every day to ensure that security vulnerabilities are found and patched. If your computer is always up-to-date, you will never be exposed to security bugs that have already been fixed. The 2017 ransomware attacks <a href="https://www.csoonline.com/article/3227906/ransomware/what-is-wannacry-ransomware-how-does-it-infect-and-who-was-responsible.html">exploited bugs that had been patched three months before</a><!-- TODO full cite -->, for example.</li>
+<li><strong>Your browser</strong>: just like computers, browsers that auto-update have the latest security patches.</li>
+<li><strong>Destination router</strong>: if you use a different password for each site, hackers can’t automatically steal your other accounts if one site is hacked.</li>
+</ul>
+<p>If you follow these three steps, the next major step is to <strong>protect your message when it’s “in flight”</strong>: you need to protect your messages as it travels through your router and intermediate routers (what I’ve been calling the internet). HTTPS protects you here<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<h4 id="the-fourth-step-learn-the-language-of-the-browser">The fourth step — learn the language of the browser</h4>
+<h4 id="the-fifth-step-keep-your-computer-clean">The fifth step — keep your computer clean</h4>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>I’ve often heard the advice “use a VPN.” While VPNs have several advantages (for example, traffic between your computer and the VPN’s servers is completely obscured and only appears as “generic VPN traffic” to eavesdroppers), they only protect your message until it reaches the VPN server. Without HTTPS, your message would then travel unencrypted to the destination server, and anyone along <em>that</em> path could eavesdrop unimpeeded.</p>
+<p>Consider a VPN when you worry about someone snooping on unencrypted traffic <em>near you</em>, like at your coffee shop, or when you worry about leaking metadata, like that you’re using Skype or going to FoxNews.com.</p>
+<p>All in all, using a VPN requires installing software on your computer and sending all of your internet traffic to <em>one company</em>. This means you need to audit the software to be sure it’s safe, you need to be <em>certain</em> the company isn’t logging your traffic and handing it to someone else, and you need to be ok with everyone around you <em>knowing you’re using a VPN</em>.</p>
+<p>Most of the times I’ve seen, people who want to use a VPN probably just need HTTPS.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+
+	<nav class="page_nav">
+		 
+			<a class="prev" href="/https/">&laquo; What is secure? What is HTTPS?</a> 
+		 
+		 
+			<a class="next" href="/conclusion/">Conclusion &raquo;</a> 
+		 
+	</nav>
+</article>
+<footer>
+  <div class="content">
+    <section>
+      <h2>Warning</h2>
+      <p>This content is targeted at most internet users—to access your bank, online shopping, and Facebook.</p>
+      <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+    </section>
+    <section>
+      
+      <h2>Content</h2>
+      <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
+      <p>I am probably ok with your commercial use. If you'd like to relicense this content, <a href="https://ben.stolovitz.com/">contact me</a>.</p>
+    </section>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "sensible_security_www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "jekyll build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "gh-pages": "^2.0.1",
+    "normalize.css": "^8.0.0"
+  }
+}

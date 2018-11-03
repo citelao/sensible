@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>What is secure? &#x2022; Sensible Security</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body class="page">
+    <header>
+  <div class="content">
+    <em class="logo">
+      
+        <a href="/">
+          <svg
+            version="1.1"
+            height="18" 
+            width="20"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg">
+              <polygon points="0,8 10,0 20,8" fill="currentColor" />
+              <polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
+          </svg> 
+          Sensible Security
+        </a>
+      
+    </em class="logo">
+    <nav>
+  <ul>
+    
+      
+        <li>
+          
+            <a href="/intro/">
+          
+            
+              Introduction
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/entreaty/">
+          
+            
+              An entreaty
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <span class="current">
+          
+            
+              What is secure?
+            
+          
+            </span>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/https/">
+          
+            
+              What is HTTPS?
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+        <li>
+          
+            <a href="/overall/">
+          
+            
+              How to stay safe
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/conclusion/">
+          
+            
+              Conclusion
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/references/">
+          
+            
+              References
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+</nav>
+  </div>
+</header>
+<article>
+	<!-- <div src= class="hero" style="background-image: url()"></div> -->
+	<h1>What is secure?</h1>
+	<aside class="sidebar">
+		<strong>Reading time</strong>: 
+
+
+
+  3mins
+
+	</aside>
+	<aside class="alert warning">
+		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
+		Use with caution.
+	</aside>
+	<p>The data we send across the Internet every day—emails, YouTube videos, and search results—are immensely valuable to hackers, governments, employers, advertisers, and snoopy family members.</p>
+<p><strong>Security means protecting this data</strong>.</p>
+<p>You may have worked to protect your computer before, perhaps with antivirus software or a firewall or a spam filter, but these are piecemeal solutions for a more general problem: you need to protect against hackers grabbing your data, exploiting it, or releasing it when you don’t want them to.</p>
+<h2 id="the-cloud-changes-things">The cloud changes things</h2>
+<p>The world is much different than what it was 10 (or even 5) years ago. Most of your life probably lives on a server in the cloud. Family photos, bank account numbers, your secret cookie recipe, your text messages to your spouse: all of these fly across the Internet when you access them.</p>
+<p>Tools like antivirus software, firewalls, and spam filters are important pieces of the puzzle, but using them haphazardly is not enough. <strong>To keep your data safe, you must protect it every step of the way</strong>.</p>
+<h2 id="every-step-of-the-way-on-the-internet">Every step of the way – on the Internet</h2>
+<p>The “Internet” is, at its core, a way of sending messages from one computer to another. It’s a collection of protocols and computers that follow those protocols.</p>
+<p>When you send messages from your computer to a destination (a “server”), your computer uses rules from protocols like the “Internet Protocol” (IP) and HyperText Transfer Protocol (HTTP) to generate those messages.</p>
+<p>Your browser—or mail app, or whatever app your computer is using to talk to the internet—takes these messages and sends them to your router. Your router then sends them through many other well-known routers (the “internet”) until they reach their destination.</p>
+<p>So downloading a webpage (or playing a YouTube video, or logging in—anything done in a browser<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>) goes through these points:</p>
+<ol type="1">
+<li>You</li>
+<li>Your computer</li>
+<li>Your browser</li>
+<li>Your router</li>
+<li>Intermediate routers (“the internet”)</li>
+<li>Destination router</li>
+</ol>
+<h2 id="classic-is-not-enough">Classic is not enough</h2>
+<p>An attacker can target any part of this chain, so a message is only as secure as the weakest part of it. Each part of this chain has different strengths and weaknesses.</p>
+<p>This is why classic security tools are not enough to protect yourself. Your computer can be perfectly secure, and the destination server can be well-protected. But, at some point, you will need to log in to your bank. At some point, you will need to send your password over the Internet. And <strong>if an attacker can read your password as you send it, it doesn’t matter how good it is</strong> or how secure the bank’s database is: the attacker has your password.</p>
+<blockquote class="pullquote">
+If an attacker can read your password as you send it, it doesn’t matter how good it is.
+</blockquote>
+<p>You must learn how to protect your messages in transit.</p>
+<p>In fact, protecting your messages as they flow across the Internet is probably the <em>single most important thing you can do</em> to protect your personal information. It’s far easier to read a message than it is to hack your computer or eavesdrop.</p>
+<p><strong>You must still protect your computer</strong>—viruses, malware, and “literally watching over the shoulder” are still common attacks—and you must still check to see that the sites you use are trustworthy, but you must protect your messages just as well.</p>
+<p>And the best tool for the job is HTTPS: “HTTP Secure”.</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Anything else over the internet (email not done through a browser, for example) goes through a different application (not your browser) and is not protected by HTTPS. The rest is the same, though. <!-- TODO don't mention HTTPS --><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+
+	<nav class="page_nav">
+		 
+			<a class="prev" href="/entreaty/">&laquo; An entreaty</a> 
+		 
+		 
+			<a class="next" href="/https/">What is HTTPS? &raquo;</a> 
+		 
+	</nav>
+</article>
+<footer>
+  <div class="content">
+    <section>
+      <h2>Warning</h2>
+      <p>This content is targeted at most internet users—to access your bank, online shopping, and Facebook.</p>
+      <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+    </section>
+    <section>
+      
+      <h2>Content</h2>
+      <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
+      <p>I am probably ok with your commercial use. If you'd like to relicense this content, <a href="https://ben.stolovitz.com/">contact me</a>.</p>
+    </section>
+  </div>
+</footer>
+  </body>
+</html>
