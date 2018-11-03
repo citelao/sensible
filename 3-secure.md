@@ -30,9 +30,11 @@ When you send messages from your computer to a destination (a "server"), your co
 
 Your browser---or mail app, or whatever app your computer is using to talk to the internet---takes  these messages and sends them to your router. Your router then sends them through many other well-known routers (the "internet") until they reach their destination.
 
-So downloading a webpage (or playing a YouTube video, or logging in---anything done in a browser[^only_browser]) goes through these points:
+So downloading a webpage (or playing a YouTube video, or logging in---anything done in a browser) goes through these points:
 
-[^only_browser]: Anything else over the internet (email not done through a browser, for example) goes through a different application (not your browser) and is not protected by HTTPS. The rest is the same, though. <!-- TODO don't mention HTTPS -->
+<aside class="sidenote">
+	Anything on the internet not done in a browser (email in an app, for example) goes through a different application (not your browser) and is not protected by HTTPS. The rest is the same, though.
+</aside>
 
 1. You
 2. Your computer

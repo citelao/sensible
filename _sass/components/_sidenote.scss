@@ -1,3 +1,10 @@
 .sidenote {
 	grid-column: sidenotes;
+
+	/* An absurdly large number of rows, to ensure we don't break layout: */
+	grid-row: span 20;
+
+	color: #444;
+	font-style: italic;
+	@include rhythm-font-size(0.875rem, 1);
 }

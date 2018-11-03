@@ -10,6 +10,8 @@ next:
     title: Conclusion
 ---
 
+The last section focused on HTTPS and how it mitigates man-in-the-middle attacks. Staying safe requies 
+
 Security literature focuses on man-in-the-middle attacks because<!-- TODO: citation needed --> they're so easy without encryption: they leave little trace, can be performed without direct contact (especially if you're a government), and are extremely powerful. 
 
 Once man-in-the-middle attacks are mitigated, you need to minimize your other security holes before you can browse safely. As long as you are aware of *how* you can be attacked and are taking reasonable precautions, you can browse pretty secure.

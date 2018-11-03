@@ -1,6 +1,6 @@
 // Debug:
 body {
-	// background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='5' height='26'> <line x1='0' y1='26' x2='5' y2='26' stroke='black' stroke-opacity='0.2'/></svg>") !important;
+//	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='5' height='26'> <line x1='0' y1='26' x2='5' y2='26' stroke='black' stroke-opacity='0.2'/></svg>") !important;
 }
 
 // Design to a line height of 16 * 1.625 = 26px;
@@ -10,6 +10,16 @@ $line-rem: 1rem * $line-height / $base-font-size;
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	line-height: $line-height / $base-font-size;
+}
+
+// https://github.com/sass/sass/issues/533
+@function strip-units($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+@mixin rhythm-font-size($size_rem, $line-height-lines: 1) {
+	font-size: $size_rem;
+	line-height: ($line-height-lines * $line-height) / (strip-units($size_rem) * $base-font-size);
 }
 
 $link_color: #2f6bcc;
@@ -71,8 +81,7 @@ ul,
 }
 
 .pullquote {
-	font-size: 1.25rem;
-	line-height: (1 * $line-height) / (1.25 * $base-font-size);
+	@include rhythm-font-size(1.25rem, 1);
 }
 
 .footnote-ref {
@@ -111,17 +120,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 	h1 {
-		font-size: 2.25rem;
-		line-height: (2 * $line-height) / (2.25 * $base-font-size);
+		@include rhythm-font-size(2.25rem, 2);
 	}
 
 	h2 {
-		font-size: 1.5rem;
-		line-height: (2 * $line-height) / (1.5 * $base-font-size);
+		@include rhythm-font-size(1.5rem, 2);
 	}
 
 	h3, h4, h5, h6 {
-		font-size: 1rem;
+		@include rhythm-font-size(1rem, 1);
 	}
 
 hr {

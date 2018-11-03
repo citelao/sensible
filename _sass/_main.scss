@@ -29,6 +29,17 @@ nav {
 		font-weight: bold;
 	}
 }
+article {
+      @include global_grid;
+
+      & > * {
+              grid-column: content;
+      }
+
+      & > .pullquote {
+              grid-column: half-bleed;
+      }
+}
 
 footer {
 	@include global_grid;

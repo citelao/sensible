@@ -11,12 +11,14 @@
 }
 
  // cheat to align baselines
-body.page {
-	header {
-		@include breakpoint($begin-columns) {
-			nav {
-				margin-top: 13px;
-			}
+@include breakpoint($begin-columns) {
+	body.page {
+		header nav {
+			//margin-top: 13px;
+		}
+
+		.sidebar {
+			margin-top: $line-height * 2;
 		}
 	}
 }
