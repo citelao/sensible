@@ -8,8 +8,6 @@ previous:
 next:
     url: /overall/
     title: How to stay safe
-bibliography: citations.bib
-nocite: '@*'
 ---
 
 In the last section, we explained how protecting your message every step of the way is *vital* to keeping your data safe.
@@ -42,7 +40,7 @@ For a long time HTTPS stayed in the background, but thanks to initiatives by Goo
 
 HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-the-middle attack[^citations].
 
-[^citations]: There is no direct citation for this statement. However, the vulnerabilities listed in @nottingham_2015, @mill_2014, @farrell2014pervasive, and @basques---essays from Google, the government, and *the agency that created the internet* explaining the need for HTTPS---are all man-in-the-middle attacks.
+[^citations]: There is no direct citation for this statement. However, the vulnerabilities listed in Nottingham, Mill, Farrell & Tschofenig, and Basques {% cite nottingham_2015 mill_2014 farrell2014pervasive basques %}---essays from Google, the government, and *the agency that created the internet* explaining the need for HTTPS---are all man-in-the-middle attacks.
 
 A man-in-the-middle attack in general is any attack where someone intercepts your communication before it reaches its destination. The most obvious example is someone standing outside your mailbox and reading all your mail before you send it to the post office. 
 
@@ -54,7 +52,7 @@ The man-in-the-middle attack is so dangerous on the Internet because:
 * it compromises **everything** you send and receive while browsing, and
 * it is cakework to implement.
 
-In 2010, Eric Butler released [Firesheep](https://codebutler.com/2010/10/24/firesheep/), a free plugin for Firefox that made impersonating Facebook accounts as easy as "double-click[ing] on someone" (@firesheep). He did this to motivate websites to switch to HTTPS. As Butler implored in 2010:
+In 2010, Eric Butler released [Firesheep](https://codebutler.com/2010/10/24/firesheep/), a free plugin for Firefox that made impersonating Facebook accounts as easy as "double-click[ing] on someone" {% cite firesheep %}. He did this to motivate websites to switch to HTTPS. As Butler implored in 2010:
 
 > The only effective fix for this problem is full end-to-end encryption, known on the web as HTTPS or SSL.
 
@@ -70,7 +68,7 @@ But HTTPS does not secure every part of your internet browsing, and you must dou
 
 Using HTTPS is a bit like **sending coded messages through the mail**: how secure you are depends on how secure your encryption is, how trustworthy the recipient is, and how sensitive the information on the envelope is[^implications], among other things.
 
-[^implications]: The information on the "envelope"---the **metadata**---has specific privacy and security implications (see @muehlstein2016analyzing and its citations 7--46), but most of them are highly specific.
+[^implications]: The information on the "envelope"---the **metadata**---has specific privacy and security implications {%cite muehlstein2016analyzing -L note -l 7--46 %}, but most of them are highly specific.
 
 	For example, an attacker can tell if you're using Skype, or that you are going to Planned Parenthood's website (but they cannot know who you talked to or which specific pages you load).
 

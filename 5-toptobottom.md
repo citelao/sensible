@@ -8,8 +8,6 @@ previous:
 next:
     url: /conclusion/
     title: Conclusion
-bibliography: citations.bib
-nocite: '@*'
 ---
 
 Security literature focuses on man-in-the-middle attacks because<!-- TODO: citation needed --> they're so easy without encryption: they leave little trace, can be performed without direct contact (especially if you're a government), and are extremely powerful. 

@@ -8,8 +8,6 @@ previous:
 next:
     url: /https/
     title: What is HTTPS?
-bibliography: citations.bib
-nocite: '@*'
 ---
 
 The data we send across the Internet every day---emails, YouTube videos, and search results---are immensely valuable to hackers, governments, employers, advertisers, and snoopy family members.
