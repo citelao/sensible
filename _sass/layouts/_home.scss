@@ -52,9 +52,9 @@ body.home {
 
 		@include global_grid;
 
-		margin-top: $line-rem;
+		//margin-top: $line-rem;
 		@include breakpoint($begin-columns) {
-			margin-top: 0;
+		//	margin-top: 0;
 		}
 
 		& > *:not(.pullquote) {
@@ -62,8 +62,8 @@ body.home {
 		}
 
 		.title {
-			font-size: 5rem;
-			line-height: (4 * $line-height) / (5 * $base-font-size);
+			font-size: 4rem;
+			line-height: (3 * $line-height) / (4 * $base-font-size);
 
 			@include breakpoint($begin-columns) {
 				font-size: 10rem;
@@ -72,7 +72,7 @@ body.home {
 			}
 
 			padding: 0;
-			margin: $line-height 0;
+			margin: 0 0 $line-height 0;
 		}
 	}
 

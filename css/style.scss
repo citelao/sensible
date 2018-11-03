@@ -63,6 +63,12 @@ body {
 
 	color: #111;
 	background: #fee;
+
+	margin: $line-rem 0;
+
+	@include breakpoint($begin-columns) {
+		margin: 0;
+	}
 }
 
 article {
