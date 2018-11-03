@@ -11,3 +11,7 @@ The sensible guide to cybersecurity.
 ## Development
 
 `jekyll serve`.
+
+## Deployment
+
+`npm run build && npm run deploy`
