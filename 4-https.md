@@ -41,7 +41,7 @@ For a long time HTTPS stayed in the background, but thanks to initiatives by Goo
 HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-the-middle attack.
 
 <aside class="sidenote">
-There is no direct citation for this statement. However, the vulnerabilities listed in Nottingham, Mill, Farrell & Tschofenig, and Basques {% cite nottingham_2015 mill_2014 farrell2014pervasive basques %}---essays from Google, the government, and *the agency that created the internet* explaining the need for HTTPS---are all man-in-the-middle attacks.
+There is no direct citation for this statement. However, the vulnerabilities listed in essays (explaining the need for HTTPS) from Google {% cite basques %}, the government {% cite mill_2014 %}, and *the agency that created the internet* {% cite farrell2014pervasive nottingham_2015 %} are all man-in-the-middle attacks.
 </aside>
 
 A man-in-the-middle attack in general is any attack where someone intercepts your communication before it reaches its destination. The most obvious example is someone standing outside your mailbox and reading all your mail before you send it to the post office. 
