@@ -1,8 +1,11 @@
 .sidenote {
 	grid-column: sidenotes;
 
-	/* An absurdly large number of rows, to ensure we don't break layout: */
-	grid-row: span 20;
+	@include breakpoint($begin-columns) {
+		// I'm under no delusions that this is robust.
+		// Keep your sidenotes short please.
+		margin-bottom: -50vh;
+	}
 
 	color: #444;
 	font-style: italic;

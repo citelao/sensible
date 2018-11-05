@@ -22,3 +22,13 @@
 		}
 	}
 }
+
+// Cheat the bottom margin so that sidenotes are correctly aligned?
+// Why sure!
+.sidenote {
+	@include breakpoint($begin-columns) {
+		// I'm under no delusions that this is robust.
+		// Keep your sidenotes short please.
+		margin-bottom: -50vh;
+	}
+}
