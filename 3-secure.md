@@ -1,6 +1,7 @@
 ---
 layout: page
 title: What is secure?
+description: What does 'secure' mean when talking about cyber-security?
 permalink: /secure/
 previous:
     url: /entreaty/

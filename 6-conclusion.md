@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Conclusion
+description: You can stay safe on the internet.
 permalink: /conclusion/
 previous:
     url: /overall/

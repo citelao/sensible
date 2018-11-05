@@ -1,6 +1,7 @@
 ---
 layout: page
 title: An entreaty
+description: Learn what you should expect to get from cyber-security guide.
 permalink: /entreaty/
 previous:
     url: /intro/

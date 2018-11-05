@@ -1,6 +1,7 @@
 ---
 layout: page
 title: What is HTTPS?
+description: HTTPS secures the most dangerous part of your internet traffic. How?
 permalink: /https/
 previous:
     url: /secure/

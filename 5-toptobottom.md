@@ -1,6 +1,7 @@
 ---
 layout: page
 title: How to stay safe
+description: Learn what you can do to stay safe on the internet, from top to bottom.
 permalink: /overall/
 previous:
     url: /https/
