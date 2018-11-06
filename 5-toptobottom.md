@@ -35,13 +35,9 @@ There's a reason that **popular security advice**, despite it flaws, tends to in
 If you follow these three steps, the next major step is to **protect your message when it's "in flight"**: you need to protect your messages as it travels through your router and intermediate routers (what I've been calling the internet). HTTPS protects you here.
 
 <aside class="sidenote">
-I've often heard the advice "use a VPN." While VPNs have several advantages (for example, traffic between your computer and the VPN's servers is completely obscured and only appears as "generic VPN traffic" to eavesdroppers), they only protect your message until it reaches the VPN server. Without HTTPS, your message would then travel unencrypted to the destination server, and anyone along *that* path could eavesdrop unimpeeded.
+I've often heard the advice "use a VPN." VPNs can be useful, but HTTPS is usually what you want.
 
-Consider a VPN when you worry about someone snooping on unencrypted traffic *near you*, like at your coffee shop, or when you worry about leaking metadata, like that you're using Skype or going to FoxNews.com.
-
-All in all, using a VPN requires installing software on your computer and sending all of your internet traffic to *one company*. This means you need to audit the software to be sure it's safe, you need to be *certain* the company isn't logging your traffic and handing it to someone else, and you need to be ok with everyone around you *knowing you're using a VPN*.
-
-Most of the times I've seen, people who want to use a VPN probably just need HTTPS.
+See [Do you need a VPN?](/vpn)
 </aside>
 
 #### The fourth step --- learn the language of the browser
