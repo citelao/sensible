@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Do you need a VPN? &#x2022; Sensible Security</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Jump in to staying secure – introduction to cyber-security techniques for sensible people.">
+    
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body class="page">
+    <header>
+  <div class="content">
+    <em class="logo">
+      
+        <a href="/">
+          <svg
+            version="1.1"
+            height="18" 
+            width="20"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg">
+              <polygon points="0,8 10,0 20,8" fill="currentColor" />
+              <polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
+          </svg> 
+          Sensible Security
+        </a>
+      
+    </em class="logo">
+    <nav>
+  <ul>
+    
+      
+        <li>
+          
+            <a href="/intro/">
+          
+            
+              Introduction
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/entreaty/">
+          
+            
+              An entreaty
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/secure/">
+          
+            
+              What is secure?
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/https/">
+          
+            
+              What is HTTPS?
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+        <li>
+          
+            <a href="/overall/">
+          
+            
+              How to stay safe
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/conclusion/">
+          
+            
+              Conclusion
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/references/">
+          
+            
+              References
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+  <h2>Sidequests</h2>
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+            <span class="current">
+          
+            
+              Do you need a VPN?
+            
+          
+            </span>
+          
+        </li> 
+      
+    
+      
+    
+  </ul>
+</nav>
+  </div>
+</header>
+<article>
+	<!-- <div src= class="hero" style="background-image: url()"></div> -->
+	<h1>Do you need a VPN?</h1>
+	<aside class="sidebar">
+		<strong>Reading time</strong>: 
+
+
+
+  4mins
+
+	</aside>
+	<aside class="alert warning">
+		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
+		Use with caution.
+	</aside>
+	<p>I’ve often heard the advice “use a VPN”—a Virtual Private Network. If you’re trying to <a href="/overall">secure your internet traffic</a>, <strong>they’re a good solution to a different problem</strong>.</p>
+
+<h2 id="the-usefulness-of-a-vpn">The usefulness of a VPN</h2>
+
+<p>VPNs are like a “middleman” or <strong>PO box for your internet connection</strong>: when you use a VPN, you forward all your computer’s internet traffic to the VPN before that VPN sends it to its final destination.</p>
+
+<p>This provides two benefits:</p>
+
+<ul>
+  <li>To your local router, it seems like your computer is talking to the VPN, not the final destination.</li>
+  <li>To the final destination, it seems like your traffic is coming from the intermediate computer, not your actual device.</li>
+</ul>
+
+<p>This can be helpful sometimes: if you want to access content only available in a certain country, for example, you could use a VPN based in that country.</p>
+
+<p>You can also use a VPN to <strong>protect against local eavesdroppers</strong>. To any eavesdroppers listening to traffic between your computer and the VPN’s servers—for example, a hacker at the table next you—your traffic only appears as “generic VPN traffic”.</p>
+
+<p>VPNs also help companies with large internal networks (intranets). IT departments often set up Internet-facing VPN servers that also connect to the internal network. Employees can access internal services through the VPN, as though they were at work.</p>
+
+<h2 id="the-many-flaws-of-vpns">The many flaws of VPNs</h2>
+
+<p>VPNs are incredibly helpful in specific scenarios (like the ones detailed above). However, most of the time, they are a false sense of security.</p>
+
+<p><strong>VPNs only protect your message until it reaches the VPN server</strong>. If your destination does not use <a href="/https">HTTPS</a>, your messages then travel unencrypted to the final server, and anyone along <em>that</em> path can eavesdrop unimpeeded.</p>
+
+<p>And while VPNs protect your information against local eavesdroppers, every local eavesdropper will <strong>know you are using a VPN</strong>. Your content will be encrypted, but it will be sent in a way that is clearly identifiable as VPN traffic. Nearby hackers won’t know you’re checking out Apple.com, but they <em>will</em> know that you’re being really secretive about <em>something</em>.</p>
+
+<p>Furthermore, using a VPN means <strong>trusting another service</strong>. When you set up a VPN, you send all of your Internet traffic to <em>one company</em>. That company has access to all of the information a coffee-shop eavesdropper would see. If you are using HTTPS, the VPN knows which sites you visit. If you aren’t using HTTPS, the VPN can read everything you send and receive.</p>
+
+<p>VPNs are marketted at people doing shady things. There’s a lot of sleezy marketting and hucksterism, and many claims like “no tracking” and “military-grade encryption” are impossible to verify.</p>
+
+<aside class="sidenote">
+  <p>By the way, <strong>military-grade encryption</strong> is meaningless. The military sends email and browses the internet the same way you do. In fact, encryption standards are generally more trusted the <strong>more</strong> public they are.</p>
+</aside>
+
+<p>If you’re doing something that HTTPS does not protect, chances are you are doing something that VPNs don’t really protect, either, and <strong>chances are you’re doing something that VPNs would be legally obligated to hand out to law enforcement</strong>.</p>
+
+<p>I feel a bit silly writing this. Don’t do illegal things on the internet. HTTPS and <a href="/overall">my general security advice</a> protects you against most of your daily threats. However, law enforcement has the time, resources, and expertise to break your security. A VPN will not make the difference here.</p>
+
+<h2 id="why-do-people-recommend-vpns">Why do people recommend VPNs?</h2>
+
+<p>If VPNs don’t keep you secure as much as they’re purported to, why do people recommend them? I think there are two main reasons:</p>
+
+<ol>
+  <li><strong>There’s money in it.</strong> Next time you see a VPN article, see who wrote it. Was it a VPN company? You can sell a VPN; you can’t sell HTTPS.</li>
+  <li><strong>VPNs mitigate insecure HTTP</strong>. VPNs can’t encrypt insecure sites entirely, but they can protect against local eavesdroppers reading your communication.</li>
+</ol>
+
+<p>VPNs have several use cases, and if you know how a VPN will help you do something, by all means use one. But a VPN won’t really make you more secure, most of the time.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Consider a VPN when you worry about someone snooping on unencrypted traffic <em>near you</em>, like at your coffee shop, or when you worry about leaking metadata, like that you’re using Skype or going to FoxNews.com.</p>
+
+<p>But keep in mind that using a VPN requires installing software on your computer and sending all of your internet traffic to <em>one company</em>. This means you need to audit the software to be sure it’s safe, you need to be <em>certain</em> the company isn’t logging your traffic and handing it to someone else, and you need to be ok with everyone around you <em>knowing you’re using a VPN</em>.</p>
+
+<p>In general, VPNs solve a different problem.</p>
+
+	<nav class="page_nav">
+		 
+		 
+	</nav>
+</article>
+<footer>
+  <div class="content">
+    <section>
+      <h2>Warning</h2>
+      <p>This content is targeted at most internet users—to access your bank, online shopping, and Facebook.</p>
+      <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+    </section>
+    <section>
+      
+      <h2>Content</h2>
+      <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
+      <p>I am probably ok with your commercial use. If you'd like to relicense this content, <a href="https://ben.stolovitz.com/">contact me</a>.</p>
+    </section>
+  </div>
+</footer>
+  </body>
+</html>

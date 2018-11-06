@@ -297,9 +297,6 @@ template {
 [hidden] {
   display: none; }
 
-*, *:before, *:after {
-  box-sizing: border-box; }
-
 body {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.625; }
@@ -328,21 +325,22 @@ p {
   margin: 0; }
 
 blockquote + blockquote,
-blockquote + p,
-blockquote + ol,
-blockquote + ul,
 p + blockquote,
-p + p,
-p + ol,
-p + ul,
 ol + blockquote,
-ol + p,
-ol + ol,
-ol + ul,
 ul + blockquote,
+.sidenote + blockquote, blockquote + p,
+p + p,
+ol + p,
 ul + p,
+.sidenote + p, blockquote + ol,
+p + ol,
+ol + ol,
 ul + ol,
-ul + ul {
+.sidenote + ol, blockquote + ul,
+p + ul,
+ol + ul,
+ul + ul,
+.sidenote + ul {
   margin-top: 1.625rem; }
 
 .pullquote {
@@ -381,7 +379,8 @@ h2 {
   line-height: 2.1666666667; }
 
 h3, h4, h5, h6 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.625; }
 
 hr {
   margin: 1.625rem 0;
@@ -395,13 +394,8 @@ ol, ul {
   ol li, ul li {
     list-style-position: inside; }
 
-.alert {
-  padding: 0.8125rem 1.625rem;
-  margin: 0.8125rem 0;
-  border-left: 0.2rem solid #111;
-  padding-left: 1.425rem; }
-  .alert.warning {
-    background: #ff5577; }
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 html, body {
   min-height: 100vh; }
@@ -415,6 +409,12 @@ body {
     body {
       margin: 0; } }
 
+nav ul {
+  margin: 0;
+  padding: 0; }
+nav .current {
+  font-weight: bold; }
+
 article {
   display: grid;
   grid-template-columns: [full-start] 1.625rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.625rem [full-end];
@@ -423,7 +423,7 @@ article {
   align-items: baseline; }
   @media (min-width: 600px) {
     article {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 3.3333333333rem) [half-bleed-start content-col] minmax(min-content, 3.3333333333rem) [sidebar-end article-start] repeat(8, [content-col] minmax(min-content, 3.3333333333rem)) [article-end content-col sidenotes-start] minmax(min-content, 3.3333333333rem) [half-bleed-end content-col] minmax(min-content, 3.3333333333rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
       grid-column-gap: 1.625rem; } }
   article .content {
     grid-column: content; }
@@ -431,13 +431,6 @@ article {
     grid-column: content; }
   article > .pullquote {
     grid-column: half-bleed; }
-
-.footnotes li,
-.references li {
-  list-style-position: outside; }
-.footnotes li + li,
-.references li + li {
-  margin-top: 1.625rem; }
 
 footer {
   display: grid;
@@ -451,7 +444,7 @@ footer {
   padding-bottom: 1.625rem; }
   @media (min-width: 600px) {
     footer {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 3.3333333333rem) [half-bleed-start content-col] minmax(min-content, 3.3333333333rem) [sidebar-end article-start] repeat(8, [content-col] minmax(min-content, 3.3333333333rem)) [article-end content-col sidenotes-start] minmax(min-content, 3.3333333333rem) [half-bleed-end content-col] minmax(min-content, 3.3333333333rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
       grid-column-gap: 1.625rem; } }
   footer .content {
     grid-column: content; }
@@ -462,7 +455,6 @@ footer {
     footer section {
       flex-basis: 45%; } }
 
-/* some stuff */
 header .logo {
   font-weight: bold;
   font-style: normal; }
@@ -477,11 +469,25 @@ header .logo {
       header .logo a:visited:hover {
         color: #1c4079; }
 
-nav ul {
-  margin: 0;
-  padding: 0; }
-nav .current {
-  font-weight: bold; }
+.alert {
+  padding: 0.8125rem 1.625rem;
+  margin: 0.8125rem 0;
+  border-left: 0.2rem solid #111;
+  padding-left: 1.425rem; }
+  .alert.warning {
+    background: #ff5577; }
+
+.sidenote {
+  grid-column: sidenotes;
+  color: #444;
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 1.8571428571; }
+  @media (min-width: 600px) {
+    .sidenote {
+      margin-bottom: -50vh; } }
+  .sidenote blockquote {
+    padding: 0.8125rem; }
 
 body.home {
   display: grid;
@@ -491,7 +497,7 @@ body.home {
   align-items: baseline; }
   @media (min-width: 600px) {
     body.home {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 3.3333333333rem) [half-bleed-start content-col] minmax(min-content, 3.3333333333rem) [sidebar-end article-start] repeat(8, [content-col] minmax(min-content, 3.3333333333rem)) [article-end content-col sidenotes-start] minmax(min-content, 3.3333333333rem) [half-bleed-end content-col] minmax(min-content, 3.3333333333rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
       grid-column-gap: 1.625rem; } }
   body.home .content {
     grid-column: content; }
@@ -534,7 +540,7 @@ body.home {
         grid-row: 1; } }
     @media (min-width: 600px) {
       body.home article {
-        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 3.3333333333rem) [half-bleed-start content-col] minmax(min-content, 3.3333333333rem) [sidebar-end article-start] repeat(8, [content-col] minmax(min-content, 3.3333333333rem)) [article-end content-col sidenotes-start] minmax(min-content, 3.3333333333rem) [half-bleed-end content-col] minmax(min-content, 3.3333333333rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
         grid-column-gap: 1.625rem; } }
     body.home article .content {
       grid-column: content; }
@@ -561,7 +567,7 @@ body.page {
   align-items: baseline; }
   @media (min-width: 600px) {
     body.page {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 3.3333333333rem) [half-bleed-start content-col] minmax(min-content, 3.3333333333rem) [sidebar-end article-start] repeat(8, [content-col] minmax(min-content, 3.3333333333rem)) [article-end content-col sidenotes-start] minmax(min-content, 3.3333333333rem) [half-bleed-end content-col] minmax(min-content, 3.3333333333rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
       grid-column-gap: 1.625rem; } }
   body.page .content {
     grid-column: content; }
@@ -574,9 +580,7 @@ body.page {
       body.page header {
         grid-row: 1; }
         body.page header li {
-          list-style-position: outside; }
-        body.page header nav {
-          margin-top: 13px; } }
+          list-style-position: outside; } }
   body.page article {
     grid-column: full;
     display: grid;
@@ -589,11 +593,11 @@ body.page {
         grid-row: 1; } }
     @media (min-width: 600px) {
       body.page article {
-        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 3.3333333333rem) [half-bleed-start content-col] minmax(min-content, 3.3333333333rem) [sidebar-end article-start] repeat(8, [content-col] minmax(min-content, 3.3333333333rem)) [article-end content-col sidenotes-start] minmax(min-content, 3.3333333333rem) [half-bleed-end content-col] minmax(min-content, 3.3333333333rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
         grid-column-gap: 1.625rem; } }
     body.page article .content {
       grid-column: content; }
-    body.page article > *:not(.pullquote):not(.hero):not(.sidebar) {
+    body.page article > *:not(.pullquote):not(.hero):not(.sidebar):not(.sidenote) {
       grid-column: article; }
     body.page article > .hero {
       height: 40rem;
@@ -609,3 +613,18 @@ body.page {
   body.page footer {
     grid-column: full;
     grid-row: footer; }
+
+.footnotes li,
+.references li {
+  list-style-position: outside; }
+.footnotes li + li,
+.references li + li {
+  margin-top: 1.625rem; }
+
+@media (min-width: 600px) {
+  body.page article h1 {
+    margin-top: 32px;
+    margin-bottom: 20px; } }
+@media (min-width: 600px) {
+  .sidenote {
+    margin-bottom: -50vh; } }
