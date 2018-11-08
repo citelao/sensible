@@ -29,6 +29,7 @@ nav {
 		font-weight: bold;
 	}
 }
+
 article {
       @include global_grid;
 
@@ -39,6 +40,12 @@ article {
       & > .pullquote {
               grid-column: half-bleed;
       }
+}
+
+.footnotes {
+	border-top: (0.1 * $line-rem) solid rebeccapurple;
+	padding-top: (0.9 * $line-rem);
+	margin-top: $line-rem;
 }
 
 footer {

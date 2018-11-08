@@ -21,11 +21,14 @@ But that's no cause for despair. The world economy relies on the encryption prov
 
 I quoted Mozilla above, but I cut them off before their key point:
 
-> It's broken in ways, but for the most part, it works.[^other]
+> It's broken in ways, but for the most part, it works.
 
-[^other]: Or, to quote the illustrious [James Mickens](https://www.usenix.org/system/files/1401_08-12_mickens.pdf):
+<aside class="sidenote">
+Or, to quote the illustrious [James Mickens](https://www.usenix.org/system/files/1401_08-12_mickens.pdf):
 
-	> Security research is the continual process of discovering that your spaceship is a deathtrap. However, as John F. Kennedy once said, “SCREW IT WE’RE GOING TO THE MOON.”  I cannot live my life in fear because someone named PhreakusMaximus at DefConHat 2014 showed that you can induce peanut allergies at a distance using an SMS message and a lock of your victim’s hair. If that’s how it is, I accept it and move on.
+> Security research is the continual process of discovering that your spaceship is a deathtrap. However, as John F. Kennedy once said, "SCREW IT WE’RE GOING TO THE MOON."
+
+</aside>
 
 **You *can* be safe, even on an open Wi-Fi network**. It just takes some knowledge, some work, and some vigilance. And every day people are working to make sure it takes less and less of all of those.
 
