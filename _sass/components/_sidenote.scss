@@ -1,10 +1,19 @@
 .sidenote {
 	grid-column: sidenotes;
 
+	margin-top: $line-rem;
+
+	padding-left: (0.9 * $line-rem);
+	border-left: (0.1 * $line-rem) solid #222;
+
 	@include breakpoint($begin-columns) {
 		// I'm under no delusions that this is robust.
 		// Keep your sidenotes short please.
 		margin-bottom: -50vh;
+
+		margin-top: 0;
+		padding-left: 0;
+		border-left: none;
 	}
 
 	color: #444;
