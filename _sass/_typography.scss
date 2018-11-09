@@ -29,18 +29,20 @@ a {
 	// text-decoration: none;
 
 	color: $link_color;
+	transition: all 0.1s;
 
-	&:hover {
+	&:hover, &:focus {
 		text-decoration: underline;
 
 		color: $link_hover_color;
+		transition: all 0s;
 	}
 
 	&:visited {
 		color: $link_color;
 
-		&:hover {
-			color: $link_hover_color;			
+		&:hover, &:focus {
+			color: $link_hover_color;
 		}
 	}
 
@@ -104,7 +106,7 @@ ul,
 
 	text-decoration: none;
 
-	&:hover {
+	&:hover, &:focus {
 		background: darken(rebeccapurple, 30%);
 	}
 

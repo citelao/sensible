@@ -2,17 +2,18 @@ body.home {
 	@include global_grid;
 
 	nav {
-		grid-column: content;
+		grid-column: sidenotes;
 
 		ul {
 			padding: 0;
-			width: 100%;
+			// float: right;
+			// width: 100%;
 		}
 
 		li {
 			display: block;
 			@include breakpoint($begin-columns) {
-				display: inline-block;
+				// display: inline-block;
 			}
 
 			& + li {
@@ -34,7 +35,7 @@ body.home {
 				text-align: center;
 				text-decoration: none;
 
-				&:hover {
+				&:hover, &:focus {
 					background: darken(rebeccapurple, 30%);
 					color: white;
 				}
@@ -55,7 +56,7 @@ body.home {
 		//	margin-top: 0;
 		}
 
-		& > *:not(.pullquote) {
+		& > *:not(.pullquote):not(.tagline) {
 			grid-column: content;
 		}
 
@@ -67,10 +68,19 @@ body.home {
 				font-size: 10rem;
 				line-height: (6 * $line-height) / (10 * $base-font-size);
 				// line-height: 1;
+
+				grid-row: 1;
 			}
 
 			padding: 0;
 			margin: 0 0 $line-height 0;
+		}
+
+		.tagline {
+			grid-column: sidenotes;
+			@include breakpoint($begin-columns) {
+				grid-row: 1;
+			}
 		}
 	}
 
