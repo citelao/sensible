@@ -14,8 +14,10 @@ body.page {
 			grid-row: 1;
 
 			li {
-				list-style-position: outside;
+				list-style: none;
 			}
+
+			text-align: right;
 		}
 	}
 

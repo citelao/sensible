@@ -1,7 +1,5 @@
-$begin-columns: 950px;
-
-$num_columns: 10;
-$content_width: 950px;
+$begin-columns: 600px;
+$max-reading-width-columns: 950px;
 @mixin global_grid {
 	display: grid;
 
@@ -15,20 +13,20 @@ $content_width: 950px;
 
 	@include breakpoint($begin-columns) {
 		$column-gap: $line-height;
-		$column-width: ($content_width - ($num_columns - 1) * $column-gap)/$num_columns;
+
 		grid-template-columns:
 		[full-start] 
 			minmax(0.5rem, 1fr)
 			[content-start content-col sidebar-start]
-				minmax(min-content, $column-width)
+				minmax(min-content, 1fr)
 			[half-bleed-start content-col]
-				minmax(min-content, $column-width)
-			[sidebar-end article-start]
-				repeat($num_columns - 4, [content-col] minmax(min-content, $column-width))
+				minmax(min-content, 1fr)
+			[sidebar-end article-start content-col]
+				minmax(min-content, 8fr)
 			[article-end content-col sidenotes-start]
-				minmax(min-content, $column-width)
+				minmax(min-content, 1fr)
 			[half-bleed-end content-col]
-				minmax(min-content, $column-width)
+				minmax(min-content, 1fr)
 			[sidenotes-end content-end]
 			minmax(0.5rem, 1fr)
 		[full-end];
