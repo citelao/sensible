@@ -1,5 +1,4 @@
 $begin-columns: 600px;
-$max-reading-width-columns: 950px;
 @mixin global_grid {
 	display: grid;
 
@@ -18,15 +17,15 @@ $max-reading-width-columns: 950px;
 		[full-start] 
 			minmax(0.5rem, 1fr)
 			[content-start content-col sidebar-start]
-				minmax(min-content, 1fr)
+				minmax(min-content, 6%)
 			[half-bleed-start content-col]
-				minmax(min-content, 1fr)
+				minmax(min-content, 6%)
 			[sidebar-end article-start content-col]
-				minmax(min-content, 8fr)
+				minmax(25%, 35rem)
 			[article-end content-col sidenotes-start]
-				minmax(min-content, 1fr)
+				minmax(min-content, 8%)
 			[half-bleed-end content-col]
-				minmax(min-content, 1fr)
+				minmax(min-content, 8%)
 			[sidenotes-end content-end]
 			minmax(0.5rem, 1fr)
 		[full-end];
