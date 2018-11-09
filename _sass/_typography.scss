@@ -130,11 +130,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 	h1 {
-		@include rhythm-font-size(2.25rem, 2);
+		@include rhythm-font-size(1.563rem, 2);
 	}
 
 	h2 {
-		@include rhythm-font-size(1.5rem, 2);
+		@include rhythm-font-size(1.25rem, 1);
 	}
 
 	h3, h4, h5, h6 {
@@ -154,6 +154,6 @@ ol, ul {
 	padding-left: $line-rem;
 
 	li {
-		list-style-position: inside;
+		// list-style-position: inside;
 	}
 }

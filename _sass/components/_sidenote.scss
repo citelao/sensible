@@ -1,10 +1,22 @@
 .sidenote {
 	grid-column: sidenotes;
 
-	margin-top: $line-rem;
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		margin: $line-rem auto 0 auto;
 
-	padding-left: (0.9 * $line-rem);
-	border-left: (0.1 * $line-rem) solid #222;
+		width: $line-rem;
+		height: $line-rem;
+		border-top: 0.1rem solid #444;
+	}
+
+		&:after {
+			border-top: none;
+			margin-top: 0;
+			border-bottom: 0.1rem solid #444;
+		}
 
 	@include breakpoint($begin-columns) {
 		// I'm under no delusions that this is robust.
@@ -12,8 +24,13 @@
 		margin-bottom: -50vh;
 
 		margin-top: 0;
-		padding-left: 0;
+		padding: 0;
 		border-left: none;
+
+		&:before,
+		&:after {
+			display: none;
+		} 
 	}
 
 	color: #444;

@@ -10,6 +10,10 @@ body.page {
 
 		grid-column: sidebar;
 
+		nav {
+			margin-top: $line-rem;
+		}
+
 		@include breakpoint($begin-columns) {
 			grid-row: 1;
 
