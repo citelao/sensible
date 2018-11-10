@@ -22,8 +22,12 @@
 		}
 
 		article h1 {
-			margin-top: 32px;
-			margin-bottom: 20px;
+			margin-top: 12px;
+			margin-bottom: 18px;
+		}
+
+		article .alert:first-of-type {
+			margin-top: -$line-rem;
 		}
 	}
 }
