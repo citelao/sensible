@@ -13,13 +13,13 @@ next:
 
 The data we send across the Internet every day---emails, YouTube videos, and search results---are immensely valuable to hackers, governments, employers, advertisers, and snoopy family members.
 
-**Security means protecting this data**.
+Security means protecting this data.
 
 You may have worked to protect your computer before, perhaps with antivirus software or a firewall or a spam filter, but these are piecemeal solutions for a more general problem: you need to protect against hackers grabbing your data, exploiting it, or releasing it when you don't want them to.
 
 ## The cloud changes things
 
-The world is much different than what it was 10 (or even 5) years ago. Most of your life probably lives on a server in the cloud. Family photos, bank account numbers, your secret cookie recipe, your text messages to your spouse: all of these fly across the Internet when you access them.
+The world is very different from what it was 10 (or even 5) years ago. Most of your life probably lives on a server in the cloud. Family photos, bank account numbers, your secret cookie recipe, your text messages to your spouse: all of these fly across the Internet when you access them.
 
 Tools like antivirus software, firewalls, and spam filters are important pieces of the puzzle, but using them haphazardly is not enough. **To keep your data safe, you must protect it every step of the way**.
 
