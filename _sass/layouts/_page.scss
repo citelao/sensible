@@ -23,6 +23,12 @@ body.page {
 
 			text-align: right;
 		}
+
+		@include breakpoint(print) {
+			nav {
+				display: none;
+			}
+		}
 	}
 
 	article {
