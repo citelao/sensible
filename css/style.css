@@ -297,18 +297,25 @@ template {
 [hidden] {
   display: none; }
 
-body {
+html, body {
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.625; }
+  font-size: 18px;
+  line-height: 1.6111111111; }
+
+@media print {
+  body {
+    font-size: 80%; } }
 
 a {
-  color: #2f6bcc; }
-  a:hover {
+  color: #2f6bcc;
+  transition: all 0.1s; }
+  a:hover, a:focus {
     text-decoration: underline;
-    color: #1c4079; }
+    color: #1c4079;
+    transition: all 0s; }
   a:visited {
     color: #2f6bcc; }
-    a:visited:hover {
+    a:visited:hover, a:visited:focus {
       color: #1c4079; }
   a:active {
     position: relative;
@@ -318,8 +325,14 @@ blockquote {
   border-left: 0.2rem solid rebeccapurple;
   margin: 0;
   background: rgba(102, 50, 155, 0.1);
-  padding: 1.625rem;
-  padding-left: 1.425rem; }
+  padding: 1.6111111111rem;
+  padding-left: 1.4111111111rem; }
+
+code {
+  font-family: "Lucida Console", "Lucida Sans Typewriter", "Consolas", "Monaco", "Courier New", serif;
+  font-size: 16.2px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem; }
 
 p {
   margin: 0; }
@@ -341,11 +354,7 @@ p + ul,
 ol + ul,
 ul + ul,
 .sidenote + ul {
-  margin-top: 1.625rem; }
-
-.pullquote {
-  font-size: 1.25rem;
-  line-height: 1.3; }
+  margin-top: 1.6111111111rem; }
 
 .footnote-ref {
   /*display: inline-block;*/
@@ -355,7 +364,7 @@ ul + ul,
   margin: 0 0.1rem;
   border-radius: 0.5rem;
   text-decoration: none; }
-  .footnote-ref:hover {
+  .footnote-ref:hover, .footnote-ref:focus {
     background: #1a0d26; }
   .footnote-ref sup {
     vertical-align: inherit;
@@ -368,31 +377,29 @@ a.footnote-ref {
     color: white; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1.21875rem 0 0.40625rem; }
+  margin: 2.4166666667rem 0 0.8055555556rem; }
 
 h1 {
-  font-size: 2.25rem;
-  line-height: 1.4444444444; }
+  font-size: 1.563rem;
+  line-height: 2.0615625222; }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 2.1666666667; }
+  font-size: 1.1rem;
+  line-height: 1.4646464646; }
 
 h3, h4, h5, h6 {
   font-size: 1rem;
-  line-height: 1.625; }
+  line-height: 1.6111111111; }
 
 hr {
-  margin: 1.625rem 0;
+  margin: 1.6111111111rem 0;
   border: none;
   border-top: 0.2rem solid rebeccapurple;
-  margin-top: 1.425rem; }
+  margin-top: 1.4111111111rem; }
 
 ol, ul {
   margin: 0;
-  padding-left: 1.625rem; }
-  ol li, ul li {
-    list-style-position: inside; }
+  padding-left: 1.6111111111rem; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -404,7 +411,7 @@ body {
   width: 100%;
   color: #111;
   background: #fee;
-  margin: 1.625rem 0; }
+  margin: 1.6111111111rem 0 0; }
   @media (min-width: 600px) {
     body {
       margin: 0; } }
@@ -417,14 +424,14 @@ nav .current {
 
 article {
   display: grid;
-  grid-template-columns: [full-start] 1.625rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.625rem [full-end];
+  grid-template-columns: [full-start] 1.6111111111rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.6111111111rem [full-end];
   grid-column-gap: 0;
   grid-template-rows: min-content 1fr [footer] auto;
   align-items: baseline; }
   @media (min-width: 600px) {
     article {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
-      grid-column-gap: 1.625rem; } }
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 6%) [half-bleed-start content-col] minmax(min-content, 6%) [sidebar-end article-start content-col] minmax(25%, 35rem) [article-end content-col sidenotes-start] minmax(min-content, 8%) [half-bleed-end content-col] minmax(min-content, 8%) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-column-gap: 29px; } }
   article .content {
     grid-column: content; }
   article > * {
@@ -432,20 +439,25 @@ article {
   article > .pullquote {
     grid-column: half-bleed; }
 
+.footnotes {
+  border-top: 0.1611111111rem solid rebeccapurple;
+  padding-top: 1.45rem;
+  margin-top: 1.6111111111rem; }
+
 footer {
   display: grid;
-  grid-template-columns: [full-start] 1.625rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.625rem [full-end];
+  grid-template-columns: [full-start] 1.6111111111rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.6111111111rem [full-end];
   grid-column-gap: 0;
   grid-template-rows: min-content 1fr [footer] auto;
   align-items: baseline;
   background: #111;
   color: #fff;
-  margin-top: 1.625rem;
-  padding-bottom: 1.625rem; }
+  margin-top: 1.6111111111rem;
+  padding-bottom: 1.6111111111rem; }
   @media (min-width: 600px) {
     footer {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
-      grid-column-gap: 1.625rem; } }
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 6%) [half-bleed-start content-col] minmax(min-content, 6%) [sidebar-end article-start content-col] minmax(25%, 35rem) [article-end content-col sidenotes-start] minmax(min-content, 8%) [half-bleed-end content-col] minmax(min-content, 8%) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-column-gap: 29px; } }
   footer .content {
     grid-column: content; }
   @media (min-width: 600px) {
@@ -470,10 +482,10 @@ header .logo {
         color: #1c4079; }
 
 .alert {
-  padding: 0.8125rem 1.625rem;
-  margin: 0.8125rem 0;
+  padding: 0.8055555556rem 1.6111111111rem;
+  margin: 0.8055555556rem 0;
   border-left: 0.2rem solid #111;
-  padding-left: 1.425rem; }
+  padding-left: 1.4111111111rem; }
   .alert.warning {
     background: #ff5577; }
 
@@ -482,56 +494,68 @@ header .logo {
   color: #444;
   font-style: italic;
   font-size: 0.875rem;
-  line-height: 1.8571428571; }
+  line-height: 1.8412698413; }
+  .sidenote:before, .sidenote:after {
+    content: '';
+    display: block;
+    margin: 1.6111111111rem auto 0 auto;
+    width: 1.6111111111rem;
+    height: 1.6111111111rem;
+    border-top: 0.1rem solid #444; }
+  .sidenote:after {
+    border-top: none;
+    margin-top: 0;
+    border-bottom: 0.1rem solid #444; }
   @media (min-width: 600px) {
     .sidenote {
-      margin-bottom: -50vh; } }
+      margin-bottom: -50vh;
+      margin-top: 0;
+      padding: 0;
+      border-left: none; }
+      .sidenote:before, .sidenote:after {
+        display: none; } }
   .sidenote blockquote {
-    padding: 0.8125rem; }
+    padding: 0.8055555556rem; }
 
 body.home {
   display: grid;
-  grid-template-columns: [full-start] 1.625rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.625rem [full-end];
+  grid-template-columns: [full-start] 1.6111111111rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.6111111111rem [full-end];
   grid-column-gap: 0;
   grid-template-rows: min-content 1fr [footer] auto;
   align-items: baseline; }
   @media (min-width: 600px) {
     body.home {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
-      grid-column-gap: 1.625rem; } }
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 6%) [half-bleed-start content-col] minmax(min-content, 6%) [sidebar-end article-start content-col] minmax(25%, 35rem) [article-end content-col sidenotes-start] minmax(min-content, 8%) [half-bleed-end content-col] minmax(min-content, 8%) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-column-gap: 29px; } }
   body.home .content {
     grid-column: content; }
   body.home nav {
-    grid-column: content; }
+    grid-column: sidenotes; }
     body.home nav ul {
-      padding: 0;
-      width: 100%; }
+      padding: 0; }
     body.home nav li {
       display: block; }
-      @media (min-width: 600px) {
-        body.home nav li {
-          display: inline-block; } }
       body.home nav li + li {
-        margin-top: 0.8125rem; }
+        margin-top: 0.8055555556rem; }
         @media (min-width: 600px) {
           body.home nav li + li {
             margin-top: 0; } }
       body.home nav li a {
         display: block;
-        margin: 0.8125rem 0;
-        padding: 0.8125rem 1.625rem;
+        margin: 0.8055555556rem 0;
+        padding: 0.8055555556rem 1.6111111111rem;
         background: rebeccapurple;
         border-radius: 1rem;
         color: white;
         text-align: center;
         text-decoration: none; }
-        body.home nav li a:hover {
+        body.home nav li a:hover, body.home nav li a:focus {
           background: #1a0d26;
           color: white; }
   body.home article {
     grid-column: full;
     display: grid;
-    grid-template-columns: [full-start] 1.625rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.625rem [full-end];
+    grid-template-columns: [full-start] 1.6111111111rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.6111111111rem [full-end];
     grid-column-gap: 0;
     grid-template-rows: min-content 1fr [footer] auto;
     align-items: baseline; }
@@ -540,35 +564,41 @@ body.home {
         grid-row: 1; } }
     @media (min-width: 600px) {
       body.home article {
-        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
-        grid-column-gap: 1.625rem; } }
+        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 6%) [half-bleed-start content-col] minmax(min-content, 6%) [sidebar-end article-start content-col] minmax(25%, 35rem) [article-end content-col sidenotes-start] minmax(min-content, 8%) [half-bleed-end content-col] minmax(min-content, 8%) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+        grid-column-gap: 29px; } }
     body.home article .content {
       grid-column: content; }
-    body.home article > *:not(.pullquote) {
+    body.home article > *:not(.pullquote):not(.tagline) {
       grid-column: content; }
     body.home article .title {
       font-size: 4rem;
-      line-height: 1.21875;
+      line-height: 1.2083333333;
       padding: 0;
-      margin: 0 0 26px 0; }
+      margin: 0 0 29px 0; }
       @media (min-width: 600px) {
         body.home article .title {
           font-size: 10rem;
-          line-height: 0.975; } }
+          line-height: 0.9666666667;
+          grid-row: 1; } }
+    body.home article .tagline {
+      grid-column: sidenotes; }
+      @media (min-width: 600px) {
+        body.home article .tagline {
+          grid-row: 1; } }
   body.home footer {
     grid-column: full;
     grid-row: footer; }
 
 body.page {
   display: grid;
-  grid-template-columns: [full-start] 1.625rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.625rem [full-end];
+  grid-template-columns: [full-start] 1.6111111111rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.6111111111rem [full-end];
   grid-column-gap: 0;
   grid-template-rows: min-content 1fr [footer] auto;
   align-items: baseline; }
   @media (min-width: 600px) {
     body.page {
-      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
-      grid-column-gap: 1.625rem; } }
+      grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 6%) [half-bleed-start content-col] minmax(min-content, 6%) [sidebar-end article-start content-col] minmax(25%, 35rem) [article-end content-col sidenotes-start] minmax(min-content, 8%) [half-bleed-end content-col] minmax(min-content, 8%) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+      grid-column-gap: 29px; } }
   body.page .content {
     grid-column: content; }
   body.page header {
@@ -576,15 +606,21 @@ body.page {
     grid-column: sidebar; }
     body.page header .content {
       grid-column: unset; }
+    body.page header nav {
+      margin-top: 1.6111111111rem; }
     @media (min-width: 600px) {
       body.page header {
-        grid-row: 1; }
+        grid-row: 1;
+        text-align: right; }
         body.page header li {
-          list-style-position: outside; } }
+          list-style: none; } }
+    @media print {
+      body.page header nav {
+        display: none; } }
   body.page article {
     grid-column: full;
     display: grid;
-    grid-template-columns: [full-start] 1.625rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.625rem [full-end];
+    grid-template-columns: [full-start] 1.6111111111rem [content-col content half-bleed sidebar article sidenotes] 8fr 1.6111111111rem [full-end];
     grid-column-gap: 0;
     grid-template-rows: min-content 1fr [footer] auto;
     align-items: baseline; }
@@ -593,8 +629,8 @@ body.page {
         grid-row: 1; } }
     @media (min-width: 600px) {
       body.page article {
-        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 5rem) [half-bleed-start content-col] minmax(min-content, 5rem) [sidebar-end article-start] repeat(6, [content-col] minmax(min-content, 5rem)) [article-end content-col sidenotes-start] minmax(min-content, 5rem) [half-bleed-end content-col] minmax(min-content, 5rem) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
-        grid-column-gap: 1.625rem; } }
+        grid-template-columns: [full-start] minmax(0.5rem, 1fr) [content-start content-col sidebar-start] minmax(min-content, 6%) [half-bleed-start content-col] minmax(min-content, 6%) [sidebar-end article-start content-col] minmax(25%, 35rem) [article-end content-col sidenotes-start] minmax(min-content, 8%) [half-bleed-end content-col] minmax(min-content, 8%) [sidenotes-end content-end] minmax(0.5rem, 1fr) [full-end];
+        grid-column-gap: 29px; } }
     body.page article .content {
       grid-column: content; }
     body.page article > *:not(.pullquote):not(.hero):not(.sidebar):not(.sidenote) {
@@ -605,7 +641,7 @@ body.page {
       grid-row: 1;
       grid-column: full; }
     body.page article .page_nav {
-      padding: 1.625rem 0; }
+      padding: 1.6111111111rem 0; }
       body.page article .page_nav .next {
         float: right; }
     body.page article .sidebar {
@@ -619,12 +655,14 @@ body.page {
   list-style-position: outside; }
 .footnotes li + li,
 .references li + li {
-  margin-top: 1.625rem; }
+  margin-top: 1.6111111111rem; }
 
 @media (min-width: 600px) {
   body.page article h1 {
-    margin-top: 32px;
-    margin-bottom: 20px; } }
+    margin-top: 12px;
+    margin-bottom: 18px; }
+  body.page article .alert:first-of-type {
+    margin-top: -1.6111111111rem; } }
 @media (min-width: 600px) {
   .sidenote {
     margin-bottom: -50vh; } }
