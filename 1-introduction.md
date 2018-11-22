@@ -29,7 +29,7 @@ The internet is overwhelming. Staying safe seems unfathomable, especially when e
 
 > Is it safe to use coffee shop wi-fi?
 
-This question has an answer. It's a nuanced answer, with caveats and loopholes, but it has an answer. To learn the answer—the right answer, not a streamlined one—you need to understand the internet.
+This question does have an answer. It's a nuanced answer, with caveats and loopholes, but it is an answer. To learn the answer—the right answer, not a streamlined one—you need to understand the Internet.
 
 That's where this guide comes in. This is a guide for everyday people, people who use Excel at work, who buy stocks online, people whose idea of a good time is *not* reading the protocols that run the internet. **Sensible people**.
 
