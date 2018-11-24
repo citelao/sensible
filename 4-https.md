@@ -11,11 +11,11 @@ next:
     title: How to stay safe
 ---
 
-In the last section, we explained how protecting your message every step of the way is *vital* to keeping your data safe.
+In the last section, we explained how protecting your messages every step of the way across the Internet is *vital* to keeping your data safe.
 
 Up until recently, **protecting your data every step of the way was impossible**.
 
-The core standards that defined the Internet—protocols like TCP/IP, HTTP, DNS, and SMTP—only described how to send your data as **plaintext**---unencrypted, just like physical mail. All your information flew across the internet in a way that anyone could read: all hackers needed to do was eavesdrop.
+The original core standards that defined the Internet---protocols (rules) like TCP/IP, HTTP, DNS, and SMTP---only specified how to send your data as **plaintext**---unencrypted, just like physical mail. All your information used to fly across the internet in a way that anyone could read: all hackers needed to do was eavesdrop.
 
 This was the original design of the internet, which helped it spread quickly, but **it soon became a liability**. Security specialists drafted "secure" variants of most internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
 
@@ -44,9 +44,9 @@ HTTPS makes your web browsing much safer because it protects against the **easie
 There is no direct citation for this statement. However, the vulnerabilities listed in essays (explaining the need for HTTPS) from Google {% cite basques %}, the government {% cite mill_2014 %}, and *the agency that created the internet* {% cite farrell2014pervasive nottingham_2015 %} are all man-in-the-middle attacks.
 </aside>
 
-A man-in-the-middle attack in general is any attack where someone intercepts your communication before it reaches its destination. The most obvious example is someone standing outside your mailbox and reading all your mail before you send it to the post office. 
+A man-in-the-middle attack in general is any attack where someone intercepts your communication before it reaches its destination. The most straightforward practical example is someone standing outside your mailbox and reading all your mail before it reaches the post office. 
 
-In the case of the internet, an attacker reads the data your computer sends to and receives from the wi-fi router, or a more powerful attacker reads data going across a much larger, deeper "node" in the Internet.
+In the case of the Internet, an attacker reads the data your computer sends to and receives from a wi-fi router, or a more powerful attacker (like a government) reads data going across a larger router located deeper in the Internet.
 
 The man-in-the-middle attack is so dangerous on the Internet because:
 
@@ -54,7 +54,11 @@ The man-in-the-middle attack is so dangerous on the Internet because:
 * it compromises **everything** you send and receive while browsing, and
 * it is cakework to implement.
 
-In 2010, Eric Butler released [Firesheep](https://codebutler.com/2010/10/24/firesheep/), a free plugin for Firefox that made impersonating Facebook accounts as easy as "double-click[ing] on someone" {% cite firesheep %}. He did this to motivate websites to switch to HTTPS. As Butler implored in 2010:
+## How easy it once was
+
+A well-publicized example of just how easy this attack was comes from a free plugin for Firefox called [Firesheep](https://codebutler.com/2010/10/24/firesheep/).
+
+In 2010, Eric Butler released Firesheep as a demonstration. This plugin made impersonating Facebook accounts as easy as "double-click[ing] on someone" {% cite firesheep %}. He did this to motivate websites to switch to HTTPS. As Butler implored in 2010:
 
 > The only effective fix for this problem is full end-to-end encryption, known on the web as HTTPS or SSL.
 
@@ -64,7 +68,7 @@ It took them 3 years.
 
 ## The secure internet -- with HTTPS
 
-HTTPS makes the man-in-the-middle attack almost impossible, except for in a few edge cases. It is the reason I feel safe reading my email in a browser (and even accessing my bank) on public Wi-Fi---in a specific set of circumstances: if my computer is secure, if I am sure the site is secure, if I don't need to type my password, among other things (which I'll list later).
+HTTPS makes the man-in-the-middle attack almost impossible, except for in a few edge cases. It is the reason I can feel safe reading Facebook (and even accessing my bank) on public Wi-Fi---in a specific set of circumstances.
 
 But HTTPS does not secure every part of your internet browsing, and you must double check it to make sure no one is attacking you.
 
@@ -75,7 +79,7 @@ The information on the "envelope"---the **metadata**---has specific privacy and 
 
 For example, an attacker can tell if you're using Skype, or that you are going to Planned Parenthood's website (but they cannot know who you talked to or which specific pages you load).
 
-This is discussed in greater depth later. <!-- TODO not atm -->	
+This is discussed in greater depth later. See also [**Do you need a VPN?**](/vpn/).
 </aside>
 
 Understanding how the internet works, end-to-end, helps you decide what is safe. Knowing how to check your computer's security helps you decide when you are safe.
@@ -88,38 +92,61 @@ Servers distribute public keys---called "certificates"---and your browser encryp
 
 Encrypting your communication with these keys stop man-in-the-middle attacks cold. As long as the encryption you use is strong enough, eavesdroppers just see gibberish passing between you and webkinz.com.
 
+<aside class="sidenote">
+NB that eavesdroppers **do** know which website you're talking to: the metadata leaks [the base part of the URL](https://stackoverflow.com/q/8277323) (and only that part). Eavesdroppers can also see that you **are** talking to a site and can analyze the message size---think about telling apart college acceptance letters vs college rejection letters by size.
+
+Again, there are practical attacks {%cite muehlstein2016analyzing -L note -l 7--46 %}, but many are very specific. See also [**Do you need a VPN?**](/vpn/) for more in-depth discussion of metadata.
+</aside>
+
 However, what if an attacker pretends to be the server, giving you a false certificate? They can pretend to be webkinz.com, intercept your messages, and then send them to the real webkinz.com. Your traffic may be encrypted, but it's still man-in-the-middled!
 
-That's why on the Internet, certificates carry a proof of identity: a "signature" from a certificate authority.
+That's why on the Internet, although the certificates may be *public*, they also carry a proof of identity: a "signature" from a Certificate Authority.
 
-There are dozens of certificate authorities, and each does the same thing: if you can prove you own a site, the authority will "sign" your certificate to say "this certificate is from the owner of miniclip.com." Like an HTTPS certificate itself, this signature is also a form of public key cryptography. The authority generates a signature using another private key, and they distribute its corresponding public key to browsers. Most browsers maintain their own careful list of trusted authorities, [adding new ones](https://letsencrypt.org/2018/08/06/trusted-by-all-major-root-programs.html) or [removing corrupt ones](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html) from time-to-time.
+There are dozens of Certificate Authorities, and each does the same thing: if you can prove you own a site, the authority will "sign" your certificate to say "this certificate is from the owner of miniclip.com." Like an HTTPS certificate itself, this signature is also a form of public key cryptography. The authority generates a signature using another private key, and they distribute its corresponding public key to browsers. Most browsers maintain their own careful list of trusted Authorities, [adding new ones](https://letsencrypt.org/2018/08/06/trusted-by-all-major-root-programs.html) or [removing corrupt ones](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html) from time-to-time.
 
-With server certificates and certificate authorities, you know that all your traffic to msn.com is going to msn.com and no one else. If you're using HTTPS---as long as the algorithms used are correct and the certificate authorities you trust are not corrupt---msn.com goes to msn.com.
+With server certificates and Certificate Authorities, you know that all your traffic to msn.com is going to msn.com and no one else. Trusting that you're on the right site becomes as simple as verifying two things:
+
+1. The HTTPS encryption is done correctly using a strong algorithm with no weaknesses, and
+2. The Certificate Authorities you trust are not corrupt.
 
 ## How your browser helps you with HTTPS
 
-HTTPS can protect your internet traffic as it goes from your router to its destination, but you must be sure it's working. Your browser helps you decide how secure your connection is.
+Your browser helps you verify those two things.
 
 You may have noticed the green lock and green "secure" or seen the `https://` in your URL on some sites. This is your browser helping you; **it is the only authoritative indicator that HTTPS is working** and your connection is secure. Nothing else, not a badge on the webpage, not a written assurance of security, not the word "secure" in the URL (and not in green), can prove your connection is secure.
-
-This padlock secures your data as it crosses the Internet. It does not guarantee your computer is up-to-date and virus free, nor does it guarantee that the website will store your password safely in its database. **Most importantly, it does not guarantee that the site you're talking to is actually the one you want to talk to!** HTTPS guarantees that when you talk to Snapple.com you are actually talking to Snapple.com. It doesn't say you should give your Apple ID to them.
 
 To understand how your browser gives you information about security, see my video "[Understanding HTTPS in your browser](https://youtu.be/RNzw8tVhOpY)."
 
 ## There's more to security than HTTPS
 
-However, it is worth emphasizing that HTTPS<!-- TODO and VPNs--> *only* protects your message in transit. It only protects the message from when it leaves your browser till it reaches its destination.
+This padlock secures your data as it crosses the Internet. It does not guarantee anything else:
 
-This leads to an interesting conclusion: HTTPS is not enough to secure your internet communication, even though it secures all communication that actually goes through "the Internet."
+* Not that your computer is up-to-date and virus free;
+* Not that the website will store your password safely in its database;
+* Not that the site you're talking to is actually the one you want to talk to.
 
-<blockquote class="pullquote">
-HTTPS is not enough to secure your internet communication, even though it secures all communication that actually goes through "the Internet."
-</blockquote>
+For example, HTTPS guarantees that when you talk to Snapple.com you are actually talking to Snapple.com. It doesn't say you should give your *Apple* logins to them.
 
-For example, Equifax [stored social security numbers poorly](https://arstechnica.com/information-technology/2018/05/equifax-breach-exposed-millions-of-drivers-licenses-phone-numbers-emails/)<!-- TODO cite -->. HTTPS had nothing to do with it---when their databases were hacked, your SSN was probably leaked, and there was nothing you could do. 
+HTTPS does not indicate any security *except* that your communication was secure in transit, but that's a very important thing; the rest you can verify separately.
 
-Hackers can also target you, personally, by watching over your shoulder. They can target your computer or browser: if your computer is hacked or your browser has a vulnerability, hackers can steal data without breaking HTTPS. They can just put a virus on your computer that sends your keystrokes to their servers, too.
+Recall the [six points your data crosses](/secure/) when it travels the internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
 
-Security literature focuses on man-in-the-middle attacks because<!-- TODO: citation needed --> they're so easy without encryption: they leave little trace, can be performed without direct contact (especially if you're a government), and are extremely powerful. 
+<aside class="sidenote">
+You may notice that HTTPS does not guarantee **availability**. That's based on servers being available to respond to your requests. In practice, HTTPS does not slow down servers enough to **disrupt** availability on its own.
+</aside>
 
-Once man-in-the-middle attacks are mitigated, you need to minimize your other security holes before you can browse safely. As long as you are aware of *how* you can be attacked and are taking reasonable precautions, you can browse pretty secure.
+* from your computer to your router,
+* from your router to the internet, and
+* from the internet to its destination.
+
+## The rest of the steps
+
+After you've secured the part of your communication that crosses the Internet, you must secure your devices and your destination.
+
+I believe that security literature focuses on man-in-the-middle attacks because they're so easy without encryption: they leave little trace, can be performed without direct contact (especially if you're a government), and are extremely powerful.
+
+<aside class="sidenote">
+... and they're interesting to study!
+</aside>
+
+Once man-in-the-middle attacks are mitigated, you need to minimize your other security holes before you can browse safely.

@@ -69,34 +69,32 @@ An "internetwork," if you will.
 
 ## Every step of the way -- on the Internet
 
-So downloading a webpage (or playing a YouTube video, or logging in---anything done in a browser) goes through these points:
-
-<aside class="sidenote">
-Anything on the internet not done in a browser (email in an app, for example) goes through a different application (not your browser) and is not protected by HTTPS. The rest is the same, though.
-</aside>
+Putting it all together, everything you do on the Internet goes through these points:
 
 1. You
 2. Your computer
-3. Your browser
+3. Your browser (or other Internet-connected app)
 4. Your router
 5. Intermediate routers ("the internet")
 6. Destination router
 
+Protecting your data "all the time" means protecting it at every point along this route *in addition* to protecting it when it's "at rest" on your hard drive or in the cloud.
+
+Since an attacker can target any part of this chain, a message is only as secure as the weakest part of the chain. Each part of this chain has different strengths and weaknesses.
+
 ## Classic is not enough
 
-An attacker can target any part of this chain, so a message is only as secure as the weakest part of it. Each part of this chain has different strengths and weaknesses.
+This is why classic security tools are not enough to protect yourself. 
 
-This is why classic security tools are not enough to protect yourself. Your computer can be perfectly secure, and the destination server can be well-protected. But, at some point, you will need to log in to your bank. At some point, you will need to send your password over the Internet. And **if an attacker can read your password as you send it, it doesn't matter how good it is** or how secure the bank's database is: the attacker has your password.
+Even if you were infallible, with a perfectly secure computer and a perfectly secure home network (points 1, 2, 3, and 4 above); even if your bank uses the strongest encryption in the world and has impeccable information security policy (point 6 above); even if *all of those things*, if an eavesdropper can read your password in plain text when you send it (point 5), **you've still been hacked**.
 
-<blockquote class="pullquote">
-If an attacker can read your password as you send it, it doesn't matter how good it is.
-</blockquote>
+If an attacker can read your password as you send it, it doesn't matter how strong it is. You must learn how to protect your messages in transit.
 
-You must learn how to protect your messages in transit.
+In fact, protecting your messages as they flow across the Internet---point 5---is probably the **single most important thing you can do** to protect your personal information. It's far easier to read a message than it is to hack your computer or eavesdrop.
 
-In fact, protecting your messages as they flow across the Internet is probably the *single most important thing you can do* to protect your personal information. It's far easier to read a message than it is to hack your computer or eavesdrop.
-
-**You must still protect your computer**---viruses, malware, and "literally watching over the shoulder" are still common attacks---and you must still check to see that the sites you use are trustworthy, but you must protect your messages just as well.
+<aside class="sidenote">
+**You must still protect your computer**---viruses, malware, and "literally watching over the shoulder" are still common attacks---and minimize how much you trust 3rd parties, but securing your messages is a huge step. The rest comes later.
+</aside>
 
 And the best tool for the job is HTTPS: "HTTP Secure".
 
