@@ -104,9 +104,11 @@ That's why on the Internet, although the certificates may be *public*, they also
 
 There are dozens of Certificate Authorities, and each does the same thing: if you can prove you own a site, the authority will "sign" your certificate to say "this certificate is from the owner of miniclip.com." Like an HTTPS certificate itself, this signature is also a form of public key cryptography. The authority generates a signature using another private key, and they distribute its corresponding public key to browsers. Most browsers maintain their own careful list of trusted Authorities, [adding new ones](https://letsencrypt.org/2018/08/06/trusted-by-all-major-root-programs.html) or [removing corrupt ones](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html) from time-to-time.
 
+## You need two things to be secure
+
 With server certificates and Certificate Authorities, you know that all your traffic to msn.com is going to msn.com and no one else. Trusting that you're on the right site becomes as simple as verifying two things:
 
-1. The HTTPS encryption is done correctly using a strong algorithm with no weaknesses, and
+1. The HTTPS encryption is done correctly, using a strong algorithm with no weaknesses, and
 2. The Certificate Authorities you trust are not corrupt.
 
 ## How your browser helps you with HTTPS
@@ -114,6 +116,12 @@ With server certificates and Certificate Authorities, you know that all your tra
 Your browser helps you verify those two things.
 
 You may have noticed the green lock and green "secure" or seen the `https://` in your URL on some sites. This is your browser helping you; **it is the only authoritative indicator that HTTPS is working** and your connection is secure. Nothing else, not a badge on the webpage, not a written assurance of security, not the word "secure" in the URL (and not in green), can prove your connection is secure.
+
+As mentioned above, browsers also maintain lists of trusted Authorities. If you use an auto-updating browser, you can be pretty confident that the list is good.
+
+<aside class="sidenote">
+Unfortunately, this list is HTTPS' biggest weakness. Some non-American governments run their own Authorities, so if you're concerned they might try to man-in-the-middle you, you must take other precautions.
+</aside>
 
 To understand how your browser gives you information about security, see my video "[Understanding HTTPS in your browser](https://youtu.be/RNzw8tVhOpY)."
 

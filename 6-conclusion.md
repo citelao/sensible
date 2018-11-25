@@ -38,7 +38,13 @@ Stay safe out there.
 
 The most effective thing you can do to stay safe online is learn. But you can also take concrete action:
 
-1. *Always* use an auto-updating computer and browser 
-2. Use different passwords on each site, managed in a password manager
-3. Use two-step authentication, especially on your email and bank accounts
-4. Learn how your browser communicates security: [read](/https/) or [watch](https://youtu.be/RNzw8tVhOpY).
+1. *Always* use an auto-updating computer and browser.
+2. Use different passwords on each site, managed in a password manager.
+3. Use two-step authentication, especially on your email and bank accounts.
+4. Encrypt your hard drive.
+5. Lock your computer with a password or biometric security.
+6. Back up your data regularly.
+7. Type passwords only when you're sure no one can see you.
+8. Trust your browser more than apps.
+9. Be suspicious when weird things happen.
+10. Learn how your browser communicates security: [read](/https/) or [watch](https://youtu.be/RNzw8tVhOpY).
