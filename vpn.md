@@ -78,6 +78,8 @@ VPNs promise security for parts of your communication that are most useful to go
 
 I feel a bit silly writing this. Don't do illegal things on the internet. HTTPS and [my general security advice](/overall) protects you against most of your daily threats. However, law enforcement has the time, resources, and expertise to break your security. A VPN will not make the difference here.
 
+If you reasonably expect a government to target you, you need better advice than mine.
+
 ## Why do people recommend VPNs?
 
 If VPNs don't keep you secure as much as they're purported to, why do people recommend them? I think there are two main reasons:
