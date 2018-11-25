@@ -26,7 +26,7 @@ These three benefits can be helpful.
 If you want to access content only available in a certain country, for example, you could use a VPN based in that country.
 
 <aside class="sidenote">
-Joan could set up her US-based router as a VPN for her Canadian cousins to watch American Netflix. Netflix would see their traffic as though it came from Joan's network. This would be illegal.
+Joan could set up her US-based router as a VPN for her Canadian cousins to watch American Netflix. Netflix would see their traffic as though it came from Joan's network. This probably breaks the Netflix user agreement.
 </aside>
 
 VPNs also help companies with large internal networks (intranets). IT departments often set up Internet-facing VPN servers that also connect to their company's internal network. Employees can access internal services through the VPN as though they were at work.
@@ -40,7 +40,7 @@ There's nuance to this: see the "flaws" section below.
 For some people, VPNs can also **hide important metadata**. Because VPNs encrypt all of your messages in their entirety, all the info within them is hidden---including metadata. For practical examples of what you can "leak" with metadata, see Muehlstein et al. and its citations 7--46 {% cite muehlstein2016analyzing -A %}.
 
 <aside class="sidenote">
-Despite how dire "metadata" may seem, I don't think that it's *generally* a problem.
+Despite how dire "leaking metadata" may seem, I don't think that it's *generally* a problem.
 
 For HTTPS you leak: your IP address, the destination website name ("reddit.com"), **that** you are talking, and a rough estimate of your request's size.
 

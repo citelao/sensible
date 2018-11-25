@@ -17,9 +17,37 @@ For example, Equifax [stored social security numbers poorly](https://arstechnica
 
 Hackers can also target you, personally, by watching over your shoulder. They can target your computer or browser: if your computer is hacked or your browser has a vulnerability, hackers can steal data without breaking HTTPS. They can just put a virus on your computer that sends your keystrokes to their servers, too.
 
-## Staying safe, in general
+## Security from top to bottom
 
-There's a reason that **popular security advice**, despite it flaws, tends to include three things:
+Of course, anecdotes about security vulnerabilities don't help you stay safe. As I detailed in [**What is secure?**](/secure/), staying safe from top to bottom requires keeping your data confidential, untampered with, and available everywhere it goes at all times.
+
+<aside class="sidenote">
+Remember the CIA triad: confidentiality, integrity, and availability.
+</aside>
+
+Recall the path your data takes when it travels through the internet:
+
+1. You
+2. Your computer
+3. Your browser (or other Internet-connected app)
+4. Your router
+5. Intermediate routers ("the internet")
+6. Destination router
+
+HTTPS keeps your data **confidential and unmodified** as it passes from your browser to your router to the internet to the destination router (points 3-4, 4-5, and 5-6).
+
+Attacking the **availability** of any of these intermediate points requires government-scale resources, and protecting yourself against denial-of-service attacks at these points is not feasible.
+
+So, with HTTPS, securing your data remains securing the remaining points:
+
+* You
+* Your computer
+* Your browser (or other Internet-connected app)
+* The destination (router)
+
+## Security: follow the typical advice
+
+Securing these last points often comes down to following some good advice. There's a reason that popular security advice, despite it flaws, tends to include three things:
 
 1. *Always* use an auto-updating computer and browser 
 2. Use different passwords on each site, managed in a password manager
