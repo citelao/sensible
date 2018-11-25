@@ -82,10 +82,10 @@ If you reasonably expect a government to target you, you need better advice than
 
 ## Why do people recommend VPNs?
 
-If VPNs don't keep you secure as much as they're purported to, why do people recommend them? I think there are two main reasons:
+If VPNs don't keep you secure as much as they're purported to, why do people recommend them? I think there are a few main reasons:
 
-1. **VPNs mitigate insecure HTTP**. VPNs can't encrypt insecure sites entirely, but they can protect against local eavesdroppers reading your communication.
-2. **VPNS can hide important metadata**. Sometimes, metadata is important. If you need to hide it from **local** eavesdroppers, a VPN protects you.
+1. **VPNs mitigate insecure HTTP**. VPNs can't encrypt insecure sites entirely, but they can protect against *local* eavesdroppers reading your communication.
+2. **VPNS can hide important metadata**. Sometimes, metadata is important. If you need to hide it from *local* eavesdroppers, a VPN protects you.
 3. **There's money in it.** Next time you see a VPN article, look who wrote it. Was it a VPN company? You can sell a VPN; you can't sell HTTPS.
 4. **VPNs let you do other things**. By using an American VPN, you can watch American Netflix even if you're in Kuwait. By using your corporate VPN, you can access company resources at home. VPNs let you appear to other people as though you were the VPN; that has practical benefits sometimes.
 
@@ -93,7 +93,7 @@ VPNs have several use cases, and if you know how a VPN will help you do somethin
 
 ## Conclusion
 
-At the end of the day, VPNs are another layer of encryption around your data. This can be helpful, but it also changes the threats you're open to. If you have a concrete reason to use one, by all means do! But if you're using one to be more secure---and most of your traffic is HTTPS---consider the tradeoff: an added layer of security with another company to trust.
+At the end of the day, VPNs are another layer of encryption around your data. This can be helpful, but it also changes the threats you're open to. If you have a concrete reason to use one, by all means do! But if you're using one to be more secure---and most of your traffic is already HTTPS---consider the tradeoff: an added layer of security with another company to trust.
 
 Consider a VPN when you worry about someone *near you*, like at your office or in your apartment, snooping on unencrypted traffic, or when you worry about leaking metadata, like that you're using Skype or going to FoxNews.com.
 

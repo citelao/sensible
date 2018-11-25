@@ -65,9 +65,8 @@ Add a few more:
 5. Lock your computer with a password or biometric security.
 6. Back up your data regularly.
 7. Type passwords only when you're sure no one can see you.
-8. Trust your browser more than apps (?).
+8. Trust your browser more than apps.
 9. Be suspicious when weird things happen.
-10. TODO
 
 These suggestions protect against the easiest attacks on the remaining points.
 
@@ -91,19 +90,21 @@ These statements have not been evaluated by the FDA. Sensible Security is not in
 
 ## Protect your computer
 
-Most traditional "security" applications work to protect this (and only this) part of your security. To their credit, securing **your computer** is an important step of securing your data. There's a long list of "things to do," but you only need to do most of these things once.
+Most traditional "security" applications work to protect **your computer** (and only your computer). To their credit, securing your computer is an important part of securing your data. There's a long list of "things to do," but you only need to do most of these things once.
 
 First, **use an auto-updating computer**. Windows 10 auto-updates by default (and you can't turn it off!), and both macOS and iOS can be set to auto-update.
 
 <aside class="sidenote">
-Also, **Android** is a special case. Though Google updates the OS regularly, most devices only get the update when the manufacturer ports the update. This means that some phones (like the Nexus/Pixel devices, specifically) get updates faster, and some slower. I would consider iOS devices **more secure** for this reason.
+**Android** is a special case. Though Google updates the OS regularly, most devices only get updates when the manufacturer manually ports them. This means that some phones (like the Nexus/Pixel devices, specifically) get updates faster, and some slower. I would consider iOS devices **more secure** for this reason.
 </aside>
 
-Computers are under attack every day. However, hundreds of people work every day to ensure that security vulnerabilities are found and patched. If your computer is always up-to-date, you will never be exposed to security bugs that have already been fixed. 
+Computers are always under attack. However, hundreds of people work every day to ensure that security vulnerabilities are found and patched. If your computer is always up-to-date, you will never be exposed to security bugs that have already been fixed. 
 
 For example, the 2017 ransomware attacks [exploited bugs that had been patched three months before](https://www.csoonline.com/article/3227906/ransomware/what-is-wannacry-ransomware-how-does-it-infect-and-who-was-responsible.html)<!-- TODO full cite -->.
 
-Next, **encrypt your hard drive** and **lock your computer with a password** or biometric security. Macs have FileVault, and Windows computers have BitLocker<!-- TODO phones by default? Do all Windows have BitLocker? -->. These services encrypt your hard drives when your computer is off. Without them, an attacker can take your hard drive, plug it into their own computer, and read all your files.
+Next, **encrypt your hard drive** and **lock your computer with a password** or biometric security. 
+
+Macs have FileVault, and Windows computers have BitLocker<!-- TODO phones by default? Do all Windows have BitLocker? -->. These services encrypt your hard drives when your computer is off. Without them, an attacker can take your hard drive, plug it into their own computer, and read all your files.
 
 <aside class="sidenote">
 Activating these often gives you a recovery code or a password. Print it out and put it in a safe. Don't pin your data's **availability** on remembering a password.
@@ -111,13 +112,13 @@ Activating these often gives you a recovery code or a password. Print it out and
 
 Likewise, passwords or biometric security (e.g. TouchID and Windows Hello, fingerprint readers) make it harder for attackers to read your data when your computer is on. To get your data from your computer directly, attackers need to login to your device.
 
+Neither of these steps are foolproof. In fact, the encryption used by BitLocker (for example) may be insecure<!-- TODO cite -->. But getting your laptop stolen by determined hackers is an unlikely scenario; these steps may be enough to protect your data from opportunists.
+
+Finally, **back up your data regularly**. Preferably, use a service that backs up all your documents automatically (like Dropbox, OneDrive, Google Drive, Time Machine, Carbonite, etc., etc.). This keeps your data **available** even if your computer is ever stolen or if you ever get a ransomware virus.
+
 <aside class="sidenote">
 Disclaimer: I work at Microsoft.
 </aside>
-
-Neither of these steps are foolproof. In fact, the encryption used by BitLocker (for example) may be insecure<!-- TODO cite -->. But getting your laptop stolen by determined hackers is an unlikely scenario; these steps may be enough to protect your data from opportunists.
-
-Finally, **back up your data regularly**. Preferably, use a service (like Dropbox, OneDrive, Google Drive, Time Machine, Carbonite, etc., etc.). This keeps your data **available** if your computer is ever stolen or if you ever get a ransomware virus.
 
 These are the best steps you can take to keep your data safe. **Using an auto-updating device**, **encrypting your hard drive**, and **locking your computer** keep your data confidential and untampered with. **Backing up your data regularly** keeps it available.
 
@@ -125,7 +126,7 @@ These are the best steps you can take to keep your data safe. **Using an auto-up
 Confidentiality, integrity, and availability.
 </aside>
 
-An interesting note is that *I don't think you need additional anti-virus software*. Windows has Windows Defender built in, and it works very well<!-- TODO firewall? checking status? -->. macOS has *so few* viruses written for it that the overhead of running anti-virus software is probably not worth it. (Non-jailbroken) iOS, also, has such a good security model that viruses are also a non-issue. If you think something is wrong, however, by all means speak to Microsoft or Apple support (through their official sites!).
+An interesting note is that *I don't think you need additional anti-virus software*. Windows has Windows Defender built in, and it works very well<!-- TODO firewall? checking status? -->. macOS has *so few* viruses written for it that the overhead of running anti-virus software is probably not worth it. (Non-jailbroken) iOS, also, has such a good security model that viruses are a non-issue. If you think something is wrong, however, by all means speak to Microsoft or Apple support (through their official sites!).
 
 <aside class="sidenote">
 I do not have good advice for Android, since it **has** had malware issues in the past.
@@ -139,13 +140,13 @@ Just like computers, browsers that auto-update have the latest security patches.
 
 **Pay attention** to the information your browser gives you about security: if you haven't already, see my video "[Understanding HTTPS in your browser](https://youtu.be/RNzw8tVhOpY)" and read [**What is HTTPS?**](/https/).
 
-Also note that *browsers* are the only applications on your computer that give you security information like this. **Trust your browser more than apps**, since *only your browser* tells you that it's using HTTPS. Other apps may browse securely, but it's often hard to check.
+Also note that *browsers* are the only applications on your computer that give you security information like this. **Trust your browser more than apps**, since *only your browser* tells you that it's using HTTPS. Other apps may communicate securely, but it's often hard to check.
 
 ## Protect the destination
 
 Finally, all that's left is **the destination**.
 
-Unfortunately, this destination is usually outside of your control. You can't choose how they store passwords, whether they encrypt their data, or who can access it. There's not much you can do to stop them from handing your data out on the street (outside of a lawsuit)!
+Unfortunately, this destination is usually outside of your control. You can't choose how they store passwords, whether they encrypt their data, or who can access it. There's not even much you can do to stop them from handing your data out on the street (outside of a lawsuit)!
 
 The safest thing to do is to treat your destination as a "black box." You send data in and can't assume *anything* about how it's used.
 
