@@ -36,6 +36,18 @@ This content is targeted at most internet users---to access your bank, online sh
 
 If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.
 
+Also, this content is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and noninfringement. In no event shall the
+authors or copyright holders be liable for any claim, damages or other
+liability, whether in an action of contract, tort or otherwise, arising from,
+out of or in connection with this content or the use or other dealings in
+this content.
+
+<aside class="sidenote">
+And some legalese. Use your best judgement with this information.
+</aside>
+
 ## The caveat at the beginning
 
 The warning above appears at the bottom of every page on this site. I am not a security professional; I am someone who studied the internet and knows how the pieces fit together. 
