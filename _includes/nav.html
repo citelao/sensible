@@ -1,7 +1,7 @@
 <nav>
   <ul>
     {% for p in site.pages %}
-      {% if p.layout == "page" and p.type != "sidequest" %}
+      {% if p.layout == "page" and p.type != "sidequest" and p.status != "draft" %}
         <li>
           {% if page.url == p.permalink %}
             <span class="current">
@@ -25,7 +25,7 @@
   <h2>Sidequests</h2>
   <ul>
     {% for p in site.pages %}
-      {% if p.layout == "page" and p.type == "sidequest" %}
+      {% if p.layout == "page" and p.type == "sidequest" and p.status != "draft"  %}
         <li>
           {% if page.url == p.permalink %}
             <span class="current">
