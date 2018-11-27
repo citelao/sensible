@@ -191,65 +191,105 @@
 
 
 
-  3mins
+  4mins
 
 	</aside>
-	<aside class="alert warning">
+	<!-- <aside class="alert warning">
 		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
 		Use with caution.
-	</aside>
+	</aside> -->
 	<p>The data we send across the Internet every day—emails, YouTube videos, and search results—are immensely valuable to hackers, governments, employers, advertisers, and snoopy family members.</p>
 
 <p>Security means protecting this data.</p>
 
-<p>You may have worked to protect your computer before, perhaps with antivirus software or a firewall or a spam filter, but these are piecemeal solutions for a more general problem: you need to protect against hackers grabbing your data, exploiting it, or releasing it when you don’t want them to.</p>
+<h2 id="protect-your-confidentiality-integrity-and-avilability">Protect your confidentiality, integrity, and avilability</h2>
+
+<p>Specifically, “protecting your data” means protecting these three things:</p>
+
+<ul>
+  <li><strong>Confidentiality</strong>: no one can access your data if you don’t want them to.</li>
+  <li><strong>Integrity</strong>: no one can change your data if you don’t want them to.</li>
+  <li><strong>Availability</strong>: no one can deny you access to your data when you want it.</li>
+</ul>
+
+<p>This is the “CIA triad,” and it represents the three fundamental guarantees you need to consider your data “safe.”</p>
+
+<aside class="sidenote">
+  <p>Some analysts like to add more guarantees, like “non-repudiation,” but the CIA triad is still <a href="https://en.wikipedia.org/wiki/CIA_triad">the “basis” for information security</a>.</p>
+</aside>
+
+<p>Furthermore, security means protecting these guarantees <strong>everywhere and all the time</strong>.</p>
+
+<p>This explains why it often feels so futile trying to secure your computer. You may have worked to secure your computer before, perhaps with antivirus software, a firewall, or a spam filter, but these are piecemeal solutions to a more general problem: they protect only some parts of your data some of the time.</p>
+
+<p>To be truly safe, you must protect your data’s confidentiality, integrity, and avilability. All of it, all of the time.</p>
 
 <h2 id="the-cloud-changes-things">The cloud changes things</h2>
 
-<p>The world is very different from what it was 10 (or even 5) years ago. Most of your life probably lives on a server in the cloud. Family photos, bank account numbers, your secret cookie recipe, your text messages to your spouse: all of these fly across the Internet when you access them.</p>
+<p>To make matters worse, securing your data “all the time” takes a lot more work than it did 10 (or even 5) years ago. Today, most of your life probably lives on servers in the cloud somehow. Family photos, bank account numbers, your secret cookie recipe, your text messages to your spouse: all of these fly across the Internet when you access them.</p>
 
-<p>Tools like antivirus software, firewalls, and spam filters are important pieces of the puzzle, but using them haphazardly is not enough. <strong>To keep your data safe, you must protect it every step of the way</strong>.</p>
+<p>Tools like antivirus software, firewalls, and spam filters are important pieces of the puzzle, but using them haphazardly is not enough.</p>
+
+<p>To keep your data safe, you must protect it every step of the way.</p>
+
+<h2 id="protocols-and-servers">Protocols and servers</h2>
+
+<p>The “Internet” is, at its core, a way of sending messages from one computer to another. It’s a collection of rules and computers that follow those rules: “protocols” and “servers.”</p>
+
+<p>Everything you send and receive on the Internet—from the latest episode of Bob’s Burgers on Hulu, to your bank account balance, to your Amazon order for Bob’s Burgers merchandise—gets sent as one of these messages.</p>
+
+<p>It doesn’t matter what app you use, or how you’re communicating with the Internet: if you are using the Internet, your computer is generating and reading messages using one of a few well-known protocols.</p>
+
+<aside class="sidenote">
+  <p>Surprisingly, most of the Internet works off of just a few protocols. You may have heard of many of them: <strong>HTTP</strong>, <strong>TCP/IP</strong>, <strong>DNS</strong>, <strong>POP3</strong>, and <strong>IMAP</strong> are a few.</p>
+</aside>
+
+<h2 id="sending-messages">Sending messages</h2>
+
+<p>Once your computer has messages to send, it needs to <em>send</em> them to their destination. Generally, your computer sends them to a “router,” a special computer that <em>routes</em> messages from your computer to the Internet.</p>
+
+<aside class="sidenote">
+  <p>If you have a Wi-Fi network at home, the device that generates the signal is your router.</p>
+</aside>
+
+<p>This router is connected to an internet service provider—an ISP. This really means that <em>your</em> router is connected to a larger router, which is connected to an even larger router—on and on until every smaller network connects to every other network:</p>
+
+<p>An “internetwork,” if you will.</p>
 
 <h2 id="every-step-of-the-way--on-the-internet">Every step of the way – on the Internet</h2>
 
-<p>The “Internet” is, at its core, a way of sending messages from one computer to another. It’s a collection of protocols and computers that follow those protocols.</p>
-
-<p>When you send messages from your computer to a destination (a “server”), your computer uses rules from protocols like the “Internet Protocol” (IP) and HyperText Transfer Protocol (HTTP) to generate those messages.</p>
-
-<p>Your browser—or mail app, or whatever app your computer is using to talk to the internet—takes  these messages and sends them to your router. Your router then sends them through many other well-known routers (the “internet”) until they reach their destination.</p>
-
-<p>So downloading a webpage (or playing a YouTube video, or logging in—anything done in a browser) goes through these points:</p>
-
-<aside class="sidenote">
-  <p>Anything on the internet not done in a browser (email in an app, for example) goes through a different application (not your browser) and is not protected by HTTPS. The rest is the same, though.</p>
-</aside>
+<p>Putting it all together, everything you do on the Internet goes through these points:</p>
 
 <ol>
   <li>You</li>
   <li>Your computer</li>
-  <li>Your browser</li>
+  <li>Your browser (or other Internet-connected app)</li>
   <li>Your router</li>
   <li>Intermediate routers (“the internet”)</li>
   <li>Destination router</li>
 </ol>
 
+<p>Protecting your data “all the time” means protecting it at every point along this route <em>in addition</em> to protecting it when it’s “at rest” on your hard drive or in the cloud.</p>
+
+<p>Since an attacker can target any part of this chain, a message is only as secure as the weakest part of the chain. Each part of this chain has different strengths and weaknesses.</p>
+
 <h2 id="classic-is-not-enough">Classic is not enough</h2>
 
-<p>An attacker can target any part of this chain, so a message is only as secure as the weakest part of it. Each part of this chain has different strengths and weaknesses.</p>
+<p>This is why classic security tools are not enough to protect yourself.</p>
 
-<p>This is why classic security tools are not enough to protect yourself. Your computer can be perfectly secure, and the destination server can be well-protected. But, at some point, you will need to log in to your bank. At some point, you will need to send your password over the Internet. And <strong>if an attacker can read your password as you send it, it doesn’t matter how good it is</strong> or how secure the bank’s database is: the attacker has your password.</p>
+<p>Even if you were infallible, with a perfectly secure computer and a perfectly secure home network (points 1, 2, 3, and 4 above); even if your bank uses the strongest encryption in the world and has impeccable information security policy (point 6 above); even if <em>all of those things</em>, if an eavesdropper can read your password in plain text when you send it (point 5), <strong>you’ve still been hacked</strong>.</p>
 
-<blockquote class="pullquote">
-  <p>If an attacker can read your password as you send it, it doesn’t matter how good it is.</p>
-</blockquote>
+<p>If an attacker can read your password as you send it, it doesn’t matter how strong it is. You must learn how to protect your messages in transit.</p>
 
-<p>You must learn how to protect your messages in transit.</p>
+<p>In fact, protecting your messages as they flow across the Internet—point 5—is probably the <strong>single most important thing you can do</strong> to protect your personal information. It’s far easier to read a message than it is to hack your computer or eavesdrop.</p>
 
-<p>In fact, protecting your messages as they flow across the Internet is probably the <em>single most important thing you can do</em> to protect your personal information. It’s far easier to read a message than it is to hack your computer or eavesdrop.</p>
-
-<p><strong>You must still protect your computer</strong>—viruses, malware, and “literally watching over the shoulder” are still common attacks—and you must still check to see that the sites you use are trustworthy, but you must protect your messages just as well.</p>
+<aside class="sidenote">
+  <p><strong>You must still protect your computer</strong>—viruses, malware, and “literally watching over the shoulder” are still common attacks—and minimize how much you trust 3rd parties, but securing your messages is a huge step. The rest comes later.</p>
+</aside>
 
 <p>And the best tool for the job is HTTPS: “HTTP Secure”.</p>
+
+<!-- TODO https://www.youtube.com/watch?v=GqmQg-cszw4 -->
 
 	<nav class="page_nav">
 		 
@@ -266,12 +306,14 @@
       <h2>Warning</h2>
       <p>This content is targeted at most internet users—to access your bank, online shopping, and Facebook.</p>
       <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+      <p>
+        Also, this content is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with this content or the use or other dealings in this content.
+    </p>
     </section>
     <section>
       
       <h2>Content</h2>
       <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
-      <p>I am probably ok with your commercial use. If you'd like to relicense this content, <a href="https://ben.stolovitz.com/">contact me</a>.</p>
     </section>
   </div>
 </footer>

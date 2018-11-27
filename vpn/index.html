@@ -191,69 +191,104 @@
 
 
 
-  5mins
+  6mins
 
 	</aside>
-	<aside class="alert warning">
+	<!-- <aside class="alert warning">
 		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
 		Use with caution.
-	</aside>
+	</aside> -->
 	<p>I’ve often heard the advice “use a VPN”—a Virtual Private Network. If you’re trying to <a href="/overall">secure your internet traffic</a>, they’re <strong>a good solution to a different problem</strong>.</p>
 
 <h2 id="the-usefulness-of-a-vpn">The usefulness of a VPN</h2>
 
-<p>VPNs are like a “middleman” or PO box for your internet connection: when you use a VPN, you forward all your computer’s internet traffic to the VPN before that VPN sends it to its final destination.</p>
+<p>A VPN is like a “middleman” or PO box for your internet connection: when you use a VPN, you forward all your computer’s internet traffic to the VPN before that VPN sends it to its final destination.</p>
 
-<p>This provides two benefits:</p>
+<p>This provides two main benefits:</p>
 
 <ul>
-  <li>To anything between you and the VPN (like the coffee shop around you), it seems like your computer is talking to the VPN, not the final destination.</li>
-  <li>To the final destination, it seems like your traffic is coming from the intermediate computer, not your actual device.</li>
+  <li>It appears to anything <strong>between you and the VPN</strong> (like the coffee shop around you) that your computer is talking to the VPN, not the final destination.</li>
+  <li>It appears to <strong>the final destination</strong> that your traffic is coming from the VPN, not your actual device.</li>
 </ul>
 
 <p>And (though it is technically possible to run a VPN without encryption) a VPN encrypts your local traffic, giving a third benefit:</p>
 
 <ul>
-  <li>To anything between you and the VPN, your traffic is encrypted and appears as “generic VPN traffic.”</li>
+  <li>It appears to anything <strong>between you and the VPN</strong> that your traffic is encrypted, as “generic VPN traffic.”</li>
 </ul>
 
 <p>These three benefits can be helpful.</p>
 
 <p>If you want to access content only available in a certain country, for example, you could use a VPN based in that country.</p>
 
-<p>You can also use a VPN to <strong>protect against local eavesdroppers</strong>. To any eavesdroppers listening to traffic between your computer and the VPN’s servers—for example, a hacker at the table next you—your traffic only appears as “generic VPN traffic”.</p>
+<aside class="sidenote">
+  <p>Joan could set up her US-based router as a VPN for her Canadian cousins to watch American Netflix. Netflix would see their traffic as though it came from Joan’s network. This probably breaks the Netflix user agreement.</p>
+</aside>
 
-<p>VPNs also help companies with large internal networks (intranets). IT departments often set up Internet-facing VPN servers that also connect to the internal network. Employees can access internal services through the VPN, as though they were at work.</p>
+<p>VPNs also help companies with large internal networks (intranets). IT departments often set up Internet-facing VPN servers that also connect to their company’s internal network. Employees can access internal services through the VPN as though they were at work.</p>
+
+<p>Perhaps most importantly, you can also use a VPN to <strong>protect against local eavesdroppers</strong>. Your VPN encrypts your local traffic in its own way, ensuring that local eavesdroppers cannot read your internet traffic <em>even if it is not HTTPS</em>.</p>
+
+<aside class="sidenote">
+  <p>There’s nuance to this: see the “flaws” section below.</p>
+</aside>
+
+<p>For some people, VPNs can also <strong>hide important metadata</strong>. Because VPNs encrypt all of your messages in their entirety, all the info within them is hidden—including metadata. For practical examples of what you can “leak” with metadata, see Muehlstein et al. and its citations 7–46 <a href="/references/#muehlstein2016analyzing">(2016)</a>.</p>
+
+<aside class="sidenote">
+  <p>Despite how dire “leaking metadata” may seem, I don’t think that it’s <em>generally</em> a problem.</p>
+
+  <p>For HTTPS you leak: your IP address, the destination website name (“reddit.com”), <strong>that</strong> you are talking, and a rough estimate of your request’s size.</p>
+
+  <p>In most circumstances, this has no practical value to attackers.</p>
+</aside>
 
 <h2 id="the-flaws-of-vpns">The flaws of VPNs</h2>
 
-<p>VPNs are incredibly helpful in specific scenarios (like the ones detailed above). However, most of the time, they are a false sense of security.</p>
+<p>VPNs are helpful in specific scenarios (like the ones detailed above). However, most of the time, they are a false sense of security, for two main reasons:</p>
 
-<p>VPNs only protect your message until it reaches the VPN server.</p>
+<ul>
+  <li>
+    <p>VPNs only protect your messages until they reach the VPN server.</p>
 
-<p>If your destination does not use <a href="/https">HTTPS</a>, your messages then travel unencrypted to their final server, and anyone along <em>that</em> path can eavesdrop unimpeeded.</p>
+    <p>If your destination does not use <a href="/https">HTTPS</a>, your messages then travel unencrypted to their final server, and anyone along <em>that</em> path can eavesdrop unimpeeded.</p>
 
-<p>And while VPNs protect your information against local eavesdroppers, every local eavesdropper will <strong>know you are using a VPN</strong>. Your content will be encrypted, but it will be sent in a way that is clearly identifiable as VPN traffic. Nearby hackers won’t know you’re checking out Apple.com, but they <em>will</em> know that you’re being really secretive about <em>something</em>.</p>
+    <p>Furthermore, this includes the metadata protection. If you’re worried about someone (a government?) eavesdropping <em>deep</em> in the Internet, a VPN may not protect your metadata. Of course, the <em>sender</em> of the message still looks like the VPN.</p>
+  </li>
+  <li>
+    <p>VPNs clearly identify your messages as “VPN” messages.</p>
 
-<p>Furthermore, using a VPN means <strong>trusting another service</strong>. When you set up a VPN, you send all of your Internet traffic to <em>one company</em>. That company has access to all of the information a coffee-shop eavesdropper would see. If you are using HTTPS, the VPN knows which sites you visit. If you aren’t using HTTPS, the VPN can read everything you send and receive.</p>
+    <p>While VPNs protect your information against local eavesdroppers, every local eavesdropper will know you are using a VPN.</p>
+
+    <p>Your content will be encrypted, but it will be sent in a way that is clearly identifiable as VPN traffic. Nearby hackers won’t know you’re checking out Apple.com, but they <em>will</em> know that you’re being really secretive about <em>something</em>.</p>
+  </li>
+</ul>
+
+<p>Furthermore, using a VPN means <strong>trusting another service</strong>. When you set up a VPN, you send all of your Internet traffic to <em>one company</em>. That company has access to all of the information a coffee-shop eavesdropper would see. If you are using HTTPS, the VPN can read your metadata. If you aren’t using HTTPS, the VPN can read everything you send and receive.</p>
+
+<h2 id="dont-do-evil">Don’t do evil</h2>
 
 <p>VPNs are marketted at people doing shady things. There’s a lot of sleezy marketting and hucksterism, and many claims like “no tracking” and “military-grade encryption” are impossible to verify.</p>
 
 <aside class="sidenote">
-  <p>By the way, <strong>military-grade encryption</strong> is meaningless. The military sends email and browses the internet the same way you do. In fact, encryption standards are generally more trusted the <strong>more</strong> public they are.</p>
+  <p>By the way, <strong>military-grade encryption</strong> is meaningless. The military sends email and browses the internet the same way you do. In fact, encryption standards are generally more trusted the <strong>more</strong> public they are.
+<!-- citation needed --></p>
 </aside>
 
-<p>If you’re doing something that HTTPS does not protect, chances are you are doing something that VPNs don’t really protect, either, and <strong>chances are you’re doing something that VPNs would be legally obligated to hand out to law enforcement</strong>.</p>
+<p>VPNs promise security for parts of your communication that are most useful to governments and large organizations. In that case, the “security” they offer is probably a lie: <strong>chances are you’re doing something that VPNs would be legally obligated to give to law enforcement</strong>.</p>
 
 <p>I feel a bit silly writing this. Don’t do illegal things on the internet. HTTPS and <a href="/overall">my general security advice</a> protects you against most of your daily threats. However, law enforcement has the time, resources, and expertise to break your security. A VPN will not make the difference here.</p>
 
+<p>If you reasonably expect a government to target you, you need better advice than mine.</p>
+
 <h2 id="why-do-people-recommend-vpns">Why do people recommend VPNs?</h2>
 
-<p>If VPNs don’t keep you secure as much as they’re purported to, why do people recommend them? I think there are two main reasons:</p>
+<p>If VPNs don’t keep you secure as much as they’re purported to, why do people recommend them? I think there are a few main reasons:</p>
 
 <ol>
+  <li><strong>VPNs mitigate insecure HTTP</strong>. VPNs can’t encrypt insecure sites entirely, but they can protect against <em>local</em> eavesdroppers reading your communication.</li>
+  <li><strong>VPNS can hide important metadata</strong>. Sometimes, metadata is important. If you need to hide it from <em>local</em> eavesdroppers, a VPN protects you.</li>
   <li><strong>There’s money in it.</strong> Next time you see a VPN article, look who wrote it. Was it a VPN company? You can sell a VPN; you can’t sell HTTPS.</li>
-  <li><strong>VPNs mitigate insecure HTTP</strong>. VPNs can’t encrypt insecure sites entirely, but they can protect against local eavesdroppers reading your communication.</li>
   <li><strong>VPNs let you do other things</strong>. By using an American VPN, you can watch American Netflix even if you’re in Kuwait. By using your corporate VPN, you can access company resources at home. VPNs let you appear to other people as though you were the VPN; that has practical benefits sometimes.</li>
 </ol>
 
@@ -261,7 +296,7 @@
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>At the end of the day, VPNs are another layer of encryption around your data. This can be helpful, but it also changes the threats you’re open to. If you have a concrete reason to use one, by all means do! But if you’re using one to be more secure—and most of your traffic is HTTPS—consider the tradeoff: an added layer of security with another company to trust.</p>
+<p>At the end of the day, VPNs are another layer of encryption around your data. This can be helpful, but it also changes the threats you’re open to. If you have a concrete reason to use one, by all means do! But if you’re using one to be more secure—and most of your traffic is already HTTPS—consider the tradeoff: an added layer of security with another company to trust.</p>
 
 <p>Consider a VPN when you worry about someone <em>near you</em>, like at your office or in your apartment, snooping on unencrypted traffic, or when you worry about leaking metadata, like that you’re using Skype or going to FoxNews.com.</p>
 
@@ -284,12 +319,14 @@
       <h2>Warning</h2>
       <p>This content is targeted at most internet users—to access your bank, online shopping, and Facebook.</p>
       <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+      <p>
+        Also, this content is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with this content or the use or other dealings in this content.
+    </p>
     </section>
     <section>
       
       <h2>Content</h2>
       <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
-      <p>I am probably ok with your commercial use. If you'd like to relicense this content, <a href="https://ben.stolovitz.com/">contact me</a>.</p>
     </section>
   </div>
 </footer>
