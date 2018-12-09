@@ -90,54 +90,23 @@ The best password is a password you remember and no one can guess.
 The NIST [updated password guidelines used by much of the web](https://www.usatoday.com/story/news/nation-now/2017/08/09/password-expert-says-he-wrong-numbers-capital-letters-and-symbols-useless/552013001/) in 2017 to remove most of the recommendations around "password requirements."
 
 ---
-
-## Entropy.
-
-The key to password strength---and many of the decisions in cryptography---is entropy.  Entropy is (loosely) a measure of "how random" something is. You can consider that the more entropy in your password, the harder it is to guess.
-
-When dealing with passwords, this measurement represents "how much more an attacker would need to know" before they could crack your password. In more technical terms, we measure entropy in terms of the number of plausible passwords. The more plausible passwords you have, the more passwords an attacker has to guess.
-
-For example, the password `x08a90s7fFf44444!*` might seem secure, but if an attacker knows your password is either `Password1` or `x08a90s7fFf44444!*`, it won't take longer for them to guess.
-
-If an attacker knows your password is "8 letters and a 4 letter year" (`peanuts1975`), it is a lot easier for them to guess than "12 random charcters": there's a lot less entropy.
-
----
-
-
-Entropy is measured in "bits," the same unit used for hard drive storage. This makes some sense: a bit is a `0` or a `1`, and the most basic form of randomness is kind of like a coin flip. A coin flip can either be heads or tails---one of two answers. 1 bit.
-
-Most importantly, we measure entropy in terms of the **number of possible outcomes**, not "how random something looks." For example, if I *know* that your password is either `Password1` or `x08a90s7fFf44444!*`, your password *still* only has **1 bit of entropy**.
-
-This is really bad because humans are really bad at being random. Something like 40% of all passwords are in the 1 million most common passwords<!-- TODO DEFINITELY cite -->. That's 6 bits of entropy, and *your* computer can try every one of those passwords in less than a second*.
-
-<aside class="sidenote">
-\* in an offline dictionary attack
-</aside>
-
-This is where most password requirements come from: they are designed to *force* us to choose from a wider set of possible passwords. They usually don't work, though.
-
-## Password requirements: a numeric example
-
-Let's look at a common requirement in depth to understand what they are meant to do, and what actually happens.
-
-Most people only use lowercase letters of the alphabet in their passwords. That means, for each character in a password, there are 26 possibilities.
-
-*Even if* people chose passwords randomly (we don't; we prefer real words), there are about 200 billion 8-character passwords (`26^8` combinations, about 37 bits of entropy).
-
-Now, what if we require a capital letter? There are now---supposedly--52 possibilities for every character. That makes over 53 *trillion* 8-character passwords (`52^8` combinations, about 46 bits of entropy).
-
-However, people are predictable, and they don't use random characters each time. Most people, given that requirement, would just capitalize the first letter of their earlier password<!-- TODO CITE -->.
-
-That means, practically, that there are *still* only 26 possibilities for each character! 26 capital letters for the first one, 26 lowercase ones for the last one.
-
-The *practical* increase in entropy is 0 for many users!
-
-<aside class="sidenote">
-It's definitely not **exactly** 0 in the real world because some people will capitalize other letters in their password, but what matters is your password. Is it reasonable to assume the first letter in most of your passwords is the capital one?
-</aside>
-
-And keep in mind that these numbers assumed people used passwords like `zdurqjwu` and `nmyfzbiz`. People prefer passwords like `password` and `lionbear`, further reducing entropy.
-
-## Not so dire
-
-One solution is to have your computer generate long, complex passwords for every site.
+https://www.forbes.com/sites/josephsteinberg/2015/04/21/new-technology-cracks-long-complex-passwords-what-you-need-to-know/#4d6dbc7662df
+https://cups.cs.cmu.edu/rshay/pubs/Feedback.pdf
+https://www.usatoday.com/story/news/nation-now/2017/08/09/password-expert-says-he-wrong-numbers-capital-letters-and-symbols-useless/552013001/
+https://www.cs.unc.edu/~reiter/papers/2010/CCS.pdf
+https://cry.github.io/nbp/
+https://nakedsecurity.sophos.com/2016/08/18/nists-new-password-rules-what-you-need-to-know/
+https://pages.nist.gov/800-63-3/sp800-63b.html
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6234434
+https://www.microsoft.com/en-us/research/wp-content/uploads/2006/11/www2007.pdf
+https://pages.nist.gov/800-63-FAQ/#q-b6
+https://wpengine.com/unmasked/
+http://lorrie.cranor.org/pubs/longpass-chi2014.pdf
+https://github.com/praetorian-inc/Hob0Rules
+https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure
+https://www.notsosecure.com/one-rule-to-rule-them-all/
+https://github.com/praetorian-inc/Hob0Rules
+https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0
+https://security.stackexchange.com/questions/8607/how-quickly-can-these-password-schemes-really-be-beaten
+https://security.stackexchange.com/questions/6095/xkcd-936-short-complex-password-or-long-dictionary-passphrase
+https://security.stackexchange.com/questions/120540/why-shouldnt-i-store-passwords-in-plaintext
