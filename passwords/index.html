@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18624606-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-18624606-3');
+    </script>
+
+    <title>Choosing good passwords &#x2022; Sensible Security</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="There's a good way to write passwords. It's just not commonly known.">
+    
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body class="page">
+    <header>
+  <div class="content">
+    <em class="logo">
+      
+        <a href="/">
+          <svg
+            version="1.1"
+            height="18" 
+            width="20"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg">
+              <polygon points="0,8 10,0 20,8" fill="currentColor" />
+              <polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
+          </svg> 
+          Sensible Security
+        </a>
+      
+    </em class="logo">
+    <nav>
+  <ul>
+    
+      
+        <li>
+          
+            <a href="/intro/">
+          
+            
+              Introduction
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/entreaty/">
+          
+            
+              An entreaty
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/secure/">
+          
+            
+              What is secure?
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/https/">
+          
+            
+              What is HTTPS?
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+        <li>
+          
+            <a href="/overall/">
+          
+            
+              How to stay safe
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/conclusion/">
+          
+            
+              Conclusion
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+        <li>
+          
+            <a href="/references/">
+          
+            
+              References
+            
+          
+            </a>
+          
+          </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+  <h2>Sidequests</h2>
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+            <a href="/vpn/">
+          
+            
+              Do you need a VPN?
+            
+          
+            </a>
+          
+        </li> 
+      
+    
+      
+    
+  </ul>
+</nav>
+  </div>
+</header>
+<article>
+	<!-- <div src= class="hero" style="background-image: url()"></div> -->
+	<h1>Choosing good passwords</h1>
+	<aside class="sidebar">
+		<strong>Reading time</strong>: 
+
+
+
+  4mins
+
+	</aside>
+	<!-- <aside class="alert warning">
+		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
+		Use with caution.
+	</aside> -->
+	<p>The objective best answer for <strong>choosing good passwords</strong> is to use a long, complex, and different password for each site. This will always be true. However, there are techniques and tricks you can use to make your own life easier.</p>
+
+<p>And, because of how we remember things, some techniques that may be <em>technically</em> worse may make your life <em>more</em> secure.</p>
+
+<h2 id="humans-arent-random">Humans aren’t random</h2>
+
+<p>Humans are really bad at being random. We tend to follow patterns like “8 characters and a year” (<code class="highlighter-rouge">peanuts1975</code>).</p>
+
+<p>In 2015, Julian Dunning found that 13 patterns made up <a href="https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure">more than half</a> of all passwords in a dataset of 34 million real-world passwords.</p>
+
+<p>In <a href="http://lorrie.cranor.org/pubs/longpass-chi2014.pdf">one study</a><!-- TODO proper citation -->, nearly 1 in 3 participants complied with a requirement to include a symbol by placing an <code class="highlighter-rouge">!</code> at the end of their password.</p>
+
+<h2 id="an-easy-target">An easy target</h2>
+
+<p>This is a huge benefit for hackers. If an attacker can guess a password’s pattern, they can reduce the number of guesses they need to make; they can hack it much faster.</p>
+
+<p>A password following the schema above (“eight-letter word and a year”) has something like 20 million possibilities (100,000 eight-letter words times 200 plausible years), whereas eight <em>completely random characters</em> has over 200 billion. In practical terms—using a <a href="https://security.stackexchange.com/questions/8607/how-quickly-can-these-password-schemes-really-be-beaten">bad, but plausible, hashing algorithm</a>—an attacker could brute force the first password in less than a second, but hacking the second would take 20s.</p>
+
+<h2 id="humans-arent-computers">Humans aren’t computers</h2>
+
+<p>Like I mentioned above, the “technical” best solution is to use a long, complex, randomly-generated password for each site: have a program generate a password like <code class="highlighter-rouge">zdurqjwu</code> or <code class="highlighter-rouge">nmyfzbiz</code> for the sites you visit.</p>
+
+<p>But this solution also sucks!</p>
+
+<p>This solution leads you to write your passwords on sticky notes, to being locked out of your email when you don’t have that sticky note, to asking your spouse to read the password over the phone three times.</p>
+
+<aside class="sidenote">
+  <p>“OK, it’s ‘z’, ‘d’, ‘u’— no, ‘z’ as in ‘Zebra’!”</p>
+</aside>
+
+<p>There’s a better way to generate passwords.</p>
+
+<h2 id="hack-yourself">Hack yourself</h2>
+
+<p>My favorite password generation technique is the <strong>XKCD technique</strong>, named after the <a href="https://xkcd.com/936/">webcomic that proposed it</a>.</p>
+
+<ol>
+  <li>Pick a (truly) random word from the dictionary.</li>
+  <li>Repeat 3 more times.</li>
+</ol>
+
+<p>This pattern is fantastic because:</p>
+
+<ul>
+  <li>it generates easy-to-remember passwords</li>
+  <li>it’s hard to hack</li>
+  <li>it’s easy to share with others in an emergency</li>
+</ul>
+
+<aside class="sidenote">
+  <p>“Availability” is an important aspect of <a href="/secure/">security</a>!</p>
+</aside>
+
+<h2 id="some-patterns-are-better-than-other-patterns">Some patterns are better than other patterns</h2>
+
+<p>But hackers take advantage of the patterns you use. Perhaps they’ve <a href="/https/">watched your web traffic</a>, and they know you’ve read this site.</p>
+
+<p>This pattern is still hard to guess.</p>
+
+<p>The comic <a href="https://security.stackexchange.com/a/6096">limits itself</a> to the 2,000 most common words. That leaves 17 trillion passwords to guess. If you pick from the 30,000 most common words (out of English’s ~250,000 words), there are 800,000 <em>trillion</em> passwords to guess.</p>
+
+<aside class="sidenote">
+  <p>Note that these numbers go down if you “re-roll” or change the passwords from this method. For example, if you would only choose 1 in 4 of these passwords, each number goes down 80%.</p>
+</aside>
+
+<p>That’s pretty good.</p>
+
+<h2 id="trust-no-one">Trust no one</h2>
+
+<p>Unfortunately, your pretty good password has to cross the Internet. Even if you trust that your communication is encrypted, the destination literally gets to look at your password. When you login to Gmail, you literally send your password to Google.</p>
+
+<p>Part of staying safe requires <a href="/overall/">minimizing your trust in others</a>, especially with your passwords. You have no way of knowing whether <a href="https://nakedsecurity.sophos.com/2013/11/04/anatomy-of-a-password-disaster-adobes-giant-sized-cryptographic-blunder/">they’re stored securely</a>, or <a href="http://blog.moertel.com/posts/2006-12-15-never-store-passwords-in-a-database.html">even encrypted at all</a><!-- via https://blog.codinghorror.com/youre-probably-storing-passwords-incorrectly/ -->; or, if they’re stored securely, whether <a href="https://arstechnica.com/information-technology/2018/05/twitter-advises-users-to-reset-passwords-after-bug-posts-passwords-to-internal-log/">some other code accidentally printed them out anyway</a>.</p>
+
+<p>The best thing you can do is use a completely unique password for every site.</p>
+
+<p>However, that’s hard to manage. Though you should be using a password manager, remembering common passwords for dozens of sites is hard.</p>
+
+<h2 id="choosing-good-passwords">Choosing good passwords</h2>
+
+<p>The best password is a password you remember and no one can guess.</p>
+
+<hr />
+
+<p>The NIST <a href="https://www.usatoday.com/story/news/nation-now/2017/08/09/password-expert-says-he-wrong-numbers-capital-letters-and-symbols-useless/552013001/">updated password guidelines used by much of the web</a> in 2017 to remove most of the recommendations around “password requirements.”</p>
+
+<hr />
+<p>https://www.forbes.com/sites/josephsteinberg/2015/04/21/new-technology-cracks-long-complex-passwords-what-you-need-to-know/#4d6dbc7662df
+https://cups.cs.cmu.edu/rshay/pubs/Feedback.pdf
+https://www.usatoday.com/story/news/nation-now/2017/08/09/password-expert-says-he-wrong-numbers-capital-letters-and-symbols-useless/552013001/
+https://www.cs.unc.edu/~reiter/papers/2010/CCS.pdf
+https://cry.github.io/nbp/
+https://nakedsecurity.sophos.com/2016/08/18/nists-new-password-rules-what-you-need-to-know/
+https://pages.nist.gov/800-63-3/sp800-63b.html
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6234434
+https://www.microsoft.com/en-us/research/wp-content/uploads/2006/11/www2007.pdf
+https://pages.nist.gov/800-63-FAQ/#q-b6
+https://wpengine.com/unmasked/
+http://lorrie.cranor.org/pubs/longpass-chi2014.pdf
+https://github.com/praetorian-inc/Hob0Rules
+https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure
+https://www.notsosecure.com/one-rule-to-rule-them-all/
+https://github.com/praetorian-inc/Hob0Rules
+https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0
+https://security.stackexchange.com/questions/8607/how-quickly-can-these-password-schemes-really-be-beaten
+https://security.stackexchange.com/questions/6095/xkcd-936-short-complex-password-or-long-dictionary-passphrase
+https://security.stackexchange.com/questions/120540/why-shouldnt-i-store-passwords-in-plaintext</p>
+
+	<nav class="page_nav">
+		 
+		 
+	</nav>
+</article>
+<footer>
+  <div class="content">
+    <section>
+      <h2>Warning</h2>
+      <p>This content is targeted at most internet users—to access your bank, online shopping, and Facebook.</p>
+      <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+      <p>
+        Also, this content is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with this content or the use or other dealings in this content.
+    </p>
+    </section>
+    <section>
+      
+      <h2>Content</h2>
+      <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
+    </section>
+  </div>
+</footer>
+  </body>
+</html>
