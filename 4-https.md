@@ -38,7 +38,7 @@ For a long time HTTPS stayed in the background, but thanks to initiatives by Goo
 
 ## The old internet -- before HTTPS
 
-HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-the-middle attack.
+HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-in-the-middle attack.
 
 <aside class="sidenote">
 There is no direct citation for this statement. However, the vulnerabilities listed in essays (explaining the need for HTTPS) from Google {% cite basques %}, the government {% cite mill_2014 %}, and *the agency that created the internet* {% cite farrell2014pervasive nottingham_2015 %} are all man-in-the-middle attacks.
@@ -70,8 +70,6 @@ It took them 3 years.
 
 HTTPS makes the man-in-the-middle attack almost impossible, except for in a few edge cases. It is the reason I can feel safe reading Facebook (and even accessing my bank) on public Wi-Fi---in a specific set of circumstances.
 
-But HTTPS does not secure every part of your internet browsing, and you must double check it to make sure no one is attacking you.
-
 Using HTTPS is a bit like **sending coded messages through the mail**: how secure you are depends on how secure your encryption is, how trustworthy the recipient is, and how sensitive the information on the envelope is, among other things.
 
 <aside class="sidenote">
@@ -82,7 +80,9 @@ For example, an attacker can tell if you're using Skype, or that you are going t
 This is discussed in greater depth later. See also [**Do you need a VPN?**](/vpn/).
 </aside>
 
-Understanding how the internet works, end-to-end, helps you decide what is safe. Knowing how to check your computer's security helps you decide when you are safe.
+But HTTPS does not secure every part of your internet browsing, and you must double check it to make sure no one is attacking you.
+
+The best way to keep yourself secure is to learn how HTTPS works.
 
 ## How HTTPS works
 
@@ -90,7 +90,7 @@ HTTPS relies on "public key encryption." Public key encryption is a form of encr
 
 Servers distribute public keys---called "certificates"---and your browser encrypts its initial message to the server using that public key. Because only the server has the right private key, you can be sure no one else reads your message. Your browser and the server then negotiate new keys, private to each of you<!-- TODO verify -->, for the rest of the connection.
 
-Encrypting your communication with these keys stop man-in-the-middle attacks cold. As long as the encryption you use is strong enough, eavesdroppers just see gibberish passing between you and webkinz.com.
+Encrypting your communication with these keys stops man-in-the-middle attacks cold. As long as the encryption you use is strong enough, eavesdroppers just see gibberish passing between you and webkinz.com.
 
 <aside class="sidenote">
 NB that eavesdroppers **do** know which website you're talking to: the metadata leaks [the base part of the URL](https://stackoverflow.com/q/8277323) (and only that part). Eavesdroppers can also see that you **are** talking to a site and can analyze the message size---think about telling apart college acceptance letters vs college rejection letters by size.
@@ -115,7 +115,11 @@ With server certificates and Certificate Authorities, you know that all your tra
 
 Your browser helps you verify those two things.
 
-You may have noticed the green lock and green "secure" or seen the `https://` in your URL on some sites. This is your browser helping you; **it is the only authoritative indicator that HTTPS is working** and your connection is secure. Nothing else, not a badge on the webpage, not a written assurance of security, not the word "secure" in the URL (and not in green), can prove your connection is secure.
+You may have noticed the green lock and green "secure" or seen the `https://` in your URL on some sites. This is your browser helping you; **it is the only authoritative indicator that HTTPS is working** and your connection is secure. Nothing else---not a badge or a written assurance of "military-grade security" on the webpage, not the word "secure" in the URL---can prove your connection is secure.
+
+<aside class="sidenote">
+As of 2018, browsers are slowly changing their indicators. Look up the most current ones for [Google Chrome](https://support.google.com/chrome/?p=ui_security_indicator), [Firefox](https://support.mozilla.org/en-US/kb/control-center-site-privacy-and-security-firefox), [Microsoft Edge](https://support.microsoft.com/en-us/help/4027268/windows-how-to-know-whether-to-trust-a-website-in-microsoft-edge), and [Safari](https://support.apple.com/guide/safari/avoid-fraud-by-using-encrypted-websites-sfri40697/mac).
+</aside>
 
 As mentioned above, browsers also maintain lists of trusted Authorities. If you use an auto-updating browser, you can be pretty confident that the list is good.
 

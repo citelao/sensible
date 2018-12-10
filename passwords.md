@@ -2,7 +2,7 @@
 layout: page
 type: sidequest
 status: draft
-short_title: Passwords
+short_title: Good passwords
 title: Choosing good passwords
 description: There's a good way to write passwords. It's just not commonly known.
 permalink: /passwords/

@@ -67,7 +67,7 @@ Furthermore, using a VPN means **trusting another service**. When you set up a V
 
 ## Don't do evil
 
-VPNs are marketted at people doing shady things. There's a lot of sleezy marketting and hucksterism, and many claims like "no tracking" and "military-grade encryption" are impossible to verify.
+VPNs are marketed at people doing shady things. There's a lot of sleezy marketing and hucksterism, and many claims like "no tracking" and "military-grade encryption" are impossible to verify.
 
 <aside class="sidenote">
 By the way, **military-grade encryption** is meaningless. The military sends email and browses the internet the same way you do. In fact, encryption standards are generally more trusted the **more** public they are.

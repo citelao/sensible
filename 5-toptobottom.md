@@ -104,7 +104,7 @@ For example, the 2017 ransomware attacks [exploited bugs that had been patched t
 
 Next, **encrypt your hard drive** and **lock your computer with a password** or biometric security. 
 
-Macs have FileVault, and Windows computers have BitLocker<!-- TODO phones by default? Do all Windows have BitLocker? -->. These services encrypt your hard drives when your computer is off. Without them, an attacker can take your hard drive, plug it into their own computer, and read all your files.
+Macs have FileVault, and Windows computers have BitLocker<!-- TODO phones by default? Do all Windows have BitLocker? -->. These services encrypt your hard drives when your computer is off. Without them, a thief can take your hard drive, plug it into their own computer, and read all your files.
 
 <aside class="sidenote">
 Activating these often gives you a recovery code or a password. Print it out and put it in a safe. Don't pin your data's **availability** on remembering a password.
