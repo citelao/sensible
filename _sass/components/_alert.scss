@@ -9,4 +9,18 @@
 		background: #ff5577;
 		// color: #fff;
 	}
+
+	&.info {
+		background: #43ca79;
+		border-left-color: darken(#43ca79, 35%);
+
+		a,
+		a:visited {
+			color: #0b20c7;
+
+			&:hover, &:active {
+				color: darken(#0b20c7, 20%);
+			}
+		}
+	}
 }
