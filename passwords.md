@@ -14,13 +14,33 @@ So do password requirements. Not just because they're annoying, but because they
 
 They're intended to make passwords "more random," but humans are really bad at being random.
 
-<aside class="sidenote">
-In 2015, Julian Dunning, a researcher, found that 13 patterns ("8 characters and a year") made up [more than half](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure) of all passwords in a dataset of 34 million real-world passwords.
+## We're bad at being random
+
+When told to choose randomly, people behave predictably.
+
+For example, in 2015, Julian Dunning, a researcher, found that 13 patterns ("8 characters and a year") made up [more than half](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure) of all passwords in a dataset of 34 million real-world passwords.
 
 In [one study](http://lorrie.cranor.org/pubs/longpass-chi2014.pdf)<!-- TODO proper citation -->, nearly 1 in 3 participants complied with a requirement to include a symbol by placing an `!` at the end of their password.
+
+In 2013, a reporter with Ars Technica [cracked](https://arstechnica.com/information-technology/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/) more than half of 16,000 encrypted passwords in "a few hours" (via [Schneier](https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html)).
+
+<aside class="sidenote">
+Note that Schneier believes my suggested password method is bad: he's wrong. Done right, my method gives about 60bits of entropy---more than enough to keep you safe.
 </aside>
 
-Not only that, we need to remember our passwords. Because of how the requirements work, we follow them in a way that's easy for us to remember---and easy for hackers to guess. 
+Seriously: everyone is terrible at choosing passwords.
+
+## Be memorably random
+
+The easiest solution is to let computers---which are good at being "random"---do the work for you. Of course, you could have your computer generate a completely random series of letters and numbers, but that's hard to remember.
+
+Surprisingly, it's important that your common passwords be memorable!
+
+Think of how you use passwords: if they're hard to remember, do you see yourself using different ones for each site? What if they were super-easy to remember? And sometimes (in emergencies) you need to share your passwords with other people. How do you plan on sharing `zdurqjwu`?
+
+<aside class="sidenote">
+"OK, it's 'z', 'd', 'u'--- no, 'z' as in 'Zebra'!"
+</aside>
 
 In other words, because of how we remember things, some password-choosing techniques that may be *technically* better may make your life *less* secure. The best password advice should give you complex---hard-to-guess---passwords that stick in your brain.
 
