@@ -116,7 +116,7 @@ In Kim's case, there is only one likely possibility, so it is trivial to guess h
 
 Unfortunately, hacking algorithms can randomly try *millions* of password possibilities per second on modern graphics cards, so you need a lot more randomness than a single random letter.
 
-Modern guidelines disagree, but the *lowest* [suggests](https://tools.ietf.org/html/rfc4086) choosing from at least 500 trillion possibilities. I think choosing from at least [1 quintillion](https://www.wolframalpha.com/input/?i=1e18+english+name) is reasonable.
+Modern guidelines disagree, but the *lowest* [suggests](https://tools.ietf.org/html/rfc4086)<!-- TODO cite properly --> choosing from at least 500 trillion possibilities. I think choosing from at least [1 quintillion](https://www.wolframalpha.com/input/?i=1e18+english+name) is reasonable.
 
 ## Measuring entropy
 
@@ -126,7 +126,7 @@ For our contexts, entropy is the <math>log<sub>2</sub></math> of the number of p
 
 The entropy of a coin flip is 1; the entropy of a randomly-chosen lower-case letter is 4.7 (there are 26 possibilities; each coin flip has 2 possibilities; 4 coin flips mean 16 possiblities).
 
-Modern password guidelines then ask for between 39-60 (and more) bits of entropy.
+Modern password guidelines then ask for between 39-60 (and more) bits of entropy.<!-- TODO cite https://security.stackexchange.com/questions/69374/is-an-80-bit-password-good-enough-for-all-practical-purposes/69378 -->
 
 ## Strength is based on knowledge
 
