@@ -75,7 +75,7 @@ My favorite password generation technique is the **XKCD technique**, named after
 Alternatively called [Diceware](http://world.std.com/~reinhold/diceware.html).
 </aside>
 
-1. Pick a (truly) random word from the dictionary.
+1. Pick a (truly) random word from the dictionary. This can be done [with dice](https://www.eff.org/dice) or with a good password manager.
 2. Repeat 3-5 more times.
 
 This pattern is fantastic because it generates easy-to-remember passwords, it's hard to hack, and it's easy to share with others in an emergency.
@@ -134,9 +134,7 @@ You might have noticed that a password's entropy---the number of possible passwo
 
 This makes it hard to calculate a password's "true" entropy.
 
-For example, what if you use your aunts' names for all your passwords? `Natalie`, for example. A hacker assuming you are using a capitalized 7-letter word has 8 trillion possibilities---apparently your password has almost 33 bits of entropy! But a hacker might include common names in their dictionary. Natalie is one of the 200 most common names; only about 8 bits of entropy there.
-
-And if your little brother wants to vandalize your Facebook, they may know to try only immediate family members: maybe 30 people (5 bits) to try?
+For example, what if you use your aunts' names for all your passwords? `Natalie`, for example. A hacker assuming you are using a capitalized 7-letter word has 8 trillion possibilities---apparently your password has almost 33 bits of entropy! But a hacker might include common names in their dictionary. Natalie is one of the 200 most common names; only about 8 bits of entropy there. And if your little brother wants to vandalize your Facebook, he may know to try only immediate family members: maybe 30 people (5 bits) to try?
 
 That's why, when doing calculations, we like to assume that an attacker knows *everything* about how the password was chosen, except for the random step.
 
@@ -144,7 +142,7 @@ For example, if you use choose random family members for your passwords, assume 
 
 ## Knowledge gives them nothing
 
-That's where the XKCD technique is strong. Even if an attacker knows you used the technique, your password is still high entropy.
+That's why the XKCD technique is strong. Even if an attacker knows you used the technique, your password is still high entropy.
 
 The comic itself [limits itself](https://security.stackexchange.com/a/6096) to the 2,000 most common words. Each word you pick adds about 11 bits of entropy. To generate a 60-bit password, all you need to do is choose 6 words completely randomly.
 
@@ -152,9 +150,9 @@ Diceware, or [the EFF's better wordlist](https://www.eff.org/deeplinks/2016/07/n
 
 Password managers often use even larger dictionaries. 1Password [uses about 18,000](https://discussions.agilebits.com/discussion/56902/diceware-dictionary-size-and-feature-request) words, so ~14bits of entropy per word.
 
-## The technique is just to remember
+## The technique is only to help you remember
 
-If correctly calculated, entropy generated one way is the same as entropy generated another: 20 bits of entropy from random lower-case letters (~4.7bits each) is the same as 20bits of entropy from dice-chosen words.
+If correctly calculated, entropy generated one way is the same as entropy generated another: 20 bits of entropy from random lower-case letters (~4.7bits each) is the same as 20 bits of entropy from dice-chosen words.
 
 I argue that XKCD-technique--entropy is "better" because it's much easier to remember:
 
