@@ -14,16 +14,18 @@ So do password requirements. Not just because they're annoying, but because they
 
 They're intended to make passwords "more random," but humans are really bad at being random. They make it harder to create and remember good passwords.
 
+How do you actually choose good passwords?
+
 ## A nutshell
 
 In a nutshell, there are four steps to creating, protecting, and remembering good passwords:
 
-* **Use a technique that generates random, but easy-to-remember passwords**: I recommend the XKCD technique (described later), but there are others.
+* **Use a technique that generates random, but easy-to-remember passwords**: I recommend the XKCD technique (described below), but there are others.
 * **Turn on multi-factor authentication**: do this for as many accounts as you can, especially the most important ones (like email and banks).
 * **Use different passwords on different sites**: at the very least, have different passwords for each important account (like email, each bank account, and your password manager).
 * **Use a password manager**: a password manager makes each of these steps much easier---and protects you from forgetting your passwords.
 
-These steps are basically written in order of importance, and each additional step you take makes you much safer. In fact, these steps each protect you against different types of attacks: a strong password makes it hard for attackers to guess their way into your accounts, but multi-factor authentication protects you if your password *does* leak.
+These steps are basically written in order of importance, and each additional step you take makes you much safer. In fact, each step protects you against different types of attacks: a strong password makes it hard for attackers to guess their way into your accounts, but multi-factor authentication protects you if your password *does* leak.
 
 Here's why you should take each step.
 
@@ -31,7 +33,7 @@ Here's why you should take each step.
 
 You need a good technique for generating passwords. In fact, you should almost never trust yourself to come up with "random" passwords.
 
-When told to choose randomly, people behave predictably.
+Why? When told to choose randomly, people behave predictably.
 
 For example, in 2015, a researcher named Julian Dunning found that 13 patterns ("8 characters and a year") made up [more than half](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure) of all passwords in a dataset of 34 million real-world passwords.
 
@@ -45,7 +47,7 @@ Note that Schneier believes my suggested password method is bad: he's wrong. I g
 
 Seriously: everyone is terrible at choosing passwords.
 
-## Be memorably random
+## Completely random is hard, though!
 
 The easiest solution is to let computers---which are good at being "random"---do the work for you. Of course, you could have your computer generate a completely random series of letters and numbers, but that's hard to remember.
 
@@ -53,7 +55,7 @@ The easiest solution is to let computers---which are good at being "random"---do
 Long sequences of random numbers and letters will always be the hardest passwords to guess.
 </aside>
 
-Surprisingly, it's important that your common passwords be memorable!
+But, surprisingly, it's also important that your common passwords be memorable!
 
 Think of how you use passwords: if they're hard to remember, do you see yourself using different ones for each site? What if they were super-easy to remember? And sometimes (in emergencies) you need to share your passwords with other people. How do you plan on sharing `zdurqjwu`?
 
@@ -98,7 +100,7 @@ It's easy to get lost in the weeds and focus on generating the "best" password, 
 
 These three steps guard against the threats of the modern web (like passwords being leaked). They offer layers of protection against hacking. Of course, there's also the complete [How to stay safe](/overall/) guide, but these three steps merit mention on any article about passwords.
 
-See the complete guide for more detailed information about these steps.
+See the [complete guide](/overall/) for more detailed information about these steps.
 
 ## Password strength and the XKCD technique
 
