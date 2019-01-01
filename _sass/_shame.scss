@@ -38,6 +38,11 @@
 	@include breakpoint($begin-columns) {
 		// I'm under no delusions that this is robust.
 		// Keep your sidenotes short please.
-		margin-bottom: -50vh;
+		margin-bottom: -55vh;
 	}
+}
+
+// Correct for rounding errors, which only seem to be a problem for h2s:
+h2 {
+	line-height: $line-height;
 }
