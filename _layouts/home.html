@@ -4,4 +4,54 @@ layout: default
 <article>
 	{{ content }}
 </article>
-{% include nav.html %}
+<!-- Taken from nav.html: TODO-->
+<nav>
+	<h2>The Guide</h2>
+	<ul>
+		{% for p in site.pages %}
+		{% if p.layout == "page" and p.type != "sidequest" %}
+		<li>
+			{% if page.url == p.permalink %}
+			<span class="current">
+				{% else %}
+				<a href="{{p.permalink}}">
+					{% endif %}
+					{% if p.short_title %}
+					{{p.short_title}}
+					{% else %}
+					{{p.title}}
+					{% endif %}
+					{% if page.url == p.permalink %}
+				</span>
+				{% else %}
+			</a>
+			{% endif %}
+		</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+	<h2>Sidequests</h2>
+	<ul>
+		{% for p in site.pages %}
+		{% if p.layout == "page" and p.type == "sidequest"  %}
+		<li>
+			{% if page.url == p.permalink %}
+			<span class="current">
+				{% else %}
+				<a href="{{p.permalink}}">
+					{% endif %}
+					{% if p.short_title %}
+					{{p.short_title}}
+					{% else %}
+					{{p.title}}
+					{% endif %}
+					{% if page.url == p.permalink %}
+				</span>
+				{% else %}
+			</a>
+			{% endif %}
+		</li> 
+		{% endif %}
+		{% endfor %}
+	</ul>
+</nav>
