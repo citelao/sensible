@@ -58,8 +58,6 @@ footer {
 
 	padding-bottom: $line-rem;
 
-	// max-width: 60rem;
-
 	@include breakpoint($begin-columns) {
 		.content {
 			display: flex;

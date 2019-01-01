@@ -31,8 +31,6 @@ body {
 $link_color: #2f6bcc;
 $link_hover_color: darken($link_color, 20%);
 a {
-	// text-decoration: none;
-
 	color: $link_color;
 	transition: all 0.1s;
 
@@ -95,13 +93,7 @@ ul,
 	@extend %reflows-typography;
 }
 
-.pullquote {
-	// @include rhythm-font-size(1.25rem, 1);
-}
-
 .footnote-ref {
-	/*display: inline-block;*/
-
 	background: rebeccapurple;
 	color: white;
 
@@ -157,8 +149,4 @@ hr {
 ol, ul {
 	margin: 0;
 	padding-left: $line-rem;
-
-	li {
-		// list-style-position: inside;
-	}
 }

@@ -6,15 +6,10 @@ body.home {
 
 		ul {
 			padding: 0;
-			// float: right;
-			// width: 100%;
 		}
 
 		li {
 			display: block;
-			@include breakpoint($begin-columns) {
-				// display: inline-block;
-			}
 
 			& + li {
 				margin-top: (0.5 * $line-rem);
@@ -51,11 +46,6 @@ body.home {
 
 		@include global_grid;
 
-		//margin-top: $line-rem;
-		@include breakpoint($begin-columns) {
-		//	margin-top: 0;
-		}
-
 		& > *:not(.pullquote):not(.tagline) {
 			grid-column: content;
 		}
@@ -67,7 +57,6 @@ body.home {
 			@include breakpoint($begin-columns) {
 				font-size: 10rem;
 				line-height: (6 * $line-height) / (10 * $base-font-size);
-				// line-height: 1;
 
 				grid-row: 1;
 			}
@@ -88,8 +77,4 @@ body.home {
 		grid-column: full;
 		grid-row: footer;
 	}
-
-	// aside {
-	// 	grid-area: c;
-	// }
 }
