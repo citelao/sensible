@@ -60,6 +60,13 @@ body.page {
 
 		.sidebar {
 			grid-column: sidenotes;
+			
+			margin-bottom: $line-rem;
+			color: rgba(0,0,0,0.7);
+			@include breakpoint($begin-columns) {
+				color: inherit;
+				margin-bottom: 0;
+			}
 		}
 	}
 
