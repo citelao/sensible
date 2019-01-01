@@ -19,10 +19,6 @@
 		}
 
 	@include breakpoint($begin-columns) {
-		// I'm under no delusions that this is robust.
-		// Keep your sidenotes short please.
-		margin-bottom: -50vh;
-
 		margin-top: 0;
 		padding: 0;
 		border-left: none;
