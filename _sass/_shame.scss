@@ -38,3 +38,8 @@
 h2 {
 	line-height: $line-height;
 }
+
+// Menu button floats right. Align it with the baseline.
+body.page #menu_button {
+	margin-top: 6px;
+}
