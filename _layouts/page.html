@@ -8,6 +8,7 @@ layout: default
         Sensible Security
       {% else %}
         <a href="/">
+          <!-- TODO blank alt -->
           <svg
             version="1.1"
             height="18" 
@@ -21,19 +22,17 @@ layout: default
         </a>
       {% endif%}
     </em class="logo">
+    <button id="menu_button" class="menu_button">
+      Menu
+    </button>
     {% include nav.html %}
   </div>
 </header>
 <article>
-	<!-- <div src={{page.hero}} class="hero" style="background-image: url({{page.hero}})"></div> -->
 	<h1>{{ page.title }}</h1>
 	<aside class="sidebar">
 		<strong>Reading time</strong>: {% include time_to_read.html %}
 	</aside>
-	<!-- <aside class="alert warning">
-		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
-		Use with caution.
-	</aside> -->
 	{{ content }}
   <aside class="alert info">
     <strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
