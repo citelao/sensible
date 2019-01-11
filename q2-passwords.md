@@ -12,7 +12,7 @@ Passwords suck {% cite grassi2017nist -L appendix  -l Appendix A %}.
 
 So do password requirements. Not just because they're annoying, but because they don't improve security {% cite weir2010testing %}. Capital letters, special characters, changing them every 3 months: none of them really help.
 
-They're intended to make passwords "more random," but humans are really bad at being random. They make it harder to create and remember good passwords.
+They're intended to make passwords "more random," but humans are really bad at being random. Password requirements make it harder to create and remember good passwords.
 
 How do you actually choose good passwords?
 
@@ -116,7 +116,7 @@ In Kim's case, there is only one likely possibility, so it is trivial to guess h
 
 Unfortunately, hacking algorithms can randomly try *millions* of password possibilities per second on modern graphics cards, so you need a lot more randomness than a single random letter.
 
-Modern guidelines disagree, but the *lowest* [suggests](https://tools.ietf.org/html/rfc4086)<!-- TODO cite properly --> choosing from at least 500 trillion possibilities. I think choosing from at least [1 quintillion](https://www.wolframalpha.com/input/?i=1e18+english+name) is reasonable.
+Modern guidelines don't all agree on a number, but the *lowest* [suggests](https://tools.ietf.org/html/rfc4086)<!-- TODO cite properly --> choosing from at least 500 trillion possibilities. I think choosing from at least [1 quintillion](https://www.wolframalpha.com/input/?i=1e18+english+name) is reasonable.
 
 ## Measuring entropy
 
