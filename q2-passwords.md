@@ -1,7 +1,6 @@
 ---
 layout: page
 type: sidequest
-published: false
 short_title: Good passwords
 title: Choosing good passwords
 description: There's a good way to write passwords. It's just not commonly known.
