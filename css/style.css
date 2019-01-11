@@ -357,7 +357,6 @@ ul + ul,
   margin-top: 1.6111111111rem; }
 
 .footnote-ref {
-  /*display: inline-block;*/
   background: rebeccapurple;
   color: white;
   padding: 0 0.5rem;
@@ -488,6 +487,47 @@ header .logo {
   padding-left: 1.4111111111rem; }
   .alert.warning {
     background: #ff5577; }
+  .alert.info {
+    background: #43ca79;
+    border-left-color: #144728; }
+    .alert.info a,
+    .alert.info a:visited {
+      color: #0b20c7; }
+      .alert.info a:hover, .alert.info a:active,
+      .alert.info a:visited:hover,
+      .alert.info a:visited:active {
+        color: #061066; }
+
+.menu_button {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0 1rem; }
+  @media (min-width: 600px) {
+    .menu_button {
+      display: none; } }
+
+.menu_list {
+  display: none;
+  position: absolute;
+  top: 1.6111111111rem;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1.6111111111rem;
+  background: #fee; }
+  .menu_list.active {
+    display: block; }
+  @media (min-width: 600px) {
+    .menu_list {
+      display: block;
+      position: static;
+      width: auto;
+      padding-top: 0;
+      background: none; } }
 
 .sidenote {
   grid-column: sidenotes;
@@ -508,7 +548,6 @@ header .logo {
     border-bottom: 0.1rem solid #444; }
   @media (min-width: 600px) {
     .sidenote {
-      margin-bottom: -50vh;
       margin-top: 0;
       padding: 0;
       border-left: none; }
@@ -606,6 +645,8 @@ body.page {
     grid-column: sidebar; }
     body.page header .content {
       grid-column: unset; }
+    body.page header .menu_button {
+      float: right; }
     body.page header nav {
       margin-top: 1.6111111111rem; }
     @media (min-width: 600px) {
@@ -645,7 +686,13 @@ body.page {
       body.page article .page_nav .next {
         float: right; }
     body.page article .sidebar {
-      grid-column: sidenotes; }
+      grid-column: sidenotes;
+      margin-bottom: 1.6111111111rem;
+      color: rgba(0, 0, 0, 0.7); }
+      @media (min-width: 600px) {
+        body.page article .sidebar {
+          color: inherit;
+          margin-bottom: 0; } }
   body.page footer {
     grid-column: full;
     grid-row: footer; }
@@ -665,4 +712,10 @@ body.page {
     margin-top: -1.6111111111rem; } }
 @media (min-width: 600px) {
   .sidenote {
-    margin-bottom: -50vh; } }
+    margin-bottom: -55vh; } }
+
+h2 {
+  line-height: 29px; }
+
+body.page #menu_button {
+  margin-top: 6px; }

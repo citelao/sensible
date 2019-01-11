@@ -26,6 +26,7 @@
     <em class="logo">
       
         <a href="/">
+          <!-- TODO blank alt -->
           <svg
             version="1.1"
             height="18" 
@@ -39,7 +40,10 @@
         </a>
       
     </em class="logo">
-    <nav>
+    <button id="menu_button" class="menu_button">
+      Menu
+    </button>
+    <nav id="main_nav" class="menu_list">
   <ul>
     
       
@@ -175,10 +179,6 @@
       
     
       
-    
-      
-    
-      
         <li>
           
             <a href="/vpn/">
@@ -193,13 +193,28 @@
       
     
       
+        <li>
+          
+            <a href="/passwords/">
+          
+            
+              Good passwords
+            
+          
+            </a>
+          
+        </li> 
+      
+    
+      
+    
+      
     
   </ul>
 </nav>
   </div>
 </header>
 <article>
-	<!-- <div src= class="hero" style="background-image: url()"></div> -->
 	<h1>How to stay safe</h1>
 	<aside class="sidebar">
 		<strong>Reading time</strong>: 
@@ -209,10 +224,6 @@
   8mins
 
 	</aside>
-	<!-- <aside class="alert warning">
-		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
-		Use with caution.
-	</aside> -->
 	<p>The last section focused on HTTPS and how it mitigates man-in-the-middle attacks. Staying safe requires a few more steps.</p>
 
 <p>For example, Equifax <a href="https://arstechnica.com/information-technology/2018/05/equifax-breach-exposed-millions-of-drivers-licenses-phone-numbers-emails/">stored social security numbers poorly</a><!-- TODO cite -->. HTTPS had nothing to do with it—when their databases were hacked, your SSN was probably leaked, and there was nothing you could do.</p>
@@ -368,6 +379,9 @@
 
 <p>Those are the best things you can do.</p>
 
+  <aside class="alert info">
+    <strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
+  </aside>
 	<nav class="page_nav">
 		 
 			<a class="prev" href="/https/">&laquo; What is HTTPS?</a> 
@@ -388,11 +402,12 @@
     </p>
     </section>
     <section>
-      
       <h2>Content</h2>
       <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
     </section>
   </div>
 </footer>
+
+    <script async src="/js/main.js"></script>
   </body>
 </html>

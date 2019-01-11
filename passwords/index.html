@@ -26,6 +26,7 @@
     <em class="logo">
       
         <a href="/">
+          <!-- TODO blank alt -->
           <svg
             version="1.1"
             height="18" 
@@ -39,7 +40,10 @@
         </a>
       
     </em class="logo">
-    <nav>
+    <button id="menu_button" class="menu_button">
+      Menu
+    </button>
+    <nav id="main_nav" class="menu_list">
   <ul>
     
       
@@ -175,10 +179,6 @@
       
     
       
-    
-      
-    
-      
         <li>
           
             <a href="/vpn/">
@@ -193,113 +193,223 @@
       
     
       
+        <li>
+          
+            <span class="current">
+          
+            
+              Good passwords
+            
+          
+            </span>
+          
+        </li> 
+      
+    
+      
+    
+      
     
   </ul>
 </nav>
   </div>
 </header>
 <article>
-	<!-- <div src= class="hero" style="background-image: url()"></div> -->
 	<h1>Choosing good passwords</h1>
 	<aside class="sidebar">
 		<strong>Reading time</strong>: 
 
 
 
-  4mins
+  10mins
 
 	</aside>
-	<!-- <aside class="alert warning">
-		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
-		Use with caution.
-	</aside> -->
-	<p>The objective best answer for <strong>choosing good passwords</strong> is to use a long, complex, and different password for each site. This will always be true. However, there are techniques and tricks you can use to make your own life easier.</p>
+	<p>Passwords suck <a href="/references/#grassi2017nist">(Grassi et al., 2017, Appendix A)</a>.</p>
 
-<p>And, because of how we remember things, some techniques that may be <em>technically</em> worse may make your life <em>more</em> secure.</p>
+<p>So do password requirements. Not just because they’re annoying, but because they don’t improve security <a href="/references/#weir2010testing">(Weir, Aggarwal, Collins, &amp; Stern, 2010)</a>. Capital letters, special characters, changing them every 3 months: none of them really help.</p>
 
-<h2 id="humans-arent-random">Humans aren’t random</h2>
+<p>They’re intended to make passwords “more random,” but humans are really bad at being random. Password requirements make it harder to create and remember good passwords.</p>
 
-<p>Humans are really bad at being random. We tend to follow patterns like “8 characters and a year” (<code class="highlighter-rouge">peanuts1975</code>).</p>
+<p>How do you actually choose good passwords?</p>
 
-<p>In 2015, Julian Dunning found that 13 patterns made up <a href="https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure">more than half</a> of all passwords in a dataset of 34 million real-world passwords.</p>
+<h2 id="a-nutshell">A nutshell</h2>
+
+<p>In a nutshell, there are four steps to creating, protecting, and remembering good passwords:</p>
+
+<ul>
+  <li><strong>Use a technique that generates random, but easy-to-remember passwords</strong>: I recommend the XKCD technique (described below), but there are others.</li>
+  <li><strong>Turn on multi-factor authentication</strong>: do this for as many accounts as you can, especially the most important ones (like email and banks).</li>
+  <li><strong>Use different passwords on different sites</strong>: at the very least, have different passwords for each important account (like email, each bank account, and your password manager).</li>
+  <li><strong>Use a password manager</strong>: a password manager makes each of these steps much easier—and protects you from forgetting your passwords.</li>
+</ul>
+
+<p>These steps are basically written in order of importance, and each additional step you take makes you much safer. In fact, each step protects you against different types of attacks: a strong password makes it hard for attackers to guess their way into your accounts, but multi-factor authentication protects you if your password <em>does</em> leak.</p>
+
+<p>With that being said, here’s how to generate secure passwords.</p>
+
+<h2 id="were-bad-at-being-random">We’re bad at being random</h2>
+
+<p>You need a good technique for generating passwords. In fact, you should almost never trust yourself to come up with “random” passwords.</p>
+
+<p>Why? When told to choose randomly, people behave predictably.</p>
+
+<p>For example, in 2015, a researcher named Julian Dunning found that 13 patterns (“8 characters and a year”) made up <a href="https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure">more than half</a> of all passwords in a dataset of 34 million real-world passwords.</p>
 
 <p>In <a href="http://lorrie.cranor.org/pubs/longpass-chi2014.pdf">one study</a><!-- TODO proper citation -->, nearly 1 in 3 participants complied with a requirement to include a symbol by placing an <code class="highlighter-rouge">!</code> at the end of their password.</p>
 
-<h2 id="an-easy-target">An easy target</h2>
+<p>Relying on common passwords and common patterns, a reporter with Ars Technica <a href="https://arstechnica.com/information-technology/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/">cracked</a> more than half of 16,000 encrypted passwords in “a few hours” in 2015 (via <a href="https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html">Schneier</a>).</p>
 
-<p>This is a huge benefit for hackers. If an attacker can guess a password’s pattern, they can reduce the number of guesses they need to make; they can hack it much faster.</p>
+<aside class="sidenote">
+  <p>Note that Schneier believes my suggested password method is bad: <a href="https://security.stackexchange.com/questions/62832/is-the-oft-cited-xkcd-scheme-no-longer-good-advice">he’s wrong</a>. I get into the math later.</p>
+</aside>
 
-<p>A password following the schema above (“eight-letter word and a year”) has something like 20 million possibilities (100,000 eight-letter words times 200 plausible years), whereas eight <em>completely random characters</em> has over 200 billion. In practical terms—using a <a href="https://security.stackexchange.com/questions/8607/how-quickly-can-these-password-schemes-really-be-beaten">bad, but plausible, hashing algorithm</a>—an attacker could brute force the first password in less than a second, but hacking the second would take 20s.</p>
+<p>Seriously: everyone is terrible at choosing passwords.</p>
 
-<h2 id="humans-arent-computers">Humans aren’t computers</h2>
+<h2 id="completely-random-is-hard-though">Completely random is hard, though!</h2>
 
-<p>Like I mentioned above, the “technical” best solution is to use a long, complex, randomly-generated password for each site: have a program generate a password like <code class="highlighter-rouge">zdurqjwu</code> or <code class="highlighter-rouge">nmyfzbiz</code> for the sites you visit.</p>
+<p>The most obvious solution is to let computers—which are good at being “random”—do the work for you: have your computer generate a completely random series of letters and numbers.</p>
 
-<p>But this solution also sucks!</p>
+<p>These passwords are perfectly secure—in fact, they are much harder to guess than an XKCD technique password of the same length—but they are also much harder to remember.</p>
 
-<p>This solution leads you to write your passwords on sticky notes, to being locked out of your email when you don’t have that sticky note, to asking your spouse to read the password over the phone three times.</p>
+<aside class="sidenote">
+  <p>Long sequences of random numbers and letters will always be the hardest passwords to guess.</p>
+</aside>
+
+<p>Surprisingly, it’s also important that your common passwords be memorable!</p>
+
+<p>Think of how you use passwords: if they’re hard to remember, do you see yourself using different ones for each site? What if they were super-easy to remember? If they’re hard to remember, are you going to write them down on a Post-It? And sometimes (in emergencies) you need to share your passwords with other people. How do you plan on sharing <code class="highlighter-rouge">zdurqjwu</code>?</p>
 
 <aside class="sidenote">
   <p>“OK, it’s ‘z’, ‘d’, ‘u’— no, ‘z’ as in ‘Zebra’!”</p>
 </aside>
 
-<p>There’s a better way to generate passwords.</p>
+<p>In other words, because of how we remember things, some password-choosing techniques that may be <em>technically</em> better may make your life <em>less</em> secure. The best password advice should give you complex—hard-to-guess—passwords that stick in your brain.</p>
 
-<h2 id="hack-yourself">Hack yourself</h2>
+<h2 id="do-this--use-the-xkcd-technique">Do this — use the XKCD technique</h2>
 
 <p>My favorite password generation technique is the <strong>XKCD technique</strong>, named after the <a href="https://xkcd.com/936/">webcomic that proposed it</a>.</p>
 
+<aside class="sidenote">
+  <p>Alternatively called <a href="http://world.std.com/~reinhold/diceware.html">Diceware</a>.</p>
+</aside>
+
 <ol>
-  <li>Pick a (truly) random word from the dictionary.</li>
-  <li>Repeat 3 more times.</li>
+  <li>Pick a (truly) random word from the dictionary. This can be done <a href="https://www.eff.org/dice">with dice</a> or with a good password manager.</li>
+  <li>Repeat 3-5 more times.</li>
 </ol>
 
-<p>This pattern is fantastic because:</p>
-
-<ul>
-  <li>it generates easy-to-remember passwords</li>
-  <li>it’s hard to hack</li>
-  <li>it’s easy to share with others in an emergency</li>
-</ul>
+<p>This pattern is fantastic because it generates easy-to-remember passwords, it’s hard to hack, and it’s easy to share with others in an emergency.</p>
 
 <aside class="sidenote">
   <p>“Availability” is an important aspect of <a href="/secure/">security</a>!</p>
 </aside>
 
-<h2 id="some-patterns-are-better-than-other-patterns">Some patterns are better than other patterns</h2>
+<p>Again, long passwords made of truly random (as in, computer-generated or chosen-by-dice-roll) characters are the “most secure” passwords. If you can swing it, by all means use truly random passwords. But I think the XKCD technique walks a good line between “memorability” and “total randomness.”</p>
 
-<p>But hackers take advantage of the patterns you use. Perhaps they’ve <a href="/https/">watched your web traffic</a>, and they know you’ve read this site.</p>
+<h2 id="also--multi-factor-authentication-varied-passwords-and-password-managers">Also — multi-factor authentication, varied passwords, and password managers</h2>
 
-<p>This pattern is still hard to guess.</p>
+<p>Before delving into the details of the technique (and why it’s secure), remember to <em>protect</em> your passwords (and to protect against the inevitability that they are hacked):</p>
 
-<p>The comic <a href="https://security.stackexchange.com/a/6096">limits itself</a> to the 2,000 most common words. That leaves 17 trillion passwords to guess. If you pick from the 30,000 most common words (out of English’s ~250,000 words), there are 800,000 <em>trillion</em> passwords to guess.</p>
+<ul>
+  <li>turn on <a href="/overall/#protect-you">multi-factor authentication</a> for as many accounts as you can</li>
+  <li>use different passwords for each account</li>
+  <li>use a password manager</li>
+</ul>
 
 <aside class="sidenote">
-  <p>Note that these numbers go down if you “re-roll” or change the passwords from this method. For example, if you would only choose 1 in 4 of these passwords, each number goes down 80%.</p>
+  <p>Seriously, set up multi-factor authentication for your email and banks now.</p>
+
+  <p>It only takes a few minutes <strong>once</strong>. Do it now!</p>
 </aside>
 
-<p>That’s pretty good.</p>
+<p>It’s easy to get lost in the weeds and focus on generating the “best” password, but this doesn’t give you the best security.</p>
 
-<h2 id="trust-no-one">Trust no one</h2>
+<p>These three steps offer important layers of protection against password hacking. See the complete <a href="/overall/">How to stay safe</a> guide for more detailed information about these steps.</p>
 
-<p>Unfortunately, your pretty good password has to cross the Internet. Even if you trust that your communication is encrypted, the destination literally gets to look at your password. When you login to Gmail, you literally send your password to Google.</p>
+<h2 id="password-strength-and-the-xkcd-technique">Password strength and the XKCD technique</h2>
 
-<p>Part of staying safe requires <a href="/overall/">minimizing your trust in others</a>, especially with your passwords. You have no way of knowing whether <a href="https://nakedsecurity.sophos.com/2013/11/04/anatomy-of-a-password-disaster-adobes-giant-sized-cryptographic-blunder/">they’re stored securely</a>, or <a href="http://blog.moertel.com/posts/2006-12-15-never-store-passwords-in-a-database.html">even encrypted at all</a><!-- via https://blog.codinghorror.com/youre-probably-storing-passwords-incorrectly/ -->; or, if they’re stored securely, whether <a href="https://arstechnica.com/information-technology/2018/05/twitter-advises-users-to-reset-passwords-after-bug-posts-passwords-to-internal-log/">some other code accidentally printed them out anyway</a>.</p>
+<p>The XKCD technique requires a little more justification. Why is it so much better to have a computer generate random words than to come up with random words yourself, or use words important to you, or important years, or names?</p>
 
-<p>The best thing you can do is use a completely unique password for every site.</p>
+<p>The strength of any password comes from how many possible passwords you <strong>could likely have chosen instead</strong>.</p>
 
-<p>However, that’s hard to manage. Though you should be using a password manager, remembering common passwords for dozens of sites is hard.</p>
+<p>This makes sense when you consider what it takes to guess a password: if your friend Kim always uses the same password, it’s not hard to log in to her Facebook. Especially if she gave you her Hulu password.</p>
 
-<h2 id="choosing-good-passwords">Choosing good passwords</h2>
+<p>In Kim’s case, there is only one likely possibility, so it is trivial to guess her password. If, instead, Kim chose a random lower-case letter for each password, there would be 26 possibilities to guess.</p>
 
-<p>The best password is a password you remember and no one can guess.</p>
+<p>Unfortunately, hacking algorithms can randomly try <em>millions</em> of password possibilities per second on modern graphics cards, so you need a lot more randomness than a single random letter.</p>
 
-<hr />
+<p>Modern guidelines don’t all agree on a number, but the <em>lowest</em> <a href="https://tools.ietf.org/html/rfc4086">suggests</a><!-- TODO cite properly --> choosing from at least 500 trillion possibilities. I think choosing from at least <a href="https://www.wolframalpha.com/input/?i=1e18+english+name">1 quintillion</a> is reasonable.</p>
 
-<p>The NIST <a href="https://www.usatoday.com/story/news/nation-now/2017/08/09/password-expert-says-he-wrong-numbers-capital-letters-and-symbols-useless/552013001/">updated password guidelines used by much of the web</a> in 2017 to remove most of the recommendations around “password requirements.”</p>
+<h2 id="measuring-entropy">Measuring entropy</h2>
 
-<hr />
-<p>https://www.forbes.com/sites/josephsteinberg/2015/04/21/new-technology-cracks-long-complex-passwords-what-you-need-to-know/#4d6dbc7662df
+<p>These numbers grow very quickly, to the point where I have to use words like “quintillion.” Security specialists prefer to measure the number of possibilities with entropy (<a href="https://tools.ietf.org/html/rfc4086">RFC4086</a> sec. 2)<!-- TODO cite properly -->, which is measured in “bits.”</p>
+
+<p>For our contexts, entropy is the <math>log<sub>2</sub></math> of the number of possibilities—the number of possibilities is <math>2<sup>entropy</sup></math>. In plain English, entropy is the “number of coin flips you would need to generate the same randomness.”</p>
+
+<p>The entropy of a coin flip is 1; the entropy of a randomly-chosen lower-case letter is 4.7 (there are 26 possibilities; each coin flip has 2 possibilities; 4 coin flips mean 16 possiblities).</p>
+
+<p>Modern password guidelines then ask for between 39-60 (and more) bits of entropy.<!-- TODO cite https://security.stackexchange.com/questions/69374/is-an-80-bit-password-good-enough-for-all-practical-purposes/69378 --></p>
+
+<h2 id="strength-is-based-on-knowledge">Strength is based on knowledge</h2>
+
+<p>You might have noticed that a password’s entropy—the number of possible passwords—varies based on how much you know about the password.</p>
+
+<p>This makes it hard to calculate a password’s “true” entropy.</p>
+
+<p>For example, what if you use your aunts’ names for all your passwords? <code class="highlighter-rouge">Natalie</code>, for example. A hacker assuming you are using a capitalized 7-letter word has 8 trillion possibilities—apparently your password has almost 33 bits of entropy! But a hacker might include common names in their dictionary. Natalie is one of the 200 most common names; only about 8 bits of entropy there. And if your little brother wants to vandalize your Facebook, he may know to try only immediate family members: maybe 30 people (5 bits) to try?</p>
+
+<p>That’s why, when doing calculations, we like to assume that an attacker knows <em>everything</em> about how the password was chosen, except for the random step.</p>
+
+<p>For example, if you use choose random family members for your passwords, assume the attacker knows you do that.</p>
+
+<h2 id="knowledge-gives-them-nothing">Knowledge gives them nothing</h2>
+
+<p>That’s why the XKCD technique is strong. Even if an attacker knows you used the technique, your password is still high entropy.</p>
+
+<p>The comic itself <a href="https://security.stackexchange.com/a/6096">limits itself</a> to the 2,000 most common words. Each word you pick adds about 11 bits of entropy. To generate a 60-bit password, all you need to do is choose 6 words completely randomly.</p>
+
+<p>Diceware, or <a href="https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases">the EFF’s better wordlist</a>, ask you to roll 5 dice to pick each word, for about 13 bits of entropy per word.</p>
+
+<p>Password managers often use even larger dictionaries. 1Password <a href="https://discussions.agilebits.com/discussion/56902/diceware-dictionary-size-and-feature-request">uses about 18,000</a> words, so ~14bits of entropy per word.</p>
+
+<h2 id="the-technique-is-only-to-help-you-remember">The technique is only to help you remember</h2>
+
+<p>If correctly calculated, entropy generated one way is the same as entropy generated another: 20 bits of entropy from random lower-case letters (~4.7bits each) is the same as 20 bits of entropy from dice-chosen words.</p>
+
+<p>I argue that XKCD-technique–entropy is “better” because it’s much easier to remember:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">nitwit myopic fluke humanize</code>: ~56bits via 1Password’s dictionary</li>
+  <li><code class="highlighter-rouge">jvuzfyambktp</code>: ~56bits via random lower-case letters</li>
+</ul>
+
+<p>This is the difference between <a href="http://world.std.com/~reinhold/diceware.html">Diceware’s list</a> and <a href="https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases">the EFF’s list</a>: the EFF’s are designed to be easier to remember.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>At the end of the day, you need to balance making passwords hard to guess and making them easy to remember. The XKCD technique makes it easier to write “harder” passwords.</p>
+
+<p>Equally-secure passwords made with random letters, numbers, and symbols can be a lot shorter, but are much harder to remember. At the end of the day, any password-generation technique works, as long as it generates enough entropy. When reading about new techniques, ask yourself: if a hacker knew I used this technique, how many guesses would they still need to make?</p>
+
+<p>To generate good passwords, keep them secure, and remember them:</p>
+
+<ul>
+  <li><strong>Use a technique that generates random, but easy-to-remember passwords</strong>: the XKCD technique is the most straightforward method I know.</li>
+  <li><strong>Turn on multi-factor authentication</strong>: do this for as many accounts as you can, especially the most important ones (like email and banks).</li>
+  <li><strong>Use different passwords on different sites</strong>: at the very least, have different passwords for each important account (like email, each bank account, and your password manager).</li>
+  <li><strong>Use a password manager</strong>: a password manager makes each of these steps much easier—and protects you from forgetting your passwords.</li>
+</ul>
+
+<p>And remember to learn <a href="/overall/">how to stay safe on the Internet</a>!</p>
+
+<!--
+
+---
+
+The NIST [updated password guidelines used by much of the web](https://www.usatoday.com/story/news/nation-now/2017/08/09/password-expert-says-he-wrong-numbers-capital-letters-and-symbols-useless/552013001/) in 2017 to remove most of the recommendations around "password requirements."
+
+---
+https://www.forbes.com/sites/josephsteinberg/2015/04/21/new-technology-cracks-long-complex-passwords-what-you-need-to-know/#4d6dbc7662df
 https://cups.cs.cmu.edu/rshay/pubs/Feedback.pdf
 https://www.usatoday.com/story/news/nation-now/2017/08/09/password-expert-says-he-wrong-numbers-capital-letters-and-symbols-useless/552013001/
 https://www.cs.unc.edu/~reiter/papers/2010/CCS.pdf
@@ -318,8 +428,12 @@ https://github.com/praetorian-inc/Hob0Rules
 https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0
 https://security.stackexchange.com/questions/8607/how-quickly-can-these-password-schemes-really-be-beaten
 https://security.stackexchange.com/questions/6095/xkcd-936-short-complex-password-or-long-dictionary-passphrase
-https://security.stackexchange.com/questions/120540/why-shouldnt-i-store-passwords-in-plaintext</p>
+https://security.stackexchange.com/questions/120540/why-shouldnt-i-store-passwords-in-plaintext
+-->
 
+  <aside class="alert info">
+    <strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
+  </aside>
 	<nav class="page_nav">
 		 
 		 
@@ -336,11 +450,12 @@ https://security.stackexchange.com/questions/120540/why-shouldnt-i-store-passwor
     </p>
     </section>
     <section>
-      
       <h2>Content</h2>
       <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
     </section>
   </div>
 </footer>
+
+    <script async src="/js/main.js"></script>
   </body>
 </html>

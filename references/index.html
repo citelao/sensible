@@ -26,6 +26,7 @@
     <em class="logo">
       
         <a href="/">
+          <!-- TODO blank alt -->
           <svg
             version="1.1"
             height="18" 
@@ -39,7 +40,10 @@
         </a>
       
     </em class="logo">
-    <nav>
+    <button id="menu_button" class="menu_button">
+      Menu
+    </button>
+    <nav id="main_nav" class="menu_list">
   <ul>
     
       
@@ -175,10 +179,6 @@
       
     
       
-    
-      
-    
-      
         <li>
           
             <a href="/vpn/">
@@ -193,13 +193,28 @@
       
     
       
+        <li>
+          
+            <a href="/passwords/">
+          
+            
+              Good passwords
+            
+          
+            </a>
+          
+        </li> 
+      
+    
+      
+    
+      
     
   </ul>
 </nav>
   </div>
 </header>
 <article>
-	<!-- <div src= class="hero" style="background-image: url()"></div> -->
 	<h1>References</h1>
 	<aside class="sidebar">
 		<strong>Reading time</strong>: 
@@ -209,10 +224,6 @@
   1min
 
 	</aside>
-	<!-- <aside class="alert warning">
-		<strong>Warning</strong>: this is not final content. It may change dramatically before release.
-		Use with caution.
-	</aside> -->
 	<div class="references">
   <ol class="bibliography"><li><p id="basques">Basques, K. Why HTTPS Matters. <i>Google</i>. Google. Retrieved from https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https</p></li>
 <li><p id="nottingham_2015">Securing the Web. (2015). <i>Extensible Markup Language (XML) 1.0 (Fifth Edition)</i>. W3C. Retrieved from https://www.w3.org/2001/tag/doc/web-https</p></li>
@@ -227,9 +238,14 @@
 <li><p id="ars_starttls">Goodin, D. (2015). Don’t count on STARTTLS to automatically encrypt your sensitive e-mails. Ars Technica. Retrieved from https://arstechnica.com/information-technology/2015/10/dont-count-on-starttls-to-automatically-encrypt-your-sensitive-e-mails/</p></li>
 <li><p id="whosknocking">Privacy International<i>Who’s That Knocking At My Door</i>. (2017). Retrieved from https://privacyinternational.org/sites/default/files/2017-10/thailand_2017_0.pdf</p></li>
 <li><p id="ssltlsstarttls">SSL vs TLS vs STARTTLS. FastMail. Retrieved from https://www.fastmail.com/help/technical/ssltlsstarttls.html</p></li>
-<li><p id="google_saferemail">Email encryption in transit. Google. Retrieved from https://transparencyreport.google.com/safer-email/overview</p></li></ol>
+<li><p id="google_saferemail">Email encryption in transit. Google. Retrieved from https://transparencyreport.google.com/safer-email/overview</p></li>
+<li><p id="grassi2017nist">Grassi, P. A., Fenton, J. L., Newton, E. M., Perlner, R. A., Regenscheid, A. R., Burr, W. E., … others. (2017). NIST Special Publication 800-63B. Digital Identity Guidelines: Authentication and Lifecycle Management. <i>Bericht, NIST</i>.</p></li>
+<li><p id="weir2010testing">Weir, M., Aggarwal, S., Collins, M., &amp; Stern, H. (2010). Testing metrics for password creation policies by attacking large sets of revealed passwords. In <i>Proceedings of the 17th ACM conference on Computer and communications security</i> (pp. 162–175). ACM.</p></li></ol>
 </div>
 
+  <aside class="alert info">
+    <strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
+  </aside>
 	<nav class="page_nav">
 		 
 			<a class="prev" href="/conclusion/">&laquo; Conclusion</a> 
@@ -248,11 +264,12 @@
     </p>
     </section>
     <section>
-      
       <h2>Content</h2>
       <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
     </section>
   </div>
 </footer>
+
+    <script async src="/js/main.js"></script>
   </body>
 </html>
