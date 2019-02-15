@@ -1,0 +1,59 @@
+---
+layout: home
+description: The sensible guide to cybersecurity, for those who need to know how it works to understand.
+---
+<article>
+	<h1 class="title">Sensible Security</h1>
+	<p class="tagline">The <strong>sensible guide to cybersecurity</strong>, for those who need to know how it works to understand.</p>
+</article>
+<!-- Taken from nav.html: TODO-->
+<nav>
+	<h2>The Guide</h2>
+	<ul>
+		{% for p in site.pages %}
+		{% if p.layout == "page" and p.type != "sidequest" %}
+		<li>
+			{% if page.url == p.permalink %}
+			<span class="current">
+				{% else %}
+				<a href="{{p.permalink}}">
+					{% endif %}
+					{% if p.short_title %}
+					{{p.short_title}}
+					{% else %}
+					{{p.title}}
+					{% endif %}
+					{% if page.url == p.permalink %}
+				</span>
+				{% else %}
+			</a>
+			{% endif %}
+		</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+	<h2>Sidequests</h2>
+	<ul>
+		{% for p in site.pages %}
+		{% if p.layout == "page" and p.type == "sidequest"  %}
+		<li>
+			{% if page.url == p.permalink %}
+			<span class="current">
+				{% else %}
+				<a href="{{p.permalink}}">
+					{% endif %}
+					{% if p.short_title %}
+					{{p.short_title}}
+					{% else %}
+					{{p.title}}
+					{% endif %}
+					{% if page.url == p.permalink %}
+				</span>
+				{% else %}
+			</a>
+			{% endif %}
+		</li> 
+		{% endif %}
+		{% endfor %}
+	</ul>
+</nav>
