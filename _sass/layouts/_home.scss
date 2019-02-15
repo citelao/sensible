@@ -91,13 +91,16 @@ body.home {
 			}
 
 	nav {
+		margin-top: $line-height;
 		grid-column: full;
 
-		display: flex;
-		justify-content: space-between;
+		@include breakpoint($begin-columns) {
+			display: flex;
+			justify-content: space-between;
 
-		a {
-			flex-basis: 50%;
+			a {
+				flex-basis: 50%;
+			}
 		}
 	}
 
