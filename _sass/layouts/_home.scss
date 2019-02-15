@@ -118,18 +118,14 @@ body.home {
 
 		margin: 0;
 		padding: 5rem 1rem;
-
-		&:hover {
-			.block_link__link {
-				text-decoration: underline;
-			}
-		}
 	}
+
+		.block_link__link {
+			text-decoration: underline;
+		}
 
 	footer {
 		grid-column: full;
 		grid-row: 5;
-
-		margin-top: 0;
 	}
 }
