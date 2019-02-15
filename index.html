@@ -2,58 +2,45 @@
 layout: home
 description: The sensible guide to cybersecurity, for those who need to know how it works to understand.
 ---
-<article>
-	<h1 class="title">Sensible Security</h1>
-	<p class="tagline">The <strong>sensible guide to cybersecurity</strong>, for those who need to know how it works to understand.</p>
-</article>
-<!-- Taken from nav.html: TODO-->
-<nav>
-	<h2>The Guide</h2>
-	<ul>
-		{% for p in site.pages %}
-		{% if p.layout == "page" and p.type != "sidequest" %}
-		<li>
-			{% if page.url == p.permalink %}
-			<span class="current">
-				{% else %}
-				<a href="{{p.permalink}}">
-					{% endif %}
-					{% if p.short_title %}
-					{{p.short_title}}
-					{% else %}
-					{{p.title}}
-					{% endif %}
-					{% if page.url == p.permalink %}
-				</span>
-				{% else %}
-			</a>
-			{% endif %}
-		</li>
-		{% endif %}
-		{% endfor %}
-	</ul>
-	<h2>Sidequests</h2>
-	<ul>
-		{% for p in site.pages %}
-		{% if p.layout == "page" and p.type == "sidequest"  %}
-		<li>
-			{% if page.url == p.permalink %}
-			<span class="current">
-				{% else %}
-				<a href="{{p.permalink}}">
-					{% endif %}
-					{% if p.short_title %}
-					{{p.short_title}}
-					{% else %}
-					{{p.title}}
-					{% endif %}
-					{% if page.url == p.permalink %}
-				</span>
-				{% else %}
-			</a>
-			{% endif %}
-		</li> 
-		{% endif %}
-		{% endfor %}
-	</ul>
-</nav>
+<header>
+	<hgroup>
+		<h1>Is it safe to use coffee shop wi-fi?</h1>
+		<h2>You know the question. What's the answer?</h2>
+	</hgroup>
+
+	<h1>Sensible Security</h1>
+	<p>The free, complete, and concrete cybersecurity guide for busy people.</p>
+	<a href="/intro/">Read the guide &rarr;</a>
+</header>
+
+<section>
+	<h2>What is Sensible Security?</h2>
+	<p>
+		Sensible Security is a complete guide to cybersecurity for normal
+		people. It focuses on the real, enduring concepts used by security
+		professionals to equip <em>you</em> with the tools you need to
+		keep you and your family safe.
+	</p>
+	<p>
+		The Internet is dangerous. It's right to be afraid of it sometimes.
+	</p>
+	<p>
+		But it's wrong to be afraid of it without understanding it. Sensible
+		Security helps you understand it.
+	</p>
+	<p>
+		Understand the Internet. Feel more competent&mdash;like you can
+		understand what's happening.
+	</p>
+	<a href="/intro/">Start reading &rarr;</a>
+</section>
+
+<section>
+	<h2>A reporter with no experience cracked 8,000 passwords in "a few hours."</h2>
+	<a href="/passwords/">Learn how to write good passwords &rarr;</a>
+</section>
+
+<section>
+	<h2>VPNs might not do what you want!</h2>
+	<a href="/vpn/">Learn what VPNs do &rarr;</a>
+</section>

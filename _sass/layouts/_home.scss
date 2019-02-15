@@ -1,6 +1,11 @@
 body.home {
 	@include global_grid;
 
+	header,
+	section {
+		grid-column: content;
+	}
+
 	nav {
 		grid-column: sidenotes;
 
@@ -75,6 +80,6 @@ body.home {
 
 	footer {
 		grid-column: full;
-		grid-row: footer;
+		grid-row: 5;
 	}
 }
