@@ -6,6 +6,90 @@ body.home {
 		grid-column: content;
 	}
 
+	.hero {
+		grid-column: full;
+
+		@include global_grid;
+	}
+
+		.hero__question {
+			grid-column: content;
+
+			@include breakpoint($begin-columns) {
+				margin-top: 30vh;
+				margin-bottom: 30vh;
+			}
+		}
+
+			.speech_bubble {
+				border: 0.3rem solid;
+				border-radius: 3rem;
+
+				padding: 0.5rem 1.5rem;
+				position: relative;
+
+				$triangle-height: 2rem;
+				margin-bottom: $triangle-height;
+				
+				&:after,
+				&:before {
+					content: '';
+					position: absolute;
+
+					display: block;
+					bottom: 0 - $triangle-height;
+					left: 3rem;
+
+					border-top: $triangle-height solid $main-background;
+					border-left: 3rem solid transparent;
+				}
+
+					&:before {
+						border-top-width: $triangle-height + 0.6rem;
+						border-left-width: 3.6rem;
+						border-top-color: inherit;
+						margin-bottom: -0.6rem;
+						left: 2.7rem;
+					}
+			}
+
+		.hero__answer {
+			grid-column: full;
+
+			@include global_grid;
+
+			background: $dark-background;
+			color: $dark-text;
+
+			padding: 2rem 0;
+
+			& > * {
+				grid-column: content;
+			}
+		}
+
+			.hero__answer__super {
+				font-size: 4rem;
+				line-height: (3 * $line-height) / (4 * $base-font-size);
+
+				@include breakpoint($begin-columns) {
+					font-size: 10rem;
+					line-height: (6 * $line-height) / (10 * $base-font-size);
+
+					grid-row: 1;
+				}
+
+				padding: 0;
+				margin: 0 0 $line-height 0;
+			}
+
+			.hero__answer__tagline {
+				grid-column: sidenotes;
+				@include breakpoint($begin-columns) {
+					grid-row: 1;
+				}
+			}
+
 	nav {
 		grid-column: sidenotes;
 
@@ -53,28 +137,6 @@ body.home {
 
 		& > *:not(.pullquote):not(.tagline) {
 			grid-column: content;
-		}
-
-		.title {
-			font-size: 4rem;
-			line-height: (3 * $line-height) / (4 * $base-font-size);
-
-			@include breakpoint($begin-columns) {
-				font-size: 10rem;
-				line-height: (6 * $line-height) / (10 * $base-font-size);
-
-				grid-row: 1;
-			}
-
-			padding: 0;
-			margin: 0 0 $line-height 0;
-		}
-
-		.tagline {
-			grid-column: sidenotes;
-			@include breakpoint($begin-columns) {
-				grid-row: 1;
-			}
 		}
 	}
 
