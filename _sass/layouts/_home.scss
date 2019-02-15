@@ -91,57 +91,42 @@ body.home {
 			}
 
 	nav {
-		grid-column: sidenotes;
+		grid-column: full;
 
-		ul {
-			padding: 0;
-		}
+		display: flex;
+		justify-content: space-between;
 
-		li {
-			display: block;
-
-			& + li {
-				margin-top: (0.5 * $line-rem);
-
-				@include breakpoint($begin-columns) {
-					margin-top: 0;
-				}
-			}
-
-			a {
-				display: block;
-				margin: (0.5 * $line-rem) 0;
-				padding: (0.5 * $line-rem) $line-rem;
-				background: rebeccapurple;
-				border-radius: 1rem;
-
-				color: white;
-				text-align: center;
-				text-decoration: none;
-
-				&:hover, &:focus {
-					background: darken(rebeccapurple, 30%);
-					color: white;
-				}
-			}
+		a {
+			flex-basis: 50%;
 		}
 	}
 
-	article {
-		grid-column: full;
-		@include breakpoint($begin-columns) {
-			grid-row: 1;
+	.block_link {
+		display: block;
+
+		color: $dark-text;
+		text-decoration: none;
+
+		background: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+		// Hacks for testing
+		&:first-child {
+			background: url(https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
 		}
 
-		@include global_grid;
+		margin: 0;
+		padding: 5rem 1rem;
 
-		& > *:not(.pullquote):not(.tagline) {
-			grid-column: content;
+		&:hover {
+			.block_link__link {
+				text-decoration: underline;
+			}
 		}
 	}
 
 	footer {
 		grid-column: full;
 		grid-row: 5;
+
+		margin-top: 0;
 	}
 }
