@@ -17,7 +17,16 @@ body.home {
 
 			@include breakpoint($begin-columns) {
 				margin-top: 30vh;
-				margin-bottom: 30vh;
+			}
+		}
+
+		.hero__image {
+			grid-column: content;
+			margin: 0 auto;
+			margin-bottom: -7px;
+
+			@include breakpoint($begin-columns) {
+				margin-left: 0;
 			}
 		}
 
@@ -110,10 +119,10 @@ body.home {
 		color: $dark-text;
 		text-decoration: none;
 
-		background: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+		background: url("https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
 		// Hacks for testing
 		&:first-child {
-			background: url(https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
+			background: url("https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
 		}
 
 		margin: 0;
