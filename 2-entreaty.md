@@ -2,6 +2,7 @@
 layout: page
 title: An entreaty
 description: Learn what you should expect to get from cyber-security guide.
+date: 2018-11-02T12:00:00
 permalink: /entreaty/
 previous:
     url: /intro/

@@ -2,6 +2,7 @@
 layout: page
 title: What is secure?
 description: What does 'secure' mean when talking about cyber-security?
+date: 2018-11-24T12:00:00
 permalink: /secure/
 previous:
     url: /entreaty/
