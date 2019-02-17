@@ -29,6 +29,8 @@ plugins:
   - jekyll-feed
   # - jekyll-pandoc
   - jekyll-scholar
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # pandoc:
 #   extensions:
