@@ -29,6 +29,7 @@ markdown: Kramdown
 plugins:
   - jekyll-feed
   # - jekyll-pandoc
+  - jekyll-last-modified-at
   - jekyll-scholar
   - jekyll-seo-tag
   - jekyll-sitemap
