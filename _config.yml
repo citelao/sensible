@@ -71,7 +71,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - CHANGELOG.md
-  - CNAME
   - README.md
   - package.json
   - package-lock.json
