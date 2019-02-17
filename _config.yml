@@ -70,7 +70,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - README.md
+  - CHANGELOG.md
   - CNAME
+  - README.md
   - package.json
   - package-lock.json

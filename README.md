@@ -15,3 +15,7 @@ The sensible guide to cybersecurity.
 ## Deployment
 
 `npm run build && npm run deploy`
+
+## Changelog
+
+See `CHANGELOG.md`.
