@@ -91,6 +91,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-pandoc
   jekyll-scholar
+  jekyll-seo-tag (~> 2.5.0)
   minima (~> 2.0)
   tzinfo-data
 
