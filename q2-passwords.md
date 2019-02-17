@@ -4,6 +4,7 @@ type: sidequest
 short_title: Good passwords
 title: Choosing good passwords
 description: There's a good way to write passwords. It's just not commonly known.
+date: 2018-11-26T12:00:00
 permalink: /passwords/
 ---
 

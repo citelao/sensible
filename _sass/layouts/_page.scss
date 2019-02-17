@@ -64,6 +64,7 @@ body.page {
 
 		.sidebar {
 			grid-column: sidenotes;
+			grid-row: span 3;
 			
 			margin-bottom: $line-rem;
 			color: rgba(0,0,0,0.7);

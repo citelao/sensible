@@ -2,6 +2,7 @@
 layout: page
 title: Introduction
 description: Jump in to staying secure – introduction to cyber-security techniques for sensible people.
+date: 2018-11-02T12:00:00
 permalink: /intro/
 hero: /img/intro_hero.jpg
 next:

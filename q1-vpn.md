@@ -2,6 +2,7 @@
 layout: page
 type: sidequest
 title: Do you need a VPN?
+date: 2018-11-05T12:00:00
 description: Jump in to staying secure – introduction to cyber-security techniques for sensible people.
 permalink: /vpn/
 ---

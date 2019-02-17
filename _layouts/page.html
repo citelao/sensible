@@ -2,41 +2,53 @@
 layout: default
 ---
 <header>
-  <div class="content">
-    <em class="logo">
-      {% if page.url == "/" %}
-        Sensible Security
-      {% else %}
-        <a href="/">
-          <!-- TODO blank alt -->
-          <svg
-            version="1.1"
-            height="18" 
-            width="20"
-            baseProfile="full"
-            xmlns="http://www.w3.org/2000/svg">
-              <polygon points="0,8 10,0 20,8" fill="currentColor" />
-              <polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
-          </svg> 
-          Sensible Security
-        </a>
-      {% endif%}
-    </em class="logo">
-    <button id="menu_button" class="menu_button">
-      Menu
-    </button>
-    {% include nav.html %}
-  </div>
+	<div class="content">
+		<em class="logo">
+			{% if page.url == "/" %}
+				Sensible Security
+			{% else %}
+				<a href="/">
+					<!-- TODO blank alt -->
+					<svg
+						version="1.1"
+						height="18" 
+						width="20"
+						baseProfile="full"
+						xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0,8 10,0 20,8" fill="currentColor" />
+							<polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
+					</svg> 
+					Sensible Security
+				</a>
+			{% endif%}
+		</em class="logo">
+		<button id="menu_button" class="menu_button">
+			Menu
+		</button>
+		{% include nav.html %}
+	</div>
 </header>
 <article>
 	<h1>{{ page.title }}</h1>
 	<aside class="sidebar">
-		<strong>Reading time</strong>: {% include time_to_read.html %}
+		<ul class="no_bullets">
+			<li>
+				<strong>Reading time</strong>: {% include time_to_read.html %}
+			</li>
+			{% if page.date %}
+				<li>
+					<strong>Published</strong>: {{ page.date | date_to_string: "ordinal", "US" }}
+				</li>
+			{% endif %}
+			<li>
+				<strong>Modified</strong>: {{ page.last_modified_at | date_to_string: "ordinal", "US" }}
+			</li>
+		</ul>
 	</aside>
 	{{ content }}
-  <aside class="alert info">
-    <strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
-  </aside>
+	<aside class="alert info">
+		<strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
+	</aside>
 	<nav class="page_nav">
 		{% if page.previous.url %} 
 			<a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> 
