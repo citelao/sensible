@@ -20,6 +20,7 @@
       
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
@@ -59,7 +60,7 @@
 				</a>
 			
 		</em class="logo">
-		<button id="menu_button" class="menu_button">
+		<button id="menu_button" role="switch" aria-checked="false" class="menu_button">
 			Menu
 		</button>
 		<nav id="main_nav" class="menu_list">
@@ -177,6 +178,8 @@
     
       
     
+      
+    
   </ul>
   <h2>Sidequests</h2>
   <ul>
@@ -225,6 +228,8 @@
             </a>
           
         </li> 
+      
+    
       
     
       
@@ -369,13 +374,13 @@
 
 <p>But if you need a VPN for a concrete reason, or if you want the extra layer of encryption and are ok with the caveats, a VPN can help.</p>
 
-	<aside class="alert info">
-		<strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
-	</aside>
 	<nav class="page_nav">
 		 
 		 
 	</nav>
+	<aside class="alert info">
+		<strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>.
+	</aside>
 </article>
 <footer>
   <div class="content">
@@ -383,13 +388,20 @@
       <h2>Warning</h2>
       <p>This content is targeted at most internet users—to access your bank, online shopping, and Facebook.</p>
       <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
-      <p>
-        Also, this content is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with this content or the use or other dealings in this content.
-    </p>
+      <p class="legalese">
+        Also, this content is provided “as is”, without warranty of any kind,
+        express or implied, including but not limited to the warranties of
+        merchantability, fitness for a particular purpose and noninfringement.
+        In no event shall the authors or copyright holders be liable for any
+        claim, damages or other liability, whether in an action of contract,
+        tort or otherwise, arising from, out of or in connection with this
+        content or the use or other dealings in this content.
+      </p>
     </section>
     <section>
       <h2>Content</h2>
       <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
+      <p>Source code is available <a href="https://github.com/citelao/sensible-security">on GitHub</a>.</p>
     </section>
   </div>
 </footer>
