@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.5
+
+- Fixed: no longer have a console error on the homepage.
+
 ## v0.0.4
 
 - Added: source code link.
