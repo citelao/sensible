@@ -12,6 +12,11 @@ html, body {
 	line-height: $line-height / $base-font-size;
 }
 
+// Add hyphens!
+*, *:before, *:after {
+	hyphens: auto;
+}
+
 body {
 	@include breakpoint(print) {
 		font-size: 80%;
