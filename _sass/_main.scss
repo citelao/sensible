@@ -94,3 +94,8 @@ header {
 		}
 	}
 }
+
+.legalese {
+	@include rhythm-font-size(0.875rem, 1);
+	color: $dark-deemphasized-text;
+}

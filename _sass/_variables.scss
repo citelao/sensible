@@ -12,3 +12,5 @@ $link_hover_color: darken($link_color, 20%);
 
 $dark-text: #fff;
 $dark-background: #111;
+
+$dark-deemphasized-text: darken($dark-text, 20%);
