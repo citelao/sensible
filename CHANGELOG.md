@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.0.4
+
+- Added: source code link.
+- Changed: new font!
+- Changed: deemphasize legalese in footer.
+- Changed: moved feedback link after navigation.
+- Changed: fixed footer link contrast issues.
+- Changed: standardized colors.
+- Changed: moved reading time lower onscreen.
+- Fixed: robots.txt uses correct URL.
+
 ## v0.0.3
 
 - Changed: mobile menu button is now an ARIA switch.
