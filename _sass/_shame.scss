@@ -41,5 +41,5 @@ h2 {
 
 // Menu button floats right. Align it with the baseline.
 body.page #menu_button {
-	margin-top: 6px;
+	margin-top: calc(-0.5rem + 4px);
 }
