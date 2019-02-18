@@ -9,13 +9,13 @@
 
 		width: $line-rem;
 		height: $line-rem;
-		border-top: 0.1rem solid #444;
+		border-top: 0.1rem solid $deemphasized-text;
 	}
 
 		&:after {
 			border-top: none;
 			margin-top: 0;
-			border-bottom: 0.1rem solid #444;
+			border-bottom: 0.1rem solid $deemphasized-text;
 		}
 
 	@include breakpoint($begin-columns) {
@@ -29,7 +29,7 @@
 		} 
 	}
 
-	color: #444;
+	color: $deemphasized-text;
 	font-style: italic;
 	@include rhythm-font-size(0.875rem, 1);
 

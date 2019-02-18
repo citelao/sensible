@@ -28,8 +28,6 @@ body {
 	line-height: ($line-height-lines * $line-height) / (strip-units($size_rem) * $base-font-size);
 }
 
-$link_color: #2f6bcc;
-$link_hover_color: darken($link_color, 20%);
 a {
 	color: $link_color;
 	transition: all 0.1s;
@@ -56,11 +54,11 @@ a {
 }
 
 blockquote {
-	border-left: 0.2rem solid #9f6dd0;
+	border-left: 0.2rem solid $blockquote-color;
 	margin: 0;
 
 	// rebeccapurple, but translucent:
-	background: #9f6dd020;
+	background: transparentize($color: $blockquote-color, $amount: 0.9);
 	padding: $line-rem;
 	padding-left: $line-rem - 0.2rem;
 }
@@ -68,7 +66,7 @@ blockquote {
 code {
 	font-family: "Lucida Console", "Lucida Sans Typewriter", "Consolas", "Monaco", "Courier New", serif;
 	font-size: (0.9 * $base-font-size);
-	background: rgba(0,0,0,0.1);
+	background: $code-color;
 	padding: 0.2rem;
 }
 
@@ -94,7 +92,7 @@ ul,
 }
 
 .footnote-ref {
-	background: rebeccapurple;
+	background: $accent-color;
 	color: white;
 
 	padding: 0 0.5rem;
@@ -104,7 +102,7 @@ ul,
 	text-decoration: none;
 
 	&:hover, &:focus {
-		background: darken(rebeccapurple, 30%);
+		background: darken($accent-color, 30%);
 	}
 
 	sup {
@@ -142,7 +140,7 @@ hr {
 	margin: $line-rem 0;
 	border: none;
 
-	border-top: 0.2rem solid rebeccapurple;
+	border-top: 0.2rem solid $accent-color;
 	margin-top: $line-rem - 0.2rem;
 }
 
