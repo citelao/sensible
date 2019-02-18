@@ -57,7 +57,6 @@ blockquote {
 	border-left: 0.2rem solid $blockquote-color;
 	margin: 0;
 
-	// rebeccapurple, but translucent:
 	background: transparentize($color: $blockquote-color, $amount: 0.9);
 	padding: $line-rem;
 	padding-left: $line-rem - 0.2rem;
