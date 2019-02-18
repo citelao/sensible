@@ -1,9 +1,12 @@
 body.home {
 	@include global_grid;
 
-	header,
-	section {
+	header {
 		grid-column: content;
+	}
+
+	section {
+		grid-column: article;
 	}
 
 	.hero {
