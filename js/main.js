@@ -3,7 +3,10 @@ const nav = document.getElementById("main_nav");
 
 menu_button.onclick = function()
 {
-	const is_active = main_nav.classList.contains("active");
+	const is_active = (menu_button.getAttribute("aria-checked") == "true");
+
+	menu_button.setAttribute("aria-checked", !is_active);
+
 	if(is_active) {
 		main_nav.classList.remove("active");
 	} else {
