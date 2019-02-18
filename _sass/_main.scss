@@ -9,8 +9,8 @@ html, body {
 body {
 	width: 100%;
 
-	color: #111;
-	background: #fee;
+	color: $main-text;
+	background: $main-background;
 
 	margin: $line-rem 0 0;
 
@@ -43,7 +43,7 @@ article {
 }
 
 .footnotes {
-	border-top: (0.1 * $line-rem) solid rebeccapurple;
+	border-top: (0.1 * $line-rem) solid $accent-color;
 	padding-top: (0.9 * $line-rem);
 	margin-top: $line-rem;
 }
@@ -51,12 +51,27 @@ article {
 footer {
 	@include global_grid;
 
-	background: #111;
-	color: #fff;
+	background: $dark-background;
+	color: $dark-text;
 	margin-top: $line-rem;
 
-
 	padding-bottom: $line-rem;
+
+	a {
+		color: $dark-link-color;
+
+		&:hover, &:focus {
+			color: $dark-link-hover-color;
+		}
+
+		&:visited {
+			color: $dark-link-color;
+
+			&:hover, &:focus {
+				color: $dark-link-hover-color;
+			}
+		}
+	}
 
 	@include breakpoint($begin-columns) {
 		.content {
@@ -80,7 +95,7 @@ header {
 			text-decoration: none;
 
 			&:hover {
-				color: $link_hover_color;
+				color: $link-hover-color;
 				text-decoration: underline;
 			}
 
@@ -88,9 +103,14 @@ header {
 				color: inherit;
 
 				&:hover {
-					color: $link_hover_color;
+					color: $link-hover-color;
 				}
 			}
 		}
 	}
+}
+
+.legalese {
+	@include rhythm-font-size(0.875rem, 1);
+	color: $dark-deemphasized-text;
 }
