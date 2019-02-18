@@ -14,3 +14,6 @@ $dark-text: #fff;
 $dark-background: #111;
 
 $dark-deemphasized-text: darken($dark-text, 20%);
+
+$dark-link-color: #86a6d8;
+$dark-link-hover-color: darken($dark-link-color, 20%);
