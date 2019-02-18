@@ -80,7 +80,7 @@ header {
 			text-decoration: none;
 
 			&:hover {
-				color: $link_hover_color;
+				color: $link-hover-color;
 				text-decoration: underline;
 			}
 
@@ -88,7 +88,7 @@ header {
 				color: inherit;
 
 				&:hover {
-					color: $link_hover_color;
+					color: $link-hover-color;
 				}
 			}
 		}

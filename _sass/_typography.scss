@@ -29,21 +29,21 @@ body {
 }
 
 a {
-	color: $link_color;
+	color: $link-color;
 	transition: all 0.1s;
 
 	&:hover, &:focus {
 		text-decoration: underline;
 
-		color: $link_hover_color;
+		color: $link-hover-color;
 		transition: all 0s;
 	}
 
 	&:visited {
-		color: $link_color;
+		color: $link-color;
 
 		&:hover, &:focus {
-			color: $link_hover_color;
+			color: $link-hover-color;
 		}
 	}
 
