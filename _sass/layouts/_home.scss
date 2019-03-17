@@ -21,6 +21,15 @@ body.home {
 			@include breakpoint($begin-columns) {
 				margin-top: 20vh;
 			}
+
+			h1 {
+				display: inline;
+				margin: 0;
+			}
+		}
+
+		.hero__maybe {
+			color: $deemphasized-text;
 		}
 
 		.hero__image {
