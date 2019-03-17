@@ -101,40 +101,6 @@ body.home {
 				font-size: 1.3rem;
 			}
 
-	nav {
-		margin-top: $line-height;
-		grid-column: full;
-
-		@include breakpoint($begin-columns) {
-			display: flex;
-			justify-content: space-between;
-
-			a {
-				flex-basis: 50%;
-			}
-		}
-	}
-
-	.block_link {
-		display: block;
-
-		color: $dark-text;
-		text-decoration: none;
-
-		background: url("https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
-		// Hacks for testing
-		&:first-child {
-			background: url("https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
-		}
-
-		margin: 0;
-		padding: 5rem 1rem;
-	}
-
-		.block_link__link {
-			text-decoration: underline;
-		}
-
 	footer {
 		grid-column: full;
 		grid-row: 5;
