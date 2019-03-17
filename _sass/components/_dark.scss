@@ -1,0 +1,20 @@
+@mixin dark {
+	background: $dark-background;
+	color: $dark-text;
+
+	a {
+		color: $dark-link-color;
+
+		&:hover, &:focus {
+			color: $dark-link-hover-color;
+		}
+
+		&:visited {
+			color: $dark-link-color;
+
+			&:hover, &:focus {
+				color: $dark-link-hover-color;
+			}
+		}
+	}
+}

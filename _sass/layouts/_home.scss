@@ -71,9 +71,7 @@ body.home {
 			grid-column: full;
 
 			@include global_grid;
-
-			background: $dark-background;
-			color: $dark-text;
+			@include dark;
 
 			padding: 2rem 0;
 
@@ -87,7 +85,7 @@ body.home {
 				line-height: (3 * $line-height) / (4 * $base-font-size);
 
 				@include breakpoint($begin-columns) {
-					font-size: 10rem;
+					font-size: 7rem;
 					line-height: (6 * $line-height) / (10 * $base-font-size);
 
 					grid-row: 1;
@@ -98,10 +96,9 @@ body.home {
 			}
 
 			.hero__answer__tagline {
-				grid-column: sidenotes;
-				@include breakpoint($begin-columns) {
-					grid-row: 1;
-				}
+				grid-column: article;
+
+				font-size: 1.3rem;
 			}
 
 	nav {
