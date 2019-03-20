@@ -19,7 +19,7 @@ body.home {
 			grid-column: content;
 
 			@include breakpoint($begin-columns) {
-				margin-top: 20vh;
+				margin-top: 2vh;
 			}
 
 			h1 {
