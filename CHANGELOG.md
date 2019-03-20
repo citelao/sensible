@@ -2,6 +2,7 @@
 
 ## v0.0.5
 
+- Changed: added a pretty homepage!
 - Fixed: no longer have a console error on the homepage.
 
 ## v0.0.4
