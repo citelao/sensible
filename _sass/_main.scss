@@ -50,28 +50,10 @@ article {
 
 footer {
 	@include global_grid;
+	@include dark;
 
-	background: $dark-background;
-	color: $dark-text;
 	margin-top: $line-rem;
-
 	padding-bottom: $line-rem;
-
-	a {
-		color: $dark-link-color;
-
-		&:hover, &:focus {
-			color: $dark-link-hover-color;
-		}
-
-		&:visited {
-			color: $dark-link-color;
-
-			&:hover, &:focus {
-				color: $dark-link-hover-color;
-			}
-		}
-	}
 
 	@include breakpoint($begin-columns) {
 		.content {

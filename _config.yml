@@ -17,7 +17,7 @@ title: Sensible Security
 author: Ben Stolovitz
 email: ben@stolovitz.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Computer security advice for the rest of us.
+  Free, complete, and concrete cybersecurity advice for the rest of us.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://security.stolovitz.com" # the base hostname & protocol for your site, e.g. http://example.com
 
