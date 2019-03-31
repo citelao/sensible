@@ -16,15 +16,22 @@ If [staying secure](/secure) means protecting your data's confidentiality, integ
 
 It's overwhelming: are you *going* to get hacked?
 
-Data seems to be everywhere---it lives on the cloud (on someone else's servers), it's on your own computers, it's at your Aunt Mae's house (and we know how bad Aunt Mae is with "the computers"). Password breaches seem to happen every day, scams seem everywhere, and the hackers seem to [have your Social Security number](https://www.washingtonpost.com/business/technology/equifax-hack-hits-credit-histories-of-up-to-143-million-americans/2017/09/07/a4ae6f82-941a-11e7-b9bc-b2f7903bab0d_story.html?utm_term=.144cd2c2c56a).
+## Have you been hacked today?
 
-You've watched the spy movies; you may have seen [NCIS](https://www.youtube.com/watch?v=msX4oAXpvUE). **Aren't hackers always one step ahead**?
+It sure seems like the Internet is on fire: your passwords have almost certainly leaked, Experian [probably leaked your Social Security number](https://www.washingtonpost.com/business/technology/equifax-hack-hits-credit-histories-of-up-to-143-million-americans/2017/09/07/a4ae6f82-941a-11e7-b9bc-b2f7903bab0d_story.html?utm_term=.144cd2c2c56a), and celebrities found their private photos stolen one by one [in 2014](https://en.wikipedia.org/wiki/ICloud_leaks_of_celebrity_photos).
 
-## Protect everything? Maybe
+Hackers are everywhere (and [unstoppable](https://www.youtube.com/watch?v=msX4oAXpvUE)), right?
 
-At the end of the day, you should try to protect yourself as much as you can. 
+## A guessing game
 
-Your data lives in the cloud, on someone else's servers. How it gets there is complex<!-- TODO link to explanation -->. Information is 
+To set the tone, I ask you to think about your friends and family; the computer users around you. In the United States, how many computers do you think have spyware on them?
 
-TODO link to HTTPS/internet explanation
+One in two? One in five? One in a twenty?
+
+The number is probably less than one in 200.
+
+Twice a year for over a decade, Microsoft has published the "Security Intelligence Report," an analysis of security data they collect across Windows. Within that data is information from the Malicious Software Removal Tool, a free downloadable program that scans (and removes) viruses and other malware.
+
+
+
 TODO privacy/data leaking
