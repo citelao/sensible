@@ -12,7 +12,26 @@ next:
     title: What is HTTPS?
 ---
 
-If [staying secure](/secure) means protecting your data's confidentiality, integrity, and availability all of the time, then how do you do it?
+Everyone is at risk of being hacked.
+
+That's the clear, explicit answer. You've probably heard it before, and it's true: anyone can be a cybercrime victim.
+
+However, we can go one step further. We have lots of good data about attack types, exposure rates, and hacking motivations.
+
+## "Who, me?" Yeah, you!
+
+---
+
+I can explain how likely it is that you will be hacked with two statements:
+
+1. Everyone is at risk of being hacked, and
+2. Hacking is much less common than you probably think.
+
+
+
+[Staying secure](/secure) means protecting your data's confidentiality, integrity, and availability all of the time. And hackers generally want your money (or maybe some information you have).
+
+
 
 It's overwhelming: are you *going* to get hacked?
 
