@@ -1,5 +1,10 @@
 {
     "search.exclude": {
         "**/_site/": true
-    }
+    },
+    "cSpell.words": [
+        "cybercrime",
+        "cybercriminals",
+        "unpatched"
+    ]
 }
