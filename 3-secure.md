@@ -38,11 +38,7 @@ To be truly safe, you must protect your data's confidentiality, integrity, and a
 
 ## Why does security matter?
 
-But why? That may seem like a "silly" question, but it's a really good point: if no one is being hacked, staying "secure" doesn't really matter.
-
-Trying to stay secure without knowing what it means is like adding deadbolts to your front door **when criminals will just break a window**<!-- TODO we have citations for this! -->. Trying to stay secure without knowing why it matters is like adding a deadbolt **without knowing if you have anything in your house**.
-
-I find it helpful to reframe "security" and the CIA triad in terms of practical outcomes. **What are you scared of on the Internet?**
+Security isn't important if it can't affect you. And it's worth considering: maybe hackers have nothing to gain from "ordinary" folks.
 
 I've found that most people are worried about the same things<!-- TODO cite folk models -->:
 
@@ -50,17 +46,15 @@ I've found that most people are worried about the same things<!-- TODO cite folk
 * hackers taking (or changing or deleting) your stuff, and
 * hackers hurting the people you care about.
 
-*This* is what you protect against by securing your computer.
+"Security" and the CIA triad can seem very abstract, but *these* fears are concrete. *This* is what you protect against by securing your computer.
 
-## All about the Benjamins, baby
+## Hackers want your money
 
-This list of fears is great because it also matches what *hackers* want.
+These worries are rational. **It turns out, hackers *do* want your money**.
 
-The Internet is complex and new; **perhaps there is other "bad stuff" that can happen to you**, that you don't even know to defend against.
+This can be reassuring if you worry you don't know what hackers could possibly take from you. There are many things to hack and many ways to hack them, but at the end of the day criminals want your money.
 
-It turns out, **hackers want money**.
-
-Every year, Verizon publishes a massive data breach report<!-- TODO cite -->---a report examining thousands of successful "hacks" across thousands of businesses. And every year they've measured, it's clear that criminals are mostly after money.
+Every year, Verizon publishes a massive report examining thousands of successful data breaches across thousands of businesses<!-- TODO cite -->. And every year, it's clear: **almost all data breaches are financially-motivated or for espionage** (corporate and government-affiliated). Hacking for fun, ideology, or grudge all trail distantly behind<!-- TODO cite -->.
 
 <aside class="sidenote">
 Or, in Verizon's words:
@@ -69,20 +63,16 @@ Or, in Verizon's words:
 greed... get the idea?
 </aside>
 
-**Almost all data breaches are financially-motivated or espionage** (corporate or government-affiliated). Hacking for fun, ideology, or grudge all trail distantly behind<!-- TODO cite -->.
-
 There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, hackers are just like your average brick-and-mortar criminal.
 
 ## Just like real life!
 
-The Internet provides crazy new opportunities for criminals to hack you, but hackers usually have straightforward goals: goals that you can understand. Goals you can prepare against.
+Hackers usually have straightforward goals: goals that you can understand. Goals you can prepare against.
 
-It's worth thinking about what scares *you*. Everyone is different, and everyone has different things they want to protect. Once you know what you're afraid *of*, you can begin to protect against it.
+Security is nice, but only if it helps *you*. Think about what you want to protect against. Everyone is different, and everyone has different things they want to protect. Once you know what you're afraid *of*, you can begin to protect against it.
 
 But there remains an open question. Am I target?
 
-I mentioned earlier that trying to stay secure without knowing what it means or why you're doing it is like trying to secure your home with a deadbolt when criminals might just use the window or avoid your house entirely.
-
-Trying to stay secure without knowing what the threats are is like trying to secure your house with a deadbolt when **criminals might not even exist**.
+Trying to stay secure without knowing what it means is like trying to secure your home with a deadbolt when criminals will just break a window, but trying to stay secure without knowing what the threats are is like trying to secure your house with a deadbolt when criminals might not even exist.
 
 So with that, it's worth asking: "will I even be hacked?"
