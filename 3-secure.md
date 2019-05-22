@@ -38,7 +38,7 @@ To be truly safe, you must protect your data's confidentiality, integrity, and a
 
 ## Why does security matter?
 
-Security isn't important if it can't affect you. And it's worth considering: maybe hackers have nothing to gain from "ordinary" folks.
+Security isn't important if it can't affect you. Maybe hackers have nothing to gain from "ordinary" folks.
 
 I've found that most people are worried about the same things<!-- TODO cite folk models -->:
 
@@ -48,11 +48,13 @@ I've found that most people are worried about the same things<!-- TODO cite folk
 
 "Security" and the CIA triad can seem very abstract, but *these* fears are concrete. *This* is what you protect against by securing your computer.
 
+These fears are also rational. There *are* hackers who want to take your money.
+
 ## Hackers want your money
 
-These worries are rational. **It turns out, hackers *do* want your money**.
+And it turns out that hackers are *very* focused on money.
 
-This can be reassuring if you worry you don't know what hackers could possibly take from you. There are many things to hack and many ways to hack them, but at the end of the day criminals want your money.
+This can be reassuring if you don't know what hackers even *want* from you. There are many things to hack and many ways to hack them, but at the end of the day criminals want your money.
 
 Every year, Verizon publishes a massive report examining thousands of successful data breaches across thousands of businesses<!-- TODO cite -->. And every year, it's clear: **almost all data breaches are financially-motivated or for espionage** (corporate and government-affiliated). Hacking for fun, ideology, or grudge all trail distantly behind<!-- TODO cite -->.
 
@@ -63,11 +65,27 @@ Or, in Verizon's words:
 greed... get the idea?
 </aside>
 
-There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, hackers are just like your average brick-and-mortar criminal.
+There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, **hackers are just like your average brick-and-mortar criminal**.
+
+## Hacking without malware: a note on cyber-stalking
+
+However, this data points out a fundamental gap between security researchers and everyday folk. Security research often focuses on hackers and malware, but users can lose their data without any of those things.
+
+There is a large data gap here: we do not have good data about privacy breaches or "friends guessing your password" in general. How frequently are Facebook photos accidentally made public? How often do public records reveal your address or personal information online?
+
+ **The best data we have comes from stalking research**, but even then there is very little of it.
+ 
+ Data from the Bureau of Justice suggests that about 1.4% of American adults have been stalked (2% of women; 0.7% of men). Of that 1.4%, at least two studies report that about 1 in 4 of these cases include any type of cyber-stalking, including things like unwanted emails or IMs.
+
+The same study from the Bureau of Justice indicates that about 3% of stalking cases in general include traditional "hacking"---specifically, installing spyware. Stalkers **stole from bank accounts** or credit cards in a **similar number of cases.**
+
+Stalking can dramatically change the type of threats you should look out for, but **I simply don't have the data to offer proven advice here**.
+
+The good news is that most prevention techniques I present here should prevent a lot of cyber-stalking, as far as I understand.
 
 ## Just like real life!
 
-Hackers usually have straightforward goals: goals that you can understand. Goals you can prepare against.
+In any case, hackers usually have straightforward goals: goals that you can understand. Goals you can prepare against.
 
 Security is nice, but only if it helps *you*. Think about what you want to protect against. Everyone is different, and everyone has different things they want to protect. Once you know what you're afraid *of*, you can begin to protect against it.
 

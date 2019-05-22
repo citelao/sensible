@@ -12,17 +12,19 @@ next:
     title: What is HTTPS?
 ---
 
-Anyone may be hacked.
+Hackers target everyone.
 
-That's the clear, explicit answer. You've probably heard it before! More specifically: cybercriminals will target anyone.
+That's the clear, explicit answer. You've probably heard something like it before!
 
 But you're probably safer than you think. Yes, hacking attempts are common---and some types are much more common than others---but success isn't. And the impact of a "successful" hack may be less catastrophic than you think.
 
-To understand your risk properly---and to plan for it---you need to read the data. How are people being hacked, and how often? This information is there, but it can be hard to find if you don't know what you're looking for.
-
 ## A hacker on every corner?
 
-One striking story that comes from this data is how threat models have changed since Windows XP's days.
+We have good data about how hackers approach targets and who's being hacked. For a sense of how important this data is, I like to look at how threats have changed since Windows XP's days in the early 2000's.
+
+<aside class="sidenote">
+Note that we don't have *great* data about "hacking" in cases like stalking or targeted harassment. The preliminary evidence we have suggests that such hacking is fairly rare and preventable, though. See **Privacy, leaking data, and hacking without malware**, below.
+</aside>
 
 In 2004, the Internet Storm Center stated that an unpatched Windows XP machine would be infected [within 20 minutes](https://www.theregister.co.uk/2004/08/19/infected_in20_minutes/) of being connected to the Internet. This is easy to believe. Windows XP:
 
@@ -35,6 +37,10 @@ Microsoft eventually released patches that turned on the firewall and fixed many
 That's not really the case today.
 
 Microsoft learned their lesson, and an ordinary, out-of-the-box Vista installation will almost certainly *never* be hacked this way. New versions of Windows include much stronger firewall, fantastic security software, and saner defaults. But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers (like Verizon!) spend billions every year cleaning up the Internet. Hundreds, if not thousands, of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime.
+
+<aside class="sidenote">
+Disclaimer: I work for Microsoft.
+</aside>
 
 It's still true that criminal networks "sweep" the Internet looking for insecure computers<!-- cite How Vulnerable Are Unprotected Machines on the Internet? -->, and it's still true that an unpatched Windows XP install will probably be hacked within 24 hours. In fact, if you turn off your security tools and deliberately sabotage your machine, you can probably get hacked this way on newer computers, too! But the world has grown and learned. Today's risks have almost nothing to do with automatic hacks in "20 minutes."
 
@@ -60,7 +66,7 @@ This spotlights how hackers have changed their methods, but there's also been a 
 
 In 2006 with the release of Windows Vista, Microsoft began including Windows Defender, a free anti-virus tool, in every Windows installation. Alongside other anti-virus companies like Kaspersky and Panda<!-- TODO cite -->, Microsoft also began publishing a security report twice a year, listing detailed statistics about the threats their users encountered.
 
-Though these statistics can only measure *detected* viruses, they paint a very helpful picture of the average computer. The numbers and periods don't all agree, but these reports suggest that a given US computer has a 15-35% chance of *seeing* at least one virus in a given quarter.
+Though these statistics can only measure *detected* viruses, they paint a very helpful picture of the average computer. The numbers and periods don't all agree, but these reports suggest that a given US computer has a 15-35% chance of *seeing* (not *catching*) at least one virus in a given quarter.
 
 More specifically, measuring the percentage of computers with at least one virus<!-- TODO I use the word virus freely to match with common usage, but I'd like to improve that --> detection:
 
@@ -86,28 +92,50 @@ According to Microsoft, between 0.25% and 0.55% of received emails in 2018 were 
 
 Phishing attempts are almost always followed by a virus<!-- TODO cite -->, which has a fairly high chance of being blocked, but the trend is clear: hackers are phishing to steal your passwords, then trying to use those passwords to hack your computer.
 
+## Stealing money isn't as easy as it looks
+
+But even with your password, hackers still have a lot of work to do to steal your money. Though it is ridiculously hard to measure actual *personal* loss from hacking (most estimates are overstated or phrased in terms of *business* loss), several things suggest that **a hacked password isn't actually that valuable**.
+
+First: given the sheer number of leaked passwords, either everyone has been hacked already or there are other safeguards. Consider that Experian leaked Social Security numbers for nearly half of all Americans, but most of us remain unhacked.
+
+<aside class="sidenote">
+Though the LifeLock guy was hacked 13 times after giving out his SSN, so I guess don't make yourself a target by daring people to steal your identity.
+
+Or by, uh, writing security advice on the Internet.
+</aside>
+
+Second: actual market rates for passwords are *really low*. One thief reported that hacked credentials go for about 1% of the account value (specifically, $250-$500 for a $40,000 account)<!-- TODO CITE  the underground economy -->. This indicates that most of the difficulty---and the danger---lies elsewhere.
+
+Third: several Federal laws severly limit your liability if you are digitally defrauded (like, to a $50 liability in many cases). Banks and credit cards often offer *zero* liability in many cases, too.
+
+Identity theft, fraud, and hacking in general are of course extremely stressful and scary things, but it may be comforting to know that you have a good deal of protection from your banks and the government. They don't like theft either.
+
+## Privacy, leaking data, and hacking without malware
+
+Despite these notes of optimism, it's worth pointing out a gap in our data. Beyond active hacking, there lies a world of privacy breaches and leaked information.
+
+As I mentioned in [**What is secure?**](/secure/), we don't have explicit data on this. Specifically, it's unclear how often these breaches (or accidental leaks or hacking without malware) occur and what impact such leaks even *have* on everyday users.
+
+Preliminary data from the few studies on *stalking* that examine cyber-stalking suggests that this is rare even among stalking victims. As mentioned earlier, about 3% of stalking includes identity theft (stealing from bank accounts, unauthorized purchases, etc.), and 3% includes the use of spyware.
+
+In other words, the data suggests that cyber-stalking is rare, but it is not strong enough to suggest ignoring it entirely.
+
+**If you are worried about this type of harassment, I do not think this guide is a complete solution for you**.
+
+It will help---the data indicates that my advice will prevent a good deal of targeted attacks---but this is a situation that requires expert, personalized help.
+
 ## Conclusion
 
-Altogether, this paints a familiar picture of security in 2018.
+Despite the caveat about stalking and harassment, this information paints a familiar picture of security in 2019.
 
-If you're active online, you're probably getting phishing emails every few weeks (especially if you check your junk mail). You may see malware, but your computer will probably block it. Lots of services work in the background to make you safe, so even if you don't *feel* safe, your computer is a lot safer than one from 2004.
+If you're active online, you're probably getting phishing emails every few weeks (especially if you check your junk mail). You may see malware, but your computer will probably block it.
 
-You're probably worried about hackers---aren't they everywhere?---but you probably haven't been hacked yet. You've heard that password breaches are common, but you have yet to see any consequences from them.
+Lots of services work in the background to make you safe, so even if you don't *feel* safe, your computer is a lot safer than one from 2004.
 
-Surely there's something you can do to be safer; surely there's something you can do to be safer.
+You're probably worried about hackers---aren't they everywhere?---but you probably haven't been hacked yet. You've heard that password breaches are common, but you have yet to see any consequences from them. You're sure your address is available on the Internet, but nothing seems to have come of it. Are your pictures available online? Who can see your Facebook albums? What happens if an ex wants to hurt you?
+
+Surely there's something you can do to be safer; surely there's something you can do to protect yourself.
 
 And there is. There are a bunch of steps you can take---based on this data---that will protect you and the people you care about.
 
 And part of that means learning about HTTPS.
-
----
-
-TODO privacy/data leaking
-TODO password/data breaches
-TODO difficulty of stealing money
-
-## They're getting through our shields, Captain!
-
-Microsoft's reports also give us evidence about how effective anti-virus software is.
-
-TODO
