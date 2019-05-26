@@ -18,12 +18,37 @@ That's the clear, explicit answer. You've probably heard something like it befor
 
 But you're probably safer than you think. Yes, hacking attempts are common---and some types are much more common than others---but success isn't. And the impact of a "successful" hack may be less catastrophic than you think.
 
-## A hacker on every corner?
+## I don't think that word means what you think it means
 
-We have good data about how hackers approach targets and who's being hacked. For a sense of how important this data is, I like to look at how threats have changed since Windows XP's days in the early 2000's.
+Up till now, I've been using the term "hacker" loosely. Specifically, I've called anyone who wants your data a "hacker."
+
+This illustrates a difference between common folks and security researchers. Most folks use the term loosely, to refer to almost any type of data breach (imagine saying "my Facebook got hacked" if you left it logged in to a public computer and someone posted on your timeline). But security researchers generally use "hacking" to mean breaking security with some sort of tool: think infecting computers with viruses, sending phishing emails, and scanning networks for vulnerabilities.
 
 <aside class="sidenote">
-Note that we don't have *great* data about "hacking" in cases like stalking or targeted harassment. The preliminary evidence we have suggests that such hacking is fairly rare and preventable, though. See **Privacy, leaking data, and hacking without malware**, below.
+Similarly, we use "virus" to refer to what security researchers would call malware, of which viruses are only one type; there are also worms, spyware, ransomware, and more.
+</aside>
+
+In other words, there's:
+
+* "true" hacking---generally what you imagine a faceless TV show villain to do---and
+* "folk" hacking---what most people are actually afraid of.
+
+<!-- TODO cite folk models; Access Control for Home Data Sharing: Attitudes, Needs and Practices -->
+
+Your friend guessing your Facebook password, or an app accidentally deleting your files, or an ex finding your photos---or a stalker looking up your address on the Internet---are not "true" hacking.
+
+This is an important distinction. Most security research focuses on "true" hacking, and hard evidence about "folk" hacking (that doesn't come from a survey) is hard to come by.
+
+However, we have great data about "true" hacking, and it seems like most of the work to protect against that will protect against the other threats, too. 
+
+I'll go into a little more detail about "folk" hacking later. From now on, I'll use the scientific definition of the word and indicate if I am not.
+
+## A hacker on every corner?
+
+We have good data about how hackers approach targets and who's being hacked. For a sense of how important this data is in protecting yourself, I like to look at how threats have changed since Windows XP's days in the early 2000's.
+
+<aside class="sidenote">
+Though, again, we don't have great general data about "hacking" that doesn't involve viruses or phishing or "black balaclava" hackers.
 </aside>
 
 In 2004, the Internet Storm Center stated that an unpatched Windows XP machine would be infected [within 20 minutes](https://www.theregister.co.uk/2004/08/19/infected_in20_minutes/) of being connected to the Internet. This is easy to believe. Windows XP:
@@ -92,6 +117,23 @@ According to Microsoft, between 0.25% and 0.55% of received emails in 2018 were 
 
 Phishing attempts are almost always followed by a virus<!-- TODO cite -->, which has a fairly high chance of being blocked, but the trend is clear: hackers are phishing to steal your passwords, then trying to use those passwords to hack your computer.
 
+## Hackers want your money
+
+And, very clearly, those hackers are using your passwords to steal your money.
+
+This can be reassuring if you don't know what hackers even *want* from you. There are many things to hack and many ways to hack them, but at the end of the day criminals want your money.
+
+Every year, Verizon publishes a massive report examining thousands of successful data breaches across thousands of businesses<!-- TODO cite -->. And every year, it's clear: **almost all data breaches are financially-motivated or for espionage** (corporate and government-affiliated). Hacking for fun, ideology, or grudge all trail distantly behind<!-- TODO cite -->.
+
+<aside class="sidenote">
+Or, in Verizon's words:
+
+> So why do the Actors do what they do? Money, loot, cash, filthy lucre,
+greed... get the idea?
+</aside>
+
+There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, **hackers are just like your average brick-and-mortar criminal**.
+
 ## Stealing money isn't as easy as it looks
 
 But even with your password, hackers still have a lot of work to do to steal your money. Though it is ridiculously hard to measure actual *personal* loss from hacking (most estimates are overstated or phrased in terms of *business* loss), several things suggest that **a hacked password isn't actually that valuable**.
@@ -104,7 +146,7 @@ Though the LifeLock guy was hacked 13 times after giving out his SSN, so I guess
 Or by, uh, writing security advice on the Internet.
 </aside>
 
-Second: actual market rates for passwords are *really low*. One thief reported that hacked credentials go for about 1% of the account value (specifically, $250-$500 for a $40,000 account)<!-- TODO CITE  the underground economy -->. This indicates that most of the difficulty---and the danger---lies elsewhere.
+Second: actual market rates for passwords are *really low*. One thief reported that hacked credentials go for about 1% of the account value (specifically, $250-$500 for a $40,000 account)<!-- TODO CITE  the underground economy & Norton 2018 -->. This indicates that most of the difficulty---and the danger---lies elsewhere.
 
 Third: several Federal laws severly limit your liability if you are digitally defrauded (like, to a $50 liability in many cases). Banks and credit cards often offer *zero* liability in many cases, too.
 
@@ -112,17 +154,29 @@ Identity theft, fraud, and hacking in general are of course extremely stressful 
 
 ## Privacy, leaking data, and hacking without malware
 
-Despite these notes of optimism, it's worth pointing out a gap in our data. Beyond active hacking, there lies a world of privacy breaches and leaked information.
+Despite these notes of optimism, it's worth jumping back to the gap in our data I mentioned earlier.
 
-As I mentioned in [**What is secure?**](/secure/), we don't have explicit data on this. Specifically, it's unclear how often these breaches (or accidental leaks or hacking without malware) occur and what impact such leaks even *have* on everyday users.
+Security research often focuses on hackers and malware, but users can lose their data without any of those things. Beyond active hacking, there lies a world of privacy breaches and leaked information.
 
-Preliminary data from the few studies on *stalking* that examine cyber-stalking suggests that this is rare even among stalking victims. As mentioned earlier, about 3% of stalking includes identity theft (stealing from bank accounts, unauthorized purchases, etc.), and 3% includes the use of spyware.
+We don't have explicit data on this. Specifically, it's unclear how often these breaches (or accidental leaks or hacking without malware) occur and what impact such leaks even *have* on everyday users.
+
+How frequently are Facebook photos accidentally made public? How often do public records reveal your address or personal information online? Do people lose money or sleep because of this?
+
+Preliminary data from the few studies on *stalking* that examine cyber-stalking suggests that this is rare even among stalking victims. About 3% of stalking includes identity theft (stealing from bank accounts, unauthorized purchases, etc.), and 3% includes the use of spyware.
+
+ <aside class="sidenote">
+However, this same study estimates that 1.4% of American adults have been stalked (2% of women; 0.7% of men), but some studies put the intimate partner stalking rate alone at between 5-15% of American woman!
+
+It's clear that any conclusions from this should be considered **extremely preliminary**.
+ </aside>
 
 In other words, the data suggests that cyber-stalking is rare, but it is not strong enough to suggest ignoring it entirely.
 
 **If you are worried about this type of harassment, I do not think this guide is a complete solution for you**.
 
-It will help---the data indicates that my advice will prevent a good deal of targeted attacks---but this is a situation that requires expert, personalized help.
+In other words, I simply don't have the data to offer proven advice here.
+
+My advice will help---my advice will prevent a good deal of targeted attacks---but this is a situation that requires expert, personalized help.
 
 ## Conclusion
 
