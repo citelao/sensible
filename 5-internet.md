@@ -3,14 +3,6 @@
 published: false
 ---
 
-## The cloud changes things
-
-To make matters worse, securing your data "all the time" takes a lot more work than it did 10 (or even 5) years ago. Today, **most of your life probably lives on servers in the cloud** somehow. Family photos, bank account numbers, your secret cookie recipe, your text messages to your spouse: all of these fly across the Internet when you access them.
-
-Tools like antivirus software, firewalls, and spam filters are important parts of keeping your data secure, but using them haphazardly is not enough.
-
-To keep your data safe, you must protect it every step of the way.
-
 ## Protocols and servers
 
 The "Internet" is, at its core, a way of sending messages from one computer to another. It's a collection of rules and computers that follow those rules: "protocols" and "servers."

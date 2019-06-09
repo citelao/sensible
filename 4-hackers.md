@@ -39,9 +39,9 @@ Your friend guessing your Facebook password, or an app accidentally deleting you
 
 This is an important distinction. Most security research focuses on "true" hacking, and hard evidence about "folk" hacking (that doesn't come from a survey) is hard to come by.
 
-However, we have great data about "true" hacking, and it seems like most of the work to protect against that will protect against the other threats, too. 
+However, we have great data about "true" hacking, and it seems like most of the work to protect against that will protect against the other threats, too.
 
-I'll go into a little more detail about "folk" hacking later. From now on, I'll use the scientific definition of the word and indicate if I am not.
+I'll go into a little more detail about "folk" hacking later, but from now on, I'll use the scientific definition of the word "hacking." I'll indicate if when I'm talking about folk hacking.
 
 ## A hacker on every corner?
 
@@ -57,11 +57,13 @@ In 2004, the Internet Storm Center stated that an unpatched Windows XP machine w
 * had poor built-in security software (so it could not stop threats once they connected), and it
 * had notoriously insecure default settings (so hackers had many ways to take over your machine).
 
-Microsoft eventually released patches that turned on the firewall and fixed many of the bad defaults (the "Service Packs"), but the damage was done. Securing a new XP machine meant hoping you could download the patches before you got a virus.
+Microsoft eventually released patches (the "Service Packs") that turned on the firewall and fixed many of the bad defaults, but the damage was done. Securing a new XP machine meant hoping you could download the patches before you got a virus.
 
 That's not really the case today.
 
-Microsoft learned their lesson, and an ordinary, out-of-the-box Vista installation will almost certainly *never* be hacked this way. New versions of Windows include much stronger firewall, fantastic security software, and saner defaults. But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers (like Verizon!) spend billions every year cleaning up the Internet. Hundreds, if not thousands, of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime.
+Microsoft learned their lesson, and an ordinary, out-of-the-box Vista installation will almost certainly *never* be hacked this way. New versions of Windows include much stronger firewall, fantastic security software, and saner defaults. But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers spend billions every year cleaning up the Internet. Hundreds, if not thousands, of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime.
+
+<!-- TODO you must keep it up-to-date though! -->
 
 <aside class="sidenote">
 Disclaimer: I work for Microsoft.
@@ -75,9 +77,9 @@ In a large part *because* of how easy it was to get hacked back then, computers 
 
 And with that new protection comes new data.
 
-Specifically, we can look at the numbers to identify *modern* threats. Security companies (including Kaspersky and Microsoft) keep track of the threats their computers see, and publish frequent reports. Today, **most threats come from email and web browsing**---not passive attacks (like the ones detailed above) or physical attacks (like a hacker inserting a virus-laden USB stick into your computer).
+Specifically, we can look at the numbers to identify *modern* threats. Security companies (including Kaspersky and Microsoft) keep track of the threats their computers see, and they publish frequent reports. Today, **most threats come from email and web browsing**---not passive attacks (like the ones detailed above) or physical attacks (like a hacker inserting a virus-laden USB stick into your computer).
 
-In fact, Verizon indicates that the overwhelming majority of malware (93.8%!) is sent by email, followed by browser (5.8%)<!-- TODO Verizon DBIR 2017 pg. 40 -->. The remaining 0.4% is sent (and detected) by other means.
+Every year, Verizon a massive report examining thousands of successful data breaches across thousands of businesses<!-- TODO cite -->. In their most recent reports, they indicate that the overwhelming majority of malware (93.8%!) is sent by email, followed by browser (5.8%)<!-- TODO Verizon DBIR 2017 pg. 40 -->. The remaining 0.4% is sent (and detected) by other means.
 
 <aside class="sidenote">
 Note that these numbers vary (widely) by country.
@@ -111,9 +113,11 @@ This is very different from 2004, where you apparently couldn't turn on your com
 
 ## But you are getting phished, right?
 
-In fact, if 2004 was the era of pervasive hackers, 2018 is the era of pervasive phishing.
+In fact, if 2004 was the era of pervasive hackers, 2019 is the era of pervasive phishing.
 
-According to Microsoft, between 0.25% and 0.55% of received emails in 2018 were phishing. While that may not seem like a lot, consider this: that means one in every 200-400 emails was phishing. By those numbers, if you get 30 emails a day, you'd get nearly one phishing email a week!
+According to Microsoft, between 0.25% and 0.55% of received email in 2018 were phishing. While that may not seem like a lot, consider this: that means one in every 200-400 emails was phishing. By those numbers, if you get 30 emails a day, you'd get nearly one phishing email a week!
+
+<!-- TODO also the other study about prevalance -->
 
 Phishing attempts are almost always followed by a virus<!-- TODO cite -->, which has a fairly high chance of being blocked, but the trend is clear: hackers are phishing to steal your passwords, then trying to use those passwords to hack your computer.
 
@@ -123,7 +127,7 @@ And, very clearly, those hackers are using your passwords to steal your money.
 
 This can be reassuring if you don't know what hackers even *want* from you. There are many things to hack and many ways to hack them, but at the end of the day criminals want your money.
 
-Every year, Verizon publishes a massive report examining thousands of successful data breaches across thousands of businesses<!-- TODO cite -->. And every year, it's clear: **almost all data breaches are financially-motivated or for espionage** (corporate and government-affiliated). Hacking for fun, ideology, or grudge all trail distantly behind<!-- TODO cite -->.
+Every year, Verizon's Data Breach Investigations Report examines hacker's motives. And every year, it's clear: **almost all data breaches are financially-motivated or for espionage** (corporate and government-affiliated). Hacking for fun, ideology, or grudge all trail distantly behind<!-- TODO cite -->.
 
 <aside class="sidenote">
 Or, in Verizon's words:
@@ -146,11 +150,13 @@ Though the LifeLock guy was hacked 13 times after giving out his SSN, so I guess
 Or by, uh, writing security advice on the Internet.
 </aside>
 
-Second: actual market rates for passwords are *really low*. One thief reported that hacked credentials go for about 1% of the account value (specifically, $250-$500 for a $40,000 account)<!-- TODO CITE  the underground economy & Norton 2018 -->. This indicates that most of the difficulty---and the danger---lies elsewhere.
+Second: actual market rates for passwords are *really low*. One thief reported that hacked credentials go for about 1% of the account value (specifically, $250-$500 for a $40,000 account)<!-- TODO CITE the underground economy & Norton 2018 -->. This indicates that most of the difficulty---and the danger---lies elsewhere.
 
 Third: several Federal laws severly limit your liability if you are digitally defrauded (like, to a $50 liability in many cases). Banks and credit cards often offer *zero* liability in many cases, too.
 
 Identity theft, fraud, and hacking in general are of course extremely stressful and scary things, but it may be comforting to know that you have a good deal of protection from your banks and the government. They don't like theft either.
+
+<!-- TODO cite Is Everything We Know About Password-Stealing Wrong? -->
 
 ## Privacy, leaking data, and hacking without malware
 
@@ -164,7 +170,8 @@ How frequently are Facebook photos accidentally made public? How often do public
 
 Preliminary data from the few studies on *stalking* that examine cyber-stalking suggests that this is rare even among stalking victims. About 3% of stalking includes identity theft (stealing from bank accounts, unauthorized purchases, etc.), and 3% includes the use of spyware.
 
- <aside class="sidenote">
+<aside class="sidenote">
+<!-- TODO annual vs total; but a 7-mo period saw ~5%. Research on Partner Stalking: Putting the Pieces Together -->
 However, this same study estimates that 1.4% of American adults have been stalked (2% of women; 0.7% of men), but some studies put the intimate partner stalking rate alone at between 5-15% of American woman!
 
 It's clear that any conclusions from this should be considered **extremely preliminary**.
