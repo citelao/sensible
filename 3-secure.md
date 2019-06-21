@@ -38,7 +38,7 @@ To be truly safe, you must protect your data's confidentiality, integrity, and a
 
 ## Bringing it to the real world
 
-It's worth stepping back to consider what this means for you and the people you care about. Security, after all, means nothing if you're not protecting anything. Maybe hackers have nothing to gain from "ordinary" folks.
+The CIA triad describes abstract concepts. It's worth thinking about what security means for you and the people you care about. Security, after all, means nothing if you're not protecting things for a reason.
 
 I've found that most people are worried about the same things<!-- TODO cite folk models -->:
 
@@ -46,14 +46,14 @@ I've found that most people are worried about the same things<!-- TODO cite folk
 * hackers taking (or changing or deleting) your stuff, and
 * hackers hurting the people you care about.
 
-"Security" and the CIA triad can seem very abstract, but *these* fears are concrete. *This* is what you protect against by securing your computer.
+"Security" and the CIA triad can seem very abstract, but *these* fears are concrete. *This* is what you protect against by securing your computer. Think about what you want to protect. It can help you decide what precautions to take.
 
-Security is nice, but only if it helps *you*. Think about what you want to protect: everyone is different and this is different for everyone. After all: you can't protect anything if you don't know what you're guarding.
+After all: you can't protect anything if you don't know what you're guarding.
 
-## Who's asking?
+## Does security impact you?
 
 But there remains an open question. Am I target?
 
-You know what's important to you, but maybe it's not important to hackers. Do people really want to know your Netflix password, or home address, or phone number, or family photos? 
+You know what's important to you, but maybe it's not important to hackers. Do people really want to know your Netflix password, or home address, or phone number, or family photos? If hackers steal your data, what impact will it have on you?
 
 So with that: "will I even be hacked?"
