@@ -51,9 +51,7 @@ In general, you can divide hacking into two categories:
 
 This is not because there are two "ways" to hack (there are actually many!), but more because it explains how regular folks get hacked.
 
-Without specific numbers, I would estimate that ~50% of Americans have been a victim of a scalable attack (consider that nearly 1 in 2 Americans lost their Social Security Numbers in the 2017 Equifax data breach).
-
-And targeted attacks are rare enough to make the news.
+Without specific numbers, I would estimate that ~50% of Americans have been a victim of a scalable attack (consider that nearly 1 in 2 Americans lost their Social Security Numbers in the 2017 Equifax data breach), but targeted attacks are rare enough to make the news.
 
 ## Hackers want your money
 
@@ -95,6 +93,8 @@ Other research<!-- TODO CITE the underground economy & Norton 2018 --><!-- TODO 
 Banks hate fraud in much the same way you do---but they shield you from it. After all, crime is bad for business. They freely pay you back for fraud because they want you to feel safe (and spend money).
 
 Banks lose over $40 million each year to *physical theft*, but you don't hear about it---they write it off and pay you back. It's the same for credit cards. In a survey, 80% of credit card fraud victims lost nothing at all, and 97% lost less than $1000<!-- TODO Synovate -->. Surveys like this are notorious for exaggerating costs, so these numbers are eye-opening.
+
+<!-- TODO that's why non-repudiatable scams are much more common -->
 
 ## The other costs
 

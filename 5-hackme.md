@@ -42,13 +42,21 @@ These are all real threats, but, as the last section examined, they may not be a
 
 This is very true for hacking. Hacking isn't a scalable attack, and the payoff for hacking one specific person is just so miniscule that most hackers don't even bother. It simply doesn't pay to hack people individually.
 
+<aside class="sidenote">
+Hacking doesn't pay---unless, of course, your attacker isn't trying to steal money. But again, it's unclear how many people are stalked or targetted personally, and it's unclear how much of that translates into hacking.
+</aside>
+
 Furthermore, hacking isn't really the unknowable, scary beast that we make it out to be.
 
-It can sometimes seem that there are new security vulnerabilities every day: new bugs, new exploits, new backdoors. This is true to an extent! In fact, the 2018 Spectre and Meltdown attacks revealed that almost *every* CPU from the late 90's to today was vulnerable to two *huge* attacks<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
+It can sometimes seem that there are new security vulnerabilities every day: new bugs, new exploits, new backdoors. This is true! In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
 
-However, Verizon's Data Breach Investigations Report, which analyzes tens of thousands of breaches and security incidents annually, found that nearly 70% of all hacking breaches involved *stolen passwords* or credentials of some kind<!-- DBIR 2019 pg 10 -->. At most 6% of successful hacking incidents had anything to do with software vulnerabilities (a further 10% involved other types of exploitation)<!-- DBIR 2019 pg 10 -->. And this data includes state-sponsored attacks and corporate espionage---not just financial hacking.
+However, these vulnerabilities don't really translate to hacking. Verizon's Data Breach Investigations Report, which analyzes tens of thousands of breaches and security incidents annually, found that *at most* 6% of successful hacking incidents (of corporations) had anything to do with software vulnerabilities like this<!-- DBIR 2019 pg 10 -->. In fact, nearly 70% of all "hacking" breaches involve *stolen passwords*.
 
-In other words, most hacking today is just folks using stolen passwords. And even that's not very scalable.
+Your computers may be riddled with holes, but hackers don't care. They just use the key they found under the mat.
+
+And this data includes state-sponsored attacks and corporate espionage---not just financial hacking.  Despite being possible for two decades, those 2018 vulnerabilities that exposed theoretically everything on everyone's systems for two decades have probably never been exploited<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Mitigation -->.
+
+In other words, most hacking today is just folks using stolen passwords. And even that sort of hacking is not very scalable.
 
 ### Malware
 
@@ -62,12 +70,14 @@ The numbers don't always agree, but most reports suggest that two-thirds of comp
 
 And of the 1/3 that did see a virus, it's reasonable to estimate that over 99% of these computers detected and removed the virus themselves<!-- older Microsoft SIRs  -->.
 
+<!-- TODO: how does this gel with how my friends have adware or unwanted applications? -->
+
 Malware is still quite common (1 in 3 is rather high), especially in different parts of the world (computers in India are more than twice as likely to encounter a virus as computers in the US<!-- TODO Cite MSIR regionals -->). But the Internet of 2019 is very different than the Internet of a decade ago. Software companies have stepped up, and a computer running modern Windows has effective, top-tier virus protection. For free.
 
 <aside class="sidenote">
 This doesn't even mention the *millions* of computers running Linux or macOS. Neither of these have antivirus software by default.
 
-These computers can get viruses just like Windows computers, but criminals don't write many viruses for them because it's so much more lucrative to go after the larger Windows market.<!-- TODO this is an interesting indicator that modern viruses are meant mostly for botnetting, so they go for market volume rather than total financial size of TAM. This is probably the case, since most viruses probably aren't actively exfilling bank creds; they seem to be either deployed to get the machine itself or to further some other plot. -->
+These computers can get viruses just like Windows computers, but criminals don't write many viruses for them because it's so much more lucrative to go after the larger Windows market.<!-- TODO this is an interesting indicator that modern viruses are meant mostly for botnetting, so they go for market volume rather than total financial size of TAM. This is probably the case, since most viruses probably aren't actively exfilling bank creds; they seem to be either deployed to get the machine itself or to further some other plot. Also, really why aren't there mac viruses?-->
 </aside>
 
 ## Phishing
@@ -82,7 +92,7 @@ This dropoff underscores the larger point: criminals want money. Spam, which pay
 
 However, these rates are still very high, especially compared to the earlier examples of hacking and malware from the Internet, both of which barely show up on the radar.
 
-Norton's phishing numbers are actually on the low side. Microsoft estimates the overall phishing email rate to be about 10x higher---sitting between 0.25% and 0.55% monthly in 2018<!-- MSIR 24 -->. And Cyren, an enterprise security vendor, found that undetected phishing made up a further 0.26% of all email in 2018<!-- Cyren Email Security Gap -->.
+Norton's phishing numbers are actually on the low side. Microsoft estimates the overall phishing email rate to be about 10x higher---sitting between 0.25% and 0.55% monthly in 2018<!-- MSIR 24 pg. 20 -->. And Cyren, an enterprise security vendor, found that undetected phishing made up a further 0.26% of all email in 2018<!-- Cyren Email Security Gap -->.
 
 Given how much email we receive daily, these numbers are troubling. Not *staggering*, and certainly still manageable, but troubling nonetheless.
 
@@ -96,7 +106,13 @@ For that, look to the VERIS schema, which Verizon uses to classify data for its 
 2019's DBIR investigated over 40,000 security incidents.
 </aside>
 
-VERIS specifies 7 different "action" categories that can lead to a security incident. In addition to malware, hacking, and social (its category for phishing and related attacks), VERIS also offers:
+VERIS specifies 7 different "action" categories that can lead to a security incident. In addition to:
+
+* malware,
+* hacking, and 
+* social (its category for phishing and related attacks),
+
+VERIS also offers:
 
 * **Misuse**: things like admins abusing access to emails and logs.
 * **Physical**: things like theft.
