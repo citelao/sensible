@@ -8,8 +8,8 @@ previous:
     url: /https/
     title: What is HTTPS?
 next:
-    url: /tfa/
-    title: "Advice to take: two-factor authentication"
+    url: /passwords/
+    title: Passwords & two-factor authentication
 ---
 
 It's clear that [hackers target everyone](/hackers/) and that they're focused on *easy*, [scalable](/how_hacked/) attacks.
@@ -31,9 +31,9 @@ Here are four *evidence-based* things you can do *right now* to make yourself mo
 
 ## Advice to avoid
 
-1. **Don't** pay money for antivirus software.
-2. **Don't** use or pay money for a VPN.
-3. **Don't** worry about password strength that much.
+1. **Don't** worry about password strength that much.
+2. **Don't** pay money for antivirus software.
+3. **Don't** use or pay money for a VPN.
 
 ## What?!
 
