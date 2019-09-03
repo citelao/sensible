@@ -5,7 +5,7 @@ short_title: I'm under attack now
 title: What if you're being attacked?
 description: TODO
 date: 2019-09-01T12:00:00
-permalink: /under_attack/
+permalink: /help/
 ---
 
 If you're under attack now, there are immediate steps you can take to defend yourself.
@@ -62,3 +62,4 @@ In almost all cases, though, **call the police**. They may not be the best resou
   > Crash Override is a crisis helpline, advocacy group and resource center for people who are experiencing online abuse.
 
 <!-- TODO journalists, folks who need to be secret online, etc -->
+<!-- TODO via femfreq: A DIY Guide to Feminist Cybersecurity, and TrollBusters, as well as Violet Blue’s The Smart Girl’s Guide to Privacy. -->

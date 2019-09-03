@@ -5,7 +5,11 @@ short_title: Good passwords
 title: Choosing good passwords
 description: There's a good way to write passwords. It's just not commonly known.
 date: 2018-11-26T12:00:00
-permalink: /passwords/
+permalink: /good_passwords/
+---
+
+TODO rewrite to say why they aren't super important
+
 ---
 
 Passwords suck {% cite grassi2017nist -L appendix  -l Appendix A %}.
