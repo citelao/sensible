@@ -1,7 +1,31 @@
 <nav id="main_nav" class="menu_list">
   <ul>
     {% for p in site.pages %}
-      {% if p.layout == "page" and p.type != "sidequest" %}
+      {% if p.layout == "page" and p.type != "sidequest" and p.type != "advice_to_take"%}
+        <li>
+          {% if page.url == p.permalink %}
+            <span class="current">
+          {% else %}
+            <a href="{{p.permalink}}">
+          {% endif %}
+            {% if p.short_title %}
+              {{p.short_title}}
+            {% else %}
+              {{p.title}}
+            {% endif %}
+          {% if page.url == p.permalink %}
+            </span>
+          {% else %}
+            </a>
+          {% endif %}
+          </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <h2>Advice to take</h2>
+  <ul>
+    {% for p in site.pages %}
+      {% if p.layout == "page" and p.type == "advice_to_take" %}
         <li>
           {% if page.url == p.permalink %}
             <span class="current">
