@@ -73,6 +73,31 @@ body.page {
 				margin-bottom: 0;
 			}
 		}
+
+		a[href^='http'] {
+			&:hover, &:focus {
+				&:after {
+					background: $link-hover-color;
+					color: $dark-text;
+					border-color: $link-hover-color;
+				}
+			}
+
+			&:after {
+				content: '↗';
+	
+				display: inline-block;
+				font-size: 0.75em;
+				margin-left: 0.3em;
+				padding: 0.1em;
+	
+				border: 0.1em solid;
+				border-radius: 0.2em;
+				vertical-align: super;
+	
+				line-height: 1;
+			}
+		}
 	}
 
 	footer {
