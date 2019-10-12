@@ -49,7 +49,7 @@ For example, hackers can just ask you for your password---phishing is pervasive 
 
 Similarly, when hackers *do* "guess," they almost always try the most common passwords---which can be pretty effective. But companies understand these attacks and can stop them easily: most big online companies prevent password guesses after a few failed attempts.
 
-Hackers attempting this---at least against large companies like Microsoft, Facebook, Google, Apple, and even your local bank---can only test a few dozen passwords per account per day at most. If your password is [reasonably good](/good_passwords/) and isn't in the top most common passwords, you're essentially immune.
+Hackers attempting this---at least against large companies like Microsoft, Facebook, Google, Apple, and even your local bank---can only test a few dozen passwords per account per day at most. If your password is reasonably good and isn't in the top most common passwords, you're essentially immune.
 
 This doesn't cover all attacks on passwords, but looking at more "overall" data paints the same picture<!-- An Administrator’s Guide to Internet Password Research; Your Pa$$word doesn't matter; -->. Most attacks just don't care about password strength so long as it's "good enough."
 
@@ -77,6 +77,8 @@ Instead of worrying about how many special characters to put in your password, s
 I find it calming to turn on two-factor authentication for as many accounts as I can, but these are the most important (how much harm can a hacker do with your Netflix account?).
 
 There are downsides and nuances to two-factor authentication (some folks argue that you should *never* use SMS-based two-factor<!-- TODO cite -->), but those are asides that change with the times.
+
+No matter what method you use, two-factor authentication will protect you from most attacks.
 
 You should still put a little effort into choosing [reasonably good](/good_passwords/) passwords, but two-factor authentication does a *ton* to keep you safe.
 

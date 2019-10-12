@@ -10,7 +10,7 @@ permalink: /help/
 
 If you're under attack now, there are immediate steps you can take to defend yourself.
 
-Hacking attacks can be scary, but there are resources to help you.People have been attacked, hacked, and defrauded all sorts of ways before you. We've learned from that, and we have guides that will *actually* keep you safe.
+Hacking attacks can be scary, but there are resources to help you. People have been attacked, hacked, and defrauded all sorts of ways before you. We've learned from that, and we have guides that will *actually* keep you safe.
 
 <aside class="sidenote">
 Especially when it comes to money, banks, and credit cards, US law (and often international law) is on your side.
