@@ -24,16 +24,16 @@ Here are four *evidence-based* things you can do *right now* to make yourself mo
 
 ## Advice to take
 
-1. Turn on two-factor authentication on your key accounts (at least email and finance).
-2. Freeze your credit at the 3 largest credit bureaus.
-3. Pay for and use automatic backup software.
+1. Turn on [two-factor authentication](/passwords/) on your key accounts (at least email and finance).
+2. [Freeze your credit](/identity_theft/) at the 3 largest credit bureaus.
+3. Pay for and use [automatic backup software](/anti_virus_and_backups/).
 4. Turn on automatic updates on your devices.
 
 ## Advice to avoid
 
-1. **Don't** worry about password strength that much.
-2. **Don't** pay money for antivirus software.
-3. **Don't** use or pay money for a VPN.
+1. **Don't** worry about [password strength](/passwords/) that much.
+2. **Don't** pay money for [antivirus software](/anti_virus_and_backups/).
+3. **Don't** use or pay money for a [VPN](/vpn/).
 
 ## What?!
 

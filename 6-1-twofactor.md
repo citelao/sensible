@@ -10,8 +10,8 @@ previous:
     url: /overall/
     title: How to stay safe
 next:
-    url: /conclusion/
-    title: Conclusion
+    url: /identity_theft/
+    title: Identity theft on the Internet
 ---
 
 We love our passwords.
