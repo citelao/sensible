@@ -1,18 +1,14 @@
 ---
 layout: page
+type: sidequest
 title: What is HTTPS?
 description: HTTPS secures the most dangerous part of your internet traffic. How?
 date: 2018-11-24T12:00:00
 permalink: /https/
-previous:
-    url: /hackers/
-    title: Will I be hacked?
-next:
-    url: /overall/
-    title: How to stay safe
+published: false
 ---
 
-Doot doot doot; how are people getting hacked?
+TODO: this isn't a section anymore.
 
 ---
 
