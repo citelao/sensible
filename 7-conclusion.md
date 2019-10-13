@@ -6,11 +6,15 @@ description: You can stay safe on the internet.
 date: 2018-11-24T12:00:00
 permalink: /conclusion/
 previous:
-    url: /overall/
-    title: How to stay safe
+    url: /anti_virus_and_backups/
+    title: Anti-virus & backup software
 next:
     url: /references/
     title: References
+---
+
+TODO: a better conclusion
+
 ---
 
 If you ask security experts about the state of the world, they'll probably say that everything is broken and everyone is hackable. Mozilla, in their [FAQ encouraging everyone to move to HTTPS](https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf) admits it:
