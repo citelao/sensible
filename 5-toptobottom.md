@@ -12,6 +12,10 @@ next:
     title: Passwords & two-factor authentication
 ---
 
+TODO: let's not be so prescriptive.
+
+--
+
 It's clear that [hackers target everyone](/hackers/) and that they're focused on *easy*, [scalable](/how_hacked/) attacks.
 
 It's also clear that most of the biggest threats to your [security](/secure/) lie with the companies that hold your data---your bank, your email providers, your social networks.
@@ -26,13 +30,13 @@ Here are four *evidence-based* things you can do *right now* to make yourself mo
 
 1. Turn on [two-factor authentication](/passwords/) on your key accounts (at least email and finance).
 2. [Freeze your credit](/identity_theft/) at the 3 largest credit bureaus.
-3. Pay for and use [automatic backup software](/anti_virus_and_backups/).
+3. Pay for and use [automatic backup software](/backups/).
 4. Turn on automatic updates on your devices.
 
 ## Advice to avoid
 
 1. **Don't** worry about [password strength](/passwords/) that much.
-2. **Don't** pay money for [antivirus software](/anti_virus_and_backups/).
+2. **Don't** pay money for [antivirus software](/antivirus/).
 3. **Don't** use or pay money for a [VPN](/vpn/).
 
 ## What?!
