@@ -6,7 +6,7 @@ description: You can stay safe on the internet.
 date: 2018-11-24T12:00:00
 permalink: /conclusion/
 previous:
-    url: /anti_virus_and_backups/
+    url: /backups/
     title: Anti-virus & backup software
 next:
     url: /references/
