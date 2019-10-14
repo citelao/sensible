@@ -28,7 +28,7 @@ Viruses (well,  technically all *malware*, but who's asking) are really weird. T
 
 That's not the only thing that's odd about malware. We're told to be wary of keyloggers stealing your bank passwords, but at the same time we're told that virus symptoms include pop-ups and distracting ads on your screen. It doesn't make sense---that's like a burglar breaking in, turning on the lights, and shouting, "I'm doing bad stuff in your house! ALSO DO YOU WANNA BUY SOME PILLS?!"
 
-Is malware written to steal your passwords and perpetrate [identity theft](/identity_theft/)? Or is it just for fun, to cause mischief<!-- Folk models -->?
+Is malware written to steal your passwords and perpetrate [identity theft](/identity_theft/)? Is it trying to sell you cheap Canadian pills? Or is it just for fun, to cause mischief<!-- Folk models -->?
 
 <!-- graphic idea: skull & crossbones laughing, or super spy -->
 
