@@ -58,6 +58,8 @@ And this data includes state-sponsored attacks and corporate espionage---not jus
 
 In other words, most hacking today is just folks using stolen passwords. And even that sort of hacking is not very scalable.
 
+<!-- TODO: explain the nuances here: Ukraine Ransomware, e.g.. When hacking becomes scalable, it is sometimes used. Windows XP, too. But the world is not XP anymore and ransomware was patched BEFORE. And so many other vulns not exploited. -->
+
 ### Malware
 
 Malware, however, is easy to scale, and that should set off alarms in your head. It's cheap to send a virus to thousands of people and hope that one of them opens it.
