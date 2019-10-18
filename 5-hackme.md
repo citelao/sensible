@@ -18,7 +18,7 @@ How will your data be compromised?
 
 ## Hacking is scalable and easy
 
-The key word here is "scalable": if you aren't worried about targeted, personal attacks---from, say, jealous friends, spouses, colleagues, exes, or family---the hackers targeting you focus on attacks that can *scale* to trick many people for very cheap.
+The key word here is "scalable": if you aren't worried about [targeted, personal attacks](/help/)---from, say, jealous friends, spouses, colleagues, exes, or family---the hackers targeting you focus on attacks that can *scale* to trick many people for very cheap.
 
 You probably know about most of these threats already! For example, you've probably heard about "malware" and "phishing."
 
@@ -30,7 +30,7 @@ But even *beyond* this new class of threats, security isn't limited to you. When
 
 ## The classic threats: hacking, malware, and phishing
 
-When you think of cyber-security, you probably think of the big *cyber* threats:
+Let's start at the beginning. When you think of cyber-security, you probably think of the big *cyber* threats:
 
 * hacking,
 * malware, and 

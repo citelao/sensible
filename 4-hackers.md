@@ -115,7 +115,7 @@ For most hackers, you are a target simply because they cast a wide net, but in t
 This is absolutely terrifying, and I will put it clearly:
 
 * **If you are worried about this type of harassment, I do not think this guide is a complete solution for you**.
-* If you are being targeted like this, you need to get help from the police.
+* If you are being targeted like this, you need to get help from the police ([I'm under attack now](/help/) has more information).
 
 In that case, why am I optimistic about security? Two reasons:
 
