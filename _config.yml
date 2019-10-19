@@ -50,6 +50,14 @@ sass:
     - _sass
     - node_modules
 
+collections:
+  coffee_shop:
+    output: true
+  how_to:
+    output: true
+  sidequests:
+    output: true
+
 defaults:
   -
     scope:

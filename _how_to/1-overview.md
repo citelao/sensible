@@ -4,12 +4,6 @@ title: How to stay safe
 description: Learn what you can do to stay safe on the internet, from top to bottom.
 date: 2018-11-24T12:00:00
 permalink: /overall/
-previous:
-    url: /https/
-    title: What is HTTPS?
-next:
-    url: /passwords/
-    title: Passwords & two-factor authentication
 ---
 
 TODO: let's not be so prescriptive.

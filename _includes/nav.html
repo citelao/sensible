@@ -1,73 +1,67 @@
 <nav id="main_nav" class="menu_list">
   <ul>
-    {% for p in site.pages %}
-      {% if p.layout == "page" and p.type != "sidequest" and p.type != "advice_to_take"%}
-        <li>
-          {% if page.url == p.permalink %}
-            <span class="current">
+    {% for p in site.coffee_shop %}
+      <li>
+        {% if page.url == p.permalink %}
+          <span class="current">
+        {% else %}
+          <a href="{{p.permalink}}">
+        {% endif %}
+          {% if p.short_title %}
+            {{p.short_title}}
           {% else %}
-            <a href="{{p.permalink}}">
+            {{p.title}}
           {% endif %}
-            {% if p.short_title %}
-              {{p.short_title}}
-            {% else %}
-              {{p.title}}
-            {% endif %}
-          {% if page.url == p.permalink %}
-            </span>
-          {% else %}
-            </a>
-          {% endif %}
-          </li>
-      {% endif %}
+        {% if page.url == p.permalink %}
+          </span>
+        {% else %}
+          </a>
+        {% endif %}
+        </li>
     {% endfor %}
   </ul>
   <h2>Advice to take</h2>
   <ul>
-    {% for p in site.pages %}
-      {% if p.layout == "page" and p.type == "advice_to_take" %}
-        <li>
-          {% if page.url == p.permalink %}
-            <span class="current">
+    {% for p in site.how_to %}
+      <li>
+        {% if page.url == p.permalink %}
+          <span class="current">
+        {% else %}
+          <a href="{{p.permalink}}">
+        {% endif %}
+          {% if p.short_title %}
+            {{p.short_title}}
           {% else %}
-            <a href="{{p.permalink}}">
+            {{p.title}}
           {% endif %}
-            {% if p.short_title %}
-              {{p.short_title}}
-            {% else %}
-              {{p.title}}
-            {% endif %}
-          {% if page.url == p.permalink %}
-            </span>
-          {% else %}
-            </a>
-          {% endif %}
-          </li>
-      {% endif %}
+        {% if page.url == p.permalink %}
+          </span>
+        {% else %}
+          </a>
+        {% endif %}
+        </li>
     {% endfor %}
   </ul>
   <h2>Sidequests</h2>
   <ul>
-    {% for p in site.pages %}
-      {% if p.layout == "page" and p.type == "sidequest"  %}
-        <li>
-          {% if page.url == p.permalink %}
-            <span class="current">
-          {% else %}
-            <a href="{{p.permalink}}">
-          {% endif %}
-            {% if p.short_title %}
-              {{p.short_title}}
-            {% else %}
-              {{p.title}}
-            {% endif %}
-          {% if page.url == p.permalink %}
-            </span>
-          {% else %}
-            </a>
-          {% endif %}
-        </li> 
+    {% for p in site.sidequests %}
+    <li>
+      {% if page.url == p.permalink %}
+        <span class="current">
+      {% else %}
+        <a href="{{p.permalink}}">
       {% endif %}
-    {% endfor %}
+        {% if p.short_title %}
+          {{p.short_title}}
+        {% else %}
+          {{p.title}}
+        {% endif %}
+      {% if page.url == p.permalink %}
+        </span>
+      {% else %}
+        </a>
+      {% endif %}
+      </li>
+  {% endfor %}
   </ul>
 </nav>
