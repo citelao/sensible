@@ -54,7 +54,7 @@ VPNs are helpful in specific scenarios (like the ones detailed above). However, 
 
 * VPNs only protect your messages until they reach the VPN server.
 
-	If your destination does not use [HTTPS](/https), your messages then travel unencrypted to their final server, and anyone along *that* path can eavesdrop unimpeeded.
+	If your destination does not use [HTTPS](/https/), your messages then travel unencrypted to their final server, and anyone along *that* path can eavesdrop unimpeeded.
 
 	Furthermore, this includes the metadata protection. If you're worried about someone (a government?) eavesdropping *deep* in the Internet, a VPN may not protect your metadata. Of course, the *sender* of the message still looks like the VPN.
 
@@ -102,6 +102,6 @@ But keep in mind that using a VPN requires installing software on your computer 
 
 This means you need to audit the software to be sure it's safe, you need to be *certain* the company isn't logging your traffic and handing it to someone else, and you need to be ok with everyone around you *knowing you're using a VPN*.
 
-I think the better investment is [learning about HTTPS](/https) and taking care to use it properly. 
+I think the better investment is [learning about HTTPS](/https/) and taking care to use it properly. 
 
 But if you need a VPN for a concrete reason, or if you want the extra layer of encryption and are ok with the caveats, a VPN can help.

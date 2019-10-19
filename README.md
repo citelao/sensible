@@ -12,6 +12,10 @@ The sensible guide to cybersecurity.
 
 `jekyll serve`.
 
+To test links (etc):
+
+`gem install html-proofer && npm run test`
+
 ## Deployment
 
 `npm run build && npm run deploy`
