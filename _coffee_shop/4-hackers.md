@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Will I be hacked?
+title: Will I even be hacked?
 description: How likely is it that you will be hacked?
 date: 2019-03-30T12:00:00
 permalink: /hackers/
 previous:
-    url: /secure/
+    url: /security/
     title: What is secure?
 next:
     url: /how_hacked/

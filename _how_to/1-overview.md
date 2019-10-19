@@ -12,7 +12,7 @@ TODO: let's not be so prescriptive.
 
 It's clear that [hackers target everyone](/hackers/) and that they're focused on *easy*, [scalable](/how_hacked/) attacks.
 
-It's also clear that most of the biggest threats to your [security](/secure/) lie with the companies that hold your data---your bank, your email providers, your social networks.
+It's also clear that most of the biggest threats to your [security](/security/) lie with the companies that hold your data---your bank, your email providers, your social networks.
 
 It may seem like protecting your data must be ridiculously easy or literally impossible. The truth is in the middle: some threats are easy to stop and some threats are impossible.
 

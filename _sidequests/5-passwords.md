@@ -114,7 +114,7 @@ To generate that core password (or any other truly random passwords, if you are 
 
 This pattern is fantastic because it generates easy-to-remember passwords, it's hard to hack, and it's easy to share with others in an emergency.
 
-<aside class="sidenote">I still remember the password from the comic: `correct horse battery staple`. "Availability"---including your ability to remember things---is an important aspect of [security](/secure/)!
+<aside class="sidenote">I still remember the password from the comic: `correct horse battery staple`. "Availability"---including your ability to remember things---is an important aspect of [security](/security/)!
 </aside>
 
 ## Maybe do this -- use a password manager

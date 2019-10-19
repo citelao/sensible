@@ -22,6 +22,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-last-modified-at", "~> 1.0"
   gem "jekyll-pandoc"
+  gem 'jekyll-redirect-from'
   gem "jekyll-scholar"
   gem "jekyll-seo-tag", "~> 2.5.0"
   gem "jekyll-sitemap", "~> 1.2"

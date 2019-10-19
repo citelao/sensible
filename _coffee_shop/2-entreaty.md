@@ -8,7 +8,7 @@ previous:
     url: /intro/
     title: Introduction
 next:
-    url: /secure/
+    url: /security/
     title: What is secure?
 ---
 

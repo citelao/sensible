@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
   # - jekyll-pandoc
   - jekyll-last-modified-at
+  - jekyll-redirect-from
   - jekyll-scholar
   - jekyll-seo-tag
   - jekyll-sitemap

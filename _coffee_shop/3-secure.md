@@ -1,9 +1,11 @@
 ---
 layout: page
-title: What is secure?
+title: What is security?
 description: What does 'secure' mean when talking about cyber-security?
 date: 2018-11-24T12:00:00
-permalink: /secure/
+permalink: /security/
+redirect_from:
+    - /secure/
 previous:
     url: /entreaty/
     title: An entreaty

@@ -144,7 +144,7 @@ For example, HTTPS guarantees that when you talk to Snapple.com you are actually
 
 HTTPS does not indicate any security *except* that your communication was secure in transit, but that's a very important thing; the rest you can verify separately.
 
-Recall the [six points your data crosses](/secure/) when it travels the internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
+Recall the [six points your data crosses](/security/) when it travels the internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
 
 <aside class="sidenote">
 You may notice that HTTPS does not guarantee **availability**. That's based on servers being available to respond to your requests. In practice, HTTPS does not slow down servers enough to **disrupt** availability on its own.
