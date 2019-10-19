@@ -5,12 +5,6 @@ title: Conclusion
 description: You can stay safe on the internet.
 date: 2018-11-24T12:00:00
 permalink: /conclusion/
-previous:
-    url: /backups/
-    title: Anti-virus & backup software
-next:
-    url: /references/
-    title: References
 ---
 
 TODO: a better conclusion

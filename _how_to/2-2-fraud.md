@@ -6,12 +6,6 @@ type: advice_to_take
 description: TODO
 date: 2019-09-02T12:00:00
 permalink: /identity_theft/
-previous:
-    url: /passwords/
-    title: Passwords & two-factor authentication
-next:
-    url: /antivirus/
-    title: Do you need anti-virus software?
 ---
 
 Identity theft is most people's #1 cyber-security concern, at least according to one survey<!-- 2010 NCSA / Norton by Symantec Online Safety Study -->.

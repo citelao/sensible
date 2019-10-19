@@ -6,12 +6,6 @@ type: advice_to_take
 description: TODO
 date: 2019-09-02T12:00:00
 permalink: /antivirus/
-previous:
-    url: /identity_theft/
-    title: Identity theft on the Internet
-next:
-    url: /conclusion/
-    title: Conclusion
 ---
 
 If you've even *heard* about Windows computers, you've heard about viruses. And if you've heard about viruses, you've heard about anti-virus software.

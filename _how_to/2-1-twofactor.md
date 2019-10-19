@@ -6,12 +6,6 @@ type: advice_to_take
 description: TODO
 date: 2019-09-02T12:00:00
 permalink: /passwords/
-previous:
-    url: /overall/
-    title: How to stay safe
-next:
-    url: /identity_theft/
-    title: Identity theft on the Internet
 ---
 
 We love our passwords.
