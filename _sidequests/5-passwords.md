@@ -6,6 +6,8 @@ title: Choosing good passwords
 description: There's a good way to write passwords. It's just not commonly known.
 date: 2018-11-26T12:00:00
 permalink: /good_passwords/
+ignore_previous: true
+ignore_next: true
 ---
 
 Passwords suck {% cite grassi2017nist -L appendix  -l Appendix A %}.

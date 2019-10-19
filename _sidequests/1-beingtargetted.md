@@ -6,6 +6,8 @@ title: What if you're being attacked?
 description: TODO
 date: 2019-09-01T12:00:00
 permalink: /help/
+ignore_previous: true
+ignore_next: true
 ---
 
 If you're under attack now, there are immediate steps you can take to defend yourself.

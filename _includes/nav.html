@@ -1,6 +1,7 @@
 <nav id="main_nav" class="menu_list">
   <ul>
-    {% for p in site.coffee_shop %}
+    {% assign sorted_p = site.coffee_shop | sort:"id" %}
+    {% for p in sorted_p %}
       <li>
         {% if page.url == p.permalink %}
           <span class="current">
@@ -22,7 +23,8 @@
   </ul>
   <h2>Advice to take</h2>
   <ul>
-    {% for p in site.how_to %}
+    {% assign sorted_p = site.how_to | sort:"id" %}
+    {% for p in sorted_p %}
       <li>
         {% if page.url == p.permalink %}
           <span class="current">
@@ -44,7 +46,8 @@
   </ul>
   <h2>Sidequests</h2>
   <ul>
-    {% for p in site.sidequests %}
+    {% assign sorted_p = site.sidequests | sort:"id" %}
+    {% for p in sorted_p %}
     <li>
       {% if page.url == p.permalink %}
         <span class="current">

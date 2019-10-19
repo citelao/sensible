@@ -4,6 +4,12 @@ title: What is secure?
 description: What does 'secure' mean when talking about cyber-security?
 date: 2018-11-24T12:00:00
 permalink: /secure/
+previous:
+    url: /entreaty/
+    title: An entreaty
+next:
+    url: /hackers/
+    title: Will I be hacked?
 ---
 
 The data we send across the Internet every day---emails, YouTube videos, and search results---is immensely valuable to hackers, governments, employers, advertisers, and snoopy family members.

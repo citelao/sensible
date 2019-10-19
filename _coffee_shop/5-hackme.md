@@ -4,6 +4,12 @@ title: How will I be hacked?
 description: If you're going to get hacked, how will it happen?
 date: 2018-11-24T12:00:00
 permalink: /how_hacked/
+previous:
+    url: /hackers/
+    title: Will I be hacked?
+next:
+    url: /conclusion/
+    title: Conclusion
 ---
 
 In [the last section](/hackers/), it became clear that the vast majority of hackers focus on *scalable* attacks: attacks that can easily target many, many people. In these cases, you're at risk simply because your name was in a giant list somewhere---you're one of many.

@@ -7,6 +7,8 @@ description: TODO
 published: false
 date: 2019-10-12T12:00:00
 permalink: /entropy/
+ignore_previous: true
+ignore_next: true
 ---
 
 TODO!

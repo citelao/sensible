@@ -4,6 +4,12 @@ title: An entreaty
 description: Learn what you should expect to get from cyber-security guide.
 date: 2018-11-02T12:00:00
 permalink: /entreaty/
+previous:
+    url: /intro/
+    title: Introduction
+next:
+    url: /secure/
+    title: What is secure?
 ---
 
 The internet is dangerous, and it is foolish to advise otherwise, but the internet is dangerous only in specific, well-understood ways. This guide aims to help you understand those ways.

@@ -4,6 +4,12 @@ title: Will I be hacked?
 description: How likely is it that you will be hacked?
 date: 2019-03-30T12:00:00
 permalink: /hackers/
+previous:
+    url: /secure/
+    title: What is secure?
+next:
+    url: /how_hacked/
+    title: How will I be hacked?
 ---
 
 Hackers target everyone.

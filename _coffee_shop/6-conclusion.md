@@ -1,10 +1,15 @@
 ---
 layout: page
-published: false
+# published: false
 title: Conclusion
-description: You can stay safe on the internet.
 date: 2018-11-24T12:00:00
 permalink: /conclusion/
+previous:
+    url: /how_hacked/
+    title: How will I be hacked?
+next:
+    url: /references/
+    title: References
 ---
 
 TODO: a better conclusion

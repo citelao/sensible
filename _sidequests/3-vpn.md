@@ -5,6 +5,8 @@ title: Do you need a VPN?
 date: 2018-11-05T12:00:00
 description: Jump in to staying secure – introduction to cyber-security techniques for sensible people.
 permalink: /vpn/
+ignore_previous: true
+ignore_next: true
 ---
 
 I've often heard the advice "use a VPN"---a Virtual Private Network. If you're trying to [secure your internet traffic](/overall), they're **a good solution to a different problem**.

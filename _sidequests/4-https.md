@@ -6,6 +6,8 @@ description: HTTPS secures the most dangerous part of your internet traffic. How
 date: 2018-11-24T12:00:00
 permalink: /https/
 published: false
+ignore_previous: true
+ignore_next: true
 ---
 
 TODO: this isn't a section anymore.
