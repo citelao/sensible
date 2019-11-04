@@ -14,7 +14,7 @@ real_next:
     title: Will I even be hacked?
 ---
 
-The data we send across the Internet every day---emails, YouTube videos, and search results---is immensely valuable to hackers, governments, employers, advertisers, and snoopy family members.
+The data we send across the Internet every day---emails, YouTube videos, and search results---is immensely valuable to hackers, governments, employers, advertisers, and snoopy family members (though we'll dive into that later).
 
 Security means protecting this data.
 
