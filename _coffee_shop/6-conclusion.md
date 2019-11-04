@@ -4,10 +4,10 @@ layout: page
 title: Conclusion
 date: 2018-11-24T12:00:00
 permalink: /conclusion/
-previous:
+real_previous:
     url: /how_hacked/
     title: How will I be hacked?
-next:
+real_next:
     url: /references/
     title: References
 ---

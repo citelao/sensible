@@ -4,10 +4,10 @@ title: How will I be hacked?
 description: If you're going to get hacked, how will it happen?
 date: 2018-11-24T12:00:00
 permalink: /how_hacked/
-previous:
+real_previous:
     url: /hackers/
     title: Will I be hacked?
-next:
+real_next:
     url: /conclusion/
     title: Conclusion
 ---
