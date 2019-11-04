@@ -12,21 +12,85 @@ real_next:
     title: Conclusion
 ---
 
-In [the last section](/hackers/), it became clear that the vast majority of hackers focus on *scalable* attacks: attacks that can easily target many, many people. In these cases, you're at risk simply because your name was in a giant list somewhere---you're one of many.
+In [the last section](/hackers/), it became clear that the vast majority of hackers focus on *scalable* attacks: attacks that can easily target many, many people or can quickly compromise many people at once. In these cases, you're at risk simply because your name was in a giant list somewhere---you're one of many.
 
-How will your data be compromised?
+But which attacks can scale? And what kind of attacks are there?
 
-## Hacking is scalable and easy
+## Completely classifying attacks
 
-The key word here is "scalable": if you aren't worried about [targeted, personal attacks](/help/)---from, say, jealous friends, spouses, colleagues, exes, or family---the hackers targeting you focus on attacks that can *scale* to trick many people for very cheap.
+Unfortunately, there is no simple list of attacks and defences, like "watch out for man-in-the-middle" or "beware of phishing emails." That list would always be changing, and we'd never be sure the list is complete. After all, we can easily see if the list is insufficient (people get hacked), but nothing we see could prove to us that the list covers everything. The attack just might not have happened yet<!-- Unfalsifiability of Security Claims-->.
 
-You probably know about most of these threats already! For example, you've probably heard about "malware" and "phishing."
+Instead of looking for a complete list of attacks, it's better to look for general attack *categories*. These categories are more enduring and help you think about the problem holistically---they help you know you're not missing a huge hole.
 
-However, security is about more than just stopping hackers. It's about [protecting the confidentiality, integrity, and availability of your data](/secure/). When you think about security as a whole, more threats become apparent.
+Luckily, we can categorize the attacks pretty well with something called the VERIS schema.
 
-You probably know about *these* threats, too, even if you might not have thought of them as a security threats: losing your phone, accidentally sending a funny pic to your boss, or misconfiguring your Facebook privacy settings. These mistakes are *easy* to make.
+The VERIS schema comes from researchers at Verizon, who developed it for their annual Data Breach Investigations Report<!-- VERIS Incident Description (also the A4 threat model) -->, or DBIR. The DBIR analyzes tens of thousands of breaches and security incidents annually, and the VERIS schema is probably the most widely-used system in the world for classifying security incidents. There's no guarantee that it's complete (since there can't ever be<!-- Unfalsifiability of Security Claims-->), but researchers use the VERIS action list to classify every action in every part of all 40,000+ submitted data breaches each year. This is a battle-tested list.
 
-But even *beyond* this new class of threats, security isn't limited to you. When you make a purchase online, you trust someone else to keep your personal information safe. It seems like hacking those business may be the most scalable (and sometimes easiest) attack of them all.
+The VERIS schema lists 7 actions:
+
+* **Hacking**: things like using stolen passwords, exploiting vulnerabilities, and everything you've seen on NCIS.
+* **Malware**: things like viruses, worms, and ransomware.
+* **Social**: phishing and other attacks involving manipulation.
+* **Misuse**: things like admins abusing access to emails and logs.
+* **Physical**: things like theft.
+* **Error**: things like emailing the wrong person or accidentally leaking information.
+* **Environmental**: things like storms, pathogens, power outages.
+
+## But what's scalable?
+
+My favorite thing about this schema is that most of these attacks are obvious.
+
+You already know about malware and social attacks like phishing, and you already know about all the other ones, too. For example, you almost certainly worry about someone seeing your password over your shoulder.
+
+Though you may not understand the particulars of how a virus or a hack works, there are no surprise types of threat that you don't know about. You just might not have tied some of these threats to cybersecurity.
+
+The same goes for scalability: you might not know precisely how these attacks work or what these attacks mean specifically, but you should have an intuition for what can scale and what can't.
+
+Ask yourself: how many passwords could a hacker get by sitting in a Starbucks for an hour and watching over people's shoulders? How many passwords could they get with a phishing attack instead? How many by stealing laptops?
+
+This should be relieving. You might not understand [how the Internet works](/internet/) or [how it can keep data secure](/https/), but you do know the general steps hackers can take, and which ones most of them find easy to take.
+
+That helps you prioritize your defences.
+
+For example, if you want to keep your password safe, you should consider someone looking over your shoulder or stealing your laptop (physical). You shouldn't just protect against malware and viruses.
+
+## Won't somebody think of the corporations?
+
+## An enterprise solution to a consumer problem
+
+Researchers use the VERIS action list to classify every action in every part of all 40,000+ submitted data breaches each year, so this is a battle-tested list. However, it has not been tested on consumer threats.
+
+I think that's okay. 
+
+Enterprise threats share a lot in common with consumer threats. Both involve stressed humans trying to do the right thing and often just making a mistake: giving out a password, downloading a virus, falling for a scam.
+
+The VERIS schema should do a good job for consumers, too.
+
+## What about the corporations?
+
+However, there's one insight that we miss by naively applying the schema to consumers: target. The vast majority of the time, if your data leaks it's because someone hacked a *company* that had your data. The VERIS schema still applies, but the attackers targeted the company, not you.
+
+When we talk about cyber-security, we tend to focus on what we personally can do. And clearly we can protect ourselves from traditional threats like hacking, malware, and phishing. We can even protect ourselves from the broader threats we find from the VERIS schema.
+
+This isn't fair.
+
+At the end of the day, most key security breaches do not come from you or your actions or your mistakes. They come from the people you give your data to<!-- citation kinda needed (Experian breach?) -->.
+
+The big lists of passwords floating around on "the dark web" don't come from hackers on your computer; they don't come from viruses, or phishing, or even theft or error or your kids pirating music online.
+
+They come from companies that were hacked. They come from companies that were phished. They come from companies that accidentally left their entire password database publicly accessible for years.
+
+Programmers are notoriously bad at writing secure code and keeping secrets safe<!-- TODO stats about encryption -->. Facebook, Dropbox, Adobe, Experian, the US Office of Personnel Management---company after company after company<!-- https://haveibeenpwned.com/PwnedWebsites -->---have all lost unencrypted (or poorly encrypted) data to hackers. Passwords, social security numbers, and even *fingerprints* now live on the Internet freely.
+
+<aside class="sidenote">
+I share the blame---I released a (now defunct) website with insecure password storage while I was in middle school. Sorry!
+</aside>
+
+As long as other people control your data, and as long as these people have little incentive to protect it, your data is unsafe. In a way, it's simply a matter of time until your password is breached---somewhere, somehow.
+
+So as you read through these threats, keep in mind the companies that store your data poorly and the defense they have to do to keep your data safe. There are real threats to you, personally, but at the end of the day, if your password ends up on the Internet it will probably be because of a corporate data breach.
+
+With that, let's examine how the VERIS schema scales.
 
 ## The classic threats: hacking, malware, and phishing
 
@@ -50,7 +114,7 @@ Furthermore, hacking isn't really the unknowable, scary beast that we make it ou
 
 It can sometimes seem that there are new security vulnerabilities every day: new bugs, new exploits, new backdoors. This is true! In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
 
-However, these vulnerabilities don't really translate to hacking. Verizon's Data Breach Investigations Report, which analyzes tens of thousands of breaches and security incidents annually, found that *at most* 6% of successful hacking incidents (of corporations) had anything to do with software vulnerabilities like this<!-- DBIR 2019 pg 10 -->. In fact, nearly 70% of all "hacking" breaches involve *stolen passwords*.
+However, these vulnerabilities don't really translate to hacking. Verizon's Data Breach Investigations Report, that security report we took the VERIS schema from, found that *at most* 6% of successful hacking incidents (of corporations) had anything to do with software vulnerabilities like this<!-- DBIR 2019 pg 10 -->. In fact, nearly 70% of all "hacking" breaches involve *stolen passwords*.
 
 Your computers may be riddled with holes, but hackers don't care. They just use the key they found under the mat.
 
@@ -133,28 +197,6 @@ It's a shame to move on without data, but it simply doesn't exist. It could be t
 
 But we don't know.
 
-## What's this about corporations?
-
-But take *one more* step back.
-
-When we talk about cyber-security, we tend to focus on what we personally can do. And clearly we can protect ourselves from traditional threats like hacking, malware, and phishing. We can even protect ourselves from the broader threats we find from the VERIS schema.
-
-This isn't fair.
-
-At the end of the day, most key security breaches do not come from you or your actions or your mistakes. They come from the people you give your data to.
-
-The big lists of passwords floating around on "the dark web" don't come from hackers on your computer; they don't come from viruses, or phishing, or even theft or error or your kids pirating music online.
-
-They come from companies that were hacked. They come from companies that were phished. They come from companies that accidentally left their entire password database publicly accessible for years.
-
-Programmers are notoriously bad at writing secure code and keeping secrets safe<!-- TODO stats about encryption -->. Facebook, Dropbox, Adobe, Experian, the US Office of Personnel Management---company after company after company<!-- https://haveibeenpwned.com/PwnedWebsites -->---have all lost unencrypted (or poorly encrypted) data to hackers. Passwords, social security numbers, *fingerprints* now live on the Internet freely.
-
-<aside class="sidenote">
-I share the blame---I released a (now defunct) website with insecure password storage while I was in middle school. Sorry!
-</aside>
-
-As long as other people control your data, and as long as these people have little incentive to protect it, your data is unsafe. In a way, it's simply a matter of time until your password is breached---somewhere, somehow.
-
 ## As an example, passwords
 
 To put this all in perspective, think about your bank password. What are the threats to it?
@@ -175,27 +217,6 @@ Then there are the further attacks:
 But then there is the simple external case:
 
 * Your bank could get hacked; they could store the password in plaintext; and now your password is public to the world.
-
----
-
-* then back up to the other big groups from VERIS schema (non-"cyber" threats, basically)
-* then back up *again* to realize that *other companies* are the big vector.
-
----
-
-## The big groups
-
-The best information we have about security breaches comes from Verizon, in their annual Data Breach Investigations Report. Each year, companies & governments submit tens of thousands of reports detailing their security incidents, including how they happened<!-- http://veriscommunity.net/actions.html -->.
-
-They break down these incidents into 7 categories:
-
-1. **Malware**: things like viruses, worms, ransomware, adware, you name it.
-2. **Hacking**: things like using stolen passwords, exploiting vulnerabilities, etc.
-3. **Social**: things like phishing.
-4. **Misuse**: things like admins abusing access to emails and logs.
-5. **Physical**: things like theft.
-6. **Error**: things like emailing the wrong person or accidentally leaking information.
-7. **Environmental**: things like storms, pathogens, power outages.
 
 ---
 
