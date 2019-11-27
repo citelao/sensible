@@ -5,22 +5,17 @@ title: What is HTTPS?
 description: HTTPS secures the most dangerous part of your internet traffic. How?
 date: 2018-11-24T12:00:00
 permalink: /https/
-published: false
 ignore_previous: true
 ignore_next: true
 ---
 
-TODO: this isn't a section anymore.
+In the main guide, we examined how [hackers look for scalable, cheap attacks](/hackers/). Keeping your data [safe](/security/) usually means preventing those easy attacks.
 
----
+Up until recently, **preventing those easy attacks was impossible**.
 
-In the last section, we explained how protecting your messages every step of the way across the Internet is *vital* to keeping your data safe.
+The original core standards that defined the Internet---protocols (rules) like TCP/IP, HTTP, DNS, and SMTP---only specified how to send your data as **plaintext**---unencrypted, just like physical mail. All hackers needed to do to steal your passwords was eavesdrop, which is very easy to do: **hence the warnings to avoid coffee shop wi-fi**.
 
-Up until recently, **protecting your data every step of the way was impossible**.
-
-The original core standards that defined the Internet---protocols (rules) like TCP/IP, HTTP, DNS, and SMTP---only specified how to send your data as **plaintext**---unencrypted, just like physical mail. All your information used to fly across the internet in a way that anyone could read: all hackers needed to do was eavesdrop.
-
-This was the original design of the internet, which helped it spread quickly, but **it soon became a liability**. Security specialists drafted "secure" variants of most internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
+This was the original design of the internet, which helped it spread quickly, but **it soon became a liability**. In response, security specialists drafted "secure" variants of most internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
 
 <aside class="sidenote">
 Tim Berners-Lee (designer of the internet) [at IP Expo](https://www.theregister.co.uk/2014/10/08/sir_tim_bernerslee_defends_decision_not_to_bake_security_into_www/), about the decision to leave security out of the original design:
