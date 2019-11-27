@@ -18,13 +18,35 @@ But which attacks can scale? And what kind of attacks are there?
 
 ## Completely classifying attacks
 
-Unfortunately, there is no simple list of attacks and defences, like "watch out for man-in-the-middle" or "beware of phishing emails." That list would always be changing, and we'd never be sure the list is complete. After all, we can easily see if the list is insufficient (people get hacked), but nothing we see could prove to us that the list covers everything. The attack just might not have happened yet<!-- Unfalsifiability of Security Claims-->.
+The bad news first: it is impossible to know every single possible attack.
 
-Instead of looking for a complete list of attacks, it's better to look for general attack *categories*. These categories are more enduring and help you think about the problem holistically---they help you know you're not missing a huge hole.
+This is a fundamental fact about security, both online and in real life. This has nothing to do with how complex computers are or how new the Internet is; it is literally impossible to prove that *anything* is secure.
 
-Luckily, we can categorize the attacks pretty well with something called the VERIS schema.
+After all, we can easily observe when a system is insecure (it got hacked), but nothing we see could prove to us that the system is safe against everything. The attack just might not have happened yet<!-- Unfalsifiability of Security Claims-->.
 
-The VERIS schema comes from researchers at Verizon, who developed it for their annual Data Breach Investigations Report<!-- VERIS Incident Description (also the A4 threat model) -->, or DBIR. The DBIR analyzes tens of thousands of breaches and security incidents annually, and the VERIS schema is probably the most widely-used system in the world for classifying security incidents. There's no guarantee that it's complete (since there can't ever be<!-- Unfalsifiability of Security Claims-->), but researchers use the VERIS action list to classify every action in every part of all 40,000+ submitted data breaches each year. This is a battle-tested list.
+You might have a similar intuition if you have a friend who drives behind other cars too closely or never uses their turn signal. "It's not safe!" you say.
+
+"Ah," they reply, with an infuriating grin, "but I've never had a problem [tailgating like a maniac/blatantly ignoring road etiquette]."
+
+## Draw from the evidence? What evidence?
+
+The best we can do is examine trends, so we at least understand the most common threats. Then, by making assumptions about the world (from the data), you can at least make educated decisions. This is still risky: your assumptions can be too narrow or you might be more cautions than you need to be, but it's better than stabbing in the dark.
+
+More bad news, then: there is no good overview of known consumer threats.
+
+There's plenty of data examining specific types of attack (how much phishing, how much malware, how much spam), but nothing empirical to say, "here's what Americans face today."
+
+## An enterprise solution to a consumer problem
+
+That's where the good news comes in: we have really good data about *corporate* threats.
+
+Corporations have the time and money to invest in cybersecurity research for themselves, especially since it saves them tons of both in the long run. One notable product of this investment is the VERIS schema.
+
+The VERIS schema comes from researchers at Verizon, who developed it for their annual Data Breach Investigations Report<!-- VERIS Incident Description (also the A4 threat model) -->, or DBIR. The DBIR analyzes over 40,000 security incidents annually, and because of this the VERIS schema is probably the most widely-used system in the world for classifying security incidents.
+
+This is what we want---we have a list of what we think hackers can do.
+
+Just like before, there's no guarantee that it's complete (since there can't ever be<!-- Unfalsifiability of Security Claims-->), but researchers use the VERIS action list to classify every action in every part of every submitted data incident every year. This is a battle-tested list.
 
 The VERIS schema lists 7 actions:
 
@@ -38,35 +60,31 @@ The VERIS schema lists 7 actions:
 
 ## But what's scalable?
 
-My favorite thing about this schema is that most of these attacks are obvious.
+I love this schema because there are no surprises on it.
 
-You already know about malware and social attacks like phishing, and you already know about all the other ones, too. For example, you almost certainly worry about someone seeing your password over your shoulder.
+You may not have thought about some of these threats as "cybersecurity threats" before, but they are all understandable (even if you don't get them in detail).
 
-Though you may not understand the particulars of how a virus or a hack works, there are no surprise types of threat that you don't know about. You just might not have tied some of these threats to cybersecurity.
+More importantly, they are imaginable.
 
-The same goes for scalability: you might not know precisely how these attacks work or what these attacks mean specifically, but you should have an intuition for what can scale and what can't.
+For example, you can probably imagine getting a virus or being the victim of a social attack like fraud or phishing. And you've almost certainly worried about someone seeing your password over your shoulder.
+
+It might not be clear how viruses work or how hackers get in, but that's ok. We'll explore the technical side of these questions later.
+
+It should, however, be clear how *scalable* these different attacks are. You might not know precisely how these attacks work or what these attacks mean specifically, but you should have an intuition for what can scale and what can't.
 
 Ask yourself: how many passwords could a hacker get by sitting in a Starbucks for an hour and watching over people's shoulders? How many passwords could they get with a phishing attack instead? How many by stealing laptops?
 
-This should be relieving. You might not understand [how the Internet works](/internet/) or [how it can keep data secure](/https/), but you do know the general steps hackers can take, and which ones most of them find easy to take.
+This is the key. It's worth learning [how the Internet works](/internet/) or [how it can keep data secure](/https/)---and learning more will only help you stay safer---but this list refocuses anything you learn back to the *whole* problem.
 
 That helps you prioritize your defences.
 
 For example, if you want to keep your password safe, you should consider someone looking over your shoulder or stealing your laptop (physical). You shouldn't just protect against malware and viruses.
 
-## Won't somebody think of the corporations?
-
-## An enterprise solution to a consumer problem
-
-Researchers use the VERIS action list to classify every action in every part of all 40,000+ submitted data breaches each year, so this is a battle-tested list. However, it has not been tested on consumer threats.
-
-I think that's okay. 
+## What corporations don't know
 
 Enterprise threats share a lot in common with consumer threats. Both involve stressed humans trying to do the right thing and often just making a mistake: giving out a password, downloading a virus, falling for a scam.
 
 The VERIS schema should do a good job for consumers, too.
-
-## What about the corporations?
 
 However, there's one insight that we miss by naively applying the schema to consumers: target. The vast majority of the time, if your data leaks it's because someone hacked a *company* that had your data. The VERIS schema still applies, but the attackers targeted the company, not you.
 
@@ -91,6 +109,8 @@ As long as other people control your data, and as long as these people have litt
 So as you read through these threats, keep in mind the companies that store your data poorly and the defense they have to do to keep your data safe. There are real threats to you, personally, but at the end of the day, if your password ends up on the Internet it will probably be because of a corporate data breach.
 
 With that, let's examine how the VERIS schema scales.
+
+---
 
 ## The classic threats: hacking, malware, and phishing
 
