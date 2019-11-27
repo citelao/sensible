@@ -9,7 +9,7 @@ ignore_previous: true
 ignore_next: true
 ---
 
-I've often heard the advice "use a VPN"---a Virtual Private Network. If you're trying to [secure your internet traffic](/overall), they're **a good solution to a different problem**.
+I've often heard the advice "use a VPN"---a Virtual Private Network. If you're trying to [stay safe on the web](/overall), they're **a good solution to a different problem**.
 
 ## The usefulness of a VPN
 
