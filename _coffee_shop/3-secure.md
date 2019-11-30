@@ -44,4 +44,4 @@ The CIA triad describes abstract concepts. It's worth thinking about what securi
 
 Likewise, it's also worth asking: are you a target? Protecting your stuff may help you feel safer---but, if no one wants to hack you, why bother?
 
-So with that: "what do I have to protect?"
+So with that: "will I even be hacked?"
