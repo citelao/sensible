@@ -42,20 +42,6 @@ To be truly safe, you must protect your data's confidentiality, integrity, and a
 
 The CIA triad describes abstract concepts. It's worth thinking about what security means for you and the people you care about. Security, after all, means nothing if you're not protecting things for a reason.
 
-I've found that most people are worried about the same things<!-- TODO cite folk models -->:
+Likewise, it's also worth asking: are you a target? Protecting your stuff may help you feel safer---but, if no one wants to hack you, why bother?
 
-* hackers stealing your money,
-* hackers taking (or changing or deleting) your stuff, and
-* hackers hurting the people you care about.
-
-"Security" and the CIA triad can seem very abstract, but *these* fears are concrete. *This* is what you protect against by securing your computer. Think about what you want to protect. It can help you decide what precautions to take.
-
-After all: you can't protect anything if you don't know what you're guarding.
-
-## Does security impact you?
-
-But there remains an open question. Am I target?
-
-You know what's important to you, but maybe it's not important to hackers. Do people really want to know your Netflix password, or home address, or phone number, or family photos? If hackers steal your data, what impact will it have on you?
-
-So with that: "will I even be hacked?"
+So with that: "what do I have to protect?"
