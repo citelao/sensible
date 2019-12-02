@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "The ways to be hacked: in depth"
-short_title: "The ways: in depth"
-description: If you're going to get hacked, how will it happen?
+title: "Common cybersecurity threats: in depth"
+short_title: Common threats
+description: TODO If you're going to get hacked, how will it happen?
 date: 2018-11-24T12:00:00
-permalink: /hacked2/
+permalink: /common_threats/
 real_previous:
     url: /how_hacked/
     title: How will I be hacked?
