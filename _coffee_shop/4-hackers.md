@@ -9,7 +9,7 @@ real_previous:
     title: What is secure?
 real_next:
     url: /how_hacked/
-    title: How will I be hacked?
+    title: How can I be hacked?
 ---
 
 From [the last section](/security/), you know that security is about protecting your data's confidentiality, integrity, and availability.

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How will I be hacked?
+title: How can I be hacked?
 description: If you're going to get hacked, how will it happen?
 date: 2018-11-24T12:00:00
 permalink: /how_hacked/

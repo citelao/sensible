@@ -7,7 +7,7 @@ date: 2018-11-24T12:00:00
 permalink: /common_threats/
 real_previous:
     url: /how_hacked/
-    title: How will I be hacked?
+    title: How can I be hacked?
 real_next:
     url: /conclusion/
     title: Conclusion

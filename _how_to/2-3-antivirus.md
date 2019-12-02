@@ -52,7 +52,7 @@ When security companies sell their software, they like to lead with the biggest 
 
 What percentage of people get viruses? That report doesn't say.
 
-We discuss this in more detail in [How will I be hacked?](/how_hacked/), but the best data suggests that about 1 in 3 computers will *see* a virus over a given year. And, because modern PCs have built-in security software, most (like, 99%) will detect and remove that virus before it can do any harm.
+We discuss this in more detail in [How can I be hacked?](/how_hacked/), but the best data suggests that about 1 in 3 computers will *see* a virus over a given year. And, because modern PCs have built-in security software, most (like, 99%) will detect and remove that virus before it can do any harm.
 
 This is not like 2004 (where a new computer would be infected in 20 minutes). Nor is this like 1988 (where a grad student broke most of the Internet for a few days<!-- Morris worm-->). The first computer viruses were pranks, gags, and tests<!-- wikipedia computer viruses; elk cloner; creeper-->.
 
