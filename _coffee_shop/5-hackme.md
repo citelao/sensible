@@ -8,8 +8,8 @@ real_previous:
     url: /hackers/
     title: Will I be hacked?
 real_next:
-    url: /common_threats/
-    title: "Common cybersecurity threats: in depth"
+    url: /well_known_threats/
+    title: "Well-known cybersecurity threats: in depth"
 ---
 
 Yes, there are hackers who want to steal your money. In [the last section](/hackers/), it became clear that hackers target everyone with cheap, *scalable* attacks---attacks that can easily target many, many people or can quickly compromise many people at once.
@@ -128,4 +128,4 @@ As long as other people control your data, and as long as these people have litt
 
 So as you read through these threats, keep in mind the companies that store your data poorly and the defense they have to do to keep your data safe. There are real threats to you, personally, but at the end of the day, if your password ends up on the Internet it will probably be because of a corporate data breach.
 
-With that, let's examine some common cybersecurity fears in a little more depth.
+With that, let's examine some well-known cybersecurity fears in a little more depth.

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Common cybersecurity threats: in depth"
-short_title: Common threats
+title: "Well-known cybersecurity threats: in depth"
+short_title: Well-known threats
 description: TODO If you're going to get hacked, how will it happen?
 date: 2018-11-24T12:00:00
-permalink: /common_threats/
+permalink: /well_known_threats/
 real_previous:
     url: /how_hacked/
     title: How can I be hacked?
