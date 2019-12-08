@@ -53,3 +53,21 @@ The most effective thing you can do to stay safe online is learn. But you can al
 8. Trust your browser more than apps.
 9. Be suspicious when weird things happen.
 10. Learn how your browser communicates security: [read](/https/) or [watch](https://youtu.be/RNzw8tVhOpY).
+
+---
+
+## Conclusion
+
+Despite the caveat about stalking and harassment, this information paints a familiar picture of security in 2019.
+
+If you're active online, you're probably getting phishing emails every few weeks (especially if you check your junk mail). You may see malware, but your computer will probably block it.
+
+Lots of services work in the background to make you safe, so even if you don't *feel* safe, your computer is a lot safer than one from 2004.
+
+You're probably worried about hackers---aren't they everywhere?---but you probably haven't been hacked yet. You've heard that password breaches are common, but you have yet to see any consequences from them. You're sure your address is available on the Internet, but nothing seems to have come of it. Are your pictures available online? Who can see your Facebook albums? What happens if an ex wants to hurt you?
+
+Surely there's something you can do to be safer; surely there's something you can do to protect yourself.
+
+And there is. There are a bunch of steps you can take---based on this data---that will protect you and the people you care about.
+
+And part of that means learning about HTTPS.

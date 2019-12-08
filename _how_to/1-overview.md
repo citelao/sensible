@@ -54,3 +54,8 @@ After all, you're technically "safer" if you go around wearing a bullet-proof ve
 These *evidence-based* suggestions are by no means complete, but they go a long way towards safeguarding you and your family. And some common advice just makes no sense given the threats we know about.
 
 Point for point, here's why.
+
+---
+
+* credit freeze
+* check your statements
