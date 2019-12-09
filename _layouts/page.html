@@ -7,7 +7,7 @@ layout: default
 			{% if page.url == "/" %}
 				Sensible Security
 			{% else %}
-				<a href="/">
+				<a href="{{site.baseurl}}/">
 					<!-- TODO blank alt -->
 					<svg
 						version="1.1"
@@ -53,16 +53,16 @@ layout: default
 			YAML and Jekyll also work to make it impossible to override next to some `void` type or add an extra property to it (`ignore`). Instead, use overall properties `ignore_previous` and `ignore_next`.
 		{% endcomment %}
 		{% if page.real_previous == nil and page.previous.url and page.ignore_previous != true %}
-			<a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> 
+			<a class="prev" href="{{site.baseurl}}{{page.previous.url}}">&laquo; {{page.previous.title}}</a> 
 		{% endif %} 
 		{% if page.real_previous %}
-			<a class="prev" href="{{page.real_previous.url}}">&laquo; {{page.real_previous.title}}</a> 
+			<a class="prev" href="{{site.baseurl}}{{page.real_previous.url}}">&laquo; {{page.real_previous.title}}</a> 
 		{% endif %} 
 		{% if page.real_next == nil and page.next.url and page.ignore_next != true %}
-			<a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a> 
+			<a class="next" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}} &raquo;</a> 
 		{% endif %} 
 		{% if page.real_next %}
-			<a class="next" href="{{page.real_next.url}}">{{page.real_next.title}} &raquo;</a> 
+			<a class="next" href="{{site.baseurl}}{{page.real_next.url}}">{{page.real_next.title}} &raquo;</a> 
 		{% endif %} 
 	</nav>
 	<aside class="alert info">

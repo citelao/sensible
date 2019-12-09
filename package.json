@@ -7,7 +7,10 @@
     "build": "jekyll build",
     "deploy": "$(npm bin)/gh-pages -d _site",
     "test": "npm run build && sh ./_build/html_proof.sh",
-    "watch": "jekyll serve"
+    "watch": "jekyll serve",
+    "build:beta": "jekyll build --config _config.yml,_beta_config.yml",
+    "deploy:beta": "$(npm bin)/gh-pages -d _site -r git@github.com:citelao/sensible-security-dev.git",
+    "watch:beta": "jekyll serve --baseurl /beta"
   },
   "author": "",
   "license": "ISC",

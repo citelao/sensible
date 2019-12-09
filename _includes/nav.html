@@ -6,7 +6,7 @@
         {% if page.url == p.permalink %}
           <span class="current">
         {% else %}
-          <a href="{{p.permalink}}">
+          <a href="{{site.baseurl}}{{p.permalink}}">
         {% endif %}
           {% if p.short_title %}
             {{p.short_title}}
@@ -29,7 +29,7 @@
         {% if page.url == p.permalink %}
           <span class="current">
         {% else %}
-          <a href="{{p.permalink}}">
+          <a href="{{site.baseurl}}{{p.permalink}}">
         {% endif %}
           {% if p.short_title %}
             {{p.short_title}}
@@ -52,7 +52,7 @@
       {% if page.url == p.permalink %}
         <span class="current">
       {% else %}
-        <a href="{{p.permalink}}">
+        <a href="{{site.baseurl}}{{p.permalink}}">
       {% endif %}
         {% if p.short_title %}
           {{p.short_title}}
