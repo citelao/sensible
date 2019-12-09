@@ -104,7 +104,7 @@ This is the key: you are already well-equipped to understand how easy many of th
 
 The VERIS schema makes the different attack types clearer---but your knowledge can help you understand which are likely.
 
-## More bad news: corporations bad
+## More bad news: corporations aren't good at this
 
 Although enterprise threats share a lot in common with consumer threats, there's one insight that we miss by naively applying the schema to consumers: target.
 
@@ -123,6 +123,31 @@ Programmers are notoriously bad at writing secure code and keeping secrets safe<
 <aside class="sidenote">
 I share the blame---I released a (now defunct) website with insecure password storage while I was in middle school. Sorry!
 </aside>
+
+## More bad news: privacy
+
+It's also worth calling out privacy specifically.
+
+Enterprises generally don't have to worry about privacy the same way conusmers do.
+
+While privacy breaches *do* fall under the VERIS schema---as misuse or error---you will miss a big consumer-specific threat without acknowledging this issue. Corporations don't really have to worry about embarassing high school photos leaking
+
+Unfortuntely, partially because most holistic research is enterprise-focused, we don't have explicit data on this. Specifically, it's unclear how often privacy breaches occur and what impact such leaks even *have* on everyday users.
+
+How frequently are Facebook photos accidentally made public? How often do public records reveal your address or personal information online? Do people lose money or sleep because of this?
+
+
+---
+
+## Privacy, leaking data, and hacking without malware
+
+Despite these notes of optimism, it's worth jumping back to the gap in our data I mentioned earlier.
+
+Security research often focuses on hackers and malware, but users can lose their data without any of those things. Beyond active hacking, there lies a world of privacy breaches and leaked information.
+
+---
+
+##
 
 As long as other people control your data, and as long as these people have little incentive to protect it, your data is unsafe. In a way, it's simply a matter of time until your password is breached---somewhere, somehow.
 
