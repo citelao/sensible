@@ -12,7 +12,7 @@ ignore_next: true
 
 Passwords suck {% cite grassi2017nist -L appendix  -l Appendix A %}.
 
-Not just because they're annoying, but because [they don't really help as much as we think they do](/passwords/).
+Not just because they're annoying, but because [they don't really help as much as we think they do]({{site.baseurl}}/passwords/).
 
 It's the same with password requirements {% cite weir2010testing %}. Capital letters, special characters, changing them every 3 months: none of them really help.
 
@@ -26,7 +26,7 @@ How do you actually choose good passwords?
 
 In a nutshell, there are a few steps to creating, protecting, and remembering good passwords:
 
-* **Turn on two-factor authentication**: passwords are meant to keep your account secure, so take the most effective step towards securing your account. As mentioned above, [passwords aren't as important as two-factor authentication](/passwords/).
+* **Turn on two-factor authentication**: passwords are meant to keep your account secure, so take the most effective step towards securing your account. As mentioned above, [passwords aren't as important as two-factor authentication]({{site.baseurl}}/passwords/).
 
 But, if you want to choose super strong passwords, even though they aren't as important as two-factor authentication:
 
@@ -36,7 +36,7 @@ But, if you want to choose super strong passwords, even though they aren't as im
 
 These steps on their own *will* protect you from the most common attacks<!-- Why? -->.
 
-Then, if you're worried specifically about targeted attacks (because you need to [defend yourself against known threats](/help/), for example):
+Then, if you're worried specifically about targeted attacks (because you need to [defend yourself against known threats]({{site.baseurl}}/help/), for example):
 
 * **Make truly random, but easy to remember, passwords**: I recommend using randomly-generated "passphrases," since they are much easier to remember than random letters. Learn about entropy and what makes a password "random."
 * **Use a password manager**: as your passwords get more complex, remembering them safely becomes harder. A password manager makes it easy to keep your passwords safe and generate new ones---and it protects you from forgetting them.
@@ -53,7 +53,7 @@ Every step you take to make your passwords harder to guess also makes them harde
 
 Balance that against all other possible attacks: phishing, bribery, even "looking over your shoulder at Starbucks." How much more secure do good passwords make you?
 
-This is examined at length in [Passwords & TFA](/passwords/), linked above. Based on actual attack data, the easy steps at the top protect you from over 99.9% of attacks. To an extent, anything beyond even the first step (turning on two-factor authentication) is unnecessary.
+This is examined at length in [Passwords & TFA]({{site.baseurl}}/passwords/), linked above. Based on actual attack data, the easy steps at the top protect you from over 99.9% of attacks. To an extent, anything beyond even the first step (turning on two-factor authentication) is unnecessary.
 
 ## Choosing good random passwords, anyway
 
@@ -114,7 +114,7 @@ To generate that core password (or any other truly random passwords, if you are 
 
 This pattern is fantastic because it generates easy-to-remember passwords, it's hard to hack, and it's easy to share with others in an emergency.
 
-<aside class="sidenote">I still remember the password from the comic: `correct horse battery staple`. "Availability"---including your ability to remember things---is an important aspect of [security](/security/)!
+<aside class="sidenote">I still remember the password from the comic: `correct horse battery staple`. "Availability"---including your ability to remember things---is an important aspect of [security]({{site.baseurl}}/security/)!
 </aside>
 
 ## Maybe do this -- use a password manager
@@ -159,4 +159,4 @@ Then, if you're targeted by people who want to hack you, specifically, and will 
 * **Make truly random, but easy to remember, passwords**, since truly random passwords are by definition unguessable, but you need to be able to access your accounts in an emergency.
 * **Use a password manager**, since they make it easy to follow all of these password rules---and make it easier to remember your passwords.
 
-And, of course, learn how to [stay safe overall](/overall/) on the Internet.
+And, of course, learn how to [stay safe overall]({{site.baseurl}}/overall/) on the Internet.

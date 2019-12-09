@@ -52,7 +52,7 @@ The most effective thing you can do to stay safe online is learn. But you can al
 7. Type passwords only when you're sure no one can see you.
 8. Trust your browser more than apps.
 9. Be suspicious when weird things happen.
-10. Learn how your browser communicates security: [read](/https/) or [watch](https://youtu.be/RNzw8tVhOpY).
+10. Learn how your browser communicates security: [read]({{site.baseurl}}/https/) or [watch](https://youtu.be/RNzw8tVhOpY).
 
 ---
 

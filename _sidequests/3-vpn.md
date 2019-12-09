@@ -9,7 +9,7 @@ ignore_previous: true
 ignore_next: true
 ---
 
-I've often heard the advice "use a VPN"---a Virtual Private Network. If you're trying to [stay safe on the web](/overall), they're **a good solution to a different problem**.
+I've often heard the advice "use a VPN"---a Virtual Private Network. If you're trying to [stay safe on the web]({{site.baseurl}}/overall), they're **a good solution to a different problem**.
 
 ## The usefulness of a VPN
 
@@ -56,7 +56,7 @@ VPNs are helpful in specific scenarios (like the ones detailed above). However, 
 
 * VPNs only protect your messages until they reach the VPN server.
 
-	If your destination does not use [HTTPS](/https/), your messages then travel unencrypted to their final server, and anyone along *that* path can eavesdrop unimpeeded.
+	If your destination does not use [HTTPS]({{site.baseurl}}/https/), your messages then travel unencrypted to their final server, and anyone along *that* path can eavesdrop unimpeeded.
 
 	Furthermore, this includes the metadata protection. If you're worried about someone (a government?) eavesdropping *deep* in the Internet, a VPN may not protect your metadata. Of course, the *sender* of the message still looks like the VPN.
 
@@ -79,7 +79,7 @@ By the way, **military-grade encryption** is meaningless. The military sends ema
 
 VPNs promise security for parts of your communication that are most useful to governments and large organizations. In that case, the "security" they offer is probably a lie: **chances are you're doing something that VPNs would be legally obligated to give to law enforcement**.
 
-I feel a bit silly writing this. Don't do illegal things on the internet. HTTPS and [my general security advice](/overall) protects you against most of your daily threats. However, law enforcement has the time, resources, and expertise to break your security. A VPN will not make the difference here.
+I feel a bit silly writing this. Don't do illegal things on the internet. HTTPS and [my general security advice]({{site.baseurl}}/overall) protects you against most of your daily threats. However, law enforcement has the time, resources, and expertise to break your security. A VPN will not make the difference here.
 
 If you reasonably expect a government to target you, you need better advice than mine.
 
@@ -104,6 +104,6 @@ But keep in mind that using a VPN requires installing software on your computer 
 
 This means you need to audit the software to be sure it's safe, you need to be *certain* the company isn't logging your traffic and handing it to someone else, and you need to be ok with everyone around you *knowing you're using a VPN*.
 
-I think the better investment is [learning about HTTPS](/https/) and taking care to use it properly. 
+I think the better investment is [learning about HTTPS]({{site.baseurl}}/https/) and taking care to use it properly. 
 
 But if you need a VPN for a concrete reason, or if you want the extra layer of encryption and are ok with the caveats, a VPN can help.

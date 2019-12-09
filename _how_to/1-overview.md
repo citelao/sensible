@@ -10,9 +10,9 @@ TODO: let's not be so prescriptive.
 
 --
 
-It's clear that [hackers target everyone](/hackers/) and that they're focused on *easy*, [scalable](/how_hacked/) attacks.
+It's clear that [hackers target everyone]({{site.baseurl}}/hackers/) and that they're focused on *easy*, [scalable]({{site.baseurl}}/how_hacked/) attacks.
 
-It's also clear that most of the biggest threats to your [security](/security/) lie with the companies that hold your data---your bank, your email providers, your social networks.
+It's also clear that most of the biggest threats to your [security]({{site.baseurl}}/security/) lie with the companies that hold your data---your bank, your email providers, your social networks.
 
 It may seem like protecting your data must be ridiculously easy or literally impossible. The truth is in the middle: some threats are easy to stop and some threats are impossible.
 
@@ -22,16 +22,16 @@ Here are four *evidence-based* things you can do *right now* to make yourself mo
 
 ## Advice to take
 
-1. Turn on [two-factor authentication](/passwords/) on your key accounts (at least email and finance).
-2. [Freeze your credit](/identity_theft/) at the 3 largest credit bureaus.
-3. Pay for and use [automatic backup software](/backups/).
+1. Turn on [two-factor authentication]({{site.baseurl}}/passwords/) on your key accounts (at least email and finance).
+2. [Freeze your credit]({{site.baseurl}}/identity_theft/) at the 3 largest credit bureaus.
+3. Pay for and use [automatic backup software]({{site.baseurl}}/backups/).
 4. Turn on automatic updates on your devices.
 
 ## Advice to avoid
 
-1. **Don't** worry about [password strength](/passwords/) that much.
-2. **Don't** pay money for [antivirus software](/antivirus/).
-3. **Don't** use or pay money for a [VPN](/vpn/).
+1. **Don't** worry about [password strength]({{site.baseurl}}/passwords/) that much.
+2. **Don't** pay money for [antivirus software]({{site.baseurl}}/antivirus/).
+3. **Don't** use or pay money for a [VPN]({{site.baseurl}}/vpn/).
 
 ## What?!
 

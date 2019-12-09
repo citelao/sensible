@@ -83,7 +83,7 @@ To generate good passwords, keep them secure, and remember them:
 * **Use different passwords on different sites**: at the very least, have different passwords for each important account (like email, each bank account, and your password manager).
 * **Use a password manager**: a password manager makes each of these steps much easier---and protects you from forgetting your passwords.
 
-And remember to learn [how to stay safe on the Internet](/overall/)!
+And remember to learn [how to stay safe on the Internet]({{site.baseurl}}/overall/)!
 
 <!--
 

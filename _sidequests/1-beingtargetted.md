@@ -28,7 +28,7 @@ Who's attacking you? What do they want from you? What resources do they have?
 
 There really seem to be three large classes of attack, organized by relative frequency:
 
-1. **[Scalable](/hackers/), but not targeted**: your hackers don't care about or invest in you specifically; they care about warm bodies. Most attacks are of this category.
+1. **[Scalable]({{site.baseurl}}/hackers/), but not targeted**: your hackers don't care about or invest in you specifically; they care about warm bodies. Most attacks are of this category.
 2. **Scalable, pivoting to targeted**: your hackers reach out to huge numbers of people, then invest in the folks who reply. This is basically all fraud.
 3. **Not scalable, highly targeted**: your hackers care about you or a small group of people and are willing to invest time and energy into hacking you. This is the least common and most dangerous.
 
@@ -46,11 +46,11 @@ TODO
 
 ## Fighting back against non-scalable, highly targeted attacks
 
-Targeted attacks are the hardest ones to defend against, since many of the [commonly-used attacks](/how_hacked/) (and your [protection against them](/overall/)) expect an attacker who doesn't have the time to sidestep your defences.
+Targeted attacks are the hardest ones to defend against, since many of the [commonly-used attacks]({{site.baseurl}}/how_hacked/) (and your [protection against them]({{site.baseurl}}/overall/)) expect an attacker who doesn't have the time to sidestep your defences.
 
 The advice you should take varies greatly depending on who's attacking you; defending against the Mossad is very different from defending against an ex-boyfriend or Gamergate wannabe<!-- TODO link you're gonna get mossaded, gamergate summary -->.
 
-Often, the advice you need may go against even my recommendations. It may include [using a VPN](/vpn/), which I would ordinarily consider a waste of time. These attacks are very different from the most common ones.
+Often, the advice you need may go against even my recommendations. It may include [using a VPN]({{site.baseurl}}/vpn/), which I would ordinarily consider a waste of time. These attacks are very different from the most common ones.
 
 Fortunately, many previous victims have curated resources to safeguard against different attacks. Unlike generic "security advice" blogs (like this one), these tips are often literal lists of steps that worked for them.
 

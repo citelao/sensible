@@ -13,7 +13,7 @@ real_next:
     title: Conclusion
 ---
 
-The seven actions in the VERIS schema (hacking, malware, social, misuse, physical, error, and environmental), which we discussed in the [the last section](/how_hacked/), give a high-level overview of cybersecurity threats. But it's worth re-examining some of the "well-known" ones.
+The seven actions in the VERIS schema (hacking, malware, social, misuse, physical, error, and environmental), which we discussed in the [the last section]({{site.baseurl}}/how_hacked/), give a high-level overview of cybersecurity threats. But it's worth re-examining some of the "well-known" ones.
 
 There's a lot of surprising facts about hacking, malware, and social attacks.
 

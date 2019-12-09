@@ -12,7 +12,7 @@ real_next:
     title: How can I be hacked?
 ---
 
-From [the last section](/security/), you know that security is about protecting your data's confidentiality, integrity, and availability.
+From [the last section]({{site.baseurl}}/security/), you know that security is about protecting your data's confidentiality, integrity, and availability.
 
 But... do you even have anything worth securing?
 
@@ -55,7 +55,7 @@ I've found that most people worry about similar things<!-- TODO cite folk models
 
 Security advice can be very abstract and high-handed. It's one-size-fits-all, and it's often unclear if it misses something that's important to you.
 
-Think about what's important to you, and what aspects of security you need for that stuff (from the CIA triad in [the last section](/security/)). What do you need to keep confidential? What do you need to keep intact? What should always be available to you?
+Think about what's important to you, and what aspects of security you need for that stuff (from the CIA triad in [the last section]({{site.baseurl}}/security/)). What do you need to keep confidential? What do you need to keep intact? What should always be available to you?
 
 You may discover important stuff you didn't protect, or you may realize that you were protecting some stuff the wrong way.
 
@@ -157,7 +157,7 @@ In this scenario you are a specific, isolated target. The hackers have the time 
 This is absolutely terrifying, and I will put it clearly:
 
 * **If you are worried about this type of harassment, I do not think this guide is a complete solution for you**.
-* If you are being targeted like this, you need to get help from the police ([I'm under attack now](/help/) has more information).
+* If you are being targeted like this, you need to get help from the police ([I'm under attack now]({{site.baseurl}}/help/) has more information).
 
 In that case, why am I optimistic about security? Two reasons:
 

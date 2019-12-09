@@ -9,7 +9,7 @@ ignore_previous: true
 ignore_next: true
 ---
 
-In the main guide, we examined how [hackers look for scalable, cheap attacks](/hackers/). Keeping your data [safe](/security/) usually means preventing those easy attacks.
+In the main guide, we examined how [hackers look for scalable, cheap attacks]({{site.baseurl}}/hackers/). Keeping your data [safe]({{site.baseurl}}/security/) usually means preventing those easy attacks.
 
 Up until recently, **preventing those easy attacks was impossible**.
 
@@ -75,7 +75,7 @@ The information on the "envelope"---the **metadata**---has specific privacy and 
 
 For example, an attacker can tell if you're using Skype, or that you are going to Planned Parenthood's website (but they cannot know who you talked to or which specific pages you load).
 
-This is discussed in greater depth later. See also [**Do you need a VPN?**](/vpn/).
+This is discussed in greater depth later. See also [**Do you need a VPN?**]({{site.baseurl}}/vpn/).
 </aside>
 
 But HTTPS does not secure every part of your internet browsing, and you must double check it to make sure no one is attacking you.
@@ -93,7 +93,7 @@ Encrypting your communication with these keys stops man-in-the-middle attacks co
 <aside class="sidenote">
 NB that eavesdroppers **do** know which website you're talking to: the metadata leaks [the base part of the URL](https://stackoverflow.com/q/8277323) (and only that part). Eavesdroppers can also see that you **are** talking to a site and can analyze the message size---think about telling apart college acceptance letters vs college rejection letters by size.
 
-Again, there are practical attacks {%cite muehlstein2016analyzing -L note -l 7--46 %}, but many are very specific. See also [**Do you need a VPN?**](/vpn/) for more in-depth discussion of metadata.
+Again, there are practical attacks {%cite muehlstein2016analyzing -L note -l 7--46 %}, but many are very specific. See also [**Do you need a VPN?**]({{site.baseurl}}/vpn/) for more in-depth discussion of metadata.
 </aside>
 
 However, what if an attacker pretends to be the server, giving you a false certificate? They can pretend to be webkinz.com, intercept your messages, and then send them to the real webkinz.com. Your traffic may be encrypted, but it's still man-in-the-middled!
@@ -139,7 +139,7 @@ For example, HTTPS guarantees that when you talk to Snapple.com you are actually
 
 HTTPS does not indicate any security *except* that your communication was secure in transit, but that's a very important thing; the rest you can verify separately.
 
-Recall the [six points your data crosses](/security/) when it travels the internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
+Recall the [six points your data crosses]({{site.baseurl}}/security/) when it travels the internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
 
 <aside class="sidenote">
 You may notice that HTTPS does not guarantee **availability**. That's based on servers being available to respond to your requests. In practice, HTTPS does not slow down servers enough to **disrupt** availability on its own.

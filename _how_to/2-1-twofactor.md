@@ -16,7 +16,7 @@ Passwords don't really matter.
 
 If you want to make your logins more secure, spend your time turning on **two-factor authentication** (also 2FA, TFA, or multi-factor authentication, MFA) instead.
 
-You should still spend a *little* effort choosing [good passwords](/good_passwords/), but TFA matters much more.
+You should still spend a *little* effort choosing [good passwords]({{site.baseurl}}/good_passwords/), but TFA matters much more.
 
 ## A good password stops little
 
@@ -53,7 +53,7 @@ This doesn't cover all attacks on passwords, but looking at more "overall" data 
 
 That being said, if a hacker wants to target *you* specifically, they can crack almost any password given enough time and motivation.
 
-That is the *one* situation where you really want a *good* password, not just a "good enough" password. And if you are being targeted like that, [you should probably contact the police](/help/).
+That is the *one* situation where you really want a *good* password, not just a "good enough" password. And if you are being targeted like that, [you should probably contact the police]({{site.baseurl}}/help/).
 
 <!-- Is Everything We Know About Password-Stealing Wrong? -->
 
@@ -74,7 +74,7 @@ There are downsides and nuances to two-factor authentication (some folks argue t
 
 No matter what method you use, two-factor authentication will protect you from most attacks.
 
-You should still put a little effort into choosing [reasonably good](/good_passwords/) passwords, but two-factor authentication does a *ton* to keep you safe.
+You should still put a little effort into choosing [reasonably good]({{site.baseurl}}/good_passwords/) passwords, but two-factor authentication does a *ton* to keep you safe.
 
 At the end of the day<!-- Your Pa$$word doesn't matter; -->:
 

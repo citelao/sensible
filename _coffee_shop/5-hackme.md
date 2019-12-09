@@ -12,9 +12,9 @@ real_next:
     title: "Well-known cybersecurity threats: in depth"
 ---
 
-Yes, there are hackers who want to steal your money. In [the last section](/hackers/), it became clear that hackers target everyone with cheap, *scalable* attacks---attacks that can easily target many, many people or can quickly compromise many people at once.
+Yes, there are hackers who want to steal your money. In [the last section]({{site.baseurl}}/hackers/), it became clear that hackers target everyone with cheap, *scalable* attacks---attacks that can easily target many, many people or can quickly compromise many people at once.
 
-Unless you know of a specific person or group of people trying to hurt you (in which case you should [get help](/help/)), you should focus on protecting the stuff that hackers use to steal your money.
+Unless you know of a specific person or group of people trying to hurt you (in which case you should [get help]({{site.baseurl}}/help/)), you should focus on protecting the stuff that hackers use to steal your money.
 
 By the same token, you may have other stuff you want to keep safe---even if there's not a straightforward threat to it yet.
 
@@ -100,7 +100,7 @@ Ask yourself: how many passwords could a hacker get by sniffing the wi-fi at Sta
 
 How many passwords could they get if they used that time to send social phishing emails?
 
-This is the key: you are already well-equipped to understand how easy many of these attacks are. Learning [how the Internet works](/internet/) or [how it can keep data secure](/https/) can only make you better at this, but you should already be in a good place.
+This is the key: you are already well-equipped to understand how easy many of these attacks are. Learning [how the Internet works]({{site.baseurl}}/internet/) or [how it can keep data secure]({{site.baseurl}}/https/) can only make you better at this, but you should already be in a good place.
 
 The VERIS schema makes the different attack types clearer---but your knowledge can help you understand which are likely.
 
