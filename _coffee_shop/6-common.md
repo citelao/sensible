@@ -124,29 +124,6 @@ But we don't know.
 
 ---
 
-## As an example, passwords
-
-To put this all in perspective, think about your bank password. What are the threats to it?
-
-There are the traditional attacks (for example):
-
-* A **hacker** could use inside knowledge about you to guess your password.
-* A **virus** keylogger could detect you entering your password and send it to a criminal.
-* A **phishing** email could convince you to login to a fake business website.
-
-Then there are the further attacks:
-
-* Your significant other could **misuse** your computer after you've fallen asleep to Netflix, and steal money from your account.
-* Someone could **steal** your laptop.
-* You could **accidentally** type your password into an email because you didn't see the cursor.
-* A **power outage** could prevent you from looking up your password in your password manager.
-
-But then there is the simple external case:
-
-* Your bank could get hacked; they could store the password in plaintext; and now your password is public to the world.
-
----
-
 * viruses (mostly by email)
 * phishing (much more common; rare success (?))
 * attacks not on you (the real problem)
@@ -167,7 +144,6 @@ Note that these numbers vary (widely) by country.
 
 For example, data from Kaspersky indicates that nearly 70% of users in Vietnam were exposed to malicious files, including through removable hard drives (like USB keys). US users saw &lt;10% exposure.
 </aside>
-
 
 ---
 

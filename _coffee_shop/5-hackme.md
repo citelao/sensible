@@ -130,24 +130,58 @@ It's also worth calling out privacy specifically.
 
 Enterprises generally don't have to worry about privacy the same way conusmers do.
 
-While privacy breaches *do* fall under the VERIS schema---as misuse or error---you will miss a big consumer-specific threat without acknowledging this issue. Corporations don't really have to worry about embarassing high school photos leaking
+While privacy breaches *do* fall under the VERIS schema---as misuse or error---you will miss a big consumer-specific threat without acknowledging this issue. Corporations don't really have to worry about embarassing high school photos leaking, and they don't really have home addresses to protect.
 
-Unfortuntely, partially because most holistic research is enterprise-focused, we don't have explicit data on this. Specifically, it's unclear how often privacy breaches occur and what impact such leaks even *have* on everyday users.
+Unfortuntely, partially because most holistic research is enterprise-focused, we don't have explicit data on this. Specifically, it's unclear how often privacy breaches occur and what impact such leaks have on everyday users.
 
 How frequently are Facebook photos accidentally made public? How often do public records reveal your address or personal information online? Do people lose money or sleep because of this?
 
+We don't know.
 
----
+## As an example, passwords
 
-## Privacy, leaking data, and hacking without malware
+To put this all in perspective, think about your bank password. What are the threats to it?
 
-Despite these notes of optimism, it's worth jumping back to the gap in our data I mentioned earlier.
+There are the traditional attacks (for example):
 
-Security research often focuses on hackers and malware, but users can lose their data without any of those things. Beyond active hacking, there lies a world of privacy breaches and leaked information.
+* A **hacker** could use inside knowledge about you to guess your password.
+* A **virus** keylogger could detect you entering your password and send it to a criminal.
+* A **phishing** email could convince you to log in to a fake business website.
 
----
+Then there are the further attacks:
 
-##
+* Your significant other could **misuse** your computer after you've fallen asleep to Netflix---and steal money from your logged-in bank account.
+* Someone could **steal** your laptop.
+* You could **accidentally** type your password into an email because you didn't see the cursor.
+* A **power outage** could prevent you from looking up your password in your password manager.
+
+But then there is the simple external case:
+
+* Your bank could get hacked; they could store the password in plaintext; and now your password is public to the world.
+
+And the privacy issue:
+
+* Your Word document of passwords, which you keep in RandomCloudDriveService, for example, could be set to "public" because the service is poorly designed; now your password is public, too.
+
+Which attacks are scalable? Which attacks are likely?
+
+## Conclusion
+
+There are many threats to your data, and it's literally impossible to know all of them. We can make good guesses based on massive previous experience, while knowing that these guesses come from enterprises.
+
+There are 7 different actions that criminals can take to steal your data:
+
+* **Hacking**
+* **Malware**
+* **Social**
+* **Misuse**
+* **Physical**
+* **Error**
+* **Environmental**
+
+But most criminals are limited to scalable attacks, since they need to make a profit.
+
+At the end of the day, though, most criminals target corporations instead---it's just more lucrative. And that is the biggest gap in your security.
 
 As long as other people control your data, and as long as these people have little incentive to protect it, your data is unsafe. In a way, it's simply a matter of time until your password is breached---somewhere, somehow.
 
