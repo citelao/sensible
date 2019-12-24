@@ -91,6 +91,15 @@ This dropoff underscores the larger point: criminals want money. Spam, which pay
 
 However, these rates are still very high, especially compared to the earlier examples of hacking and malware from the Internet, both of which barely show up on the radar.
 
+<!--
+More napkin math time! 
+
+(1-%phishing)^(#emails) = chance of no phishing
+(1-%phishing)^(#emails/day * 30) = chance of no phishing in a month
+
+If you assume ~5 emails/day, 0.955991028 = chance of no phishing in a month, so expect 5% versus 2%. That's not super crazy off.
+-->
+
 Norton's phishing numbers are actually on the low side. Microsoft estimates the overall phishing email rate to be about 10x higher---sitting between 0.25% and 0.55% monthly in 2018<!-- MSIR 24 pg. 20 -->. And Cyren, an enterprise security vendor, found that undetected phishing made up a further 0.26% of all email in 2018<!-- Cyren Email Security Gap -->.
 
 Doing some napkin math with these numbers, you could estimate that perhaps 1% of all email is phishing.
@@ -125,8 +134,6 @@ But we don't know.
 ---
 
 * viruses (mostly by email)
-* phishing (much more common; rare success (?))
-* attacks not on you (the real problem)
 
 Kaspersky (annual?)
 * ransomware (fewer than 1 in 200 in US; 1 in 40 in Japan)
@@ -135,9 +142,9 @@ Kaspersky (annual?)
 
 ---
 
-Specifically, we can look at the numbers to identify *modern* threats. Security companies (including Kaspersky and Microsoft) keep track of the threats their computers see, and they publish frequent reports. Today, **most threats come from email and web browsing**---not passive attacks (like the ones detailed above) or physical attacks (like a hacker inserting a virus-laden USB stick into your computer).
+ Today, **most threats come from email and web browsing**---not passive attacks (like the ones detailed above) or physical attacks (like a hacker inserting a virus-laden USB stick into your computer).
 
-Every year, Verizon a massive report examining thousands of successful data breaches across thousands of businesses<!-- TODO cite -->. In their most recent reports, they indicate that the overwhelming majority of malware (93.8%!) is sent by email, followed by browser (5.8%)<!-- TODO Verizon DBIR 2017 pg. 40 -->. The remaining 0.4% is sent (and detected) by other means.
+In DBIR's most recent reports, they indicate that the overwhelming majority of malware (93.8%!) is sent by email, followed by browser (5.8%)<!-- TODO Verizon DBIR 2017 pg. 40 -->. The remaining 0.4% is sent (and detected) by other means.
 
 <aside class="sidenote">
 Note that these numbers vary (widely) by country.
@@ -157,9 +164,7 @@ For example, data from Kaspersky indicates that nearly 70% of users in Vietnam w
 
 This spotlights how hackers have changed their methods, but there's also been a huge change in volume.
 
-In 2006 with the release of Windows Vista, Microsoft began including Windows Defender, a free anti-virus tool, in every Windows installation. Alongside other anti-virus companies like Kaspersky and Panda<!-- TODO cite -->, Microsoft also began publishing a security report twice a year, listing detailed statistics about the threats their users encountered.
-
-Though these statistics can only measure *detected* viruses, they paint a very helpful picture of the average computer. The numbers and periods don't all agree, but these reports suggest that a given US computer has a 15-35% chance of *seeing* (not *catching*) at least one virus in a given quarter.
+---
 
 More specifically, measuring the percentage of computers with at least one virus<!-- TODO I use the word virus freely to match with common usage, but I'd like to improve that --> detection:
 
@@ -173,28 +178,10 @@ These numbers also vary widely by country. According to Microsoft, a computer in
 Also note that in 2018, Microsoft reported a much lower worldwide monthly detection rate of 5.10%.
 </aside>
 
-These numbers are incredible, especially since they represent *detected* malware (and, as far as we can tell, we know about most malware<!-- TODO cite DBIR. We know that most exploits are patched/known! -->). They say that almost 3 in 4 computers won't see *any* malware in a given year!
+---
 
 This is very different from 2004, where you apparently couldn't turn on your computer without being hacked.
 
 ## But you are getting phished, right?
 
-In fact, if 2004 was the era of pervasive hackers, 2019 is the era of pervasive phishing.
-
-According to Microsoft, between 0.25% and 0.55% of received email in 2018 were phishing. While that may not seem like a lot, consider this: that means one in every 200-400 emails was phishing. By those numbers, if you get 30 emails a day, you'd get nearly one phishing email a week!
-
-<!-- TODO also the other study about prevalance -->
-
 Phishing attempts are almost always followed by a virus<!-- TODO cite -->, which has a fairly high chance of being blocked, but the trend is clear: hackers are phishing to steal your passwords, then trying to use those passwords to hack your computer.
-
----
-
-## Privacy, leaking data, and hacking without malware
-
-Despite these notes of optimism, it's worth jumping back to the gap in our data I mentioned earlier.
-
-Security research often focuses on hackers and malware, but users can lose their data without any of those things. Beyond active hacking, there lies a world of privacy breaches and leaked information.
-
-We don't have explicit data on this. Specifically, it's unclear how often these breaches (or accidental leaks or hacking without malware) occur and what impact such leaks even *have* on everyday users.
-
-How frequently are Facebook photos accidentally made public? How often do public records reveal your address or personal information online? Do people lose money or sleep because of this?
