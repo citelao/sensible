@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Traditional threats
+title: Hacking, malware, & phishing
 description: TODO If you're going to get hacked, how will it happen?
 date: 2018-11-24T12:00:00
-permalink: /traditional_threats/
+permalink: /hacking_malware_phishing/
 real_previous:
     url: /how_hacked/
     title: How can I be hacked?
@@ -12,7 +12,7 @@ real_next:
     title: The other threats
 ---
 
-If you've learned about cybersecurity before, you've almost certainly heard of the first three items in the VERIS schema (discussed in [the last section]({{site.baseurl}}/how_hacked/)): hacking, malware, and phishing.
+If you've learned about cybersecurity before, you've almost certainly heard of the first three items in the VERIS schema (discussed in [the last section]({{site.baseurl}}/how_hacked/)): Hacking, malware, & phishing.
 
 These are the typical "cyber" threats you see reported on, but ask yourself the important questions: are these threats scalable or can they be large-scale?
 
