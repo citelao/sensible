@@ -5,8 +5,8 @@ title: Conclusion
 date: 2018-11-24T12:00:00
 permalink: /conclusion/
 real_previous:
-    url: /how_hacked/
-    title: How can I be hacked?
+    url: /other_threats/
+    title: The other threats
 real_next:
     url: /references/
     title: References

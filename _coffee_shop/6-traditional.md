@@ -1,41 +1,24 @@
 ---
 layout: page
-title: "Well-known cybersecurity threats: in depth"
-short_title: Well-known threats
+title: Traditional threats
 description: TODO If you're going to get hacked, how will it happen?
 date: 2018-11-24T12:00:00
-permalink: /well_known_threats/
+permalink: /traditional_threats/
 real_previous:
     url: /how_hacked/
     title: How can I be hacked?
 real_next:
-    url: /conclusion/
-    title: Conclusion
+    url: /other_threats/
+    title: The other threats
 ---
 
-The seven actions in the VERIS schema (hacking, malware, social, misuse, physical, error, and environmental), which we discussed in the [the last section]({{site.baseurl}}/how_hacked/), give a high-level overview of cybersecurity threats. But it's worth re-examining some of the "well-known" ones.
+If you've learned about cybersecurity before, you've almost certainly heard of the first three items in the VERIS schema (discussed in [the last section]({{site.baseurl}}/how_hacked/)): hacking, malware, and phishing.
 
-There's a lot of surprising facts about hacking, malware, and social attacks.
+These are the typical "cyber" threats you see reported on, but ask yourself the important questions: are these threats scalable or can they be large-scale?
 
-## This may not be the big picture
+## Hacking
 
-If you're worried about your cybersecurity today, you're probably worried about these three attacks specifically.
-
-Researchers worry about the same things, and that comes out in the research. Most consumer cybersecurity research revolves around these three attacks, and it's very hard to find data about the others in a way that feels complete.
-
-There are probably surprising and brilliant insights hidden in the data for the other 4 actions in the VERIS schema, but I don't have that data---maybe nobody does.
-
-Regardless, let's examine the data we have.
-
-## The key word is "scalable"
-
-If there's a mantra to be had from the previous sections, it's that most cybercriminals aim for scalable attacks---out of necessity. If cybercrime is about money, then the attacks need to make a bunch of money at once (very hard) or make a little bit of money many times.
-
-Most of the insights here stem from applying that rule of thumb to different attacks.
-
-### Hacking
-
-This is very true for hacking.
+Surprisingly, *hacking* isn't very scalable---and on that note, it isn't very common.
 
 We use the word "hacking" fairly loosely, but here that means exploiting or circumventing computer security measures. This type of attack isn't very scalable, and the payoff for hacking one specific person is just so miniscule that most hackers don't even bother. It simply doesn't pay to hack people individually.
 
@@ -43,19 +26,21 @@ We use the word "hacking" fairly loosely, but here that means exploiting or circ
 Hacking doesn't pay---unless, of course, your attacker isn't trying to steal money. But again, it's unclear how many people are stalked or targetted personally, and it's unclear how much of that translates into hacking.
 </aside>
 
-Furthermore, hacking isn't really the unknowable, scary beast that we make it out to be.
+But how do we know that? Aren't there tons of new security vulnerabilities every day?
 
-It can sometimes seem that there are new security vulnerabilities every day: new bugs, new exploits, new backdoors. This is true! In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
+That is true! We learn about new bugs, new exploits, and new backdoors every day. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
 
-However, these vulnerabilities don't really translate to hacking. Verizon's DBIR found that *at most* 6% of successful hacking incidents (of corporations) had anything to do with software vulnerabilities like this<!-- DBIR 2019 pg 10 -->. In fact, nearly 70% of all "hacking" breaches involve *stolen passwords*.
+However, these vulnerabilities don't really translate to hacking. Verizon's DBIR found that *at most* 6% of successful (corporate) data breaches had anything to do with software vulnerabilities like this<!-- DBIR 2019 pg 10 -->. 
 
-Your computers may be riddled with holes, but hackers don't care. They just use the key they found under the mat.
+"Hacking" in data breaches is common---appearing in 53% of all breaches in 2018---but nearly 70% of all that hacking meant using *stolen passwords*.
 
-And this data includes state-sponsored attacks and corporate espionage---not just financial hacking.  Despite being possible for two decades, those 2018 vulnerabilities that exposed theoretically everything on everyone's systems have probably never been exploited<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Mitigation -->.
+<aside class="sidenote">
+It's worth re-emphasizing that these numbers come from **corporate** breaches. I'm fairly certain that **consumer** hacking is rare enough to make the news.
 
-In other words, most hacking today is just folks using stolen passwords. And even that sort of hacking is not very scalable<!-- Cite Microsoft's Azure post. -->---so not very common.
+It's worth guessing passwords at a company because they usually have a lot of data hackers can sell.
+</aside>
 
-<!-- TODO: explain the nuances here: Ukraine Ransomware, e.g.. When hacking becomes scalable, it is sometimes used. Windows XP, too. But the world is not XP anymore and ransomware was patched BEFORE. And so many other vulns not exploited. -->
+In other words, your computers may be riddled with holes, but hackers don't care. They just use the key they found under the mat.
 
 ### Malware
 
@@ -70,6 +55,8 @@ The numbers don't always agree, but most reports suggest that two-thirds of comp
 And of the 1/3 that did see a virus, it's reasonable to estimate that over 99% of these computers detected and removed the virus themselves<!-- older Microsoft SIRs  -->.
 
 <!-- TODO: how does this gel with how my friends have adware or unwanted applications? -->
+
+<!-- TODO: why are they not as prevalant anymore? Microsoft's bottom line (prob) and hard to monetize (?) -->
 
 Malware is still quite common (1 in 3 is rather high), especially in different parts of the world (computers in India are more than twice as likely to encounter a virus as computers in the US<!-- TODO Cite MSIR regionals -->). But the Internet of 2019 is very different than the Internet of a decade ago. Software companies have stepped up, and a computer running modern Windows has effective, top-tier virus protection. For free.
 
@@ -106,30 +93,31 @@ Doing some napkin math with these numbers, you could estimate that perhaps 1% of
 
 Given how much email we receive daily, that's troubling. Not *staggering*, and certainly still manageable, but troubling nonetheless.
 
-## Back to the big picture: misuse, error, physical, and environmental
+## The big three? Probably
 
-It's worth jumping back to the point we made at the beginning---most of our data only covers the first 3 actions in the VERIS schema:
+These numbers should be a bit reassuring and perhaps match your experience. Hacking, malware, and phishing/social attacks are all real, but perhaps they don't occur at the rates you expected.
 
-* hacking,
-* malware, and
-* phishing.
+Applying the rules from the last section---"does it scale?" and "can it be large scale?"---leads to the same conclusions that data shows: the easy-to-scale attacks are super common, and the more difficult attacks are much less common. Phishing and spam, for example, are common, while movie-style hacking is not.
 
-The data shows that---though both malware and phishing are *common*---none of them are as common as most people think.
+These are probably the most prevalant attacks, but it's worth examining the rest of the actions in the VERIS schema to understand why.
 
-There are still 4 other actions in the VERIS schema:
+---
 
-* misuse,
-* physical,
-* error, and
-* environmental.
+### Hacking
 
-Each of them can be scaled in different ways. We don't have a lot of data about these attacks.
+This is very true for hacking.
 
-But you can begin to apply the rule of thumb to these, too---even subjectively. When was the last time you sent an email to the wrong person (error)? Last week? How often do friends start thumbing through your other pictures when you show them one on your phone (misuse)?
+---
 
-We don't do a good job of measuring these things objectively, and it's hard to learn from the data until then. It could be that a product that stops you from emailing the wrong Dan is more valuable than the most expensive anti-virus software.
+Furthermore, hacking isn't really the unknowable, scary beast that we make it out to be.
 
-But we don't know.
+---
+
+And this data includes state-sponsored attacks and corporate espionage---not just financial hacking.  Despite being possible for two decades, those 2018 vulnerabilities that exposed theoretically everything on everyone's systems have probably never been exploited<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Mitigation -->.
+
+In other words, most hacking today is just folks using stolen passwords. And even that sort of hacking is not very scalable<!-- Cite Microsoft's Azure post. -->---so not very common.
+
+<!-- TODO: explain the nuances here: Ukraine Ransomware, e.g.. When hacking becomes scalable, it is sometimes used. Windows XP, too. But the world is not XP anymore and ransomware was patched BEFORE. And so many other vulns not exploited. -->
 
 ---
 
@@ -185,3 +173,4 @@ This is very different from 2004, where you apparently couldn't turn on your com
 ## But you are getting phished, right?
 
 Phishing attempts are almost always followed by a virus<!-- TODO cite -->, which has a fairly high chance of being blocked, but the trend is clear: hackers are phishing to steal your passwords, then trying to use those passwords to hack your computer.
+
