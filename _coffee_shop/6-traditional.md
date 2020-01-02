@@ -12,35 +12,106 @@ real_next:
     title: The other threats
 ---
 
-If you've learned about cybersecurity before, you've almost certainly heard of the first three items in the VERIS schema (discussed in [the last section]({{site.baseurl}}/how_hacked/)): Hacking, malware, & phishing.
+If you've learned about cybersecurity before, you've almost certainly heard of the first three items in the VERIS schema (discussed in [the last section]({{site.baseurl}}/how_hacked/)): hacking, malware, and phishing.
 
-These are the typical "cyber" threats you see reported on, but ask yourself the important questions: are these threats scalable or can they be large-scale?
+These are the typical "cyber" threats you see reported on, but ask yourself the important questions: are these threats scalable, and can they be large-scale?
 
 ## Hacking
 
-Surprisingly, *hacking* isn't very scalable---and on that note, it isn't very common.
+While hacking can certainly be large-scale---just think about all of the huge hacks that make the news every few months---it's not immediately clear if hacking is scalable, or, by the same token, prevalent.
 
-We use the word "hacking" fairly loosely, but here that means exploiting or circumventing computer security measures. This type of attack isn't very scalable, and the payoff for hacking one specific person is just so miniscule that most hackers don't even bother. It simply doesn't pay to hack people individually.
+If you're anything like me, when you think of "hacking," you think of masked villains in [NCIS](https://www.youtube.com/watch?v=u8qgehH3kEQ) or [Castle](https://www.youtube.com/watch?v=K7Hn1rPQouU). But you probably also think of automated hacking attacks that target your computer the moment it's attached to the Internet. Or you think of viruses and phishing and fraud.
+
+We use the word "hacking" fairly loosely, but in this context we just mean "exploiting or circumventing computer security measures." Viruses and phishing and fraud are all other types of attacks.
+
+<aside class="sidenote">
+VERIS calls hacking:
+
+> [...] all attempts to intentionally access or harm information assets without (or exceeding) authorization by circumventing or thwarting logical security mechanisms. Includes brute force, SQL injection, cryptanalysis, denial of service attacks, etc.
+<!-- http://veriscommunity.net/actions.html -->
+</aside>
+
+Even with this clarification, though, "hacking" attacks range from very targeted (governments deploying a virus to destroy nuclear centrifuges<!-- Stuxnet -->) to very broad (tools that automatically find and hack vulnerable devices across the world<!-- https://www.vice.com/en_us/article/xw4emj/autosploit-automated-hacking-tool -->).
+
+It helps, then, to separate hacking into two groups:
+
+* Targeted (non-scalable) hacking
+* Scalable hacking
+
+Though there's definitely a spectrum here (some attacks take years to run, while some take just seconds), but this distinction is appropriate: even an "almost scalable" attack *isn't* scalable. There's a big difference between running 1,000 attacks daily and running 100 attacks daily, and an even bigger difference between 100 and 10. Each stage requires *10 times more profit* per attack to be worthwhile.
+
+This is similar to the distinction we make in [Will I even be hacked?]({{site.baseurl}}/hackers/).
+
+## Targeted (non-scalable) hacking
+
+The hacking you see on TV isn't scalable.
+
+<aside class="sidenote">
+It's also not super realistic, but you get the idea<!-- https://www.youtube.com/watch?v=SZQz9tkEHIg -->.
+</aside>
+
+That shouldn't be surprising---hackers can't hack thousands of people if they have to spend several hours on each one. We know it's hard to steal money from [Will I even be hacked?]({{site.baseurl}}/hackers/). Hacking you---a random person---like this just doesn't make financial sense.
+
+It turns out that this type of hacking isn't particularly common among corporate targets, either, even though hacking a company could yield a lot of good, sellable data.
+
+While hacking in general is common in corporate breaches---present in 53% of them in 2018<!-- DBIR 2019 pg 10 -->---70% of those "hacking" breaches involve using stolen passwords. At most 6% of all breaches involve "exploiting vulnerabilities" like we see in the movies.
+
+In other words, even *corporate* computers may be riddled with holes, but hackers don't care. They just use the key they found under the mat. 
+
+That being said, around 15% of corporate breaches involve exploiting a software backdoor<!-- DBIR 2019 offers 30% backdoor or C2 for hacking, which is 1 in 2. Therefore, 15%. -->. So there's still some dramatic hacking going on, overall.
+
+<aside class="sidenote">
+It's worth re-emphasizing that these numbers come from **corporate** breaches. I'm fairly certain that **consumer** hacking is rare enough to make the news<!-- eg (https://www.forbes.com/sites/daveywinder/2020/12/31/windows-hack-attack-confirmed-as-microsoft-responds-with-powerful-counterpunch/#7f71ef057e01) -->.
+
+It's worth guessing passwords at a company because they usually have a lot of data hackers can sell.
+</aside>
+
+## Scalable hacking
+
+On the other hand, scalable hacking might be really scary. Hackers could theoretically target every person all the time (given the right automatic hacking tools).
+
+In fact, aren't there tons of new security vulnerabilities every day? Aren't there tons of automatic hacking tools?
+
+That is true! We learn about new bugs, new exploits, and new backdoors all the time. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years---Spectre and Meltdown<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
+
+It turns out that computer companies know about these exploits, too. And it turns out that computer companies today proactively defend against these attacks---if your software is up to date, you should be protected.
+
+This wasn't the case in 2004.
+
+In 2004, the Internet Storm Center stated that an unpatched Windows XP machine would be infected [within 20 minutes](https://www.theregister.co.uk/2004/08/19/infected_in20_minutes/) of being connected to the Internet<!-- also InfoSec Handlers Diary Blog - Survival Time on the Internet -->---automatically. This is easy to believe. Windows XP:
+
+* had no default firewall (it allowed anyone to connect to it without issue),
+* had poor built-in security software (so it could not stop threats once they connected), and it
+* had notoriously insecure default settings (so hackers had many ways to take over your machine).
+* was hard to automatically update (so you couldn't get patches before hackers took over).
+
+Microsoft eventually released patches that turned on the firewall and fixed many of the bad defaults (the "Service Packs"), but the damage was done. Securing a new XP machine meant hoping you could download the patches before you got a virus.
+
+That's not really the case today.
+
+Microsoft learned their lesson, and the next release of Windows (Vista) could almost certainly *never* be hacked that way (as long as it was supported). New versions of Windows include much stronger firewall, fantastic security software, and saner defaults. But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers (like Verizon!) spend billions every year cleaning up the Internet. Thousands, of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime.
+
+<aside class="sidenote">
+Disclaimer: I work for Microsoft.
+</aside>
+
+It's still true that criminal networks "sweep" the Internet looking for insecure computers<!-- cite How Vulnerable Are Unprotected Machines on the Internet? and current survival time stats https://isc.sans.edu/survivaltime.html -->, and it's still true that an unpatched Windows XP install will probably be hacked within 24 hours. In fact, if you turn off your security tools and deliberately sabotage your machine, you can probably get hacked this way on newer computers, too! 
+
+But the world has mostly grown and learned. The world is now, usually, secure by default.
+
+In a large part *because* of how easy it was to get hacked back then, computers today are protected on a level that would have been unfathomable in 2004.
+
+There are still
+
+---
 
 <aside class="sidenote">
 Hacking doesn't pay---unless, of course, your attacker isn't trying to steal money. But again, it's unclear how many people are stalked or targetted personally, and it's unclear how much of that translates into hacking.
 </aside>
 
-But how do we know that? Aren't there tons of new security vulnerabilities every day?
+But how do we know that? 
 
-That is true! We learn about new bugs, new exploits, and new backdoors every day. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
-
-However, these vulnerabilities don't really translate to hacking. Verizon's DBIR found that *at most* 6% of successful (corporate) data breaches had anything to do with software vulnerabilities like this<!-- DBIR 2019 pg 10 -->. 
-
-"Hacking" in data breaches is common---appearing in 53% of all breaches in 2018---but nearly 70% of all that hacking meant using *stolen passwords*.
-
-<aside class="sidenote">
-It's worth re-emphasizing that these numbers come from **corporate** breaches. I'm fairly certain that **consumer** hacking is rare enough to make the news.
-
-It's worth guessing passwords at a company because they usually have a lot of data hackers can sell.
-</aside>
-
-In other words, your computers may be riddled with holes, but hackers don't care. They just use the key they found under the mat.
+---
 
 ### Malware
 
