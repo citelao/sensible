@@ -68,15 +68,23 @@ It's worth guessing passwords at a company because they usually have a lot of da
 
 ## Scalable hacking
 
-On the other hand, scalable hacking might be really scary. Hackers could theoretically target every person all the time (given the right automatic hacking tools).
+On the other hand, scalable hacking might be the real threat. Hackers could theoretically target every person all the time (given the right automatic hacking tools).
 
 In fact, aren't there tons of new security vulnerabilities every day? Aren't there tons of automatic hacking tools?
 
 That is true! We learn about new bugs, new exploits, and new backdoors all the time. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years---Spectre and Meltdown<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
 
-It turns out that computer companies know about these exploits, too. And it turns out that computer companies today proactively defend against these attacks---if your software is up to date, you should be protected.
+And there are hackers that automatically scan computers on the Internet for vulnerabilities, looking for easy targets<!-- cite How Vulnerable Are Unprotected Machines on the Internet? and current survival time stats https://isc.sans.edu/survivaltime.html -->.
 
-This wasn't the case in 2004.
+But it turns out that computer companies know about these exploits, too. And they know about automatic scanners.
+
+And it turns out that computer companies today proactively defend against these attacks---if your software is up to date, you should be protected.
+
+## Scalable hacking: in 2004
+
+To really understand the state of scalable hacking today, it helps to look back to 2004.
+
+Things were not as good back then.
 
 In 2004, the Internet Storm Center stated that an unpatched Windows XP machine would be infected [within 20 minutes](https://www.theregister.co.uk/2004/08/19/infected_in20_minutes/) of being connected to the Internet<!-- also InfoSec Handlers Diary Blog - Survival Time on the Internet -->---automatically. This is easy to believe. Windows XP:
 
@@ -89,35 +97,27 @@ Microsoft eventually released patches that turned on the firewall and fixed many
 
 That's not really the case today.
 
-Microsoft learned their lesson, and the next release of Windows (Vista) could almost certainly *never* be hacked that way (as long as it was supported). New versions of Windows include much stronger firewall, fantastic security software, and saner defaults. But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers (like Verizon!) spend billions every year cleaning up the Internet. Thousands, of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime.
+Microsoft learned their lesson, and the next release of Windows (Vista) could almost certainly *never* be hacked that way (as long as it was supported). New versions of Windows include much stronger firewall, fantastic security software, and saner defaults.
 
 <aside class="sidenote">
 Disclaimer: I work for Microsoft.
 </aside>
 
+But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers (like Verizon!) spend billions every year cleaning up the Internet. Thousands, of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime.
+
 It's still true that criminal networks "sweep" the Internet looking for insecure computers<!-- cite How Vulnerable Are Unprotected Machines on the Internet? and current survival time stats https://isc.sans.edu/survivaltime.html -->, and it's still true that an unpatched Windows XP install will probably be hacked within 24 hours. In fact, if you turn off your security tools and deliberately sabotage your machine, you can probably get hacked this way on newer computers, too! 
 
 But the world has mostly grown and learned. The world is now, usually, secure by default.
 
-In a large part *because* of how easy it was to get hacked back then, computers today are protected on a level that would have been unfathomable in 2004.
-
-There are still
-
----
-
-<aside class="sidenote">
-Hacking doesn't pay---unless, of course, your attacker isn't trying to steal money. But again, it's unclear how many people are stalked or targetted personally, and it's unclear how much of that translates into hacking.
-</aside>
-
-But how do we know that? 
-
----
+In a large part *because* of how easy it was to get hacked back then, computers today are protected from scalable hacking on a level that would have been unfathomable in 2004.
 
 ### Malware
 
-Malware, however, is easy to scale, and that should set off alarms in your head. It's cheap to send a virus to thousands of people and hope that one of them opens it.
+Unlike hacking, *all* malware is pretty easy to scale once it's written---just send it to more people! That should set off alarms in your head. It's cheap to send a virus to thousands of people and hope that one of them opens it.
 
-But even with that, malware is not the scourge it once was.
+Just like scalable hacking, though, malware is a *known* threat. Everyone in the industry knows about it and wants to stop it.
+
+Because of that, malware is not the scourge it once was.
 
 Most large anti-virus companies (like Kaspersky, Norton, Microsoft, and Panda) publish annual reports<!-- TODO cite --> about what they stopped. Many of these reports are misleading (because of how they measure their numbers), but they always contain really good data, too.
 
@@ -139,7 +139,7 @@ These computers can get viruses just like Windows computers, but criminals don't
 
 ## Phishing
 
-Phishing (and its other closely-related cousins, like pretexting) is also easy to scale. Actually, anything to email seems really easy to scale. That's why, of all "classic" cyber-attacks, phishing is probably the one you see on a daily basis.
+Phishing (and its other closely-related cousins, like pretexting) is also easy to scale. Actually, anything related to email seems really easy to scale. That's why, of all "classic" cyber-attacks, phishing is probably the one you see on a daily basis.
 
 Malicious email as a whole is a huge industry. In fact, Norton<!-- 2019 Internet Security Threat Report --> measured that every user received between about 65 and 80 spam emails *a month* in 2018. They estimate that over half of all email is spam.
 
@@ -147,7 +147,7 @@ Even here, though, the rate drops off sharply between *spam* emails and *malware
 
 This dropoff underscores the larger point: criminals want money. Spam, which pays directly (companies pay spammers to send ads, or pay per-click), is *much* more common than phishing & malware, which both pay indirectly (a phisher must later sell the credentials they steal).
 
-However, these rates are still very high, especially compared to the earlier examples of hacking and malware from the Internet, both of which barely show up on the radar.
+However, these rates are still very high, especially compared to the earlier examples of hacking and malware from the Internet. Those may be fairly prevalent---hackers will try (and fail) to remotely exploit your machine, and you have a 1 in 3 chance of seeing (and stopping) a virus---but *you* have to protect yourself from the phishing email you receive. A machine can't do all of it for you.
 
 <!--
 More napkin math time! 
@@ -166,21 +166,34 @@ Given how much email we receive daily, that's troubling. Not *staggering*, and c
 
 ## The big three? Probably
 
-These numbers should be a bit reassuring and perhaps match your experience. Hacking, malware, and phishing/social attacks are all real, but perhaps they don't occur at the rates you expected.
+These numbers should be a bit reassuring and perhaps match your experience. 
+
+You know what hackers can do from the news, but you're not sure if they're targeting you. You see new vulnerabilities published all the time, but you haven't seen anyone use them.
+
+You've probably gotten malware in the past, but you haven't gotten any recently. 
+
+Instead, you just get a lot of spam and some phishing email---though your junk filters probably catch most of it.
 
 Applying the rules from the last section---"does it scale?" and "can it be large scale?"---leads to the same conclusions that data shows: the easy-to-scale attacks are super common, and the more difficult attacks are much less common. Phishing and spam, for example, are common, while movie-style hacking is not.
 
 These are probably the most prevalant attacks, but it's worth examining the rest of the actions in the VERIS schema to understand why.
 
----
-
-### Hacking
-
-This is very true for hacking.
 
 ---
 
-Furthermore, hacking isn't really the unknowable, scary beast that we make it out to be.
+## Scalable hacking: the unaccountable ones
+
+What about the unaccountable ones: modems, routers, NASes, Raspberry Pis, TVs, IoT devices, Chrome's unwanted notifications?
+
+Some companies have a lot farther to go...
+
+---
+
+<aside class="sidenote">
+Hacking doesn't pay---unless, of course, your attacker isn't trying to steal money. But again, it's unclear how many people are stalked or targetted personally, and it's unclear how much of that translates into hacking.
+</aside>
+
+But how do we know that? 
 
 ---
 
@@ -238,8 +251,6 @@ Also note that in 2018, Microsoft reported a much lower worldwide monthly detect
 </aside>
 
 ---
-
-This is very different from 2004, where you apparently couldn't turn on your computer without being hacked.
 
 ## But you are getting phished, right?
 
