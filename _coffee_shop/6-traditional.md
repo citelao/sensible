@@ -38,7 +38,7 @@ It helps, then, to separate hacking into two groups:
 * Targeted (non-scalable) hacking
 * Scalable hacking
 
-Though there's definitely a spectrum here (some attacks take years to run, while some take just seconds), but this distinction is appropriate: even an "almost scalable" attack *isn't* scalable. There's a big difference between running 1,000 attacks daily and running 100 attacks daily, and an even bigger difference between 100 and 10. Each stage requires *10 times more profit* per attack to be worthwhile.
+Though there's definitely a spectrum here (some attacks take years to run, while some take just seconds), I think this distinction is appropriate: even an "almost scalable" attack *isn't* scalable. There's a big difference between running 1,000 attacks daily and running 100 attacks daily, and an even bigger difference between 100 and 10. Each stage requires *10 times more profit* per attack to be worthwhile.
 
 This is similar to the distinction we make in [Will I even be hacked?]({{site.baseurl}}/hackers/).
 
@@ -52,7 +52,7 @@ It's also not super realistic, but you get the idea<!-- https://www.youtube.com/
 
 That shouldn't be surprising---hackers can't hack thousands of people if they have to spend several hours on each one. We know it's hard to steal money from [Will I even be hacked?]({{site.baseurl}}/hackers/). Hacking you---a random person---like this just doesn't make financial sense.
 
-It turns out that this type of hacking isn't particularly common among corporate targets, either, even though hacking a company could yield a lot of good, sellable data.
+We don't have great data to back this up, except that these incidents are rare enough to get news coverage when they occur, but it turns out that this type of hacking isn't particularly common among corporate targets, either. Even though hacking a company could yield a lot of good, sellable data.
 
 While hacking in general is common in corporate breaches---present in 53% of them in 2018<!-- DBIR 2019 pg 10 -->---70% of those "hacking" breaches involve using stolen passwords. At most 6% of all breaches involve "exploiting vulnerabilities" like we see in the movies.
 
@@ -68,17 +68,17 @@ It's worth guessing passwords at a company because they usually have a lot of da
 
 ## Scalable hacking
 
-On the other hand, scalable hacking might be the real threat. Hackers could theoretically target every person all the time (given the right automatic hacking tools).
+On the other hand, scalable hacking might be the real threat. The right tools could let hackers target every person all the time.
 
-In fact, aren't there tons of new security vulnerabilities every day? Aren't there tons of automatic hacking tools?
+Actually, aren't there tons of automatic hacking tools? And aren't there tons of new security vulnerabilities every day?
 
-That is true! We learn about new bugs, new exploits, and new backdoors all the time. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years---Spectre and Meltdown<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
+That is true! Even today, there are hackers who automatically scan computers on the Internet for vulnerabilities, looking for easy targets<!-- cite How Vulnerable Are Unprotected Machines on the Internet? and current survival time stats https://isc.sans.edu/survivaltime.html -->. Your computer is probably scanned within an hour of being connected to the Internet.
 
-And there are hackers that automatically scan computers on the Internet for vulnerabilities, looking for easy targets<!-- cite How Vulnerable Are Unprotected Machines on the Internet? and current survival time stats https://isc.sans.edu/survivaltime.html -->.
+And we learn about new bugs, new exploits, and new backdoors all the time. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years---Spectre and Meltdown<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
 
-But it turns out that computer companies know about these exploits, too. And they know about automatic scanners.
+But it turns out that computer companies know about these automatic scanners, too. And they even find some of the biggest exploits<!-- project zero -->.
 
-And it turns out that computer companies today proactively defend against these attacks---if your software is up to date, you should be protected.
+And it turns out that most computer companies today proactively defend against these attacks---if your software is up to date, you should be protected.
 
 ## Scalable hacking: in 2004
 
@@ -139,15 +139,19 @@ These computers can get viruses just like Windows computers, but criminals don't
 
 ## Phishing
 
-Phishing (and its other closely-related cousins, like pretexting) is also easy to scale. Actually, anything related to email seems really easy to scale. That's why, of all "classic" cyber-attacks, phishing is probably the one you see on a daily basis.
+Finally, we come to the last of the three popular cybersecurity threats: phishing.
+
+Like malware, phishing (and its other closely-related cousins, like pretexting) is easy to scale. Actually, anything related to email seems really easy to scale. That's why, of all "classic" cyber-attacks, phishing is probably the one you see on a daily basis.
 
 Malicious email as a whole is a huge industry. In fact, Norton<!-- 2019 Internet Security Threat Report --> measured that every user received between about 65 and 80 spam emails *a month* in 2018. They estimate that over half of all email is spam.
 
 Even here, though, the rate drops off sharply between *spam* emails and *malware-delivering* or *phishing* emails. The same study said about 0.24% of all email contains malware, and 0.03% of email was phishing (compared to 55% of email that is spam). Tellingly, they switch from measuring how much *each person* gets to measuring *how many* people get it. According to Norton, about 2% of users receive at least one phishing email in a given month.
 
-This dropoff underscores the larger point: criminals want money. Spam, which pays directly (companies pay spammers to send ads, or pay per-click), is *much* more common than phishing & malware, which both pay indirectly (a phisher must later sell the credentials they steal).
+Norton's phishing numbers are actually on the low side. Microsoft estimates the overall phishing email rate to be about 10x higher---sitting between 0.25% and 0.55% monthly in 2018<!-- MSIR 24 pg. 20 -->. And Cyren, an enterprise security vendor, found that undetected phishing made up a further 0.26% of all email in 2018<!-- Cyren Email Security Gap -->.
 
-However, these rates are still very high, especially compared to the earlier examples of hacking and malware from the Internet. Those may be fairly prevalent---hackers will try (and fail) to remotely exploit your machine, and you have a 1 in 3 chance of seeing (and stopping) a virus---but *you* have to protect yourself from the phishing email you receive. A machine can't do all of it for you.
+Doing some napkin math with these numbers, you could estimate that perhaps 1% of all email is phishing.
+
+Given these conflicting numbers, I don't really trust Norton's estimate of "2%," but it's the only number I could really find. There are plenty of generic reports ("X% of businesses affected," etc), but none that estimate the "per user" rate of phishing email or email with malware. Radicati reports that business workers received about 90 emails per day between 2007 and 2017<!-- Email Statistics Report, 2017-2021 -->. Given the incidence rate of 1%, naive statistics virtually guarantees that you'll receive at least one phishing email a month. Clearly we need more data to fully estimate this rate.
 
 <!--
 More napkin math time! 
@@ -156,17 +160,28 @@ More napkin math time!
 (1-%phishing)^(#emails/day * 30) = chance of no phishing in a month
 
 If you assume ~5 emails/day, 0.955991028 = chance of no phishing in a month, so expect 5% versus 2%. That's not super crazy off.
+
+If you assume ~50 emails/day (half of 90 emails/day for office workers from Radicati report (Email Statistics Report, 2017-2021)):
+
+.99^(50*30) = 0.000000284...
+
 -->
 
-Norton's phishing numbers are actually on the low side. Microsoft estimates the overall phishing email rate to be about 10x higher---sitting between 0.25% and 0.55% monthly in 2018<!-- MSIR 24 pg. 20 -->. And Cyren, an enterprise security vendor, found that undetected phishing made up a further 0.26% of all email in 2018<!-- Cyren Email Security Gap -->.
+Still, these numbers help us contextualize spam and phishing, especially compared to hacking and malware.
 
-Doing some napkin math with these numbers, you could estimate that perhaps 1% of all email is phishing.
+First, the huge difference in volume between spam and phishing underscores the larger point of [Will I even be hacked?]({{site.baseurl}}/hackers/): criminals want money. Spam, which pays directly (companies pay spammers to send ads, or pay per-click), is *much* more common than phishing & malware, which both pay indirectly (a phisher must later sell the credentials they steal).
 
-Given how much email we receive daily, that's troubling. Not *staggering*, and certainly still manageable, but troubling nonetheless.
+Second, phishing is the common one, even though hacking and malware are still reasonably visible. Especially given how good we are at blocking hacking and malware. Your computer may have a 1 in 3 chance of seeing a virus, but it has a 99.99% chance of stopping that virus<!-- old MSIR data! -->. But phishing emails regularly slip through our filters---our detection rate is far less than 99.99%.
 
-## The big three? Probably
+The good news: these phishing attacks are often the first step of a malware attack---which your computer will probably block. And with some training, you can probably get good at recognizing phishing attacks. Most people are already pretty good: only about 3% of corporate users click the links in phishing emails (perhaps because they get so much email).
 
-These numbers should be a bit reassuring and perhaps match your experience. 
+## The big picture
+
+With that, we've finished our "deeper dive" into hacking, malware, and phishing---the "traditional" cybersecurity threats.
+
+These numbers help you understand the big picture of security---the true story behind all the news of hacks and breaches. They help you understand the real threats.
+
+In fact, I find these numbers a bit reassuring. These numbers match my *experience*. If you're like me:
 
 You know what hackers can do from the news, but you're not sure if they're targeting you. You see new vulnerabilities published all the time, but you haven't seen anyone use them.
 
@@ -176,8 +191,27 @@ Instead, you just get a lot of spam and some phishing email---though your junk f
 
 Applying the rules from the last section---"does it scale?" and "can it be large scale?"---leads to the same conclusions that data shows: the easy-to-scale attacks are super common, and the more difficult attacks are much less common. Phishing and spam, for example, are common, while movie-style hacking is not.
 
-These are probably the most prevalant attacks, but it's worth examining the rest of the actions in the VERIS schema to understand why.
+## The big three? Probably
 
+There are four other actions in the VERIS schema beyond hacking, malware, and phishing:
+
+* misuse,
+* physical,
+* error, and
+* environmental.
+
+We've demonstrated the effectiveness of the two questions---"does it scale?" and "can it be large scale?" Take a step back and ask those questions about each of the remaining actions.
+
+Are they more scalable than hacking? Malware? Phishing?
+
+I spoiled it a bit with the section title, but hacking, malware, and phishing are probably the most prevalant attacks, since they probably are the most scalable and "large-scale" attacks overall.
+
+But it's worth looking into the remaining actions just a little bit more, and it's worth examining the two caveats mentioned in the last section:
+
+* the VERIS schema makes it hard to realize *who was targeted*
+* the VERIS schema makes it hard to realize *privacy breaches*
+
+We'll learn more about all of that in the next section.
 
 ---
 
