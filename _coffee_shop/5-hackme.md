@@ -62,7 +62,7 @@ The VERIS schema lists 7 attack types, or "actions":
 
 This is every type of action we think there is.
 
-Just like before, there's no guarantee that it's complete (since there can't ever be<!-- Unfalsifiability of Security Claims-->), but researchers use the VERIS action list to classify every action in every part of every submitted data incident every year. This is a battle-tested list.
+Just like before, there's no guarantee that it's complete (since there can't ever be<!-- Unfalsifiability of Security Claims-->), but researchers use the VERIS action list to classify every action in every part of every submitted data incident every year. This is a battle-tested list.<!-- 94% according to DBIR 2018 pg 22 -->
 
 ## More bad news: corporations aren't good at security
 

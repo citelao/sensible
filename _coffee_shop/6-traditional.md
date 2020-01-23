@@ -76,9 +76,9 @@ That is true! Even today, there are hackers who automatically scan computers on 
 
 And we learn about new bugs, new exploits, and new backdoors all the time. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years---Spectre and Meltdown<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
 
-But it turns out that computer companies know about these automatic scanners, too. And they even find some of the biggest exploits<!-- project zero -->.
+But it turns out that most attacks don't rely on these vulnerabilities. In 2017, at most 10% of corporate breaches exploited a new vulnerability<!-- Verizon Reveals Cyber-Attack Trends in Data Breach Report -->. In fact, many of these exploits come from companies auditing and testing themselves<!-- project zero -->.
 
-And it turns out that most computer companies today proactively defend against these attacks---if your software is up to date, you should be protected.
+And it turns out that most computer companies today proactively defend against these attacks. At least for your Macs, Window PCs, and Linux boxes---if your software is up to date, you should be protected.<!-- WannaCry, eg -->
 
 ## Scalable hacking: in 2004
 
@@ -86,7 +86,7 @@ To really understand the state of scalable hacking today, it helps to look back 
 
 Things were not as good back then.
 
-In 2004, the Internet Storm Center stated that an unpatched Windows XP machine would be infected [within 20 minutes](https://www.theregister.co.uk/2004/08/19/infected_in20_minutes/) of being connected to the Internet<!-- also InfoSec Handlers Diary Blog - Survival Time on the Internet -->---automatically. This is easy to believe. Windows XP:
+In 2004, the Internet Storm Center stated that an unpatched Windows XP machine would be infected [within 20 minutes](https://www.theregister.co.uk/2004/08/19/infected_in20_minutes/) of being connected to the Internet<!-- also InfoSec Handlers Diary Blog - Survival Time on the Internet -->---automatically. This is easy to believe (though hard to really confirm). Windows XP:
 
 * had no default firewall (it allowed anyone to connect to it without issue),
 * had poor built-in security software (so it could not stop threats once they connected), and it
@@ -94,6 +94,8 @@ In 2004, the Internet Storm Center stated that an unpatched Windows XP machine w
 * was hard to automatically update (so you couldn't get patches before hackers took over).
 
 Microsoft eventually released patches that turned on the firewall and fixed many of the bad defaults (the "Service Packs"), but the damage was done. Securing a new XP machine meant hoping you could download the patches before you got a virus.
+
+## Scalable hacking: now
 
 That's not really the case today.
 
@@ -103,9 +105,9 @@ Microsoft learned their lesson, and the next release of Windows (Vista) could al
 Disclaimer: I work for Microsoft.
 </aside>
 
-But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers (like Verizon!) spend billions every year cleaning up the Internet. Thousands, of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime.
+But, more importantly, the rest of the Internet got better. Companies like Google and your Internet Service Providers (like Verizon!) spend billions every year cleaning up the Internet. Thousands of people **dedicate their lives to protecting your computer**: scouring for phishing sites, writing spam filters, deploying firewalls, perfecting fraud detection algorithms, and even drafting legislation to protect you from cybercrime<!-- Verizon's first DBIR was 2008 -->.
 
-It's still true that criminal networks "sweep" the Internet looking for insecure computers<!-- cite How Vulnerable Are Unprotected Machines on the Internet? and current survival time stats https://isc.sans.edu/survivaltime.html -->, and it's still true that an unpatched Windows XP install will probably be hacked within 24 hours. In fact, if you turn off your security tools and deliberately sabotage your machine, you can probably get hacked this way on newer computers, too! 
+It's still true that criminal networks "sweep" the Internet looking for insecure computers<!-- cite How Vulnerable Are Unprotected Machines on the Internet? and current survival time stats https://isc.sans.edu/survivaltime.html and DBIR 2019 pg 73-->, and it's still true that an unpatched Windows XP install will probably be hacked within 24 hours. In fact, if you turn off your security tools and deliberately sabotage your machine, you can probably get hacked this way on newer computers, too! 
 
 But the world has mostly grown and learned. The world is now, usually, secure by default.
 
@@ -113,11 +115,17 @@ In a large part *because* of how easy it was to get hacked back then, computers 
 
 ### Malware
 
-Unlike hacking, *all* malware is pretty easy to scale once it's written---just send it to more people! That should set off alarms in your head. It's cheap to send a virus to thousands of people and hope that one of them opens it.
+On the same note, malware is not quite the scourge it once was.
+
+Malware and "scalable hacking" are very similar, to the extent that I often struggle to draw a meaningful line between the two. For example, what's a botnet program? It's a program of some sort that can infect your computer---so it's malware---but it often grabs passwords from your computer and tries them in other places---so it's kinda like scalable hacking.
+
+Ultimately, the difference isn't very meaningful. They're both very similar things. That helps you reason about it.
+
+Like scalable hacking, Malware is pretty easy to scale once it's written---just send it to more people! That should set off alarms in your head. It's cheap to send a virus to thousands of people and hope that one of them opens it.
 
 Just like scalable hacking, though, malware is a *known* threat. Everyone in the industry knows about it and wants to stop it.
 
-Because of that, malware is not the scourge it once was.
+Malware isn't as big as it used to be.
 
 Most large anti-virus companies (like Kaspersky, Norton, Microsoft, and Panda) publish annual reports<!-- TODO cite --> about what they stopped. Many of these reports are misleading (because of how they measure their numbers), but they always contain really good data, too.
 
@@ -125,17 +133,67 @@ The numbers don't always agree, but most reports suggest that two-thirds of comp
 
 And of the 1/3 that did see a virus, it's reasonable to estimate that over 99% of these computers detected and removed the virus themselves<!-- older Microsoft SIRs  -->.
 
+<aside class="sidenote">
+Although there are reputable sources that suggest that nearly 4% of computers overall received a virus and didn't stop it<!-- Nokia p 18 -->. This is a huge range (0.5% vs 4% infected), and it indicates that we need substantially more research here, but it still limits the impact. For contrast, over 8% of 3-year-old hard drives fail annually. We'll discuss this more in the next section.
+</aside>
+
 <!-- TODO: how does this gel with how my friends have adware or unwanted applications? -->
 
 <!-- TODO: why are they not as prevalant anymore? Microsoft's bottom line (prob) and hard to monetize (?) -->
 
 Malware is still quite common (1 in 3 is rather high), especially in different parts of the world (computers in India are more than twice as likely to encounter a virus as computers in the US<!-- TODO Cite MSIR regionals -->). But the Internet of 2019 is very different than the Internet of a decade ago. Software companies have stepped up, and a computer running modern Windows has effective, top-tier virus protection. For free.
 
-<aside class="sidenote">
-This doesn't even mention the *millions* of computers running Linux or macOS. Neither of these have antivirus software by default.
+## Scalable hacking and malware: the numbers disagree, you see
 
-These computers can get viruses just like Windows computers, but criminals don't write many viruses for them because it's so much more lucrative to go after the larger Windows market.<!-- TODO this is an interesting indicator that modern viruses are meant mostly for botnetting, so they go for market volume rather than total financial size of TAM. This is probably the case, since most viruses probably aren't actively exfilling bank creds; they seem to be either deployed to get the machine itself or to further some other plot. Also, really why aren't there mac viruses?-->
-</aside>
+Unfortunately, before we move on from scalable hacking and malware, we need to have a short talk about data ("now you see, when two data scientists love each other very much...").
+
+It's hard to feel satisfied with this data.
+
+While much of this data is fantastic—and eye-opening—many of the numbers tend to disagree. For example, why does Nokia present a residential infection rate that is nearly 8 times higher than Microsoft's rates<!-- Nokia vs CCM -->? Why are residential customers 12 times more likely to be infected than an average device, according to the same Nokia report?
+
+At least one report<!-- ESET on Andromeda --> seems to claim that over 10% of computers in Mexico hosted a botnet infection at the height of a 2017 epidemic. Is that even possible? Even the more consistent numbers---like malware encounter rate---differ by about 50% in some cases<!-- Panda vs Microsoft-->, and they all measure different things. Some are quarterly, some are monthly, some are annual. These are impossible to compare!
+
+Even the analyses are unsatisfying. While I am confident in the analyses that money and scalable attacks drive hacking, I have yet to find a satisfying analysis for why Macs don't get hacked in practice. There are millions of Mac users---probably richer than the average Windows user. Why not steal from them?
+
+I have my own hypotheses for these questions (each measurement is tracking different types of devices across different populations with different behaviors, and malware authors probably make more money selling access to infected devices than they do trying to steal money from random people), but I have yet to see an empirical, experimentally validated answer.
+
+So, while I'm confident that targeted hacking is not common, and while I'm confident that malware and scalable hacking aren't as common as they used to be, it's hard to give accurate estimates about *how* common either are today.
+
+It's frustrating to read reports and articles that offer up "lonely numbers" (as Factfulness author Hans Rosling puts it), numbers intended to look large or small with no context, instead of rates. I saw several articles about a 2017 botnet that infected nearly 17 million devices at its peak <!-- Gamarue; MSIR 23 p 13 -->. Huge, right?
+
+There are 22 billion Internet-connected devices<!-- https://www.helpnetsecurity.com/2019/05/23/connected-devices-growth/ -->. That's less than .07% of the Internet.
+
+Big? Yes. Unstoppable? No.
+
+## Scalable hacking and malware: the unaccountable folks
+
+Much of this seems due to accountability gaps. Companies have no real incentive or legal responsibility to build secure products, and consumers don't have a real way of auditing them.
+
+It took years before Microsoft---a multi-billion dollar company that builds software for nearly every desktop computer on the planet---stood up to build secure systems. And consumers *knew* they were getting viruses.
+
+Think about the gadgets in your house you understand even less than your computer: your modems, routers, NASes, Raspberry Pis, TVs, IoT lightbulbs and alarm systems, printers, and smart speakers.
+
+Would you know if any of these were hacked?
+
+Technology---and cybersecurity---today is bizarre. The stuff run by companies with accountability is largely secure: Windows is pretty safe, and your bank account is pretty safe. But everything else is a grab bag.
+
+Some technologies with only passive protection---like Macs and iPhones---rarely succumb to scalable hacking or malware, while other, similar technology---routers, file shares, smart lightbulbs---seems to get hacked indiscriminately.
+
+This disparity is magnified in other parts of the world, like eastern Europe, southeast Asia, and (basically) all of Africa. It's also magnified in business, especially amongst companies that operate complex equipment with little technical expertise.
+
+<!-- Improving Users’ Security Choices on Home Wireless Networks: stats on wireless network encryption types; Nokia's IoT stuff. -->
+
+Writing this is very difficult. It means admitting that we don't know the answer for a whole swath of new devices that are becoming increasingly hard to avoid. While it's entirely possible to avoid buying smart lightbulbs today, it feels paranoid to suggest that you forgo these awesome things entirely. The data I offer here draws largely from case studies, vulnerability reports, and extrapolation from larger data sets.
+
+We have fair knowledge about certain *vulnerabilities* (for example, about 1.5% of the Internet is using a router that has a weak admin password and can be accessed publicly<!-- Improving Users’ Security Choices on Home Wireless Networks: stats on wireless network encryption types -->), but we cannot translate that into *exploitation*.
+
+This is similar to targeted hacking: the vulnerabilities might be there, but they're generally not important.
+
+I would be surprised if the rate of infected devices even approaches 10% worldwide, but I cannot say so for sure.
+
+Even now, as I write this, I cannot say with certainty that the router I am using is secure—or at least, not with the same confidence I can say that my laptop is secure.
+
+---
 
 ## Phishing
 
@@ -212,14 +270,6 @@ But it's worth looking into the remaining actions just a little bit more, and it
 * the VERIS schema makes it hard to realize *privacy breaches*
 
 We'll learn more about all of that in the next section.
-
----
-
-## Scalable hacking: the unaccountable ones
-
-What about the unaccountable ones: modems, routers, NASes, Raspberry Pis, TVs, IoT devices, Chrome's unwanted notifications?
-
-Some companies have a lot farther to go...
 
 ---
 
