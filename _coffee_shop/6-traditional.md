@@ -56,6 +56,12 @@ We don't have great data to back this up, except that these incidents are rare e
 
 While hacking in general is common in corporate breaches---present in 53% of them in 2018<!-- DBIR 2019 pg 10 -->---70% of those "hacking" breaches involve using stolen passwords. At most 6% of all breaches involve "exploiting vulnerabilities" like we see in the movies.
 
+<aside class="sidenote">
+And this data includes state-sponsored attacks and corporate espionage---not just financial hacking.
+</aside>
+
+<!-- and password hacking isn't very scalable: cite Microsoft's Azure post. -->
+
 In other words, even *corporate* computers may be riddled with holes, but hackers don't care. They just use the key they found under the mat. 
 
 That being said, around 15% of corporate breaches involve exploiting a software backdoor<!-- DBIR 2019 offers 30% backdoor or C2 for hacking, which is 1 in 2. Therefore, 15%. -->. So there's still some dramatic hacking going on, overall.
@@ -65,6 +71,8 @@ It's worth re-emphasizing that these numbers come from **corporate** breaches. I
 
 It's worth guessing passwords at a company because they usually have a lot of data hackers can sell.
 </aside>
+
+Unless you're worried about hackers targeting you specifically (in which case [you need to get help](/help/); see [Will I even be hacked?](/hackers/)), this type of hacking probably isn't your biggest threat.
 
 ## Scalable hacking
 
@@ -76,7 +84,7 @@ That is true! Even today, there are hackers who automatically scan computers on 
 
 And we learn about new bugs, new exploits, and new backdoors all the time. There are podcasts about it. In fact, two 2018 papers revealed theoretical attacks that exposed everything on almost *every* computer from the last 20 years---Spectre and Meltdown<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Affected_hardware, clean up this stat-->.
 
-But it turns out that most attacks don't rely on these vulnerabilities. In 2017, at most 10% of corporate breaches exploited a new vulnerability<!-- Verizon Reveals Cyber-Attack Trends in Data Breach Report -->. In fact, many of these exploits come from companies auditing and testing themselves<!-- project zero -->.
+But it turns out that most attacks don't rely on these vulnerabilities. In 2017, at most 10% of corporate breaches exploited a new vulnerability<!-- Verizon Reveals Cyber-Attack Trends in Data Breach Report -->. In fact, many of these exploits come from companies auditing and testing themselves<!-- project zero -->. Despite being possible for two decades, those 2018 vulnerabilities that exposed theoretically everything on everyone's systems have probably never been exploited<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Mitigation -->.
 
 And it turns out that most computer companies today proactively defend against these attacks. At least for your Macs, Window PCs, and Linux boxes---if your software is up to date, you should be protected.<!-- WannaCry, eg -->
 
@@ -129,6 +137,15 @@ Malware isn't as big as it used to be.
 
 Most large anti-virus companies (like Kaspersky, Norton, Microsoft, and Panda) publish annual reports<!-- TODO cite --> about what they stopped. Many of these reports are misleading (because of how they measure their numbers), but they always contain really good data, too.
 
+<!-- More specifically, measuring the percentage of computers with at least one virus (TODO I use the word virus freely to match with common usage, but I'd like to improve that) detection:
+
+* Microsoft measured a monthly detection rate of 18.3% worldwide in 2017
+* PandaLabs measured a quarterly detection rate of 33.32% worldwide in 2017
+* Kaspersky measured an annual detection of rate of 29.40% worldwide in 2017
+
+Also note that in 2018, Microsoft reported a much lower worldwide monthly detection rate of 5.10%.
+-->
+
 The numbers don't always agree, but most reports suggest that two-thirds of computer users didn't even *see* a virus in 2017 <!-- Kaspersky, Panda, Microsoft, and Norton (?) -->.
 
 And of the 1/3 that did see a virus, it's reasonable to estimate that over 99% of these computers detected and removed the virus themselves<!-- older Microsoft SIRs  -->.
@@ -141,7 +158,13 @@ Although there are reputable sources that suggest that nearly 4% of computers ov
 
 <!-- TODO: why are they not as prevalant anymore? Microsoft's bottom line (prob) and hard to monetize (?) -->
 
-Malware is still quite common (1 in 3 is rather high), especially in different parts of the world (computers in India are more than twice as likely to encounter a virus as computers in the US<!-- TODO Cite MSIR regionals -->). But the Internet of 2019 is very different than the Internet of a decade ago. Software companies have stepped up, and a computer running modern Windows has effective, top-tier virus protection. For free.
+That being said, malware is still fairly common. 1 in 3 is rather high. This is especially true in different parts of the world: computers in India are more than twice as likely to encounter a virus as computers in the US<!-- TODO Cite MSIR regionals -->. State-sponsored ransomware attacks are *still* crippling governments around the world.
+
+<!-- According to Microsoft, a computer in the US had a 12.6% chance of seeing malware in December 2017, whereas a computer in India had a 25.5% chance.-->
+
+In fact, although there was a complete patch for the earlier *WannaCry* ransomware attack, the NotPetya attack that hit Ukraine decimated many patched computers, too<!-- These are real important nuances here: Ukraine Ransomware, e.g. It was mostly Windows 7; an org with 97% patching was still affected because of lateral transmission, despite patched before. https://www.microsoft.com/security/blog/2018/02/05/overview-of-petya-a-rapid-cyberattack/ -->.
+
+But, in general, the Internet of 2020 is very different than the Internet of a decade ago. Software companies have stepped up, and a computer running modern Windows has effective, top-tier virus protection. For free.
 
 ## Scalable hacking and malware: the numbers disagree, you see
 
@@ -193,11 +216,11 @@ I would be surprised if the rate of infected devices even approaches 10% worldwi
 
 Even now, as I write this, I cannot say with certainty that the router I am using is secure—or at least, not with the same confidence I can say that my laptop is secure.
 
----
+<!-- ALSO QUOTE OMG: All Things Considered: An Analysis of IoT Devices on Home Networks -->
 
 ## Phishing
 
-Finally, we come to the last of the three popular cybersecurity threats: phishing.
+With that, we turn our attention to the last of the three popular cybersecurity threats: phishing.
 
 Like malware, phishing (and its other closely-related cousins, like pretexting) is easy to scale. Actually, anything related to email seems really easy to scale. That's why, of all "classic" cyber-attacks, phishing is probably the one you see on a daily basis.
 
@@ -231,7 +254,7 @@ First, the huge difference in volume between spam and phishing underscores the l
 
 Second, phishing is the common one, even though hacking and malware are still reasonably visible. Especially given how good we are at blocking hacking and malware. Your computer may have a 1 in 3 chance of seeing a virus, but it has a 99.99% chance of stopping that virus<!-- old MSIR data! -->. But phishing emails regularly slip through our filters---our detection rate is far less than 99.99%.
 
-The good news: these phishing attacks are often the first step of a malware attack---which your computer will probably block. And with some training, you can probably get good at recognizing phishing attacks. Most people are already pretty good: only about 3% of corporate users click the links in phishing emails (perhaps because they get so much email).
+The good news: these phishing attacks are often the first step of a malware attack<!-- TODO cite -->---which your computer will probably block. And with some training, you can probably get good at recognizing phishing attacks. Most people are already pretty good: only about 3% of corporate users click the links in phishing emails (perhaps because they get so much email).
 
 ## The big picture
 
@@ -273,22 +296,6 @@ We'll learn more about all of that in the next section.
 
 ---
 
-<aside class="sidenote">
-Hacking doesn't pay---unless, of course, your attacker isn't trying to steal money. But again, it's unclear how many people are stalked or targetted personally, and it's unclear how much of that translates into hacking.
-</aside>
-
-But how do we know that? 
-
----
-
-And this data includes state-sponsored attacks and corporate espionage---not just financial hacking.  Despite being possible for two decades, those 2018 vulnerabilities that exposed theoretically everything on everyone's systems have probably never been exploited<!-- https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)#Mitigation -->.
-
-In other words, most hacking today is just folks using stolen passwords. And even that sort of hacking is not very scalable<!-- Cite Microsoft's Azure post. -->---so not very common.
-
-<!-- TODO: explain the nuances here: Ukraine Ransomware, e.g.. When hacking becomes scalable, it is sometimes used. Windows XP, too. But the world is not XP anymore and ransomware was patched BEFORE. And so many other vulns not exploited. -->
-
----
-
 * viruses (mostly by email)
 
 Kaspersky (annual?)
@@ -307,36 +314,3 @@ Note that these numbers vary (widely) by country.
 
 For example, data from Kaspersky indicates that nearly 70% of users in Vietnam were exposed to malicious files, including through removable hard drives (like USB keys). US users saw &lt;10% exposure.
 </aside>
-
----
-
-* you're really only getting viruses or your being phished, but viruses are old news
-* threats vary widely by region
-* email fraud is super common
-
----
-
-## How much do we get?
-
-This spotlights how hackers have changed their methods, but there's also been a huge change in volume.
-
----
-
-More specifically, measuring the percentage of computers with at least one virus<!-- TODO I use the word virus freely to match with common usage, but I'd like to improve that --> detection:
-
-* Microsoft measured a monthly detection rate of 18.3% worldwide in 2017
-* PandaLabs measured a quarterly detection rate of 33.32% worldwide in 2017
-* Kaspersky measured an annual detection of rate of 29.40% worldwide in 2017
-
-<aside class="sidenote">
-These numbers also vary widely by country. According to Microsoft, a computer in the US had a 12.6% chance of seeing malware in December 2017, whereas a computer in India had a 25.5% chance.
-
-Also note that in 2018, Microsoft reported a much lower worldwide monthly detection rate of 5.10%.
-</aside>
-
----
-
-## But you are getting phished, right?
-
-Phishing attempts are almost always followed by a virus<!-- TODO cite -->, which has a fairly high chance of being blocked, but the trend is clear: hackers are phishing to steal your passwords, then trying to use those passwords to hack your computer.
-

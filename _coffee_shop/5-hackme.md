@@ -22,7 +22,7 @@ Some bad news first: it is impossible to know every single possible attack.
 
 This is a fundamental fact about security, both online and off. It has nothing to do with how complex computers are or how new the Internet is; it is literally impossible to prove that *anything* is secure.
 
-After all, we can observe that a system was insecure (if it got hacked), but there is no observation that could prove to us that the system is safe against everything. The attack just might not have happened yet<!-- Unfalsifiability of Security Claims-->.
+After all, we can observe that a system was insecure (if it got hacked), but there is no observation that could prove to us that the system is safe against everything. The attack just might not have happened yet<!-- Unfalsifiability of Security Claims; science of security. -->.
 
 You might have experienced the same paradox if you have a friend who never buckles up, drives behind other cars too closely, or doesn't use their turn signal. "It's not safe!" you say.
 
