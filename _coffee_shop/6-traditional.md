@@ -154,15 +154,25 @@ And of the 1/3 that did see a virus, it's reasonable to estimate that over 99% o
 Although there are reputable sources that suggest that nearly 4% of computers overall received a virus and didn't stop it<!-- Nokia p 18 -->. This is a huge range (0.5% vs 4% infected), and it indicates that we need substantially more research here, but it still limits the impact. For contrast, over 8% of 3-year-old hard drives fail annually. We'll discuss this more in the next section.
 </aside>
 
-<!-- TODO: how does this gel with how my friends have adware or unwanted applications? -->
+<!-- TODO: how does this gel with how my friends have adware or unwanted applications?-->
 
 <!-- TODO: why are they not as prevalant anymore? Microsoft's bottom line (prob) and hard to monetize (?) -->
 
 That being said, malware is still fairly common. 1 in 3 is rather high. This is especially true in different parts of the world: computers in India are more than twice as likely to encounter a virus as computers in the US<!-- TODO Cite MSIR regionals -->. State-sponsored ransomware attacks are *still* crippling governments around the world.
 
-<!-- According to Microsoft, a computer in the US had a 12.6% chance of seeing malware in December 2017, whereas a computer in India had a 25.5% chance.-->
+<!-- According to Microsoft, a computer in the US had a 12.6% chance of seeing malware in December 2017, whereas a computer in India had a 25.5% chance.
+
+Kaspersky Security Bulletin 2017 (2017, annual)
+* web-based malware (19.4% US, 44.06% algeria; 32.34% India)
+"Unique users whose computers have been targeted by Malware-class web attacks as a percentage of all unique users of certain Kaspersky Lab products in the country."
+-->
 
 In fact, although there was a complete patch for the earlier *WannaCry* ransomware attack, the NotPetya attack that hit Ukraine decimated many patched computers, too<!-- These are real important nuances here: Ukraine Ransomware, e.g. It was mostly Windows 7; an org with 97% patching was still affected because of lateral transmission, despite patched before. https://www.microsoft.com/security/blog/2018/02/05/overview-of-petya-a-rapid-cyberattack/ -->.
+
+<!-- Kaspersky (annual?) (encounter rates? Can't remember)
+* ransomware (fewer than 1 in 200 in US; 1 in 40 in Japan---2.83% of computers)
+* "file"-based malware (hard to assess; includes virus residue; ~15-20% US, 67.41% vietnam, 36.8% worldwide); basically unciteable data.
+-->
 
 But, in general, the Internet of 2020 is very different than the Internet of a decade ago. Software companies have stepped up, and a computer running modern Windows has effective, top-tier virus protection. For free.
 
@@ -227,6 +237,14 @@ Like malware, phishing (and its other closely-related cousins, like pretexting) 
 Malicious email as a whole is a huge industry. In fact, Norton<!-- 2019 Internet Security Threat Report --> measured that every user received between about 65 and 80 spam emails *a month* in 2018. They estimate that over half of all email is spam.
 
 Even here, though, the rate drops off sharply between *spam* emails and *malware-delivering* or *phishing* emails. The same study said about 0.24% of all email contains malware, and 0.03% of email was phishing (compared to 55% of email that is spam). Tellingly, they switch from measuring how much *each person* gets to measuring *how many* people get it. According to Norton, about 2% of users receive at least one phishing email in a given month.
+
+<aside class="sidenote">
+Notice that malware emails, while uncommon, are **still** 10x more likely than phishing emails.
+
+Interestingly, the overwhelming majority of all malware (93.8%!) comes via email, followed by browser (5.8%)<!-- TODO Verizon DBIR 2017 pg. 40 -->. The remaining 0.4% is sent (and detected) by other means.
+
+Do what scales, right?
+</aside>
 
 Norton's phishing numbers are actually on the low side. Microsoft estimates the overall phishing email rate to be about 10x higher---sitting between 0.25% and 0.55% monthly in 2018<!-- MSIR 24 pg. 20 -->. And Cyren, an enterprise security vendor, found that undetected phishing made up a further 0.26% of all email in 2018<!-- Cyren Email Security Gap -->.
 
@@ -293,24 +311,3 @@ But it's worth looking into the remaining actions just a little bit more, and it
 * the VERIS schema makes it hard to realize *privacy breaches*
 
 We'll learn more about all of that in the next section.
-
----
-
-* viruses (mostly by email)
-
-Kaspersky (annual?)
-* ransomware (fewer than 1 in 200 in US; 1 in 40 in Japan)
-* web-based malware (19.4% US, 44.06% algeria)
-* "file"-based malware (hard to assess; includes virus residue; ~15-20% US, 67.41% vietnam, 36.8% worldwide)
-
----
-
- Today, **most threats come from email and web browsing**---not passive attacks (like the ones detailed above) or physical attacks (like a hacker inserting a virus-laden USB stick into your computer).
-
-In DBIR's most recent reports, they indicate that the overwhelming majority of malware (93.8%!) is sent by email, followed by browser (5.8%)<!-- TODO Verizon DBIR 2017 pg. 40 -->. The remaining 0.4% is sent (and detected) by other means.
-
-<aside class="sidenote">
-Note that these numbers vary (widely) by country.
-
-For example, data from Kaspersky indicates that nearly 70% of users in Vietnam were exposed to malicious files, including through removable hard drives (like USB keys). US users saw &lt;10% exposure.
-</aside>
