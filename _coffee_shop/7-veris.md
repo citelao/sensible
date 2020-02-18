@@ -12,7 +12,7 @@ real_next:
     title: Conclusion
 ---
 
-When you think of cybersecurity, you probably think about the things we discussed in [the last section]({{site.baseurl}}/hacking_malware_phishing/) first: hacking, malware, and social.
+When you think of cybersecurity, you probably think about the things we discussed in [the last section]({{site.baseurl}}/hacking_malware_phishing/) first: hacking, malware, and social attacks.
 
 But in [How can I be hacked?]({{site.baseurl}}/how_hacked/), we noted four other attacks types taken from the VERIS schema:
 
@@ -30,13 +30,42 @@ Let's dive into these other facets.
 
 ## We can't do the VERIS schema justice
 
-Unfortunately, just like you probably focus on hacking, malware, and social attacks, so do researchers.
+Unfortunately, similarly to how most people focus on hacking, malware, and social attacks, so do researchers. Most consumer cybersecurity research revolves around these three attacks, and it's very hard to find data about the others in a way that feels complete.
 
-Most consumer cybersecurity research revolves around these three attacks, and it's very hard to find data about the others in a way that feels complete.
-
-There are probably surprising and brilliant insights hidden in the data for the other 4 actions in the VERIS schema, but I don't have that data---maybe nobody does.
+There are probably surprising and brilliant insights that could come from exploring the other 4 actions of the VERIS schema in depth, but I don't have a good set of research to draw from. Maybe nobody does.
 
 Regardless, let's examine the data we have.
+
+## Talking about the big three
+
+First, it's worth noting that the *absence of data* is itself an indicator.
+
+Security researchers are not stupid. For all that we talk of "publish or perish" and replication crises and self-serving researchers, there are plenty of people who work hard every day to find and address the biggest problems in cybersecurity.
+
+ Yes, there is a chance that the cybersecurity community is missing a huge issue (and, indeed, we find that it's easy to miss details and hidden trends if you don't look deeply enough), but the chance that they're missing *the biggest problems* is unlikely.
+ 
+ <aside class="sidenote">
+For example, I wrote this guide because I believe the cybersecurity community has a **gap**: they don't communicate their findings well.
+
+But I don't think that cybersecurity is necessarily flawed at its core.
+ </aside>
+
+The current focus of research---on hacking, malware, and phishing---serves us as an *indicator* of where the real problems are. Not necessarily a strong one, and not necessarily a complete one.
+
+But an indicator nevertheless.
+
+## Picking at a convenience sample isn't helpful
+
+For some more "mild" evidence, we can also look at the DBIR, the biggest paper that analyzes VERIS incidents each year.
+
+
+
+
+The good news: the data doesn't suggest that there are any "secret" threats lurking out there. For example, the DBIR does not seem to indicate that the *real* problem lies outside 
+
+## The key word is "scalable"
+
+
 
 ---
 
