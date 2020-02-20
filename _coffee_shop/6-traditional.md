@@ -303,7 +303,7 @@ We've demonstrated the effectiveness of the two questions---"does it scale?" and
 
 Are they more scalable than hacking? Malware? Phishing?
 
-I spoiled it a bit with the section title, but hacking, malware, and phishing are probably the most prevalant attacks, since they probably are the most scalable and "large-scale" attacks overall.
+I spoiled it a bit with the section title, but hacking, malware, and phishing are probably the most prevalant attacks, since they probably are the most scalable and "large-scale" attacks overall<!-- TODO hmmmmmmmm -->.
 
 But it's worth looking into the remaining actions just a little bit more, and it's worth examining the two caveats mentioned in the last section:
 

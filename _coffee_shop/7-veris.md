@@ -62,41 +62,33 @@ Of course, the DBIR also shows that the other four attack types are credible thr
 Breaches are often a combination of multiple attacks, so these percentages don't sum to 100%.
 </aside>
 
-The bad news: this data is a convenenicne sample.
+The bad news: this data is a convenience sample. The authors state it themselves<!-- DBIR 2019 p 6 -->. That makes drawing conclusions from it difficult.
 
-## The key word is "scalable"
+There's no guarantee that this data reflects the corporate world accurately, let alone the consumer world. We can take guesses at it, but in the end any conclusions are still basically guesses. It's basically like asking your friends, "did you find any surprises here?" and getting the answer, "none we can see." It's *data*, but it's not particularly *good* data.
 
+So this data basically reiterates, without being very helpful:
 
+1. There don't seem to be any big, lurking threats that we don't know about.
+2. The other threats are viable, too.
 
----
+## With little data, try "scalable"?
 
-## The key word is "scalable"
+Unfortunately, that's about all the clear data we have for error, misuse, and physical & environmental attacks. It's unsatisfying to leave it like that (especially since the data we have suggests that these *are* viable threats), but I don't have the data to offer good advice.
 
-If there's a mantra to be had from the previous sections, it's that most cybercriminals aim for scalable attacks---out of necessity. If cybercrime is about money, then the attacks need to make a bunch of money at once (very hard) or make a little bit of money many times.
+In this case, I would defer to the rule of thumb we developed in [How can I be hacked?]({{site.baseurl}}/how_hacked/): 
 
-Most of the insights here stem from applying that rule of thumb to different attacks.
+> When you encounter a new threat, ask yourself: could this threat scale to likely affect me? And: could this threat breach a place that stores my data?
 
----
+Look for the scaleable and large-scale attacks.
 
-It's worth jumping back to the point we made at the beginning---most of our data only covers the first 3 actions in the VERIS schema:
+We demonstrated that these rules held up for hacking, malware, and phishing in [the last section]({{site.baseurl}}/hacking_malware_phishing/), so it's probably reasonable to extend them to the other rules.
 
-* hacking,
-* malware, and
-* phishing.
+We don't have great data, but these rules are helpful---even subjectively! When was the last time you sent an email to the wrong person (error)? Last week? How often do friends start thumbing through your other pictures when you show them one on your phone (misuse)?
 
-The data shows that---though both malware and phishing are *common*---none of them are as common as most people think.
+We don't do a good job of measuring these things objectively, and it's hard to learn from the data until then. It could be that a product that stops you from emailing the wrong "Dan" is more valuable than the most expensive anti-virus software.
 
-There are still 4 other actions in the VERIS schema:
+But we don't know. 
 
-* misuse,
-* physical,
-* error, and
-* environmental.
+## The VERIS schema doesn't clarify target
 
-Each of them can be scaled in different ways. We don't have a lot of data about these attacks.
-
-But you can begin to apply the rule of thumb to these, too---even subjectively. When was the last time you sent an email to the wrong person (error)? Last week? How often do friends start thumbing through your other pictures when you show them one on your phone (misuse)?
-
-We don't do a good job of measuring these things objectively, and it's hard to learn from the data until then. It could be that a product that stops you from emailing the wrong Dan is more valuable than the most expensive anti-virus software.
-
-But we don't know.
+We don't know---or at least, lose in the data---*who* was targeted for each attack.
