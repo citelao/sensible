@@ -85,6 +85,8 @@ We demonstrated that these rules held up for hacking, malware, and phishing in [
 
 We don't have great data, but these rules are helpful---even subjectively! When was the last time you sent an email to the wrong person (error)? Last week? How often do friends start thumbing through your other pictures when you show them one on your phone (misuse)?
 
+For comparison, when was the last time you were hacked or got a virus?
+
 We don't do a good job of measuring these things objectively, and it's hard to learn from the data until then. It could be that a product that stops you from emailing the wrong "Dan" is more valuable than the most expensive anti-virus software.
 
 But we don't know. 
