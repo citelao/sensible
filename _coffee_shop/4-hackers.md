@@ -168,6 +168,8 @@ Unfortunately, there is very little data about this type of hacking. How frequen
 
 It is unclear.
 
+**TODO TODO CAVEAT THIS; HACKING IS COMMON IN PARTNER VIOLENCE.**
+
 <aside class="sidenote">
 I investigated cyber-stalking as a stand-in for these types of attacks and still found the data to be preliminary and unclear.
 
