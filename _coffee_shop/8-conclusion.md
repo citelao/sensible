@@ -71,3 +71,13 @@ Surely there's something you can do to be safer; surely there's something you ca
 And there is. There are a bunch of steps you can take---based on this data---that will protect you and the people you care about.
 
 And part of that means learning about HTTPS.
+
+---
+
+That is to say: when we talk about cybersecurity, we tend to focus on personal accountability (e.g. what can *you* do to keep yourself safer?).
+
+This isn't the real problem. You can learn all you want about cybersecurity, but at the end of the day you need to be sure the companies that hold your data do it securely. *They're* the ones being hacked, not consumers.
+
+There are steps you can take to be safer, but if there's a problem or a breach, it's probably not your fault. If you truly want a safer world, put pressure on the services you rely on to be safe and secure.
+
+---
