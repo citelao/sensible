@@ -10,6 +10,7 @@ real_previous:
 real_next:
     url: /other_threats/
     title: The other threats
+published: false
 ---
 
 If you've learned about cybersecurity before, you've almost certainly heard of the first three items in the VERIS schema (discussed in [the last section]({{site.baseurl}}/how_hacked/)): hacking, malware, and phishing.
