@@ -12,72 +12,91 @@ real_next:
     title: References
 ---
 
-TODO: a better conclusion
+We started with a simple question:
 
----
+> Is it safe to use coffee shop wi-fi?
 
-If you ask security experts about the state of the world, they'll probably say that everything is broken and everyone is hackable. Mozilla, in their [FAQ encouraging everyone to move to HTTPS](https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf) admits it:
+So after all that, is it?
 
-> For all its flaws, the CA system we have is one that underpins the entire online economy we have today. It’s broken in ways[...]
+Depending where you look today, you'll get different answers. Security experts will probably tell you that everything is broken and everyone is hackable. Security companies will tell you the same thing, but then tell you their product will fix it.
 
-The systems today have flaws. Attacks come out all the time, people write their passwords on Post-Its, and hackers make lots of money. There's a lot of work to be done and a lot of holes to fill.
+Just like I wrote in the [introduction]({{site.baseurl}}/intro), I believe it is probably safe to use coffee shop wi-fi.
 
-But that's no cause for despair. The world economy relies on the encryption provided by HTTPS. Governments and militaries use the same encryption schemes you do when you check Facebook. These systems are battle-tested. Sure, people have attacked them since the day they were released, but hundreds, thousands of people dedicate their lives to fixing them up. They work every day to call out encryption schemes that [seem fishy](https://blog.cryptographyengineering.com/2013/09/18/the-many-flaws-of-dualecdrbg/). To invent new ones. To break the old ones. And to fight for online privacy and security for everyone.
+## Tying it all together
 
-I quoted Mozilla above, but I cut them off before their key point:
+After [an entreaty]({{site.baseurl}}/entreaty/) to build a model of security that helps *you* make predictions, we dove into some big questions:
+
+* We explored [what it even means to be secure]({{site.baseurl}}/security/)---and why typical security advice feels so unsatisfying.
+* We asked [whether or not random people are even likely to be hacked]({{site.baseurl}}/hackers/)---and that most people are at risk of scalable attacks that target people indiscriminately, but that some people may need to [get additional help]({{site.baseurl}}/help/).
+* Finally, we looked into [how people are likely to be hacked]({{site.baseurl}}/how_hacked/)---or, at least, we tried to. We learned that there are huge information gaps that make it hard to feel safe.
+
+Hopefully, these articles gave you a clear-eyed answer to each question.
+
+## What's with all the negativity?
+
+Depending on how you read each article, you might be pessimistic about security. After all, if we don't have complete data about consumer threats, how can we possibly be secure? On the other hand, with consumer fraud protection, who cares about security? You can always get your money back, right?
+
+I think the answer lies somewhere in the middle, closer to the optimistic side.
+
+Security is complicated. We mess up all the time. Attacks come out all the time, people post their credit card numbers on Twitter<!-- TODO cite -->, and hackers make lots of money. There's a lot of work to be done and a lot of holes to fill.
+
+But there are so many people working to learn and get better. Even you yourself are a part of that: you went looking for answers so that you could get better, too. We're not in the greatest place just yet, and there's no guarantee we'll get there. But if we keep working at it, we have a fighting chance to do that.
+
+Already you can see good things happening. You can see them in operating systems becoming more secure<!-- TODO we cut that section (in hacking etc) -->. You can see them in browsers moving to HTTPS by default<!-- https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html & firefox too-->. You can see them in federal fraud laws. You can see them in tools like Signal and WireGuard and LetsEncrypt. You may not recognize these things, but know that people are working so that you don't *have* to know them. They're working to make the world secure.<!-- They work every day to call out encryption schemes that [seem fishy](https://blog.cryptographyengineering.com/2013/09/18/the-many-flaws-of-dualecdrbg/).  -->
+
+We also know what hackers want. We may not know how they generally try to get it, but we know that most hackers want money. Information helps us. We can make educated decisions and protect the stuff that hackers want most. We can make changes like turning on two-factor authentication for bank accounts or like setting up text message fraud alerts. We can plan, rationally.
+
+Some people are at risk of other types of attacks---from people who want to hurt them directly. These people need additional protection, and---frankly---we do a really bad job of giving them that advice, but separating them out lets us tailor advice to them. It lets us focus on the problems they have.
+
+We don't know everything. Indeed, after reading this, you should probably be even more aware of how little we know.
+
+But we have all the right ingredients to start learning.
+
+## Why can we even make security claims?
+
+I've been asked---since we don't know the largest threats that consumers face, how can we possibly make any security claims or give any security advice? Couldn't it all be wrong?
+
+It's a good question. Indeed, we can't make sweeping claims. We can't say that, for example, "turning on two-factor authentication is the single most important security step you can take."
+
+But we can say that turning on two-factor authentication [makes your accounts 99.9% less likely to be compromised]({{site.baseurl}}/passwords) (at least according to data from Microsoft<!-- TODO cite; same as passwords/ -->).
+
+We can look at outcomes; we can run experiments; we can look for results. Until we know what the biggest threats are, we cannot say we've solved the biggest threat.
+
+But we can certainly find big threats and deal with them one by one.
+
+## Just keep on truckin'
+
+Security experts know these things, even if they don't express it well. They know that security isn't perfect, and they know that everyone is at risk. They know that our knowledge is flawed and incomplete, but they know that we can still find and address big problems anyway.
+
+Mozilla, in a FAQ about HTTPS, describes the certificate authority system---a key part of how we stay safe on the Internet<!-- TODO cite https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf -->:
 
 > It's broken in ways, but for the most part, it works.
 
-<aside class="sidenote">
-Or, to quote the illustrious [James Mickens](https://www.usenix.org/system/files/1401_08-12_mickens.pdf):
+James Mickens, a distinguished Harvard professor and cybersecurity researcher, puts it another way<!-- TODO cite https://www.usenix.org/system/files/1401_08-12_mickens.pdf -->:
 
 > Security research is the continual process of discovering that your spaceship is a deathtrap. However, as John F. Kennedy once said, "SCREW IT WE’RE GOING TO THE MOON."
 
-</aside>
+Sometimes you just gotta go to the moon.
 
-**You *can* be safe, even on an open Wi-Fi network**. It just takes some knowledge, some work, and some vigilance. And every day people are working to make sure it takes less and less of all of that.
+## Next steps
 
-Stay safe out there.
+Of course, you'd rather fix that deathtrap rocket.
 
-## Bite-sized takeaways
+Even without the whole picture, we can offer some good advice based on clear threats. It's a whole section: [How to stay safe]({{site.baseurl}}/overall/).
 
-The most effective thing you can do to stay safe online is learn. But you can also take concrete action:
+* Turn on [two-factor authentication]({{site.baseurl}}/passwords/) (yes, even more important than choosing [good passwords]({{site.baseurl}}/good_passwords/)).
+* Get good [backup]({{site.baseurl}}/backups/) software.
+* If you're being targeted specifically, [get help]({{site.baseurl}}/help/) from actual experts.
 
-1. *Always* use an auto-updating computer and browser.
-2. Use different passwords on each site, managed in a password manager.
-3. Use two-step authentication, especially on your email and bank accounts.
-4. Encrypt your hard drive.
-5. Lock your computer with a password or biometric security.
-6. Back up your data regularly.
-7. Type passwords only when you're sure no one can see you.
-8. Trust your browser more than apps.
-9. Be suspicious when weird things happen.
-10. Learn how your browser communicates security: [read]({{site.baseurl}}/https/) or [watch](https://youtu.be/RNzw8tVhOpY).
+Also:
 
----
+* Probably skip the [VPN]({{site.baseurl}}/vpn/).
+* Probably skip the [3rd-party anti-virus software]({{site.baseurl}}/antivirus/).
 
-## Conclusion
+But keep that little bit of you that's unhappy. You should still be frustrated that we don't have the complete answers, the complete guides. You should still worry that you haven't covered everything. We haven't.
 
-Despite the caveat about stalking and harassment, this information paints a familiar picture of security in 2019.
+Keep it in your mind, and the next time you read a security blog or consider buying a VPN, poke back a little. Ask them for more. Ask them for the whole answer. If you truly want a safer world, put pressure on the services you rely on to be safe and secure. And put pressure on them to explain what that means.
 
-If you're active online, you're probably getting phishing emails every few weeks (especially if you check your junk mail). You may see malware, but your computer will probably block it.
+Demand a complete answer---because until we have one, you'll never be *sure* you're protected.
 
-Lots of services work in the background to make you safe, so even if you don't *feel* safe, your computer is a lot safer than one from 2004.
-
-You're probably worried about hackers---aren't they everywhere?---but you probably haven't been hacked yet. You've heard that password breaches are common, but you have yet to see any consequences from them. You're sure your address is available on the Internet, but nothing seems to have come of it. Are your pictures available online? Who can see your Facebook albums? What happens if an ex wants to hurt you?
-
-Surely there's something you can do to be safer; surely there's something you can do to protect yourself.
-
-And there is. There are a bunch of steps you can take---based on this data---that will protect you and the people you care about.
-
-And part of that means learning about HTTPS.
-
----
-
-That is to say: when we talk about cybersecurity, we tend to focus on personal accountability (e.g. what can *you* do to keep yourself safer?).
-
-This isn't the real problem. You can learn all you want about cybersecurity, but at the end of the day you need to be sure the companies that hold your data do it securely. *They're* the ones being hacked, not consumers.
-
-There are steps you can take to be safer, but if there's a problem or a breach, it's probably not your fault. If you truly want a safer world, put pressure on the services you rely on to be safe and secure.
-
----
+Stay safe out there. 🔒

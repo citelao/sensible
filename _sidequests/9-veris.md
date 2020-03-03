@@ -95,3 +95,30 @@ But we don't know.
 ## The VERIS schema doesn't clarify target
 
 We don't know---or at least, lose in the data---*who* was targeted for each attack.
+
+---
+
+
+## Conclusion
+
+Despite the caveat about stalking and harassment, this information paints a familiar picture of security in 2019.
+
+If you're active online, you're probably getting phishing emails every few weeks (especially if you check your junk mail). You may see malware, but your computer will probably block it.
+
+Lots of services work in the background to make you safe, so even if you don't *feel* safe, your computer is a lot safer than one from 2004.
+
+You're probably worried about hackers---aren't they everywhere?---but you probably haven't been hacked yet. You've heard that password breaches are common, but you have yet to see any consequences from them. You're sure your address is available on the Internet, but nothing seems to have come of it. Are your pictures available online? Who can see your Facebook albums? What happens if an ex wants to hurt you?
+
+Surely there's something you can do to be safer; surely there's something you can do to protect yourself.
+
+And there is. There are a bunch of steps you can take---based on this data---that will protect you and the people you care about.
+
+And part of that means learning about HTTPS.
+
+---
+
+That is to say: when we talk about cybersecurity, we tend to focus on personal accountability (e.g. what can *you* do to keep yourself safer?).
+
+This isn't the real problem. You can learn all you want about cybersecurity, but at the end of the day you need to be sure the companies that hold your data do it securely. *They're* the ones being hacked, not consumers.
+
+There are steps you can take to be safer, but if there's a problem or a breach, it's probably not your fault. 
