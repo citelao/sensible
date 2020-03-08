@@ -128,6 +128,8 @@ How many passwords could they get if they used that time to send phishing emails
 
 This is the key: you are already well-equipped to understand how easy or difficult many of these attacks are. More knowledge can only help, but you should already be well-equipped to start.
 
+<!-- TODO: section on how corporations are usually the target? -->
+
 ## So make do, but don't be satisfied
 
 You should be unhappy with these answers.

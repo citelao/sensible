@@ -36,7 +36,7 @@ Anti-virus software came into a lawless world, where people desperately needed p
 
 And for a while, Microsoft was really slow to respond. Windows 7 fixed many of the glaring security vulnerabilities XP had, but even then a new Windows computer wouldn't be well-equipped to deal with new threats. By Microsoft's own data<!-- Why Windows Defender Antivirus is the most deployed in the enterprise -->, it took until late 2015 for Windows' built-in tools to start matching third-party anti-virus software.
 
-But now the world is different. Windows Defender, Microsoft's built-in anti-virus program, may be the best anti-virus on the market. All major operating systems---including mobile operating systems---can auto-update to keep you safe. And we now know that the hassle of renewing and choosing anti-virus software causes other problems<!-- MSIR 17; other sources about security holes -->.
+But now the world is different. Windows Defender, Microsoft's built-in anti-virus program, may be the best anti-virus on the market. All major operating systems---including mobile operating systems---can auto-update to keep you safe. And we now know that the hassle of renewing and choosing anti-virus software causes other problems<!-- MSIR 17; other sources about security holes; TODO, prob needs its own section to elaborate. -->.
 
 <aside class="sidenote">
 Disclaimer: I work at Microsoft, but not on the Windows Defender team.

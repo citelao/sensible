@@ -6,19 +6,29 @@ date: 2018-11-24T12:00:00
 permalink: /overall/
 ---
 
-TODO: let's not be so prescriptive.
+It's clear that [hackers target everyone]({{site.baseurl}}/hackers/) with easy, scalable attacks. It's also clear that [we don't have a good overall view]({{site.baseurl}}/how_hacked/) of all the ways they target us.
 
---
+That being said, you are not powerless.
 
-It's clear that [hackers target everyone]({{site.baseurl}}/hackers/) and that they're focused on *easy*, [scalable]({{site.baseurl}}/how_hacked/) attacks.
+We might not know all the possible threats, but we know a lot about many of the biggest and most common ones. For example, we know approximately how many people encounter viruses while browsing the web, and we know how many people get phishing emails, and we know how many people get defrauded each year<!-- TODO link to my summary -->. Despite the holes in our data, it is still possible to give good security advice.
 
-It's also clear that most of the biggest threats to your [security]({{site.baseurl}}/security/) lie with the companies that hold your data---your bank, your email providers, your social networks.
+Good security advice must do at least these 2 things:
 
-It may seem like protecting your data must be ridiculously easy or literally impossible. The truth is in the middle: some threats are easy to stop and some threats are impossible.
+1. It must not claim to be complete (since it clearly can't be, if we don't know about all threats).
+2. It must clearly articulate what it assumes and what it claims to do (since, if it's not complete, you need to know what it protects).<!-- TODO cite unfalsifiability of security claims to explain in more depth -->
 
-But you can take simple steps to mitigate all of these threats and reduce their impacts---even if you can't stop them completely.
+Unfortunately, most security advice does not do either of these things. Most security advice is bad.
 
-Here are four *evidence-based* things you can do *right now* to make yourself more secure, and a few bits of common security advice that are probably useless.
+<aside class="sidenote">
+That is not to say that most security advice is **wrong**. After all, you don't need a research study to notice that seatbelts keep you secure in many types of accidents.
+
+But the people trying to sell you seatbelts should certainly have that study.
+</aside>
+
+Here are four evidence-based things you can do right now to make yourself more secure, and a few bits of common security advice that are probably useless.
+
+This advice might not apply to you (though it probably does), and it's certainly not complete. But I explain what this advice protects you from and what it assumes. And, unlike the other guys, I have the disclaimer up front.
+
 
 ## Advice to take
 
@@ -32,6 +42,20 @@ Here are four *evidence-based* things you can do *right now* to make yourself mo
 1. **Don't** worry about [password strength]({{site.baseurl}}/passwords/) that much.
 2. **Don't** pay money for [antivirus software]({{site.baseurl}}/antivirus/).
 3. **Don't** use or pay money for a [VPN]({{site.baseurl}}/vpn/).
+
+
+
+---
+
+It's also clear that most of the biggest threats to your [security]({{site.baseurl}}/security/) lie with the companies that hold your data---your bank, your email providers, your social networks.
+
+It may seem like protecting your data must be ridiculously easy or literally impossible. The truth is in the middle: some threats are easy to stop and some threats are impossible.
+
+But you can take simple steps to mitigate all of these threats and reduce their impacts---even if you can't stop them completely.
+
+Here are four *evidence-based* things you can do *right now* to make yourself more secure, and a few bits of common security advice that are probably useless.
+
+---
 
 ## What?!
 
