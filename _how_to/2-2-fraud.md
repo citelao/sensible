@@ -23,3 +23,10 @@ You can prevent most new account fraud by freezing your credit, probably. So do 
 TODO
 
 See also Pew Americans & Cybersecurity, which has much higher fraud stats.
+
+---
+
+* credit freeze
+* check your statements
+
+---

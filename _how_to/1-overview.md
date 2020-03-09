@@ -10,9 +10,9 @@ It's clear that [hackers target everyone]({{site.baseurl}}/hackers/) with easy, 
 
 That being said, you are not powerless.
 
-We might not know all the possible threats, but we know a lot about many of the biggest and most common ones. For example, we know approximately how many people encounter viruses while browsing the web, and we know how many people get phishing emails, and we know how many people get defrauded each year<!-- TODO link to my summary -->. Despite the holes in our data, it is still possible to give good security advice.
+We might not know all the possible threats, but we know a lot about many of the biggest and most common ones. For example, we know a lot about how many people get viruses, receive phishing emails, and are defrauded every year<!-- TODO link to my summary -->. Despite the holes in our data, it is still possible to give good (if incomplete) security advice.
 
-Good security advice must do at least these 2 things:
+Good security advice must do at least these 2 things<!-- Herley has an exploration into requirements like this:  Science of Security, T10, and More Is Not the Answer, section 2.2 -->:
 
 1. It must not claim to be complete (since it clearly can't be, if we don't know about all threats).
 2. It must clearly articulate what it assumes and what it claims to do (since, if it's not complete, you need to know what it protects).<!-- TODO cite unfalsifiability of security claims to explain in more depth -->
@@ -29,7 +29,6 @@ Here are four evidence-based things you can do right now to make yourself more s
 
 This advice might not apply to you (though it probably does), and it's certainly not complete. But I explain what this advice protects you from and what it assumes. And, unlike the other guys, I have the disclaimer up front.
 
-
 ## Advice to take
 
 1. Turn on [two-factor authentication]({{site.baseurl}}/passwords/) on your key accounts (at least email and finance).
@@ -43,59 +42,57 @@ This advice might not apply to you (though it probably does), and it's certainly
 2. **Don't** pay money for [antivirus software]({{site.baseurl}}/antivirus/).
 3. **Don't** use or pay money for a [VPN]({{site.baseurl}}/vpn/).
 
-
-
----
-
+<!-- TODO, is this justified? 
 It's also clear that most of the biggest threats to your [security]({{site.baseurl}}/security/) lie with the companies that hold your data---your bank, your email providers, your social networks.
-
-It may seem like protecting your data must be ridiculously easy or literally impossible. The truth is in the middle: some threats are easy to stop and some threats are impossible.
-
-But you can take simple steps to mitigate all of these threats and reduce their impacts---even if you can't stop them completely.
-
-Here are four *evidence-based* things you can do *right now* to make yourself more secure, and a few bits of common security advice that are probably useless.
-
----
+-->
 
 ## What?!
 
 Some of this advice directly contradicts what you may have heard before.
 
-Security advice is hard to give. A lot of it comes from earnest guesswork (and other places, too), but very little comes from real data. Furthermore, although it's easy to see when security advice is insufficient (you got hacked!), it's really hard to know when security advice is unnecessary<!-- Cormac Unfalsifiability -->.
+Security advice is hard to give. A lot of it comes from honest guesswork (and other, less honest places, too), but very little comes from real data. In fact, it's impossible any overall advice comes from real data---as mentioned above, we literally don't know all of the overall threats!
+
+And, since the advice generally comes from guesswork, not data, it's hard (if not impossible<!-- Cormac Unfalsifiability -->) to know when advice is unnecessary.
 
 How could you verify that, say, keeping your computer up-to-date is protecting you?
 
-So advice creeps up; builds; compounds. Strong passwords! And VPNs! And HTTPS! And firewalls! And phishing awareness! And more and more and more.
+So advice creeps up. Strong passwords! And VPNs! And HTTPS! And firewalls! And phishing awareness! And more and more and more. The advice comes from guesses---it will never end.
 
-We have data on how folks get hacked and how things get stolen. There are times when almost every piece of security advice is useful (even necessary!).
+Each tool is important and may be able to help you. There are times when almost every piece of security advice is useful (even necessary!).
 
-But if you only have limited energy to defend yourself, the most common advice we give can lead you the wrong way.
+But sometimes the advice assumes things that aren't true, or assumes that a threat is more common than it actually is. If you only have limited energy to defend yourself, the most common advice we give can lead you the wrong way.
+
+## Is advice a lie?
+
+Common advice is usually guesswork. This is not necessarily malicious, and it does not necessarily mean that most security advice is useless. But it means that most security advice can never be complete.
+
+If advice comes from an expert's "best guess" about the threats you face, there's a very real chance that expert is wrong about something or missed an important threat.
+
+For example, Speak Up & Stay Safe(r), a guide written by actual victims of cyber-harassment attacks<!-- TODO cite https://onlinesafety.feministfrequency.com/en/ -->, lists "remove potential doxxing information" as one of its top 3 preventative steps. I have never seen this advice in any generic security advice; if you were a victim of online harassment and didn't know about the Speak Up guide, you'd never find this information.
+
+<aside class="sidenote">
+"Doxxing" means posting private information, like real name and address, about a target, generally as a form of harassment<!-- https://www.lexico.com/en/definition/dox -->.
+</aside>
+
+And you'd never know that you were missing it---because the easy-to-find guides never mentioned they were just a "best guess."
+
+While I strongly believe that my overviews of [security]({{site.baseurl}}/security/), [who is targeted]({{site.baseurl}}/hackers/), and [how people are hacked]({{site.baseurl}}/how_hacked/) are complete, I do not claim these suggestions are complete. Instead, I offer evidence and assumptions---here's what these suggestions do, how they work, and what they assume.
+
+You can find value in most advice, anywhere. But for the other stuff, you'll need to ask those questions yourself.
+
+---
 
 <aside class="sidenote">
 After all, you're technically "safer" if you go around wearing a bullet-proof vest, but it's **probably** a waste of your money to buy and wear one. Plus it's heavy, and you'll look silly.
 </aside>
 
-These *evidence-based* suggestions are by no means complete, but they go a long way towards safeguarding you and your family. And some common advice just makes no sense given the threats we know about.
-
-Point for point, here's why.
-
 ---
 
-* credit freeze
-* check your statements
+Unvetted:
 
----
-
-## Bite-sized takeaways
-
-The most effective thing you can do to stay safe online is learn. But you can also take concrete action:
-
-1. *Always* use an auto-updating computer and browser.
 2. Use different passwords on each site, managed in a password manager.
-3. Use two-step authentication, especially on your email and bank accounts.
 4. Encrypt your hard drive.
 5. Lock your computer with a password or biometric security.
-6. Back up your data regularly.
 7. Type passwords only when you're sure no one can see you.
 8. Trust your browser more than apps.
 9. Be suspicious when weird things happen.
