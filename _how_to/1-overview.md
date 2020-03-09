@@ -62,6 +62,10 @@ Each tool is important and may be able to help you. There are times when almost 
 
 But sometimes the advice assumes things that aren't true, or assumes that a threat is more common than it actually is. If you only have limited energy to defend yourself, the most common advice we give can lead you the wrong way.
 
+<aside class="sidenote">
+After all, you're technically "safer" if you go around wearing a bullet-proof vest, but it's **probably** a waste of your money to buy and wear one. Plus it's heavy, and you'll look silly.
+</aside>
+
 ## Is advice a lie?
 
 Common advice is usually guesswork. This is not necessarily malicious, and it does not necessarily mean that most security advice is useless. But it means that most security advice can never be complete.
@@ -79,12 +83,6 @@ And you'd never know that you were missing it---because the easy-to-find guides 
 While I strongly believe that my overviews of [security]({{site.baseurl}}/security/), [who is targeted]({{site.baseurl}}/hackers/), and [how people are hacked]({{site.baseurl}}/how_hacked/) are complete, I do not claim these suggestions are complete. Instead, I offer evidence and assumptions---here's what these suggestions do, how they work, and what they assume.
 
 You can find value in most advice, anywhere. But for the other stuff, you'll need to ask those questions yourself.
-
----
-
-<aside class="sidenote">
-After all, you're technically "safer" if you go around wearing a bullet-proof vest, but it's **probably** a waste of your money to buy and wear one. Plus it's heavy, and you'll look silly.
-</aside>
 
 ---
 
