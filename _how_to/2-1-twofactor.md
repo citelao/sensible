@@ -30,7 +30,7 @@ However, in practice hackers don't need to guess anything at all.
 
 As one example, the Internet is teeming with breached usernames & passwords, stolen from companies' databases worldwide<!-- HaveIBeenPwned -->. Most attacks (over 20 million *daily* on Microsoft accounts alone, according to a director on the Microsoft Identity team<!-- Your Pa$$word doesn't matter -->) are just hackers trying these username & password pairs on other sites, hoping that you reused your password.
 
-And it works<!-- Previous article: 62%; 2010 NCSA / Norton by Symantec Online Safety Study says 37% +/- 5% unsure; . The Tangled Web of Password Reuse via The Password Life Cycle:
+And they work<!-- Previous article: 62%; 2010 NCSA / Norton by Symantec Online Safety Study says 37% +/- 5% unsure; . The Tangled Web of Password Reuse via The Password Life Cycle:
 User Behaviour in Managing Passwords says 43% of passwords in a dataset were reused -->.
 
 In these attacks, it doesn't matter how strong your password was: whether you used `Password1!` or `8zUM94oureVvjsBrsUCJYHxNWcG6`, the hacker already knows your old password and is trying it in new places.
