@@ -2,7 +2,7 @@
 layout: page
 type: sidequest
 title: What is HTTPS?
-description: HTTPS secures the most dangerous part of your internet traffic. How?
+description: HTTPS secures the most dangerous part of your Internet traffic. How?
 date: 2018-11-24T12:00:00
 permalink: /https/
 ignore_previous: true
@@ -15,10 +15,10 @@ Up until recently, **preventing those easy attacks was impossible**.
 
 The original core standards that defined the Internet---protocols (rules) like TCP/IP, HTTP, DNS, and SMTP---only specified how to send your data as **plaintext**---unencrypted, just like physical mail. All hackers needed to do to steal your passwords was eavesdrop, which is very easy to do: **hence the warnings to avoid coffee shop wi-fi**.
 
-This was the original design of the internet, which helped it spread quickly, but **it soon became a liability**. In response, security specialists drafted "secure" variants of most internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
+This was the original design of the Internet, which helped it spread quickly, but **it soon became a liability**. In response, security specialists drafted "secure" variants of most Internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
 
 <aside class="sidenote">
-Tim Berners-Lee (designer of the internet) [at IP Expo](https://www.theregister.co.uk/2014/10/08/sir_tim_bernerslee_defends_decision_not_to_bake_security_into_www/), about the decision to leave security out of the original design:
+Tim Berners-Lee (designer of the Internet) [at IP Expo](https://www.theregister.co.uk/2014/10/08/sir_tim_bernerslee_defends_decision_not_to_bake_security_into_www/), about the decision to leave security out of the original design:
 
 > [The web] might not have taken off if it had been too difficult.
 
@@ -28,18 +28,18 @@ He was probably right.
 
 ## Introducing HTTPS
 
-Most importantly, these experts introduced **a secure version of HTTP** ("HyperText Transfer Protocol"), the protocol you use for browsing the web. This protocol, **HTTPS** ("HTTP Secure"), protects traffic on the internet by sending it as **cyphertext**: encrypted. If everything works right, only you and your destination can read the contents.
+Most importantly, these experts introduced **a secure version of HTTP** ("HyperText Transfer Protocol"), the protocol you use for browsing the web. This protocol, **HTTPS** ("HTTP Secure"), protects traffic on the Internet by sending it as **cyphertext**: encrypted. If everything works right, only you and your destination can read the contents.
 
 With HTTPS, you now have the *ability* to keep your content secure as it travels the Internet.
 
-For a long time HTTPS stayed in the background, but thanks to initiatives by Google, Let's Encrypt, the EFF, and many others, encrypted internet traffic in the United States has nearly *doubled* over the last two years. Mozilla calls all of this work "[deprecating the insecure internet](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)," and because of it, [over 50%](https://transparencyreport.google.com/https/overview?hl=en) of traffic on the internet is encrypted today. That number [keeps going up](https://scotthelme.co.uk/alexa-top-1-million-analysis-august-2018/)<!-- TODO CITE -->, and it's the reason you can browse open wireless networks in relative peace.
+For a long time HTTPS stayed in the background, but thanks to initiatives by Google, Let's Encrypt, the EFF, and many others, encrypted Internet traffic in the United States has nearly *doubled* over the last two years. Mozilla calls all of this work "[deprecating the insecure Internet](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)," and because of it, [over 50%](https://transparencyreport.google.com/https/overview?hl=en) of traffic on the Internet is encrypted today. That number [keeps going up](https://scotthelme.co.uk/alexa-top-1-million-analysis-august-2018/)<!-- TODO CITE -->, and it's the reason you can browse open wireless networks in relative peace.
 
-## The old internet -- before HTTPS
+## The old Internet -- before HTTPS
 
 HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-in-the-middle attack.
 
 <aside class="sidenote">
-There is no direct citation for this statement. However, the vulnerabilities listed in essays (explaining the need for HTTPS) from Google {% cite basques %}, the government {% cite mill_2014 %}, and *the agency that created the internet* {% cite farrell2014pervasive nottingham_2015 %} are all man-in-the-middle attacks.
+There is no direct citation for this statement. However, the vulnerabilities listed in essays (explaining the need for HTTPS) from Google {% cite basques %}, the government {% cite mill_2014 %}, and *the agency that created the Internet* {% cite farrell2014pervasive nottingham_2015 %} are all man-in-the-middle attacks.
 </aside>
 
 A man-in-the-middle attack in general is any attack where someone intercepts your communication before it reaches its destination. The most straightforward practical example is someone standing outside your mailbox and reading all your mail before it reaches the post office. 
@@ -64,7 +64,7 @@ Firesheep can't hack Facebook anymore because Facebook switched to HTTPS by defa
 
 It took them 3 years.
 
-## The secure internet -- with HTTPS
+## The secure Internet -- with HTTPS
 
 HTTPS makes the man-in-the-middle attack almost impossible, except for in a few edge cases. It is the reason I can feel safe reading Facebook (and even accessing my bank) on public Wi-Fi---in a specific set of circumstances.
 
@@ -78,7 +78,7 @@ For example, an attacker can tell if you're using Skype, or that you are going t
 This is discussed in greater depth later. See also [**Do you need a VPN?**]({{site.baseurl}}/vpn/).
 </aside>
 
-But HTTPS does not secure every part of your internet browsing, and you must double check it to make sure no one is attacking you.
+But HTTPS does not secure every part of your Internet browsing, and you must double check it to make sure no one is attacking you.
 
 The best way to keep yourself secure is to learn how HTTPS works.
 
@@ -139,15 +139,15 @@ For example, HTTPS guarantees that when you talk to Snapple.com you are actually
 
 HTTPS does not indicate any security *except* that your communication was secure in transit, but that's a very important thing; the rest you can verify separately.
 
-Recall the [six points your data crosses]({{site.baseurl}}/security/) when it travels the internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
+Recall the [six points your data crosses]({{site.baseurl}}/security/) when it travels the Internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
 
 <aside class="sidenote">
 You may notice that HTTPS does not guarantee **availability**. That's based on servers being available to respond to your requests. In practice, HTTPS does not slow down servers enough to **disrupt** availability on its own.
 </aside>
 
 * from your computer to your router,
-* from your router to the internet, and
-* from the internet to its destination.
+* from your router to the Internet, and
+* from the Internet to its destination.
 
 ## The rest of the steps
 

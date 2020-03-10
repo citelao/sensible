@@ -13,7 +13,7 @@ I've often heard the advice "use a VPN"---a Virtual Private Network. If you're t
 
 ## The usefulness of a VPN
 
-A VPN is like a "middleman" or PO box for your internet connection: when you use a VPN, you forward all your computer's internet traffic to the VPN before that VPN sends it to its final destination. 
+A VPN is like a "middleman" or PO box for your Internet connection: when you use a VPN, you forward all your computer's Internet traffic to the VPN before that VPN sends it to its final destination. 
 
 This provides two main benefits:
 
@@ -34,7 +34,7 @@ Joan could set up her US-based router as a VPN for her Canadian cousins to watch
 
 VPNs also help companies with large internal networks (intranets). IT departments often set up Internet-facing VPN servers that also connect to their company's internal network. Employees can access internal services through the VPN as though they were at work.
 
-Perhaps most importantly, you can also use a VPN to **protect against local eavesdroppers**. Your VPN encrypts your local traffic in its own way, ensuring that local eavesdroppers cannot read your internet traffic *even if it is not HTTPS*.
+Perhaps most importantly, you can also use a VPN to **protect against local eavesdroppers**. Your VPN encrypts your local traffic in its own way, ensuring that local eavesdroppers cannot read your Internet traffic *even if it is not HTTPS*.
 
 <aside class="sidenote">
 There's nuance to this: see the "flaws" section below.
@@ -73,13 +73,13 @@ Furthermore, using a VPN means **trusting another service**. When you set up a V
 VPNs are marketed at people doing shady things. There's a lot of sleezy marketing and hucksterism, and many claims like "no tracking" and "military-grade encryption" are impossible to verify.
 
 <aside class="sidenote">
-By the way, **military-grade encryption** is meaningless. The military sends email and browses the internet the same way you do. In fact, encryption standards are generally more trusted the **more** public they are.
+By the way, **military-grade encryption** is meaningless. The military sends email and browses the Internet the same way you do. In fact, encryption standards are generally more trusted the **more** public they are.
 <!-- citation needed -->
 </aside>
 
 VPNs promise security for parts of your communication that are most useful to governments and large organizations. In that case, the "security" they offer is probably a lie: **chances are you're doing something that VPNs would be legally obligated to give to law enforcement**.
 
-I feel a bit silly writing this. Don't do illegal things on the internet. HTTPS and [my general security advice]({{site.baseurl}}/overall) protects you against most of your daily threats. However, law enforcement has the time, resources, and expertise to break your security. A VPN will not make the difference here.
+I feel a bit silly writing this. Don't do illegal things on the Internet. HTTPS and [my general security advice]({{site.baseurl}}/overall) protects you against most of your daily threats. However, law enforcement has the time, resources, and expertise to break your security. A VPN will not make the difference here.
 
 If you reasonably expect a government to target you, you need better advice than mine.
 
@@ -100,7 +100,7 @@ At the end of the day, VPNs are another layer of encryption around your data. Th
 
 Consider a VPN when you worry about someone *near you*, like at your office or in your apartment, snooping on unencrypted traffic, or when you worry about leaking metadata, like that you're using Skype or going to FoxNews.com.
 
-But keep in mind that using a VPN requires installing software on your computer and sending all of your internet traffic to *one company*.
+But keep in mind that using a VPN requires installing software on your computer and sending all of your Internet traffic to *one company*.
 
 This means you need to audit the software to be sure it's safe, you need to be *certain* the company isn't logging your traffic and handing it to someone else, and you need to be ok with everyone around you *knowing you're using a VPN*.
 

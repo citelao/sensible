@@ -12,7 +12,7 @@ real_next:
     title: What is secure?
 ---
 
-The internet is dangerous, and it is foolish to advise otherwise, but the internet is dangerous only in specific, well-understood ways. This guide aims to help you understand those ways.
+The Internet is dangerous, and it is foolish to advise otherwise, but the Internet is dangerous only in specific, well-understood ways. This guide aims to help you understand those ways.
 
 This guide aims to give you a coherent model of security on the Internet. 
 
@@ -25,7 +25,7 @@ Eliezer S. Yudkowsky, an AI researcher, writes {% cite yudkowsky_2005 -A %} (emp
 
 </aside>
 
-At the end of this guide, you should have a good, falsifiable mental model of security on the Internet. This model shouldn't be that "the internet is safe" or "the internet is dangerous"; it should help you understand the *specific* things that are dangerous and things that are safe on the Internet because it describes how the Internet *actually* works---and nothing else {% cite pollard_2018 %}. 
+At the end of this guide, you should have a good, falsifiable mental model of security on the Internet. This model shouldn't be that "the Internet is safe" or "the Internet is dangerous"; it should help you understand the *specific* things that are dangerous and things that are safe on the Internet because it describes how the Internet *actually* works---and nothing else {% cite pollard_2018 %}. 
 
 If my article cannot help you make a prediction---like how safe it is to download an app on public Wi-Fi, for example---please let me know, and I will improve it.
 
@@ -33,7 +33,7 @@ With that, a warning:
 
 ## A warning
 
-This content is targeted at most internet users---to access your bank, online shopping, and Facebook.
+This content is targeted at most Internet users---to access your bank, online shopping, and Facebook.
 
 If you fear censorship or your life may be at risk if you are hacked, it is reasonable to [take other precautions](/help/).
 
@@ -53,6 +53,6 @@ And some legalese. Use your best judgement with this information.
 
 ## The caveat at the beginning
 
-The warning above appears at the bottom of every page on this site. I am not a security professional; I am someone who studied the internet and knows how the pieces fit together. 
+The warning above appears at the bottom of every page on this site. I am not a security professional; I am someone who studied the Internet and knows how the pieces fit together. 
 
-At the very least, this guide will show you how security on the internet works. Let's begin!
+At the very least, this guide will show you how security on the Internet works. Let's begin!
