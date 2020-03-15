@@ -14,18 +14,18 @@ real_next:
 
 The Internet is dangerous, and it is foolish to advise otherwise, but the Internet is dangerous only in specific, well-understood ways. This guide aims to help you understand those ways.
 
-This guide aims to give you a coherent model of security on the Internet. 
+This guide aims to give you a coherent model of security on the Internet.
+
+This model shouldn't be that "the Internet is safe" or "the Internet is dangerous"; it should help you understand the *specific* things that are dangerous and things that are safe on the Internet because it describes how the Internet *actually* works---and nothing else {% cite pollard_2018 %}. 
 
 With a good model, you can separate reasonable fears from irrational ones.
 
 <aside class="sidenote">
 Eliezer S. Yudkowsky, an AI researcher, writes {% cite yudkowsky_2005 -A %} (emphasis in original):
 
-> [In Karl] Popper's philosophy, the strength of a scientific theory is not how much it explains, but how much it *doesn't* explain. The virtue of a scientific theory lies not in the outcomes it permits, but in the outcomes it *prohibits*.
+> [In Karl] Popper's philosophy, the strength of a scientific theory is not how much it explains, but how much it **doesn't** explain. The virtue of a scientific theory lies not in the outcomes it permits, but in the outcomes it **prohibits**.
 
 </aside>
-
-At the end of this guide, you should have a good, falsifiable mental model of security on the Internet. This model shouldn't be that "the Internet is safe" or "the Internet is dangerous"; it should help you understand the *specific* things that are dangerous and things that are safe on the Internet because it describes how the Internet *actually* works---and nothing else {% cite pollard_2018 %}. 
 
 If my article cannot help you make a prediction---like how safe it is to download an app on public Wi-Fi, for example---please let me know, and I will improve it.
 
@@ -53,6 +53,6 @@ And some legalese. Use your best judgement with this information.
 
 ## The caveat at the beginning
 
-The warning above appears at the bottom of every page on this site. I am not a security professional; I am someone who studied the Internet and knows how the pieces fit together. 
+The warning above appears at the bottom of every page on this site. I am not a security professional; I am someone who studied the Internet and knows how the pieces fit together.
 
 At the very least, this guide will show you how security on the Internet works. Let's begin!

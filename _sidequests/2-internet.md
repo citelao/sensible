@@ -23,7 +23,7 @@ Once your computer has messages to send, it needs to *send* them to their destin
 If you have a Wi-Fi network at home, the device that generates the signal is your router.
 </aside>
 
-This router is connected to an internet service provider---an ISP. This really means that *your* router is connected to a larger router, which is connected to an even larger router---on and on until every smaller network connects to every other network:
+This router is connected to an Internet service provider---an ISP. This really means that *your* router is connected to a larger router, which is connected to an even larger router---on and on until every smaller network connects to every other network:
 
 An "internetwork," if you will.
 
@@ -35,7 +35,7 @@ Putting it all together, everything you do on the Internet goes through these po
 2. Your computer
 3. Your browser (or other Internet-connected app)
 4. Your router
-5. Intermediate routers ("the internet")
+5. Intermediate routers ("the Internet")
 6. Destination router
 
 Protecting your data "all the time" means protecting it at every point along this route *in addition* to protecting it when it's "at rest" on your hard drive or in the cloud.
