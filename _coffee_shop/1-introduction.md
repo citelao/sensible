@@ -7,7 +7,7 @@ permalink: /intro/
 hero: /img/intro_hero.jpg
 real_next:
     url: /entreaty/
-    title: An entreaty
+    title: This guide is different
 ---
 
 <!-- [hero image: Alice and Bob waiting in a coffee shop and literally everyone else is a stereotypical "hacker" in a trench coat] -->

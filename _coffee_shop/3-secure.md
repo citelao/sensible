@@ -8,7 +8,7 @@ redirect_from:
     - /secure/
 real_previous:
     url: /entreaty/
-    title: An entreaty
+    title: This guide is different
 real_next:
     url: /hackers/
     title: Will I even be hacked?
