@@ -28,9 +28,7 @@ No wonder security seems so hard!
 
 ## You shouldn't have to learn about cybersecurity
 
-But first, why even learn about cybersecurity at all?
-
-After all, you don't need a Ph.D. to keep your money safe at a bank. Why should you need one to keep your money safe online?
+But first, why even learn about cybersecurity at all? After all, you don't need a Ph.D. to keep your money safe at a bank. Why should you need one to keep your money safe online?
 
 Cybersecurity should be simple---we should communicate it well. If your money is safe, we should tell you that it's safe. If it's not, we should tell you how to make it safe. You shouldn't need to worry about protocols and encryption schemes and anti-virus tools.
 
@@ -44,7 +42,7 @@ Banks have had a long time to learn about security. They're built to defend agai
 
 One day Internet security will be easy. It's our job---as engineers and cybersecurity researchers---to make that happen.
 
-But until then, you need to learn about cybersecurity to stay safe. It's ridiculous {% cite pollard_2018 %}, but that's where we are.
+But until then, you need to learn about cybersecurity to stay safe. It's ridiculous that you should need to learn anything {% cite pollard_2018 %}, but that's where we are.
 
 This guide can help.
 
@@ -101,38 +99,7 @@ And some legalese. Use your best judgement with this information.
 
 The warning above appears at the bottom of every page on this site. I am not a security professional; I am someone who studied the Internet and knows how the pieces fit together.
 
-At the very least, this guide will show you how security on the Internet works. Let's begin!
-
----
-
-and how to communicate it. The mental model for bank security is clear. It's drilled into your head by the sturdy stone of the bank buildings, the heavy metal of the vaults, the "FDIC-insured" stickers on the door, and the calm nod from the guards as you enter.
-
-That is not true for cybersecurity. We
-
----
-
-It really is ridiculous that you have to seek out security advice and read advice columns in order to stay safe on the Internet. The Internet should be designed to be secure by default.
-
-There are many historical reasons for the sorry state of cybersecurity. But, at the end of the day, we—as the security community and as engineers—must do better. You should never need to worry about protocols and encryption schemes and anti-virus tools: we should do the work to keep you safe automatically.
-
-You don't need a Ph.D. to keep your money safe at a bank. Why should you need one to keep your money safe online?
-
-New tools like iMessage, Signal, HTTPS (and Let's Encrypt), MagicWormhole, and WireGuard are making security easier and more automatic, but we're not at the 
-
-You should never need a mental model of cybersecurity, or that mental model should be as simple as your mental model of a bank .
-
----
-
-Without a good overview of cybersecurity, it's impossible to process advice. How can you possibly know what
-
- 
-
----
-
 The Internet is dangerous, and it is foolish to advise otherwise, but the Internet is dangerous only in specific, well-understood ways. This guide aims to help you understand those ways.
 
-There is already plenty of cybersecurity advice on the Internet.
+At the very least, this guide will show you how security on the Internet works. Let's begin!
 
-However, most of it is only action-oriented, or it focuses on random parts of 
-
-This model shouldn't be that "the Internet is safe" or "the Internet is dangerous"; it should help you understand the *specific* things that are dangerous and things that are safe on the Internet because it describes how the Internet *actually* works---and nothing else {% cite pollard_2018 %}. 
