@@ -26,13 +26,11 @@ Hackers target everyone.
 
 We'll dive into it, but that's the short answer.
 
-But that's not the whole answer. You are targeted, but this is almost entirely because these criminals target as many people as they can **as cheaply as they can**. These hackers are probably not interested in your cookie recipes---or even your salacious photos! They want your money, and they want it quickly. They don't have the time to waste on you specifically.
-
-<big>Large scale?</big>
+But that's not the whole answer. You are targeted, but this is almost entirely because these criminals target as many people as they can **as cheaply as they can** *or* because they focus on high value targets (like companies) to **steal many people's data at once**. These hackers are probably not interested in your cookie recipes---or even your salacious photos! They want your money, and they want it quickly. They don't have the time to waste on you specifically.
 
 It is also hard to steal money. Even if everything goes right for hackers, federal law can often protect you---and you can get your money back.
 
-Unfortunately, some people must defend against a different sort of hacker: a targeted hacker. If you know you are a target---since you have an abusive ex, since you are a political dissident, or since you are an important CEO, for example---you may need to worry about other threats.
+Unfortunately, some people must also defend against a different sort of hacker: a targeted hacker. If you know you are a target---since you have an abusive ex, since you are a political dissident, or since you are an important CEO, for example---you may need to worry about other threats.
 
 We'll investigate all of this below.
 
@@ -86,7 +84,7 @@ Unfortunately, you are still a target. The narrative is true---there *are* hacke
 
 Fortunately, they pretty much *only* want to steal your money.
 
-Every year, Verizon publishes the Data Breach Investigations Report (the DBIR), a report that examines tens of thousands of data "incidents" across companies around the world. And every year, it's clear: **almost all corporate data breaches are financially-motivated**. 
+Every year, Verizon publishes the Data Breach Investigations Report (DBIR), a report that examines tens of thousands of data "incidents" across companies around the world. And every year, it's clear: **almost all corporate data breaches are financially-motivated**. 
 
 <aside class="sidenote">
 Or, in Verizon's words:
@@ -103,7 +101,7 @@ In more detail:
 
 There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, **hackers are usually like your average brick-and-mortar criminal**.
 
-It's worth noting that 11% for fun, ideology, or grudge is still a large number. Almost 9 out of 10 breaches were for money or leverage (to make money, probably), but that remaining bit isn't easy to ignore. However, I think most security experts agree that these "non-money" breaches are generally small and targeted. The breaches that impact the most people are probably almost always for the money.
+It's worth noting that 11% for fun, ideology, or grudge is still a large number. Almost 9 out of 10 breaches were for money or espionage (which is also to make money, probably), but that remaining bit isn't easy to ignore. However, I think most security experts agree that these "non-money" breaches are generally small and targeted. The breaches that impact the most people are probably almost always for the money.
 
 In general, then, the masked hackers targeting you want money. They don't care about your cookie recipes. They don't care about your sensitive pictures. They don't care about anything you care about... unless it can make them money. Quickly.
 
