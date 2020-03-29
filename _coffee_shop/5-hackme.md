@@ -12,13 +12,13 @@ real_next:
     title: Conclusion
 ---
 
-Yes, there are hackers who want to steal your money. In [the last section]({{site.baseurl}}/hackers/), it became clear that hackers target everyone with cheap, *scalable* attacks---attacks that can easily target many, many people or can quickly compromise many people at once.
+Yes, there are hackers who want to steal your money. In [the last section]({{site.baseurl}}/hackers/), it became clear that hackers target everyone with cheap, *scalable* attacks---attacks that can easily target many, many people---or large-scale attacks---attacks that can quickly compromise many people at once.
 
 But that still doesn't tell you what types of attacks there are. What will a cyber-criminal actually do to compromise your [security]({{site.baseurl}}/security/)?
 
 Unfortunately, the quick answer is, "we don't really know."
 
-That's not completely fair---we have a ton of good information and empirical ways to [stay safe]({{site.baseurl}}/overall/)---but there's no one measuring the top types of attacks so you can prepare for them. Security research can seem really piecemeal.
+That's not completely fair---we have a ton of good information and empirical ways to [stay safe]({{site.baseurl}}/overall/)---but no one is measuring the top types of attacks so you can prepare for them. Security research can be really piecemeal.
 
 ## Bad news: completely classifying attacks is impossible
 
@@ -54,7 +54,7 @@ And that book demonstrated that all of our safety features were insufficient. Yo
 
 There is a good overview of *corporate* threats, though, in something called the VERIS schema.
 
-The VERIS schema comes from researchers at Verizon, who developed it for their annual Data Breach Investigations Report<!-- VERIS Incident Description (also the A4 threat model) -->, or DBIR. The DBIR analyzes over 40,000 security incidents annually, and because of this the VERIS schema is probably the most widely-used system in the world for classifying security incidents. This is what we want---we have a list of what we think hackers can do.
+The VERIS schema comes from researchers at Verizon, who developed it for their annual Data Breach Investigations Report<!-- VERIS Incident Description (also the A4 threat model) -->, mentioned in the last section. Since the DBIR analyzes over 40,000 security incidents annually, the VERIS schema is probably the most widely-used system in the world for classifying cybersecurity incidents. This is what we want---we have a list of what we think hackers can do.
 
 The VERIS schema lists 7 attack types, or "actions":
 
@@ -74,11 +74,11 @@ Immediately, there are several problems applying this list to everyday folks:
 
 * There is almost no consumer data for the last 4 actions in the list (misuse, physical, error, and environmental).
 * The list hides a big problem---that your password is much more likely to end up on the Internet because a corporation was hacked than because you were hacked.<!--  The vast majority of the time, if your data leaks it's because someone hacked a *company* that had your data (citation kinda needed (Experian breach?)). The VERIS schema still applies, but the attackers targeted the company, not you. It's notoriously hard to write secure code and keep secrets safe (TODO stats about encryption). Facebook, Dropbox, Adobe, Experian, the US Office of Personnel Management, and more---company after company and government after govenrment (https://haveibeenpwned.com/PwnedWebsites)---have all lost unencrypted (or poorly encrypted) data to hackers. Passwords, social security numbers, and even *fingerprints* have all been stolen and live on the Internet freely. I share the blame---I released a (now defunct) website with insecure password storage while I was in middle school. Sorry! -->
-* This list doesn't handle passive problems well. For example, privacy issues. "Error" and "misuse" describe some of those problems, but it seems like a poor fit.<!-- Enterprises generally don't have to worry about privacy the same way consumers do. They don't really have to worry about embarassing high school photos leaking, and they don't really have home addresses to protect. Unfortunately, partially because most end-to-end research is enterprise-focused, we don't have explicit data on this. Specifically, it's unclear how often privacy breaches occur and what impact such leaks have on everyday users. How frequently are Facebook photos accidentally made public? How often do public records reveal your address or personal information online? Do people lose money or sleep because of this? We don't know. -->
+* This list doesn't handle passive problems well. For example, privacy issues. "Error" and "misuse" describe some of those problems, but they seem like poor fits.<!-- Enterprises generally don't have to worry about privacy the same way consumers do. They don't really have to worry about embarassing high school photos leaking, and they don't really have home addresses to protect. Unfortunately, partially because most end-to-end research is enterprise-focused, we don't have explicit data on this. Specifically, it's unclear how often privacy breaches occur and what impact such leaks have on everyday users. How frequently are Facebook photos accidentally made public? How often do public records reveal your address or personal information online? Do people lose money or sleep because of this? We don't know. -->
 
 The VERIS attack types simply aren't a complete answer here. Until someone takes a systematic look at the problems everyday users face, we won't have that complete answer.
 
-The VERIS schema is useful, but it the whole answer. It's the best we have.
+The VERIS schema is useful, but it's not the whole answer. It's the best we have.
 
 ## The list is unsurprising, at least
 
@@ -110,7 +110,7 @@ In the absence of data, remember the takeaway from [the last section]({{site.bas
 
 Unless they are targeting you specifically (in which case you should [get help]({{site.baseurl}}/help/)), hackers are looking for **scalable** and **large-scale** attacks.
 
-This is the best tool you have without the systematic list of threats that we don't have. We may not know how hackers tend to get in, but we're pretty sure about what they want.
+This is the best tool you have without a systematic list of threats---which we don't have. We may not know how hackers tend to get in, but we're pretty sure about what they want.
 
 When you encounter a new threat, ask yourself: could this threat scale to likely affect me? And: could this threat breach a place that stores my data?
 
@@ -126,7 +126,7 @@ Ask yourself: how many passwords could a hacker get by sniffing the wi-fi at Sta
 
 How many passwords could they get if they used that time to send phishing emails instead?
 
-This is the key: you are already well-equipped to understand how easy or difficult many of these attacks are. More knowledge can only help, but you should already be well-equipped to start.
+This is the key: you are already well-equipped to understand how easy or difficult many of these attacks are. More knowledge can only help, but you should already be ready to start.
 
 <!-- TODO: section on how corporations are usually the target? -->
 
@@ -138,9 +138,9 @@ A real answer would give you numbers and put things in perspective. A real answe
 
 We don't have that.
 
-Corporations do: they have the VERIS schema attack types. They know that 94% of attacks fit those categories<!-- 94% according to DBIR 2018 pg 22 -->, and they know the relative rates between each of them (they know that malware is much more common than physical attacks, for example). It even makes some sense to apply their attack types to consumer threats!
+Corporations do: they have the VERIS schema attack types. They know that 94% of attacks fit those categories<!-- 94% according to DBIR 2018 pg 22 -->, and they know the relative rates between each of them (they know that malware is much more common than physical attacks, for example).
 
-But these attack types aren't a great fit for everyday folks---or, at least, we don't have data to say that they are.
+It even makes some sense to apply their attack types to consumer threats! But these attack types aren't a great fit for everyday folks---or, at least, we don't have data to say that they are.
 
 So make do.
 
