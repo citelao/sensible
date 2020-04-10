@@ -18,45 +18,13 @@ But that still doesn't tell you what types of attacks there are. What will a cyb
 
 Unfortunately, the quick answer is, "we don't really know."
 
-That's not completely fair---we have a ton of good information and empirical ways to [stay safe]({{site.baseurl}}/overall/)---but no one is measuring the top types of attacks so you can prepare for them. Security research can be really piecemeal.
-
-## Bad news: completely classifying attacks is impossible
-
-First: it is impossible to know every single possible attack.
-
-This is a fundamental fact about security, both online and off. It has nothing to do with how complex computers are or how new the Internet is; it is literally impossible to prove that *anything* is secure.
-
-After all, we can observe that a system was insecure (if it got hacked), but there is no observation that could prove to us that the system is safe against everything. The attack just might not have happened yet<!-- Unfalsifiability of Security Claims; science of security. -->.
-
-You might have experienced the same paradox if you have a friend who never buckles up, drives behind other cars too closely, or doesn't use their turn signal. "It's not safe!" you say.
-
-"Ah," they reply, with an infuriating grin, "but I've never had a problem [ignoring my seatbelt/tailgating like a maniac/blatantly ignoring road etiquette]."
-
-<aside class="sidenote">
-Please wear your seatbelt. The NHTSA, verbatim<!-- TODO their page on seatbelts -->:
-
->If you buckle up in the front seat of a passenger car, you can reduce your risk of [...] fatal injury by 45% (Kahane, 2015).
-</aside>
-
-## Draw from the evidence when you can
-
-The best we can do is examine trends and listen to experts, to at least make educated guesses (from data) about what threats exist. This is still risky: experts might not understand what's important to us or we might end up more cautious than we need to be, but it's better than stabbing in the dark.
-
-More bad news, then: there is no good overview of known consumer threats.
-
-This is a big deal. It means that no matter how much energy you spend improving your security, you still can't even be sure that you improved the most important things.
-
-For example, imagine trying to buy a safe car in the '50s. You'd have plenty of safety features to choose from, but you'd have no way to know which were important. You wouldn't get an analysis of the most important safety features until 1965, with Ralph Nader's *Unsafe at Any Speed*<!-- https://en.wikipedia.org/wiki/Unsafe_at_Any_Speed -->.
-
-And that book demonstrated that all of our safety features were insufficient. You couldn't get the safety you wanted in 1950.
+There is plenty of cybersecurity research out there, and there are plenty of ways to [stay safe]({{site.baseurl}}/overall/), but there is no good overall list of consumer cybersecurity threats. Without that list, we cannot say empirically what the most likely threats are. Instead, the best we can do is analyze the biggest threats we know about---and hope they are *actually* the biggest threats.
 
 ## Our best list: the VERIS schema
 
-There is a good overview of *corporate* threats, though, in something called the VERIS schema.
+The best starting point we have, though, comes from the VERIS schema, developed at Verizon for their annual Data Breach Investigations Report<!-- VERIS Incident Description (also the A4 threat model) -->, mentioned in the last section.
 
-The VERIS schema comes from researchers at Verizon, who developed it for their annual Data Breach Investigations Report<!-- VERIS Incident Description (also the A4 threat model) -->, mentioned in the last section. Since the DBIR analyzes over 40,000 security incidents annually, the VERIS schema is probably the most widely-used system in the world for classifying cybersecurity incidents. This is what we want---we have a list of what we think hackers can do.
-
-The VERIS schema lists 7 attack types, or "actions":
+The VERIS schema breaks up attacks into 7 different categories, called "actions:"
 
 * **Hacking**: things like using stolen passwords, exploiting vulnerabilities, and everything you've seen on NCIS.
 * **Malware**: things like viruses, worms, and ransomware.
@@ -66,11 +34,15 @@ The VERIS schema lists 7 attack types, or "actions":
 * **Error**: things like emailing the wrong person or accidentally leaking information.
 * **Environmental**: things like storms, pathogens, power outages.
 
+For corporate threats, at least, this is a fantastic, battle-tested list. The DBIR analyzes over 40,000 security incidents annually, and 94% of attacks fall into one of these categories<!-- 94% according to DBIR 2018 pg 22 -->.
+
+If this list were tested on consumers, it would be exactly what we're looking for.
+
 ## The best list is not good enough
 
-Unfortunately, no one has applied this list to consumers.
+Unfortunately, no one has applied this list to consumers, or even tested the list on them.
 
-Immediately, there are several problems applying this list to everyday folks:
+Beyond that, it's pretty easy to identify some problems applying this list to everyday folks:
 
 * There is almost no consumer data for the last 4 actions in the list (misuse, physical, error, and environmental).
 * The list hides a big problem---that your password is much more likely to end up on the Internet because a corporation was hacked than because you were hacked.<!--  The vast majority of the time, if your data leaks it's because someone hacked a *company* that had your data (citation kinda needed (Experian breach?)). The VERIS schema still applies, but the attackers targeted the company, not you. It's notoriously hard to write secure code and keep secrets safe (TODO stats about encryption). Facebook, Dropbox, Adobe, Experian, the US Office of Personnel Management, and more---company after company and government after govenrment (https://haveibeenpwned.com/PwnedWebsites)---have all lost unencrypted (or poorly encrypted) data to hackers. Passwords, social security numbers, and even *fingerprints* have all been stolen and live on the Internet freely. I share the blame---I released a (now defunct) website with insecure password storage while I was in middle school. Sorry! -->
@@ -80,11 +52,45 @@ The VERIS attack types simply aren't a complete answer here. Until someone takes
 
 The VERIS schema is useful, but it's not the whole answer. It's the best we have.
 
+## All lists are flawed
+
+All lists of cybersecurity threats will have similar problems. They all come with certain assumptions---of what's important to you, of what an "attack" means, of what's possible.
+
+<aside class="sidenote">
+This comes from a deeper philosophical issue, the problem of induction<!-- Unfalsifiability of Security Claims; science of security. -->.
+</aside>
+
+Consider your friend (we all have one) who never buckles up when they drive. "It's not safe!" you say.
+
+"Ah," they reply, with an infuriating grin, "but I've never had a problem."
+
+<aside class="sidenote">
+Please wear your seatbelt. The NHTSA, verbatim<!-- TODO their page on seatbelts -->:
+
+>If you buckle up in the front seat of a passenger car, you can reduce your risk of [...] fatal injury by 45% (Kahane, 2015).
+</aside>
+
+Perhaps they're right: after all, they haven't been hurt yet, and plenty of folks get hurt in car accidents even while wearing their seatbelts. By a similar argument, why don't you wear a bulletproof vest while you walk to work? Doesn't it make you "safer"?
+
+For me, the answer is immediate and visceral. *Getting shot* is not likely. *Getting in a car accident* is. Seatbelts and bulletproof vests make you "safer" in different scenarios. If my friend wore the vest but didn't buckle up, I'd probably want to slap them.
+
+But I can also imagine places where that scenario is flipped (like a war zone). And in those case, I'd rather wear the vest than buckle up.
+
+## Why even have a list, then?
+
+This is why having an empirical overview of threats is so important.
+
+The more we try to understand the specific threats we face, the more we can recognize when those threats do not apply to us or when we're missing something. And as more people share their lists and pool their data, we can be more and more sure that we know the biggest threats.
+
+You can use our intuition and listen to experts to at least make educated guesses (from data) about what threats exist. But those are still guesses.
+
+This list is a start.
+
+Without a *battle-tested* overview of threats, no matter how much energy you spend protecting yourself, **you can never be sure that you protected against the most important threats**. You might be wearing a seatbelt when you should be wearing a bulletproof vest.
+
 ## The list is unsurprising, at least
 
-Despite these caveats, the VERIS schema gets us some of the way there.
-
-We may not have a complete answer, but at least we have some sense of it. Furthermore, the list is approachable. Nothing on it should be suprising.
+For something that's "just" a start, though, the VERIS schema is pretty great. A lot of it makes sense, and the list is *approachable*. Nothing on it should be suprising.
 
 You may not have considered some of these threats to be "cybersecurity threats" before, but they should all be recognizable---and fairly familiar.
 
@@ -110,7 +116,7 @@ In the absence of data, remember the takeaway from [the last section]({{site.bas
 
 Unless they are targeting you specifically (in which case you should [get help]({{site.baseurl}}/help/)), hackers are looking for **scalable** and **large-scale** attacks.
 
-This is the best tool you have without a systematic list of threats---which we don't have. We may not know how hackers tend to get in, but we're pretty sure about what they want.
+This is the best tool you have without a systematic list of threats---and we don't have that list. We may not know how hackers tend to get in, but we're pretty sure about what they want.
 
 When you encounter a new threat, ask yourself: could this threat scale to likely affect me? And: could this threat breach a place that stores my data?
 
@@ -127,8 +133,6 @@ Ask yourself: how many passwords could a hacker get by sniffing the wi-fi at Sta
 How many passwords could they get if they used that time to send phishing emails instead?
 
 This is the key: you are already well-equipped to understand how easy or difficult many of these attacks are. More knowledge can only help, but you should already be ready to start.
-
-<!-- TODO: section on how corporations are usually the target? -->
 
 ## So make do, but don't be satisfied
 
@@ -151,3 +155,15 @@ So make do.
 And demand a better answer to the question: "how will I be hacked?"
 
 <!-- TODO link to the analysis of hacking, malware, and phishing -->
+
+---
+
+Well, first, it's much easier (and less anxiety-inducing) to have a list of threats in mind when trying to protect yourself. But also, an overview of threats is the only way we can be sure we're protecting everything. We can use our intuition and listen to experts, to at least make educated guesses (from data) about what threats exist. But those are still guesses.
+
+Without an overview of threats, no matter how much energy you spend protecting yourself, **you can never be sure that you protected against the most important threats**.
+
+For example, imagine trying to buy a safe car in the '50s. You'd have plenty of safety features to choose from and plenty of advice to read, but you'd have no way to know which were important. You wouldn't get an analysis of the most important safety features until 1965, with Ralph Nader's *Unsafe at Any Speed*<!-- https://en.wikipedia.org/wiki/Unsafe_at_Any_Speed -->.
+
+And that book demonstrated that all of our safety features were insufficient. You couldn't get the safety you wanted in 1950.
+
+---
