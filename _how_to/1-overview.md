@@ -12,12 +12,12 @@ That being said, you are not powerless.
 
 We might not know all the possible threats, but we know a lot about many of the biggest and most common ones. For example, we know a lot about how many people get viruses, receive phishing emails, and are defrauded every year<!-- TODO link to my summary -->. Despite the holes in our data, it is still possible to give good (if incomplete) security advice.
 
-Good security advice must do at least these 2 things<!-- Herley has an exploration into requirements like this:  Science of Security, T10, and More Is Not the Answer, section 2.2 -->:
+Good security advice must follow two rules<!-- Herley has an exploration into requirements like this:  Science of Security, T10, and More Is Not the Answer, section 2.2 -->:
 
 1. It must not claim to be complete (since it clearly can't be, if we don't know about all threats).
 2. It must clearly articulate what it assumes and what it claims to do (since, if it's not complete, you need to know what it protects).<!-- TODO cite unfalsifiability of security claims to explain in more depth -->
 
-Unfortunately, most security advice does not do either of these things. Most security advice is bad.
+Unfortunately, most security advice breaks both of these rules. Most security advice is bad.
 
 <aside class="sidenote">
 That is not to say that most security advice is **wrong**. After all, you don't need a research study to notice that seatbelts keep you secure in many types of accidents.
