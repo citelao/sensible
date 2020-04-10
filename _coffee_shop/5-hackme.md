@@ -155,15 +155,3 @@ So make do.
 And demand a better answer to the question: "how will I be hacked?"
 
 <!-- TODO link to the analysis of hacking, malware, and phishing -->
-
----
-
-Well, first, it's much easier (and less anxiety-inducing) to have a list of threats in mind when trying to protect yourself. But also, an overview of threats is the only way we can be sure we're protecting everything. We can use our intuition and listen to experts, to at least make educated guesses (from data) about what threats exist. But those are still guesses.
-
-Without an overview of threats, no matter how much energy you spend protecting yourself, **you can never be sure that you protected against the most important threats**.
-
-For example, imagine trying to buy a safe car in the '50s. You'd have plenty of safety features to choose from and plenty of advice to read, but you'd have no way to know which were important. You wouldn't get an analysis of the most important safety features until 1965, with Ralph Nader's *Unsafe at Any Speed*<!-- https://en.wikipedia.org/wiki/Unsafe_at_Any_Speed -->.
-
-And that book demonstrated that all of our safety features were insufficient. You couldn't get the safety you wanted in 1950.
-
----
