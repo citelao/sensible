@@ -101,7 +101,7 @@ In more detail:
 
 There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, **hackers are usually like your average brick-and-mortar criminal**.
 
-It's worth noting that 11% for fun, ideology, or grudge is still a large number. Almost 9 out of 10 breaches were for money or espionage (which is also to make money, probably), but that remaining bit isn't easy to ignore. However, I think most security experts agree that these "non-money" breaches are generally small and targeted. The breaches that impact the most people are probably almost always for the money.
+It's worth noting that 11% for fun, ideology, or grudge is still a large number. Almost 9 out of 10 breaches were for money or espionage (which is also to make money, probably), but that remaining bit isn't easy to ignore. However, I think most security experts agree that these "non-money" breaches are generally small and targeted. I know several people who have been victims of "small-scale" hacking (like seeing someone from Chile log in to their Netflix, or having a website they run defaced with Russian links), but the breaches that impact the most people are probably almost always for the money.
 
 In general, then, the masked hackers targeting you want money. They don't care about your cookie recipes. They don't care about your sensitive pictures. They don't care about anything you care about... unless it can make them money. Quickly.
 
