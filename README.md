@@ -26,7 +26,7 @@ To deploy a beta version to https://ben.stolovitz.com/sensible-security-dev/:
 
 You can test a local beta copy:
 
-`npm run watch:beta`
+`npm run watch:beta` (or `now`)
 
 ## Deployment
 
