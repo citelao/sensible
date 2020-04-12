@@ -8,8 +8,8 @@ real_previous:
     url: /hackers/
     title: Will I be hacked?
 real_next:
-    url: /conclusion/
-    title: Conclusion
+    url: /coffee/
+    title: Is it safe to use coffee-shop wi-fi?
 ---
 
 Yes, there are hackers who want to steal your money. In [the last section]({{site.baseurl}}/hackers/), it became clear that hackers target everyone with cheap, *scalable* attacks---attacks that can easily target many, many people---or large-scale attacks---attacks that can quickly compromise many people at once.

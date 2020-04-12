@@ -5,8 +5,8 @@ title: Conclusion
 date: 2018-11-24T12:00:00
 permalink: /conclusion/
 real_previous:
-    url: /how_hacked/
-    title: How can I be hacked?
+    url: /coffee/
+    title: Is it safe to use coffee-shop wi-fi?
 real_next:
     url: /references/
     title: References
@@ -74,7 +74,7 @@ Mozilla, in a FAQ about HTTPS, describes the certificate authority system---a ke
 
 James Mickens, a distinguished Harvard professor and cybersecurity researcher, puts it another way<!-- TODO cite https://www.usenix.org/system/files/1401_08-12_mickens.pdf -->:
 
-> Security research is the continual process of discovering that your spaceship is a deathtrap. However, as John F. Kennedy once said, "SCREW IT WE’RE GOING TO THE MOON."
+> Security research is the continual process of discovering that your spaceship is a deathtrap. However, as John F. Kennedy once said, "SCREW IT WE'RE GOING TO THE MOON."
 
 Sometimes you just gotta go to the moon.
 
