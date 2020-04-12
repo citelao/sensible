@@ -28,7 +28,7 @@ We'll dive into it, but that's the short answer.
 
 But that's not the whole answer. You are targeted, but this is almost entirely because these criminals target as many people as they can **as cheaply as they can** *or* because they focus on high value targets (like companies) to **steal many people's data at once**. These hackers are probably not interested in your cookie recipes---or even your salacious photos! They want your money, and they want it quickly. They don't have the time to waste on you specifically.
 
-It is also hard to steal money. Even if everything goes right for hackers, federal law can often protect you---and you can get your money back.
+It is also hard to lose money to online theft. Even if everything goes right for hackers, federal law can often protect you---and you can get your money back.
 
 Unfortunately, some people must also defend against a different sort of hacker: a targeted hacker. If you know you are a target---since you have an abusive ex, since you are a political dissident, or since you are an important CEO, for example---you may need to worry about other threats.
 
