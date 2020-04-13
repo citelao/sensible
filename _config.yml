@@ -80,6 +80,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - CHANGELOG.md
+  - TODO.md
   - README.md
   - package.json
   - package-lock.json

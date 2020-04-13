@@ -83,15 +83,3 @@ And you'd never know that you were missing it---because the easy-to-find guides 
 While I strongly believe that my overviews of [security]({{site.baseurl}}/security/), [who is targeted]({{site.baseurl}}/hackers/), and [how people are hacked]({{site.baseurl}}/how_hacked/) are complete, I do not claim these suggestions are complete. Instead, I offer evidence and assumptions---here's what these suggestions do, how they work, and what they assume.
 
 You can find value in most advice, anywhere. But for the other stuff, you'll need to ask those questions yourself.
-
----
-
-Unvetted:
-
-2. Use different passwords on each site, managed in a password manager.
-4. Encrypt your hard drive.
-5. Lock your computer with a password or biometric security.
-7. Type passwords only when you're sure no one can see you.
-8. Trust your browser more than apps.
-9. Be suspicious when weird things happen.
-10. Learn how your browser communicates security: [read]({{site.baseurl}}/https/) or [watch](https://youtu.be/RNzw8tVhOpY).
