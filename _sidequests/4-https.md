@@ -9,13 +9,31 @@ ignore_previous: true
 ignore_next: true
 ---
 
-In the main guide, we examined how [hackers look for scalable, cheap attacks]({{site.baseurl}}/hackers/). Keeping your data [safe]({{site.baseurl}}/security/) usually means preventing those easy attacks.
+When you browse the Internet---you know, when you go to google.com to search for puppies---you are using HTTP (the HyperText Transport Protocol). HTTPS (HTTP Secure) prevents other people from seeing those puppies. Or worse, replacing those puppies with *less cute* ones.
 
-Up until recently, **preventing those easy attacks was impossible**.
+When you browse the Internet today, most of the stuff you see is already HTTPS---and you probably notice the "Not Secure" indicator when it's not. Your banks and sensitive websites---and certainly your searches and social media---are all secure by default using HTTPS. Even your email is probably protected by a similar tool (for email, you're protected with TLS or SSL).
 
-The original core standards that defined the Internet---protocols (rules) like TCP/IP, HTTP, DNS, and SMTP---only specified how to send your data as **plaintext**---unencrypted, just like physical mail. All hackers needed to do to steal your passwords was eavesdrop, which is very easy to do: **hence the warnings to avoid coffee shop wi-fi**.
+HTTPS is what protects you against the scariest threats at a [coffee shop]({{site.baseurl}}/coffee/), and it's why I feel safe browsing the web wherever I go. 
 
-This was the original design of the Internet, which helped it spread quickly, but **it soon became a liability**. In response, security specialists drafted "secure" variants of most Internet standards, thanks in a large part to the US relaxing strict export laws about encryption<!-- CITATION NEEDED-->.
+What does "secure" mean, and how does HTTPS work? Let's dive in.
+
+## What is the Internet, and why does it need security?
+
+No matter how you slice it, the Internet is simply a way for two people to communicate electronically.
+
+* When you load a website (like Google), your computer is asking another computer for that website. 
+* When you watch Netflix, you're asking a computer somewhere to send you all 6 seasons of Community in one weekend (I get it). 
+* When you send an email, your computer sends that email to Hotmail's (or whomever's) servers for your friend to read later.
+
+Each of these communication methods follows a standard set of rules---a protocol.  These protocols specify exactly how to package up your data to send it properly, just like you have to do with snail mail.
+
+Snail mail is pretty safe, and easy to protect. We send cash and checks in the mail all the time.
+
+At first, the Internet was pretty safe, too. It was also tiny, and, even if it weren't safe, the founders needed to get something simple running. The core protocols that defined the Internet---like HTTP, TCP/IP, DNS, and SMTP---made no effort to protect your data from snoops<!-- https://tools.ietf.org/html/rfc1945#section-12.4 -->.
+
+Specifically, these protocols only described how to send your data as plaintext---unencrypted, just like physical mail. All hackers needed to do to steal your passwords as you sent them to Google was eavesdrop, which is very easy to do: **hence the warnings to avoid coffee shop wi-fi**.
+
+This was the original design of the Internet, which helped it spread quickly, but **it soon became a liability**. Billions of people live their lives on the Internet, each one of them a goldmine of secrets for criminals (and even governments).
 
 <aside class="sidenote">
 Tim Berners-Lee (designer of the Internet) [at IP Expo](https://www.theregister.co.uk/2014/10/08/sir_tim_bernerslee_defends_decision_not_to_bake_security_into_www/), about the decision to leave security out of the original design:
@@ -23,20 +41,25 @@ Tim Berners-Lee (designer of the Internet) [at IP Expo](https://www.theregister.
 > [The web] might not have taken off if it had been too difficult.
 
 He was probably right.
-	
 </aside>
+
+In response, security specialists drafted "secure" variants of most Internet standards. <!-- thanks in a large part to the US relaxing strict export laws about encryption CITATION NEEDED -->
 
 ## Introducing HTTPS
 
-Most importantly, these experts introduced **a secure version of HTTP** ("HyperText Transfer Protocol"), the protocol you use for browsing the web. This protocol, **HTTPS** ("HTTP Secure"), protects traffic on the Internet by sending it as **cyphertext**: encrypted. If everything works right, only you and your destination can read the contents.
+Importantly for us, these standards included **a secure version of HTTP**, **HTTPS** ("HTTP Secure").
 
-With HTTPS, you now have the *ability* to keep your content secure as it travels the Internet.
+HTTPS protects traffic on the Internet by sending it as **cyphertext**: encrypted. If everything works right, only you and your destination can read the contents.
 
-For a long time HTTPS stayed in the background, but thanks to initiatives by Google, Let's Encrypt, the EFF, and many others, encrypted Internet traffic in the United States has nearly *doubled* over the last two years. Mozilla calls all of this work "[deprecating the insecure Internet](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)," and because of it, [over 50%](https://transparencyreport.google.com/https/overview?hl=en) of traffic on the Internet is encrypted today. That number [keeps going up](https://scotthelme.co.uk/alexa-top-1-million-analysis-august-2018/)<!-- TODO CITE -->, and it's the reason you can browse open wireless networks in relative peace.
+With HTTPS, we now had the *ability* to keep your content secure as it traveled the Internet.
+
+For a long time, though, HTTPS languished, and most Internet communication remained insecure. But recently, thanks to initiatives by Google, Let's Encrypt, the EFF, and many others, encrypted Internet traffic in the United States nearly *doubled* between 2015 and 2018. Mozilla calls all of this work "[deprecating the insecure Internet](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)," and because of it, [over 90%](https://transparencyreport.google.com/https/overview?hl=en) of traffic on the Internet is encrypted today. That number [keeps going up](https://scotthelme.co.uk/alexa-top-1-million-analysis-august-2018/)<!-- TODO CITE -->, and it's the reason you can browse open wireless networks in relative peace.
+
+In fact, when I first wrote this article, only about 60% of Internet traffic was encrypted.
 
 ## The old Internet -- before HTTPS
 
-HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous attack possible on the Internet**: the man-in-the-middle attack.
+HTTPS makes your web browsing much safer because it protects against the **easiest and most dangerous direct attack possible on the Internet**: the man-in-the-middle attack.
 
 <aside class="sidenote">
 There is no direct citation for this statement. However, the vulnerabilities listed in essays (explaining the need for HTTPS) from Google {% cite basques %}, the government {% cite mill_2014 %}, and *the agency that created the Internet* {% cite farrell2014pervasive nottingham_2015 %} are all man-in-the-middle attacks.
@@ -84,7 +107,12 @@ The best way to keep yourself secure is to learn how HTTPS works.
 
 ## How HTTPS works
 
-HTTPS relies on "public key encryption." Public key encryption is a form of encryption that relies on a pair of numbers: a publicly available one and a corresponding private one. These numbers---or "keys"---can be used in an algorithm to generate messages that only the other key can unscramble. If you encrypt a message with a public key, only someone with the private key can decrypt them, and if you encrypt a message with a private key, your friends with the corresponding public key can be sure you wrote it.
+HTTPS relies on "public key encryption." Public key encryption is a form of encryption that relies on a pair of numbers---or "keys": 
+
+* a publicly available key (a "public key") and
+* a corresponding private key. 
+
+These keys can be used to generate messages that only the other key can unscramble (using *math*!). If you encrypt a message with a public key, only someone with the private key can decrypt them, and if you encrypt a message with a private key, your friends with the corresponding public key can be sure you wrote it.
 
 Servers distribute public keys---called "certificates"---and your browser encrypts its initial message to the server using that public key. Because only the server has the right private key, you can be sure no one else reads your message. Your browser and the server then negotiate new keys, private to each of you<!-- TODO verify -->, for the rest of the connection.
 
