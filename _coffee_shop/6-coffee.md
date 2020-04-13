@@ -19,7 +19,7 @@ We started with a simple question:
 
 So after all that, is it?
 
-I think so. For most people.
+I think so. For most people. [HTTPS]({{site.baseurl}}/https/) helps with that a lot.
 
 ## True for me or true for you?
 
