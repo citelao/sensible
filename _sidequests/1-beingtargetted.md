@@ -36,13 +36,17 @@ You should already have an intuition about what class of attack you're facing. S
 
 ## Fighting back against scalable, not targeted attacks
 
-TODO
+<aside class="alert info">
+This section is in progress.
+</aside>
 
 ## Fighting back against fraud
 
-Scalable attacks that pivot to targeted ones (basically fraud) can be exteremely frustrating to deal with, and it's often confusing to know when the law protects you and when it doesn't.
+Scalable attacks that pivot to targeted ones (basically fraud) can be extremely frustrating to deal with, and it's often confusing to know when the law protects you and when it doesn't.
 
-TODO
+<aside class="alert info">
+This section is in progress.
+</aside>
 
 ## Fighting back against non-scalable, highly targeted attacks
 
@@ -64,4 +68,4 @@ In almost all cases, though, **call the police**. They may not be the best resou
   > Crash Override is a crisis helpline, advocacy group and resource center for people who are experiencing online abuse.
 
 <!-- TODO journalists, folks who need to be secret online, etc -->
-<!-- TODO via femfreq: A DIY Guide to Feminist Cybersecurity, and TrollBusters, as well as Violet Blue’s The Smart Girl’s Guide to Privacy. -->
+<!-- TODO via femfreq: A DIY Guide to Feminist Cybersecurity, and TrollBusters, as well as Violet Blue's The Smart Girl's Guide to Privacy. -->
