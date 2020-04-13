@@ -12,15 +12,13 @@ real_next:
     title: References
 ---
 
-We started with a simple question:
+We asked: [is it safe to use coffee shop wi-fi]({{site.baseurl}}/coffee/)? But we really have a larger question: is it safe?
 
-> Is it safe to use coffee shop wi-fi?
-
-So after all that, is it?
+"Am I safe when I live my life today?"
 
 Depending where you look today, you'll get different answers. Security experts will probably tell you that everything is broken and everyone is hackable. Security companies will tell you the same thing, but then tell you their product will fix it.
 
-Just like I wrote in the [introduction]({{site.baseurl}}/intro), I believe it is probably safe to use coffee shop wi-fi.
+Just like I wrote in the [introduction]({{site.baseurl}}/intro) and [the last section]({{site.baseurl}}/coffee/), I believe it is probably safe to use coffee shop wi-fi. And I think it's straightforward to stay safe on the Internet today.
 
 ## Tying it all together
 
@@ -28,7 +26,8 @@ After explaining [how this guide is different]({{site.baseurl}}/entreaty/) (it a
 
 * We explored [what it even means to be secure]({{site.baseurl}}/security/)---and why typical security advice feels so unsatisfying.
 * We asked [whether or not random people are even likely to be hacked]({{site.baseurl}}/hackers/)---and learned that most people are at risk of scalable or large-scale attacks that target people indiscriminately, but that some people may need to [get additional help]({{site.baseurl}}/help/).
-* Finally, we looked into [how people are likely to be hacked]({{site.baseurl}}/how_hacked/)---or, at least, we tried to. We learned that there are huge information gaps that make it hard to feel safe.
+* We looked into [how people are likely to be hacked]({{site.baseurl}}/how_hacked/)---or, at least, we tried to. We learned that there are huge information gaps that make it hard to feel safe.
+* Finally, we asked, "[is it safe to use coffee shop wi-fi?]({{site.baseurl}}/coffee/)"---and applied the other sections to understand our answer.
 
 Hopefully, these sections gave you a clear-eyed answer to each question.
 
