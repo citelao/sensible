@@ -3,7 +3,9 @@ layout: page
 title: This guide is different
 description: Learn what you should expect to get from cyber-security guide.
 date: 2018-11-02T12:00:00
-permalink: /entreaty/
+permalink: /im_different/
+redirect_from:
+    - /entreaty/
 real_previous:
     url: /intro/
     title: Introduction

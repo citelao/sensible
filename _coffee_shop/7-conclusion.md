@@ -22,7 +22,7 @@ Just like I wrote in the [introduction]({{site.baseurl}}/intro) and [the last se
 
 ## Tying it all together
 
-After explaining [how this guide is different]({{site.baseurl}}/entreaty/) (it asks you to learn about security in a way that lets *you* make predictions), we dove into some big questions:
+After explaining [how this guide is different]({{site.baseurl}}/im_different/) (it asks you to learn about security in a way that lets *you* make predictions), we dove into some big questions:
 
 * We explored [what it even means to be secure]({{site.baseurl}}/security/)---and why typical security advice feels so unsatisfying.
 * We asked [whether or not random people are even likely to be hacked]({{site.baseurl}}/hackers/)---and learned that most people are at risk of scalable or large-scale attacks that target people indiscriminately, but that some people may need to [get additional help]({{site.baseurl}}/help/).

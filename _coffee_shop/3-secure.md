@@ -7,7 +7,7 @@ permalink: /security/
 redirect_from:
     - /secure/
 real_previous:
-    url: /entreaty/
+    url: /im_different/
     title: This guide is different
 real_next:
     url: /hackers/

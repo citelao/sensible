@@ -23,7 +23,7 @@ I think so. For most people. [HTTPS]({{site.baseurl}}/https/) helps with that a 
 
 ## True for me or true for you?
 
-At the beginning of this guide, I claimed that [this guide is different]({{site.baseurl}}/entreaty/) because it doesn't just offer blind advice. And, indeed, every single person on Earth worries about different things. Although the word "[security]({{site.baseurl}}/security/)" means the same thing everywhere, what security *gives* to you differs for everyone.
+At the beginning of this guide, I claimed that [this guide is different]({{site.baseurl}}/im_different/) because it doesn't just offer blind advice. And, indeed, every single person on Earth worries about different things. Although the word "[security]({{site.baseurl}}/security/)" means the same thing everywhere, what security *gives* to you differs for everyone.
 
 You might be right to avoid coffee shop wi-fi---depending on what you care about.
 

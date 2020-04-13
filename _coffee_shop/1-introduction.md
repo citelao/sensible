@@ -6,7 +6,7 @@ date: 2018-11-02T12:00:00
 permalink: /intro/
 hero: /img/intro_hero.jpg
 real_next:
-    url: /entreaty/
+    url: /im_different/
     title: This guide is different
 ---
 
