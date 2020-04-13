@@ -16,7 +16,7 @@ Passwords don't really matter.
 
 If you want to make your logins more secure, spend your time turning on **two-factor authentication** (also 2FA, TFA, or multi-factor authentication, MFA) instead.
 
-You should still spend a *little* effort choosing [good passwords]({{site.baseurl}}/good_passwords/), but TFA matters much more.
+You should still spend a *little* effort choosing [good passwords]({{site.baseurl}}/better_passwords/), but TFA matters much more.
 
 ## A good password stops little
 
@@ -45,7 +45,7 @@ Similarly, when hackers *do* "guess," they almost always try the most common pas
 
 Hackers attempting this---at least against large companies like Microsoft, Facebook, Google, Apple, and even your local bank---can only test a few dozen passwords per account per day at most. If your password is reasonably good and isn't in the top most common passwords, you're essentially immune.
 
-This doesn't cover all attacks on passwords, but looking at more "overall" data paints the same picture<!-- An Administrator’s Guide to Internet Password Research; Your Pa$$word doesn't matter; -->. Most attacks just don't care about password strength so long as it's "good enough."
+This doesn't cover all attacks on passwords, but looking at more "overall" data paints the same picture<!-- An Administrator's Guide to Internet Password Research; Your Pa$$word doesn't matter; -->. Most attacks just don't care about password strength so long as it's "good enough."
 
 ## But what if they want to guess me?
 
@@ -74,7 +74,7 @@ There are downsides and nuances to two-factor authentication (some folks argue t
 
 No matter what method you use, two-factor authentication will protect you from most attacks.
 
-You should still put a little effort into choosing [reasonably good]({{site.baseurl}}/good_passwords/) passwords, but two-factor authentication does a *ton* to keep you safe.
+You should still put a little effort into choosing [reasonably good]({{site.baseurl}}/better_passwords/) passwords, but two-factor authentication does a *ton* to keep you safe.
 
 At the end of the day<!-- Your Pa$$word doesn't matter; -->:
 
