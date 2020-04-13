@@ -6,6 +6,9 @@ type: advice_to_take
 description: TODO
 date: 2019-09-02T12:00:00
 permalink: /antivirus/
+real_next:
+    url: /vpn/
+    title: Do you need a VPN?
 ---
 
 If you've even *heard* about Windows computers, you've heard about viruses. And if you've heard about viruses, you've heard about anti-virus software.

@@ -1,11 +1,14 @@
 ---
 layout: page
-type: sidequest
+type: advice_to_take
 title: Do you need a VPN?
+short_title: VPNs
 date: 2018-11-05T12:00:00
 description: Jump in to staying secure – introduction to cyber-security techniques for sensible people.
 permalink: /vpn/
-ignore_previous: true
+real_previous:
+    url: /antivirus/
+    title: Do you need anti-virus software?
 ignore_next: true
 ---
 
@@ -56,15 +59,15 @@ VPNs are helpful in specific scenarios (like the ones detailed above). However, 
 
 * VPNs only protect your messages until they reach the VPN server.
 
-	If your destination does not use [HTTPS]({{site.baseurl}}/https/), your messages then travel unencrypted to their final server, and anyone along *that* path can eavesdrop unimpeeded.
+    If your destination does not use [HTTPS]({{site.baseurl}}/https/), your messages then travel unencrypted to their final server, and anyone along *that* path can eavesdrop unimpeeded.
 
-	Furthermore, this includes the metadata protection. If you're worried about someone (a government?) eavesdropping *deep* in the Internet, a VPN may not protect your metadata. Of course, the *sender* of the message still looks like the VPN.
+    Furthermore, this includes the metadata protection. If you're worried about someone (a government?) eavesdropping *deep* in the Internet, a VPN may not protect your metadata. Of course, the *sender* of the message still looks like the VPN.
 
 * VPNs clearly identify your messages as "VPN" messages.
 
-	While VPNs protect your information against local eavesdroppers, every local eavesdropper will know you are using a VPN. 
+    While VPNs protect your information against local eavesdroppers, every local eavesdropper will know you are using a VPN. 
 
-	Your content will be encrypted, but it will be sent in a way that is clearly identifiable as VPN traffic. Nearby hackers won't know you're checking out Apple.com, but they *will* know that you're being really secretive about *something*.
+    Your content will be encrypted, but it will be sent in a way that is clearly identifiable as VPN traffic. Nearby hackers won't know you're checking out Apple.com, but they *will* know that you're being really secretive about *something*.
 
 Furthermore, using a VPN means **trusting another service**. When you set up a VPN, you send all of your Internet traffic to *one company*. That company has access to all of the information a coffee-shop eavesdropper would see. If you are using HTTPS, the VPN can read your metadata. If you aren't using HTTPS, the VPN can read everything you send and receive.
 
