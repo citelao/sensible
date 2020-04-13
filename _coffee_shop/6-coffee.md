@@ -61,7 +61,7 @@ Do these attacks even happen in real life?
 
 ## Technical knowledge helps you, if you want it
 
-This guide gives you the tools you need to assess other advice and recognize when it's unsatisfying, even if that advice is very technical or uses words you don't understand. You are not stupid. You may not know what a "man-in-the-middle attack" is, but you are qualified to the likelihood of some teenager trying it on you at Starbucks.
+This guide gives you the tools you need to assess other advice and recognize when it's unsatisfying, even if that advice is very technical or uses words you don't understand. You are not stupid. You may not know what a "man-in-the-middle attack" is, but you are qualified to guess the likelihood of some teenager trying it on you at Starbucks.
 
 But a bit of technical knowledge can be helpful.
 
@@ -79,7 +79,7 @@ Well, more accurately, SSL, which also can protect emails.
 
 If HTTPS fixes everything, then why doesn't the other advice say so? Indeed, if you bring up HTTPS to some other advisors, they will probably start listing off threats that HTTPS doesn't protect. Even I agree that HTTPS has its flaws.
 
-It is easy to feel overwhelmed. Maybe coffee shop wi-fi isn't safe.
+It is easy to feel overwhelmed. Maybe coffee shop wi-fi isn't safe after all.
 
 But notice that feeling of confusion. Take the same step back you did before, and ask the the same *non-technical* questions:
 
@@ -117,7 +117,7 @@ But if the cybersecurity community is offering a bulletproof vest to me for free
 
 Our guide to [HTTPS]({{site.baseurl}}/https/) is not part of the main course. It's a sidequest. I think it's interesting, clear, and helpful, but I also think that the content we've already covered is clear enough. You can make pretty good decisions about security without that particular technical knowledge.
 
-The Internet is a new world. It's different and confusing. But it's not a secret, able to be understood by a chosen few. The Internet is run by people. Hackers are people. The Internet makes certain things easier, for both you and hackers. But I believe that if you understand how *people* use the Internet---and understand a bit of how the Internet works---you can make rational decisions.
+The Internet is a new world. It's different and confusing. But it's not a secret, only able to be understood by a chosen few. The Internet is run by people. Hackers are people. The Internet makes certain things easier, for both you and hackers. But I believe that if you understand how *people* use the Internet---and understand a bit of how the Internet works---you can make rational decisions.
 
 With the knowledge in this guide, a desire to learn the truth, and an eye for half-truths and doublespeak, you can stay safe on the Internet and determine for yourself if coffee shop wi-fi is safe.
 
