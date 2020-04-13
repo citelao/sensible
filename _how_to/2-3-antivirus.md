@@ -102,7 +102,7 @@ It's worth looking to the emerging markets, like Android (and maybe iOS), but ev
 If you want to keep your device safe, I would recommend these steps instead:
 
 * Turn on automatic updates, and make sure you're always up to date.
-* [Back up your data automatically]({{site.baseurl}}/backups/).
+* Back up your data automatically<!-- TODO [Back up your data automatically]({{site.baseurl}}/backups/) -->.
 
 As a closing example, the huge 2017 WannaCry ransomware attack<!-- wiki wannacry --> had two noteworthy features:
 

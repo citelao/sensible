@@ -33,7 +33,7 @@ This advice might not apply to you (though it probably does), and it's certainly
 
 1. Turn on [two-factor authentication]({{site.baseurl}}/passwords/) on your key accounts (at least email and finance).
 2. [Freeze your credit]({{site.baseurl}}/identity_theft/) at the 3 largest credit bureaus.
-3. Pay for and use [automatic backup software]({{site.baseurl}}/backups/).
+3. Pay for and use automatic backup software<!-- TODO [automatic backup software]({{site.baseurl}}/backups/) -->.
 4. Turn on automatic updates on your devices.
 
 ## Advice to avoid
