@@ -37,7 +37,7 @@ You should already have an intuition about what class of attack you're facing. S
 ## Fighting back against scalable, not targeted attacks
 
 <aside class="alert info">
-This section is in progress.
+This section is in progress.<!-- TODO -->
 </aside>
 
 ## Fighting back against fraud
@@ -45,7 +45,7 @@ This section is in progress.
 Scalable attacks that pivot to targeted ones (basically fraud) can be extremely frustrating to deal with, and it's often confusing to know when the law protects you and when it doesn't.
 
 <aside class="alert info">
-This section is in progress.
+This section is in progress.<!-- TODO -->
 </aside>
 
 ## Fighting back against non-scalable, highly targeted attacks

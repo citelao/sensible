@@ -32,7 +32,7 @@ This advice might not apply to you (though it probably does), and it's certainly
 ## Advice to take
 
 <aside class="alert info">
-(These write-ups are in progress.)
+(These write-ups are in progress.)<!-- TODO -->
 </aside>
 
 1. Turn on [two-factor authentication]({{site.baseurl}}/passwords/) on your key accounts (at least email and finance).
