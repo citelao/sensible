@@ -193,7 +193,7 @@ Perhaps "milder" versions of these attacks are common. For example, it's easy to
 
 If you do not know of anyone who would want to hurt you, you should not need to worry about these attacks. But if you do, or if you are concerned about these "milder" attacks, it is reasonable to take other precautions.
 
-## The big picture
+## Summary
 
 In short:
 
