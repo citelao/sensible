@@ -60,7 +60,7 @@ All lists of cybersecurity threats will have similar problems. They all come wit
 This comes from a deeper philosophical issue, the problem of induction<!-- Unfalsifiability of Security Claims; science of security. -->.
 </aside>
 
-Consider your friend (we all have one) who never buckles up when they drive. "It's not safe!" you say.
+Consider your friend who never buckles up when they drive (we all have one). "It's not safe!" you say.
 
 "Ah," they reply, with an infuriating grin, "but I've never had a problem."
 
@@ -96,7 +96,7 @@ You may not have considered some of these threats to be "cybersecurity threats" 
 
 More importantly, they are imaginable and understandable.
 
-For example, you can probably imagine:
+For example, you can probably imagine<!-- TODO: skimmers would gravitate to this -->:
 
 * Having a password **hacked**.
 * Getting a virus or other type of **malware**.
