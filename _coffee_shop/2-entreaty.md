@@ -14,19 +14,20 @@ real_next:
     title: What is secure?
 ---
 
-There is already plenty of cybersecurity advice on the Internet.
+There is already plenty of cybersecurity advice on the Internet, but this advice is different.
 
-This advice is different.
-
-This guide aims to explain what security actually means. This guide aims to give you a coherent model of security on the Internet.
+This guide aims to explain what security actually means. It aims to give you a coherent model of security on the Internet.
 
 ## The to-do lists are unsatisfying
 
-Typical security advice is usually unsatisfying. It's either short lists, centered around "quick tips" you can take to make yourself safer---which doesn't feel complete. Or it focuses on specific threats---with little context about the bigger picture.
+Typical security advice is usually unsatisfying. In my experience, it usually takes one of two forms:
 
-With advice like that, you end up building huge lists of "things you need to do"---without understanding why---or you end up focusing on well-documented threats while ignoring more important, less newsworthy ones<!-- So Long, And No Thanks for the Externalities -->.
+1. **Top 10 lists, focused on quick tips to make yourself safer**---which are all slightly different and never explain why *their* tips are the right ones to follow.
+2. **Analyses of specific, interesting threats**---which often focus on the hot new thing and can miss more important, less newsworthy threats.
 
-No wonder security seems so hard!
+In any form, typical security advice offers little benefit. If you're anything like an average user, you try to follow some basic security advice, but you probably have no idea whether it protects you or not. Microsoft security researcher Cormac Herley's paper [So Long, and No Thanks for the Externalities](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/SoLongAndNoThanks.pdf) describes this in more detail: most security advice today is unnecessary, confusing, and "harmful in its own right"<!-- TODO {% cite herley_so_2009 -A %} -->.
+
+With security advice like that, no wonder security seems so hard!
 
 ## You shouldn't have to learn about cybersecurity
 
@@ -35,26 +36,22 @@ But first, why even learn about cybersecurity at all? After all, you don't need 
 Cybersecurity should be simple---we should communicate it well. If your money is safe, we should tell you that it's safe. If it's not, we should tell you how to make it safe. You shouldn't need to worry about protocols and encryption schemes and anti-virus tools.
 
 <aside class="sidenote">
-Though we'll dicuss what it means to be "safe" later.<!-- cite unfalsifiability -->
+Though we'll dicuss what it means to be "safe" later.
 </aside>
 
 But cybersecurity is not simple. Not yet.
 
 Banks have had a long time to learn about security. They're built to defend against the biggest threats. We're getting there---we're securing the Internet with HTTPS and building tools that work like you expect (like Signal, iMessage, MagicWormhole, and WireGuard, for example). But we're not there yet.
 
-One day Internet security will be easy. It's our job---as engineers and cybersecurity researchers---to make that happen.
+One day Internet security will be easy. It's our job---as engineers and cybersecurity researchers---to make that happen {% cite pollard_2018 %}. But until then, you need to learn about cybersecurity to stay safe.
 
-But until then, you need to learn about cybersecurity to stay safe. It's ridiculous that you should need to learn anything {% cite pollard_2018 %}, but that's where we are.
-
-This guide can help.
+This guide can help!
 
 ## Read this guide → get a good mental model
 
 That's why this guide is different.
 
-It's not a to-do list.
-
-It's not a detailed look into extremely rare threats.
+It's not a to-do list. It's not a detailed look into extremely rare threats.
 
 It's an overview. It attempts to introduce you to cybersecurity in a concrete way, with evidence and *proof* that it covers everything. When something is unclear, we say it's unclear.
 
@@ -73,13 +70,13 @@ Eliezer S. Yudkowsky, an AI researcher, writes {% cite yudkowsky_2005 -A %} (emp
 
 </aside>
 
-If my guide cannot help you make a prediction---like how safe it is to download an app on public Wi-Fi, for example---please let me know, and I will improve it.
+If my guide cannot help you make a prediction---like how safe it is to download an app on public Wi-Fi---please let me know (with the survey at the bottom of every page), and I will improve it.
 
 With that, a warning:
 
 ## A warning
 
-This content is targeted at most Internet users---to access your bank, online shopping, and Facebook.
+This content is targeted at most Internet users---to access your bank, online shopping, Facebook, etc.
 
 If you fear censorship or your life may be at risk if you are hacked, it is reasonable to [take other precautions](/help/).
 
