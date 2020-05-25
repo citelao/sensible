@@ -26,15 +26,15 @@ Hackers target everyone.
 
 We'll dive into it, but that's the short answer.
 
-But that's not the whole answer. You are targeted, but this is almost entirely because these criminals target as many people as they can **as cheaply as they can** *or* because they focus on high value targets (like companies) to **steal many people's data at once**. These hackers are probably not interested in your cookie recipes---or even your salacious photos! They want your money, and they want it quickly. They don't have the time to waste on you specifically.
+But that's not the whole answer. You are targeted, but this is almost entirely because these criminals target **as many people as they can**, **as cheaply as they can**, *or* because they focus on high value targets (like companies) to **steal many people's data at once**. These hackers are probably not interested in your cookie recipes---or even your salacious photos! They want your money, and they want it quickly. They don't have the time to waste on you specifically.
 
 It is also hard to lose money to online theft. Even if everything goes right for hackers, federal law can often protect you---and you can get your money back.
 
-Unfortunately, some people must also defend against a different sort of hacker: a targeted hacker. If you know you are a target---since you have an abusive ex, since you are a political dissident, or since you are an important CEO, for example---you may need to worry about other threats.
+Unfortunately, some people must also defend against a different sort of hacker: a targeted hacker. If you know you are a target---you have an abusive ex, you are a political dissident, or you are an important CEO, for example---you may need to worry about other threats.
 
 We'll investigate all of this below.
 
-## Two questions in one
+## This is two questions in one
 
 There are really two questions here:
 
@@ -47,14 +47,15 @@ After all, it's important to protect the things that hackers want to steal---and
 
 Being safe is about *feeling safe,* too.
 
-## What do you want?
+## First, what do you want to protect?
 
-First, spend some time understanding what's important to you---and what you want to protect.
+First, spend some time understanding what's important to you---this is what you want to protect.
 
-I've found that most people worry about similar things<!-- TODO cite folk models -->:
+I've found that most people worry about similar things {% cite wash_folk_2010 oliver_lewis_fear_2001 %}:
 
 * hackers stealing your money,
-* hackers taking (or changing or deleting) your stuff, and
+* hackers taking (or changing or deleting) your stuff,
+* hackers impersonating you, and
 * hackers hurting the people you care about.
 
 Security advice can be very abstract and high-handed. It's one-size-fits-all, and it's often unclear if it misses something that's important to you.
@@ -63,15 +64,15 @@ Think about what's important to you, and what aspects of security you need for t
 
 You may discover important stuff you didn't protect, or you may realize that you were protecting some stuff the wrong way.
 
-After all: you can't protect anything if you don't know what you're protecting.
+That's more valuable than any generic security advice.
 
-## What do hackers want?
+## Second, what do hackers want to steal?
 
-Now comes the second question. What do *they* want?
+Now comes the second question. What do *they* want from you?
 
-You know what's important to you, but maybe it's not important to hackers. Do they really want to know your Netflix password, or home address, or phone number, or family photos?
+We actually have good data about what most hackers want and how they work to get it. Most hackers *don't* want to grab your Netflix account, or home address, or phone number, or family photos.
 
-We have good data about what most hackers want and how they work to get it. Because of this, it makes sense to group people into one of two categories:
+Because of this, it makes sense to group people into one of two categories:
 
 1. You *don't* know of any specific person or group trying to hack you (like an ex-boyfriend, a government, jealous family, or a stalker)
 2. You *do* know of a specific person or group trying to hack you.
@@ -84,7 +85,7 @@ Unfortunately, you are still a target. The narrative is true---there *are* hacke
 
 Fortunately, they pretty much *only* want to steal your money.
 
-Every year, Verizon publishes the Data Breach Investigations Report (DBIR), a report that examines tens of thousands of data "incidents" across companies around the world. And every year, it's clear: **almost all corporate data breaches are financially-motivated**. 
+Every year, Verizon publishes the Data Breach Investigations Report (DBIR), a report that examines tens of thousands of data breaches & incidents across companies around the world. And every year, it's clear: **almost all corporate data breaches are financially-motivated**. 
 
 <aside class="sidenote">
 Or, in Verizon's words:
@@ -93,25 +94,21 @@ Or, in Verizon's words:
 greed... get the idea?
 </aside>
 
-In more detail:
+In more detail, Verizon found  {% cite verizon_enterprise_2018_2018 -l 5 -A %}:
 
 * 76% of breaches were financially-motivated.
 * 13% of breaches were for espionage (both corporate and government spying).
 * The remaining 11% of breaches were for fun, ideology, or grudges.
 
-There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, **hackers are usually like your average brick-and-mortar criminal**.
+There may have been a time when most hackers did it for the "fun" of it, but that's not the case today. Today, **most hackers are like your average brick-and-mortar criminal**.
 
-It's worth noting that 11% for fun, ideology, or grudge is still a large number. Almost 9 out of 10 breaches were for money or espionage (which is also to make money, probably), but that remaining bit isn't easy to ignore. However, I think most security experts agree that these "non-money" breaches are generally small and targeted. I know several people who have been victims of "small-scale" hacking (like seeing someone from Chile log in to their Netflix, or having a website they run defaced with Russian links), but the breaches that impact the most people are probably almost always for the money.
+It's worth noting that 11% for fun, ideology, or grudge is still a large number. Almost 9 out of 10 breaches were for money or espionage (which is also to make money, probably), but that remaining bit isn't easy to ignore. I think most security experts agree that these "non-money" breaches are generally small and targeted. I know several people who have been victims of "small-scale" hacking (like seeing someone from Chile log in to their Netflix, or having a website they run defaced with Russian links), but the breaches that impact the most people are probably almost always for the money.
 
 In general, then, the masked hackers targeting you want money. They don't care about your cookie recipes. They don't care about your sensitive pictures. They don't care about anything you care about... unless it can make them money. Quickly.
 
-<aside class="sidenote">
-Though the LifeLock guy was hacked 13 times after giving out his SSN<!-- TODO cite -->, so I guess don't make yourself a target by daring people to steal your identity.
-</aside>
-
 ## Hackers need easy money
 
-This leads to a key insight about most hacking: hackers don't want to invest time hacking you or monetizing your data. In fact, they really *can't*. Payoffs are low, so hackers have to steal a *lot* of data to make it worth their while. Cybercrime is, in some sense, a business; if it takes 15 minutes to steal a Netflix account that they can resell for $1<!-- 2019 ISTR -->, it makes more sense to get a job at Taco Bell.
+This leads to a key insight about most hacking: hackers don't want to invest time hacking you or monetizing your data. In fact, they really *can't*. Payoffs are low, so hackers have to steal a *lot* of data to make it worth their while. Cybercrime is, in some sense, a business; if it takes 15 minutes to steal a Netflix account that they can resell for $1 {% cite symantec_internet_2019 -l 56 %}, it makes more sense to get a job at Taco Bell.
 
 <aside class="sidenote">
 Though it's unclear what that means for hackers in other countries, where the wages at Taco Bell may be much lower.
@@ -132,29 +129,29 @@ This is not because there are two "ways" to hack (there are actually many!), but
 
 Because of financial constraints, hackers who need money must target as many people as possible and focus on cheap, scalable, and low effort attacks. Or they target corporations with in-depth, high effort attacks, where their work can pay off in large-scale breaches.
 
-Without specific numbers, I would estimate that ~50% of Americans have been a victim of a scalable or large-scale attack (consider that nearly 1 in 2 Americans lost their Social Security Numbers in the 2017 Equifax data breach), but targeted attacks are rare enough to often make the news.
+Consider that at least 50% of Americans have been a victim of a scalable or large-scale attack (nearly 1 in 2 Americans lost their Social Security Numbers in the 2017 Equifax data breach {% cite noauthor_equifax_2019 %}), but targeted attacks are rare enough to often make the news.
 
 ## Stealing money isn't as easy as it looks
 
 And this is why the truth---that hackers target everyone---is far less scary than it could be. It's really hard to steal money, even digitally.
 
-Other research<!-- TODO CITE the underground economy & Norton 2018 --><!-- TODO cite Is Everything We Know About Password-Stealing Wrong? --> explores this in greater depth, but at the end of the day there are 3 simple reasons to believe this:
+Other research {% cite rob_thomas_underground_2006 florencio_is_2012 %}explores this in greater depth, but at the end of the day there are 3 simple reasons to believe this:
 
 1. Federal law limits your liability for digital fraud---to an absolute maximum of $50 in many cases---and most banks & credit cards offer *zero* liability in most cases.
-2. There are billions of hacked passwords and accounts worldwide, but there is simply nowhere near that amount of fraud.<!-- https://haveibeenpwned.com/ (&gt;9 billion?) vs DOJ fraud rates (10% of Americans annually? 30mil? 88% of this has no loss: 3mil with losses annually: 1%) -->
-3. Hacked accounts aren't worth much. Norton estimates that they sell for between 0.5--10% of the account's value<!-- TODO CITE the underground economy & Norton 2018 -->---your password is far from enough information to steal money. 
+2. There are billions of hacked passwords and accounts worldwide {% cite troy_hunt_have_nodate %}, but there is simply nowhere near that amount of fraud {% cite oliver_lewis_fear_2001 %}.<!-- TODO: also vs DOJ fraud rates (10% of Americans annually? 30mil? 88% of this has no loss: 3mil with losses annually: 1%) -->
+3. Hacked accounts aren't worth much. Norton estimates that they sell for between 0.5--10% of the account's value {% cite symantec_internet_2019 -l 56 %}---your password is far from enough information to steal money. 
 
 Banks hate fraud in much the same way you do---but they shield you from it. After all, crime is bad for business. They freely pay you back for fraud because they want you to feel safe (and to continue giving money to them).
 
-Banks lose over $40 million each year to *physical theft*, but you don't hear about it---they write it off and pay you back. It's the same for credit cards. In a survey, 80% of credit card fraud victims lost nothing at all, and 97% lost less than $1000<!-- TODO Synovate; DOJ Victims of Identity Theft, 2016 (88% lost < $1) -->. Surveys like this are notorious for exaggerating costs, so these numbers are eye-opening.
+Banks lose over $40 million each year to *physical theft*, but you don't hear about it---they write it off and pay you back. It's the same for credit cards. In a survey, 80% of credit card fraud victims lost nothing at all, and 97% lost less than $1000 {% cite synovate_federal_2007 harrell_victims_2019 -l 37-38 -l 1 %}<!-- DOJ Victims of Identity Theft, 2016 says 88% lost < $1 -->. Surveys like this are notorious for exaggerating costs, so these numbers are eye-opening.
 
 <!-- TODO that's why non-repudiatable scams are much more common -->
 
 ## The other costs
 
-However, you're probably worried about more than just losing money. A "successful" theft attempt (even one where you get your money back) often costs you time and energy---and it's scary!
+However, you're probably worried about more than just losing money. A "successful" theft attempt (even one where you get your money back) often costs you time and energy {% cite synovate_federal_2007 -l 38 %}---and it's scary!
 
-The good news: if you catch it early, it will probably be easy to resolve. 69% of folks who discovered fraud within 6 months of the occurence spent less than 10 hours resolving it. It's frustrating and annoying, but hopefully not the end of the world.
+The good news: if you catch it early, it will probably be easy to resolve. 69% of folks who discovered fraud within 6 months of the occurence spent less than 10 hours resolving it {% cite synovate_federal_2007 -l 39-40 %}. It's frustrating and annoying, but hopefully not the end of the world.
 
 That being said, many of the remaining 31% of cases took months to resolve, or more.
 
@@ -166,9 +163,9 @@ But it's good to know that the system protects you. It helps you focus on the ri
 
 All of this information centered around one assumption: you are not being targeted specifically.
 
-Typical hackers just want your money, but a hacker with a grudge or a personal connection---a jealous ex, an angry coworker, a distrustful parent, or even a friend playing a prank---doesn't need that.
+Typical hackers just want your money, but a hacker with a grudge or a personal connection---a jealous ex, an angry coworker, a distrustful parent, or even a friend playing a prank---has a different goal.
 
-In this scenario you are a specific, isolated target. The hackers have the time to break in and they *want* to break in. On paper, this is the nightmare that keeps security analysts up at night: these people can know your secrets, have access to your devices, and may even know your passwords.
+In this scenario you are a specific, isolated target. The hackers have the time to break in and they *want* to break in. This is the nightmare scenario that keeps security analysts (and normal people!) up at night: these people can know your secrets, have access to your devices, and may even know your passwords.
 
 This is absolutely terrifying, and I will put it clearly:
 
@@ -179,29 +176,32 @@ Unfortunately, there is very little data about this type of hacking. How frequen
 
 It is unclear.
 
-<aside class="sidenote">
-I investigated cyber-stalking as a stand-in for these types of attacks. I am confident that cyber-stalking is **very common** in abusive relationships. There are many tools that make these attacks easy.
+## Cyber-stalking, for example
 
-However, this data is preliminary and is hard to generalize towards other attacks<!-- TODO cite TK Logan Putting the Pieces Together; and other newer articles-->.
-</aside>
+I investigated cyber-stalking as a stand-in for these types of attacks. I am confident that cyber-stalking is **very common** in abusive relationships {% cite freed_stalkers_2018 %}. There are many tools that make these attacks easy.
 
-## But targeted hacking is probably rare?
+However, this data is preliminary {% cite logan_research_2010 %} and is hard to generalize towards other attacks.
+
+## Targeted hacking is probably rare
 
 In that case, why am I optimistic about security? Two reasons:
 
 1. Most people should never have to worry about something like this.
 2. I think the advice in this guide serves as a good baseline for protecting yourself against these threats.
 
-Perhaps "milder" versions of these attacks are common. For example, it's easy to imagine a friend Facebook stalking you, or even some roommates guessing your password to make gag posts on Twitter. But I imagine that you are much less worried about these attacks than you are about losing your money.
+Perhaps "milder" versions of these attacks are common. For example, it's easy to imagine an employer Facebook stalking you, or even some roommates guessing your password to make gag posts on Twitter. But I imagine that you are much less worried about these attacks than you are about losing your money.
 
 If you do not know of anyone who would want to hurt you, you should not need to worry about these attacks. But if you do, or if you are concerned about these "milder" attacks, it is reasonable to take other precautions.
 
 ## The big picture
 
-In short, you *are* a target for hackers, if only because they cast a gigantic, all-encompassing net in their search for easy money.
+In short:
 
-Most hackers don't care about you or your accounts specifically, and it takes more than a hack to steal all your money. It can be frustrating to recover from a hack, and it's scary, but there are ways to get your money back.
+* You *are* a target for hackers, if only because they cast a gigantic, all-encompassing net in their search for easy money, allthough most hackers don't care about you or your accounts specifically.
+* Some folks need to worry about more targeted attacks from people they know, and other folks may want to take extra precautions, just in case.
 
-Some folks need to worry about more targeted attacks from people they know, and other folks may want to take extra precautions, just in case.
+Also:
+
+* It takes more than a hack to steal all your money. It can be frustrating to recover from a hack, and it's scary, but there are ways to get your money back.
 
 The data indicates straightforward ways to stay safe (some not related to cybersecurity at all!), but in order to understand why, you need to understand how you will be hacked.
