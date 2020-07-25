@@ -9,7 +9,7 @@ ignore_previous: true
 ignore_next: true
 ---
 
-When you browse the Internet---you know, when you go to google.com to search for puppies---you are using HTTP (the HyperText Transport Protocol). HTTPS (HTTP Secure) prevents other people from seeing those puppies. Or worse, replacing those puppies with *less cute* ones.
+When you browse the Internet---you know, when you go to google.com to search for puppies---you are using HTTP (the HyperText Transport Protocol). HTTPS (HTTP Secure) prevents other people from eavesdropping on your puppy search. Or worse, replacing those puppies with *less cute* ones.
 
 When you browse the Internet today, most of the stuff you see is already HTTPS---and you probably notice the "Not Secure" indicator when it's not. Your banks and sensitive websites---and certainly your searches and social media---are all secure by default using HTTPS. Even your email is probably protected by a similar tool (for email, you're protected with TLS or SSL).
 
@@ -29,7 +29,7 @@ Each of these communication methods follows a standard set of rules---a protocol
 
 Snail mail is pretty safe, and easy to protect. We send cash and checks in the mail all the time.
 
-At first, the Internet was pretty safe, too. It was also tiny, and, even if it weren't safe, the founders needed to get something simple running. The core protocols that defined the Internet---like HTTP, TCP/IP, DNS, and SMTP---made no effort to protect your data from snoops<!-- https://tools.ietf.org/html/rfc1945#section-12.4 -->.
+At first, the Internet was pretty safe, too. It was also tiny, and, even if it wasn't safe, the founders needed to get something simple running. The core protocols that defined the Internet---like HTTP, TCP/IP, DNS, and SMTP---made no effort to protect your data from snoops<!-- https://tools.ietf.org/html/rfc1945#section-12.4 -->.
 
 Specifically, these protocols only described how to send your data as plaintext---unencrypted, just like physical mail. All hackers needed to do to steal your passwords as you sent them to Google was eavesdrop, which is very easy to do: **hence the warnings to avoid coffee shop wi-fi**.
 
@@ -53,9 +53,10 @@ HTTPS protects traffic on the Internet by sending it as **cyphertext**: encrypte
 
 With HTTPS, we now had the *ability* to keep your content secure as it traveled the Internet.
 
-For a long time, though, HTTPS languished, and most Internet communication remained insecure. But recently, thanks to initiatives by Google, Let's Encrypt, the EFF, and many others, encrypted Internet traffic in the United States nearly *doubled* between 2015 and 2018. Mozilla calls all of this work "[deprecating the insecure Internet](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)," and because of it, [over 90%](https://transparencyreport.google.com/https/overview?hl=en) of traffic on the Internet is encrypted today. That number [keeps going up](https://scotthelme.co.uk/alexa-top-1-million-analysis-august-2018/)<!-- TODO CITE -->, and it's the reason you can browse open wireless networks in relative peace.
+For a long time, though, HTTPS languished, and most Internet communication remained insecure. But recently, thanks to initiatives by Google, Let's Encrypt, the EFF, and many others, encrypted Internet traffic in the United States nearly *doubled* between 2015 and 2018. That number [keeps going up](https://scotthelme.co.uk/alexa-top-1-million-analysis-august-2018/)<!-- TODO CITE -->, and it's the reason you can browse open wireless networks in relative peace.
 
-In fact, when I first wrote this article, only about 60% of Internet traffic was encrypted.
+In fact, when I first wrote this article, only about 60% of Internet traffic was encrypted. Today, [over 90%](https://transparencyreport.google.com/https/overview?hl=en) is.
+<!-- Mozilla calls all of this work "[deprecating the insecure Internet](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)," and because of it, -->
 
 ## The old Internet -- before HTTPS
 
@@ -107,19 +108,19 @@ The best way to keep yourself secure is to learn how HTTPS works.
 
 ## How HTTPS works
 
-HTTPS relies on "public key encryption." Public key encryption is a form of encryption that relies on a pair of numbers---or "keys": 
+HTTPS relies on "public key encryption." Public key encryption is a form of encryption that relies on a pair of numbers---or "keys":
 
 * a publicly available key (a "public key") and
 * a corresponding private key. 
 
-These keys can be used to generate messages that only the other key can unscramble (using *math*!). If you encrypt a message with a public key, only someone with the private key can decrypt them, and if you encrypt a message with a private key, your friends with the corresponding public key can be sure you wrote it.
+These keys can be used to generate messages that only the other key can unscramble (using *math*!). If you encrypt a message with a public key, only someone with the private key can decrypt it, and if you encrypt a message with a private key, your friends with the corresponding public key can be sure you wrote it.
 
-Servers distribute public keys---called "certificates"---and your browser encrypts its initial message to the server using that public key. Because only the server has the right private key, you can be sure no one else reads your message. Your browser and the server then negotiate new keys, private to each of you<!-- TODO verify -->, for the rest of the connection.
+Servers distribute specially-formatted public keys---called "certificates"---and your browser encrypts its initial message to the server using that public key. Because only the server has the right private key, you can be sure no one else reads your message. Your browser and the server then negotiate new keys, private to each of you<!-- TODO verify -->, for the rest of the connection.
 
 Encrypting your communication with these keys stops man-in-the-middle attacks cold. As long as the encryption you use is strong enough, eavesdroppers just see gibberish passing between you and webkinz.com.
 
 <aside class="sidenote">
-NB that eavesdroppers **do** know which website you're talking to: the metadata leaks [the base part of the URL](https://stackoverflow.com/q/8277323) (and only that part). Eavesdroppers can also see that you **are** talking to a site and can analyze the message size---think about telling apart college acceptance letters vs college rejection letters by size.
+Note that eavesdroppers **do** know which website you're talking to: the metadata leaks [the base part of the URL](https://stackoverflow.com/q/8277323) (and only that part). Eavesdroppers can also see that you **are** talking to a site and can analyze the message size---think about telling apart college acceptance letters vs college rejection letters by size.
 
 Again, there are practical attacks {%cite muehlstein2016analyzing -L note -l 7--46 %}, but many are very specific. See also [**Do you need a VPN?**]({{site.baseurl}}/vpn/) for more in-depth discussion of metadata.
 </aside>
@@ -128,7 +129,7 @@ However, what if an attacker pretends to be the server, giving you a false certi
 
 That's why on the Internet, although the certificates may be *public*, they also carry a proof of identity: a "signature" from a Certificate Authority.
 
-There are dozens of Certificate Authorities, and each does the same thing: if you can prove you own a site, the authority will "sign" your certificate to say "this certificate is from the owner of miniclip.com." Like an HTTPS certificate itself, this signature is also a form of public key cryptography. The authority generates a signature using another private key, and they distribute its corresponding public key to browsers. Most browsers maintain their own careful list of trusted Authorities, [adding new ones](https://letsencrypt.org/2018/08/06/trusted-by-all-major-root-programs.html) or [removing corrupt ones](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html) from time-to-time.
+There are dozens of Certificate Authorities, and each does the same thing: if you can prove you own a site, the authority will "sign" your certificate to say "this certificate is from the owner of miniclip.com." Like an HTTPS certificate itself, this signature is also a form of public key cryptography. The authority generates a signature using another private key, and they distribute its corresponding public key to browsers. Most browsers maintain their own careful list of trusted Authorities, [adding new ones](https://letsencrypt.org/2018/08/06/trusted-by-all-major-root-programs.html) or [removing corrupt ones](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html) from time to time.
 
 ## You need two things to be secure
 
@@ -167,16 +168,6 @@ For example, HTTPS guarantees that when you talk to Snapple.com you are actually
 
 HTTPS does not indicate any security *except* that your communication was secure in transit, but that's a very important thing; the rest you can verify separately.
 
-Recall the [six points your data crosses]({{site.baseurl}}/security/) when it travels the Internet. HTTPS secures three of them (and the connections between them): your data is confidential and unmodified---
-
-<aside class="sidenote">
-You may notice that HTTPS does not guarantee **availability**. That's based on servers being available to respond to your requests. In practice, HTTPS does not slow down servers enough to **disrupt** availability on its own.
-</aside>
-
-* from your computer to your router,
-* from your router to the Internet, and
-* from the Internet to its destination.
-
 ## The rest of the steps
 
 After you've secured the part of your communication that crosses the Internet, you must secure your devices and your destination.
@@ -188,3 +179,5 @@ I believe that security literature focuses on man-in-the-middle attacks because 
 </aside>
 
 Once man-in-the-middle attacks are mitigated, you need to minimize your other security holes before you can browse safely.
+
+That we cover in [How to stay safe]({{site.baseurl}}/overall/).
