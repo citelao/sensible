@@ -11,6 +11,21 @@ real_previous:
 ignore_next: true
 ---
 
+<!-- ## Acknowledgements -->
+
+<!--
+
+* Mom
+* Cormac Herley
+* Michael Whitesides
+* Deepak Kumar
+* Yennie Jun
+* Sophie Rooks
+* And everyone else who listened to me ramble about security.
+
+## Complete references & bibliography
+-->
+
 <div class="references">
 {% bibliography %}
 </div>
