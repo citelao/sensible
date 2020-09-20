@@ -36,7 +36,7 @@ But first, why even learn about cybersecurity at all? After all, you don't need 
 Cybersecurity should be simple---we should communicate it well. If your money is safe, we should tell you that it's safe. If it's not, we should tell you how to make it safe. You shouldn't need to worry about protocols and encryption schemes and anti-virus tools.
 
 <aside class="sidenote">
-Though we'll dicuss what it means to be "safe" later.
+Though we'll discuss what it means to be "safe" later.
 </aside>
 
 But cybersecurity is not simple. Not yet.
