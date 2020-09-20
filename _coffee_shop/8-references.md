@@ -17,10 +17,10 @@ ignore_next: true
 
 * Mom
 * Cormac Herley
+* Sophie Rooks
 * Michael Whitesides
 * Deepak Kumar
 * Yennie Jun
-* Sophie Rooks
 * And everyone else who listened to me ramble about security.
 
 ## Complete references & bibliography
