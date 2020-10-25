@@ -23,7 +23,7 @@ Here's why.
 
 Viruses (well,  technically all *malware*, but who's asking) are really weird. There's a pretty high chance you've gotten one before and remember dealing with it, so the new advice---that you probably don't need one---is a bit jarring. Why do you not need one? Did something change?
 
-That's not the only thing that's odd about malware. We're told to be wary of keyloggers stealing your bank passwords, but at the same time we're told that virus symptoms include pop-ups and distracting ads on your screen. It doesn't make sense---that's like a burglar breaking in, turning on the lights, and shouting, "I'm doing bad stuff in your house! ALSO DO YOU WANNA BUY SOME PILLS?!"
+That's not the only thing that's odd about malware. We're told to be wary of keyloggers stealing your bank passwords, but at the same time we're told that virus symptoms include pop-ups and distracting ads on your screen. It doesn't make sense---that's like a burglar breaking in, turning on the lights, and shouting, "I'm doing very sneaky secret stuff in your house! ALSO DO YOU WANNA BUY SOME PILLS?!"
 
 Is malware written to steal your passwords and perpetrate identity theft<!-- TODO [identity theft]({{site.baseurl}}/identity_theft/) -->? Is it trying to sell you cheap Canadian medicine? Or is it just for fun, to cause mischief<!-- Folk models -->?
 
@@ -36,6 +36,8 @@ I'm not sure anyone has good answers to these questions. I certainly haven't see
 ## The times they are a-changing
 
 Anti-virus software came into a lawless world, where people desperately needed protection. We explored this in [Will I be hacked?]({{site.baseurl}}/hackers/), but the story was that a new Windows XP computer would catch malware within 20 minutes of just *connecting* to the Internet.
+
+<!-- TODO not anymore -->
 
 And for a while, Microsoft was really slow to respond. Windows 7 fixed many of the glaring security vulnerabilities XP had, but even then a new Windows computer wouldn't be well-equipped to deal with new threats. By Microsoft's own data<!-- Why Windows Defender Antivirus is the most deployed in the enterprise -->, it took until late 2015 for Windows' built-in tools to start matching third-party anti-virus software.
 
