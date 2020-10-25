@@ -18,6 +18,8 @@ But what will a cyber-criminal actually do to compromise your [security]({{site.
 
 Unfortunately, the quick answer is, "we don't really know."
 
+![A person shrugs their shoulders as two criminals, standing directly behind the person, make off with paperwork and money.]({{site.baseurl}}/img/Shrug.png)
+
 There is plenty of cybersecurity research out there, and there are plenty of ways to [stay safe]({{site.baseurl}}/overall/), but there is no good overall list of consumer cybersecurity threats. Without that list, we cannot say empirically what the most likely threats are. Instead, the best we can do is **analyze the biggest threats we know about**---and hope they are *actually* the biggest threats.
 
 ## Our best list: the VERIS schema

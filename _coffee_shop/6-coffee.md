@@ -21,6 +21,8 @@ So after all that, is it?
 
 For most people, yes. It is extremely unlikely that a hacker would wait on public wi-fi to intercept your data. And, from a technical side, modern Internet protocols (specifically SSL and [HTTPS]({{site.baseurl}}/https/)) protect your data from snoopers anyway.
 
+![A person with a bun and an earring leans back in their chair while browsing their phone and holding a cup of coffee in their lap. Onlookers at the coffee shop display reactions of shock, fear, and mild surprise.]({{site.baseurl}}/img/Calm.png)
+
 ## Starbucks can be productive, but not for hackers
 
 Why is it safe to use the wi-fi? Well, we know [whether or not random people are even likely to be targeted]({{site.baseurl}}/hackers/). We know that most people are at risk of indiscriminate, scaleable (or large-scale) attacks (although some people need to [get additional help]({{site.baseurl}}/help/)).

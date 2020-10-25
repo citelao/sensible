@@ -45,6 +45,12 @@ body.page {
 
 		& > *:not(.pullquote):not(.hero):not(.sidebar):not(.sidenote) {
 			grid-column: article;
+
+			& > img {
+				display: block;
+				max-width: 70%;
+				margin: 0 auto;
+			}
 		}
 
 		& > .hero {
@@ -55,7 +61,7 @@ body.page {
 		}
 
 		.page_nav {
-			padding: $line-rem 0; 
+			padding: $line-rem 0;
 
 			.next {
 				float: right;

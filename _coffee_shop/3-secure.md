@@ -18,7 +18,7 @@ The data we send across the Internet every day---emails, YouTube videos, and sea
 
 Security means protecting this data: protecting your **confidentiality**, **integrity** and **availability**---**everywhere** and **all the time**.
 
-<!-- DOODLE? -->
+![A person uses their computer. Three additional arms sprout from their back, each gesturing "stop" in a different direction.]({{site.baseurl}}/img/Triad.png)
 
 ## Protect your confidentiality, integrity, and availability
 

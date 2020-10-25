@@ -20,6 +20,8 @@ This guide aims to explain what security actually means. It aims to give you a c
 
 ## The to-do lists are unsatisfying
 
+![With mild frustration, a person grasps a speech bubble containing a giant exclamation mark. Behind them float two other speech bubbles, one with three exclamation points and one with the words "Top 10."]({{site.baseurl}}/img/Todo.png)
+
 Typical security advice is usually unsatisfying. In my experience, it usually takes one of two forms:
 
 1. **Top 10 lists, focused on quick tips to make yourself safer**---which are all slightly different and never explain why *their* tips are the right ones to follow.
