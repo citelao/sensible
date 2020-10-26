@@ -22,7 +22,7 @@ Unfortunately, the quick answer is, "we don't really know."
     <img src="{{site.baseurl}}/img/Shrug.png" alt="A person shrugs their shoulders as two criminals, standing directly behind the person, make off with paperwork and money." />
 
     <figcaption>
-        There's no good overall list of the biggest threats.
+        There's no good overall list of the biggest threats
     </figcaption>
 </figure>
 

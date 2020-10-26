@@ -25,7 +25,7 @@ For most people, yes. It is extremely unlikely that a hacker would wait on publi
     <img src="{{site.baseurl}}/img/Calm.png" alt="A person with a bun and an earring leans back in their chair while browsing their phone and holding a cup of coffee in their lap. Onlookers at the coffee shop display reactions of shock, fear, and mild surprise." />
 
     <figcaption>
-        For most people, coffee shop wi-fi is safe.
+        For most people, coffee shop wi-fi is safe
     </figcaption>
 </figure>
 
