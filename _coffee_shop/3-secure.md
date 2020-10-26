@@ -18,7 +18,13 @@ The data we send across the Internet every day---emails, YouTube videos, and sea
 
 Security means protecting this data: protecting your **confidentiality**, **integrity** and **availability**---**everywhere** and **all the time**.
 
-![A person uses their computer. Three additional arms sprout from their back, each gesturing "stop" in a different direction.]({{site.baseurl}}/img/Triad.png)
+<figure markdown="0">
+    <img src="{{site.baseurl}}/img/Triad.png" alt="A person uses their computer. Three additional arms sprout from their back, each gesturing 'stop' in a different direction." />
+
+    <figcaption>
+        Security means protecting your confidentiality, integrity, and availability—everywhere and all the time
+    </figcaption>
+</figure>
 
 ## Protect your confidentiality, integrity, and availability
 

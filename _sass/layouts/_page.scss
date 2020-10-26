@@ -46,7 +46,9 @@ body.page {
 		& > *:not(.pullquote):not(.hero):not(.sidebar):not(.sidenote) {
 			grid-column: article;
 
-			& > img {
+			// Figure!
+			& > img,
+			& > figure {
 				display: block;
 				max-width: 70%;
 				margin: 0 auto;
@@ -102,6 +104,18 @@ body.page {
 				vertical-align: super;
 	
 				line-height: 1;
+			}
+		}
+
+		// Figure!
+		figure {
+			img {
+				max-width: 100%;
+			}
+
+			figcaption {
+				text-align: center;
+				color: $deemphasized-text;
 			}
 		}
 	}

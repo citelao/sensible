@@ -16,7 +16,13 @@ From [the last section]({{site.baseurl}}/security/), you know that security is a
 
 But... do you even have anything worth securing?
 
-![A guard with an earpiece and dark sunglasses stands outside a heavy barbed wire fence. Within the fence is a jar of cookies.]({{site.baseurl}}/img/Guard.png)
+<figure markdown="0">
+    <img src="{{site.baseurl}}/img/Guard.png" alt="A guard with an earpiece and dark sunglasses stands outside a heavy barbed wire fence. Within the fence is a jar of cookies." />
+
+    <figcaption>
+        Is the stuff you have even worth securing?
+    </figcaption>
+</figure>
 
 Each layer of security you use has different tradeoffs---and usually makes it harder for *you* to get your data. After all, you could keep everything you own in a bank vault and it might theoretically be "safe" (for some definition of "safe"), but what's the point? Nobody wants your old cookie recipes!
 

@@ -21,7 +21,13 @@ So after all that, is it?
 
 For most people, yes. It is extremely unlikely that a hacker would wait on public wi-fi to intercept your data. And, from a technical side, modern Internet protocols (specifically SSL and [HTTPS]({{site.baseurl}}/https/)) protect your data from snoopers anyway.
 
-![A person with a bun and an earring leans back in their chair while browsing their phone and holding a cup of coffee in their lap. Onlookers at the coffee shop display reactions of shock, fear, and mild surprise.]({{site.baseurl}}/img/Calm.png)
+<figure markdown="0">
+    <img src="{{site.baseurl}}/img/Calm.png" alt="A person with a bun and an earring leans back in their chair while browsing their phone and holding a cup of coffee in their lap. Onlookers at the coffee shop display reactions of shock, fear, and mild surprise." />
+
+    <figcaption>
+        For most people, coffee shop wi-fi is safe.
+    </figcaption>
+</figure>
 
 ## Starbucks can be productive, but not for hackers
 

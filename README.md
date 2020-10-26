@@ -27,6 +27,8 @@ To test links (etc):
 convert Calm_raw.png -fuzz 45% -transparent white Calm.png
 ```
 
+https://stackoverflow.com/questions/12424018/how-to-replace-white-background-color-with-transparent-of-an-image-in-imagemagic
+
 ### Beta versions
 
 To deploy a beta version to https://ben.stolovitz.com/sensible-security-dev/:
